@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="h-screen">
+    <div>
       <section className="relative">
         <Image
           src="/imgs/Downtown-Vancouver.png"
@@ -19,14 +19,14 @@ export default function About() {
           height="550"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <h1 className="font-dinProBold leading-none text-[40px] md:text-[50px]">
+          <h1 className="font-bold leading-none text-lg md:text-xl">
             Contact Us!
           </h1>
         </div>
       </section>
       <section className="flex flex-col items-center justify-center h-[50vh]">
         <div className=" text-center md:max-w-[55vw] border rounded-xl pt-[2vw] border-redLight">
-          <h1 className="text-redLight font-dinProMedium leading-none text-[20px] md:text-[30px]">
+          <h1 className="text-redLight font-semibold leading-none text-xs md:text-sm">
             Questions
           </h1>
           <p className="py-[2vh] px-[5vw]">
@@ -34,8 +34,8 @@ export default function About() {
             team and we will get back to you as soon as we can.
           </p>
           <hr className="border-redLight" />
-          <div className="py-[1vw] font-dinProMedium text-[15px] md:text-[18px]">
-            <Link href="mailto:s.chng02@gmail.com">caseit@sfu.ca</Link>
+          <div className="py-[1vw] font-medium text-2xs md:text-[18px]">
+            <Link href="mailto:caseit@sfu.ca">caseit@sfu.ca</Link>
           </div>
         </div>
       </section>

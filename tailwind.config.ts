@@ -10,11 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        dinProBlack: ["DINPro-Black", "sans-serif"],
-        dinProBold: ["DINPro-Bold", "sans-serif"],
-        dinProLight: ["DINPro-Light", "sans-serif"],
-        dinProMedium: ["DINPro-Medium", "sans-serif"],
-        dinProRegular: ["DINPro-Regular", "sans-serif"],
+        sans: ["Switzer", "sans-serif"],
       },
     },
     colors: {
@@ -30,13 +26,13 @@ const config: Config = {
       LinkedIn: "#0077B5",
     },
     fontSize: {
-      "3xs": "8px",
-      "2xs": "11px",
-      xs: "16px",
-      sm: "21px",
+      "3xs": "10px",
+      "2xs": "15px",
+      xs: "20px",
+      sm: "30px",
       base: "27px",
-      lg: "35px",
-      xl: "46px",
+      lg: "40px",
+      xl: "50px",
       "2xl": "61px",
       "3xl": "79px",
       "4xl": "104px",

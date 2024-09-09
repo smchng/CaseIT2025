@@ -1,15 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type buttonItems = {
   img: string;
   alt: string;
-
+  link: string;
   text: string;
 };
 
-export const ImgButton = ({ img, alt, text }: buttonItems) => {
+export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
   return (
-    <div className=" relative">
+    <Link href={link} className=" relative">
       <Image
         src={img}
         alt={alt}
@@ -21,9 +22,9 @@ export const ImgButton = ({ img, alt, text }: buttonItems) => {
       />
       <div className="absolute h-full inset-0 flex items-end pl-[2vw]">
         <div className="text-white">
-          <h1 className="font-dinProBold text-[15px] md:text-[20px]">{text}</h1>
+          <h1 className="font-bold text-2xs md:text-xs">{text}</h1>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

@@ -16,16 +16,14 @@ export default function About() {
         <div className="grid grid-cols-2 gap-4">
           <ImgLeft img="/imgs/about.png" width={727} height={408} />
           <div className=" pr-[10vw] flex flex-col justify-center">
-            <h1 className="font-dinProBold  text-[15px] md:text-[30px]">
-              About CaseIT
-            </h1>
+            <h1 className="font-bold  text-2xs md:text-sm">About CaseIT</h1>
             <p>
               CaseIT brings together top undergraduate students, distinguished
               faculty members, experienced industry professionals, and a
               dedicated student body to challenge conventional thinking and
               offer professional connections to benefit your business career.
             </p>
-            <p className="font-dinProMedium text-redLight text-[15px] md:text-[18px] py-[5vh]">
+            <p className="font-medium text-redLight  text-2xs md:text-[18px] py-[5vh]">
               Learn more about CaseIT
             </p>
           </div>
@@ -59,7 +57,7 @@ export default function About() {
             width="1218"
             height="637"
           />
-          <p className="text-[10px]">
+          <p className="text-3xs">
             Disclaimer: the world map displays all the post-secondary
             institutions that have participated in CaseIT since it inauguration
           </p>
@@ -80,10 +78,10 @@ export default function About() {
             height="10"
           />
           <div className="text-white">
-            <h1 className="font-dinProBold text-[15px] md:text-[30px]">
+            <h1 className="font-bold text-2xs md:text-sm">
               Our Location rendition
             </h1>
-            <p className="text-[15px] w-[40vw]">
+            <p className="text-2xs w-[40vw]">
               PIVOT is designed with a similar structure to its sister
               competition, CaseIT, and is tailored to top undergraduates in
               British Columbia. Built for future leaders.  PIVOT is designed
@@ -95,7 +93,7 @@ export default function About() {
         </div>
       </section>
       <section className="w-full flex flex-col items-center py-[8vh]">
-        <div className="font-dinProBold text-[15px] md:text-[30px] pb-[2vh]">
+        <div className="font-bold text-2xs md:text-sm pb-[2vh]">
           Meet the Team
         </div>
         <div className="flex space-x-[2vw]">
@@ -103,11 +101,13 @@ export default function About() {
             img="/imgs/2024_OC.PNG"
             alt="2024 OC team pic"
             text="2024 ORGANIZING COMMITTEE"
+            link="/oc/"
           />
           <ImgButton
             img="/imgs/2024_OC.PNG"
             alt="2024 OC team pic"
             text="JOIN US"
+            link="/oc/"
           />
         </div>
       </section>

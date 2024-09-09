@@ -9,7 +9,7 @@ type NavItems = {
 
 const NavLinks = ({ link, name }: NavItems) => {
   return (
-    <li className=" text-greyLight hover:text-black font-dinProMedium">
+    <li className=" text-greyLight hover:text-black font-medium">
       <Link href={link}>{name}</Link>
     </li>
   );

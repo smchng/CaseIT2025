@@ -6,7 +6,7 @@ type textItems = {
 export const TextDot = ({ text }: textItems) => {
   return (
     <div className="flex items-baseline">
-      <div className="font-dinProBold text-[15px] md:text-[30px]">{text}</div>
+      <div className="font-bold text-2xs md:text-sm">{text}</div>
       <span className="ml-1">
         <Image src="/svgs/redDot.svg" alt="red dot" width="8" height="8" />
       </span>

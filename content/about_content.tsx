@@ -20,13 +20,13 @@ export const imgButtons = [
   {
     img: "/imgs/2024_OC.PNG",
     alt: "2024 OC team pic",
-    text: "2024 ORGANIZING COMMITTEE",
+    text: "2025 ORGANIZING COMMITTEE",
     link: "/oc/",
   },
   {
-    img: "/imgs/2024_OC.PNG",
+    img: "/imgs/CaseIT_On3.PNG",
     alt: "2024 OC team pic",
-    text: "2024 ORGANIZING COMMITTEE",
+    text: "GET INVOLVED",
     link: "/oc/",
   },
 ];

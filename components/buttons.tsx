@@ -10,22 +10,28 @@ type buttonItems = {
 
 export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
   return (
-    <Link href={link} className=" relative">
-      <Image
-        src={img || "/svgs/CaseIT_Black.svg"}
-        alt={alt || "image description"}
-        width={549} // Set to 0 to allow the style attribute to take control
-        height={325} // Set to 0 to allow the style attribute to take control
-        style={{
-          width: `30vw`,
-        }}
-      />
-      <div className="absolute h-full inset-0 flex items-end pl-[2vw]">
-        <div className="text-white">
-          <h1 className="font-bold text-2xs md:text-xs">{text}</h1>
-        </div>
+    <div className="relative group">
+      {/* Top line */}
+
+      <div className="absolute top-0 left-0 right-0 h-8 z-10 overflow-hidden">
+        <div className="absolute top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-10"></div>
       </div>
-    </Link>
+
+      <Link href={link} className="relative block">
+        <Image
+          src={img || "/svgs/CaseIT_Black.svg"}
+          alt={alt || "image description"}
+          width={645}
+          height={415}
+          className="w-[30vw] h-auto"
+        />
+        <div className="absolute inset-0 flex items-end pl-[2vw] pb-[2vh] z-10">
+          <div className="text-white">
+            <p className="font-bold text-2xs md:text-xs">{text}</p>
+          </div>
+        </div>
+      </Link>
+    </div>
   );
 };
 

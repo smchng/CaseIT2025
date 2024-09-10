@@ -27,7 +27,10 @@ export default function Contact() {
       </section>
       <section className="flex flex-col items-center justify-center h-[50vh]">
         <div className=" text-center md:max-w-[55vw] border rounded-xl pt-[2vw] border-redDark">
-          <text.Header3Red text={contactText.header3Red} />
+          <text.Header3
+            stylingClasses="text-red"
+            text={contactText.header3Red}
+          />
           <p className="py-[2vh] px-[5vw]">{contactText.paragraph}</p>
           <hr className="border-redDark" />
           <div className="py-[1vw] font-medium text-2xs md:text-[18px]">

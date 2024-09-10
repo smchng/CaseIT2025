@@ -17,10 +17,14 @@ export default function About() {
         <div className="flex space-x-[2vw] xl:space-x-[5vw]">
           <ImgLeft img="/imgs/about.png" stylingClasses="w-[90vw] h-auto" />
           <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px] ">
-            <text.Header3 text={about.aboutText.header3} />
+            {/* <text.Header3 text={about.aboutText.header3} />
             <div className="max-w-[50vw] pb-[2vh]">
               <text.Paragraph text={about.aboutText.paragraph[0]} />
-            </div>
+            </div> */}
+            <text.BlackHeaderText
+              text={about.aboutText.paragraph[0]}
+              title={about.aboutText.header3}
+            />
             <GreyButton link="/history" text="CaseIT History" />
           </div>
         </div>

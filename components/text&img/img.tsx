@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Header3Red } from "./text";
+import { Header3 } from "./text";
 
 type imgItems = {
   img: string;
@@ -9,6 +9,20 @@ type imgItems = {
 };
 
 export const ImgLeft = ({ img, stylingClasses }: imgItems) => {
+  return (
+    <div className="relative p-7 ">
+      <div className="absolute inset-0 border-2 border-redDark rounded-2xl transform -translate-x-36 -z-10"></div>
+      <Image
+        src={img}
+        alt="img"
+        width={1002} // Original aspect ratio width
+        height={503} // Original aspect ratio height
+        className={stylingClasses}
+      />
+    </div>
+  );
+};
+export const ImgRight = ({ img, stylingClasses }: imgItems) => {
   return (
     <div className="relative p-7 ">
       <div className="absolute inset-0 border-2 border-redDark rounded-2xl transform -translate-x-36 -z-10"></div>
@@ -34,7 +48,7 @@ export const IconImg = ({ img, stylingClasses, title, text }: imgItems) => {
         className={stylingClasses}
       />
       <div>
-        <Header3Red text={title} />
+        <Header3 stylingClasses="text-red" text={title} />
 
         <p>{text}</p>
       </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { NavList } from "./nav_content";
+import { NavList } from "@/content/nav_content";
 
 type NavItems = {
   link: string;

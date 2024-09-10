@@ -1,13 +1,16 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import * as text from "@/components/text&img/text";
+import { FAQ } from "@/components/faq";
+import { contactText } from "@/content/contact_content";
 
 export const metadata: Metadata = {
   title: "Contact",
   description: "Learn more about our company and team.",
 };
 
-export default function About() {
+export default function Contact() {
   return (
     <div>
       <section className="relative">
@@ -19,24 +22,27 @@ export default function About() {
           height="550"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <h1 className="font-bold leading-none text-lg md:text-xl">
-            Contact Us!
-          </h1>
+          <text.Header1 text={contactText.header1} />
         </div>
       </section>
       <section className="flex flex-col items-center justify-center h-[50vh]">
         <div className=" text-center md:max-w-[55vw] border rounded-xl pt-[2vw] border-redLight">
-          <h1 className="text-redLight font-semibold leading-none text-xs md:text-sm">
-            Questions
-          </h1>
-          <p className="py-[2vh] px-[5vw]">
-            Have a question about CaseIT? Please do not hesITate to contact our
-            team and we will get back to you as soon as we can.
-          </p>
+          <text.Header3Red text={contactText.header3Red} />
+          <p className="py-[2vh] px-[5vw]">{contactText.paragraph}</p>
           <hr className="border-redLight" />
           <div className="py-[1vw] font-medium text-2xs md:text-[18px]">
-            <Link href="mailto:caseit@sfu.ca">caseit@sfu.ca</Link>
+            <Link href="mailto:caseit@sfu.ca">{contactText.email}</Link>
           </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <text.Header2 text={contactText.header2} />
+        </div>
+        <div>
+          {contactText.faqs.map((faq, index) => (
+            <FAQ key={index} question={faq.question} answer={faq.answer} />
+          ))}
         </div>
       </section>
     </div>

@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import { ImgLeft, IconImg } from "@/components/text&img/img";
-import { TextDot } from "@/components/text&img/text";
+import * as text from "@/components/text&img/text";
 import { ImgButton } from "@/components/buttons";
+import * as about from "@/content/about_content";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -16,39 +17,30 @@ export default function About() {
         <div className="grid grid-cols-2 gap-4">
           <ImgLeft img="/imgs/about.png" width={727} height={408} />
           <div className=" pr-[10vw] flex flex-col justify-center">
-            <h1 className="font-bold  text-2xs md:text-sm">About CaseIT</h1>
-            <p>
-              CaseIT brings together top undergraduate students, distinguished
-              faculty members, experienced industry professionals, and a
-              dedicated student body to challenge conventional thinking and
-              offer professional connections to benefit your business career.
-            </p>
-            <p className="font-medium text-redLight  text-2xs md:text-[18px] py-[5vh]">
-              Learn more about CaseIT
-            </p>
+            <text.Header3 text={about.aboutText.header3} />
+            <text.Paragraph text={about.aboutText.paragraph[0]} />
           </div>
         </div>
       </section>
       <section className="flex space-x-[5vw] bg-greyDark p-[5vw]">
-        <IconImg
-          img="/svgs/target.svg"
-          width={75}
-          height={75}
-          title="Mission"
-          text="Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. "
-        />
-        <IconImg
-          img="/svgs/eye.svg"
-          width={75}
-          height={75}
-          title="Vision"
-          text="Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. "
-        />
+        {about.icons.map((item, index) => (
+          <IconImg
+            img={item.img}
+            width={75}
+            height={75}
+            title={item.title}
+            text={item.text}
+          />
+        ))}
       </section>
       <section>
-        <div className="w-full justify-center flex space-x-[2vw] mt-[8vh]">
-          <TextDot text="One Competition" />
-          <TextDot text="Global Impacts" />
+        <div className="w-full justify-center flex mt-[8vh] space-x-[5px]">
+          {about.titles.map((item, index) => (
+            <text.TextDot
+              key={index}
+              dotText={<text.Header2 text={item.title} />}
+            />
+          ))}
         </div>
         <div className="px-[5vw]">
           <Image
@@ -57,10 +49,7 @@ export default function About() {
             width="1218"
             height="637"
           />
-          <p className="text-3xs">
-            Disclaimer: the world map displays all the post-secondary
-            institutions that have participated in CaseIT since it inauguration
-          </p>
+          <text.Paragraph text={about.aboutText.disclaimer} />
         </div>
       </section>
       <section className="py-[5vh] relative">
@@ -77,38 +66,23 @@ export default function About() {
             width="229"
             height="10"
           />
-          <div className="text-white">
-            <h1 className="font-bold text-2xs md:text-sm">
-              Our Location rendition
-            </h1>
-            <p className="text-2xs w-[40vw]">
-              PIVOT is designed with a similar structure to its sister
-              competition, CaseIT, and is tailored to top undergraduates in
-              British Columbia. Built for future leaders.  PIVOT is designed
-              with a similar structure to its sister competition, CaseIT, and is
-              tailored to top undergraduates in British Columbia. Built for
-              future leaders. 
-            </p>
+          <div className="text-white w-[40vw]">
+            <text.Header3 text="Our Location rendition" />
+            <text.Paragraph text={about.aboutText.paragraph[1]} />
           </div>
         </div>
       </section>
       <section className="w-full flex flex-col items-center py-[8vh]">
-        <div className="font-bold text-2xs md:text-sm pb-[2vh]">
-          Meet the Team
-        </div>
-        <div className="flex space-x-[2vw]">
-          <ImgButton
-            img="/imgs/2024_OC.PNG"
-            alt="2024 OC team pic"
-            text="2024 ORGANIZING COMMITTEE"
-            link="/oc/"
-          />
-          <ImgButton
-            img="/imgs/2024_OC.PNG"
-            alt="2024 OC team pic"
-            text="JOIN US"
-            link="/oc/"
-          />
+        <text.Header2 text="Meet the Team" />
+        <div className="flex space-x-[2vw] pt-[2vh]">
+          {about.imgButtons.map((item, index) => (
+            <ImgButton
+              img={item.img}
+              alt={item.alt}
+              text={item.text}
+              link={item.link}
+            />
+          ))}
         </div>
       </section>
     </div>

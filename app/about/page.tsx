@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { ImgLeft, IconImg } from "@/components/text&img/img";
 import * as text from "@/components/text&img/text";
-import { ImgButton } from "@/components/buttons";
+import { ImgButton, GreyButton } from "@/components/buttons";
 import * as about from "@/content/about_content";
 
 export const metadata: Metadata = {
@@ -14,20 +14,23 @@ export default function About() {
   return (
     <div>
       <section className="py-[20vh]">
-        <div className="grid grid-cols-2 gap-4">
-          <ImgLeft img="/imgs/about.png" width={727} height={408} />
-          <div className=" pr-[10vw] flex flex-col justify-center">
+        <div className="flex space-x-[2vw] xl:space-x-[5vw]">
+          <ImgLeft img="/imgs/about.png" stylingClasses="w-[90vw] h-auto" />
+          <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px] ">
             <text.Header3 text={about.aboutText.header3} />
-            <text.Paragraph text={about.aboutText.paragraph[0]} />
+            <div className="max-w-[50vw] pb-[2vh]">
+              <text.Paragraph text={about.aboutText.paragraph[0]} />
+            </div>
+            <GreyButton link="/history" text="CaseIT History" />
           </div>
         </div>
       </section>
       <section className="flex space-x-[5vw] bg-greyDark p-[5vw]">
         {about.icons.map((item, index) => (
           <IconImg
+            key={index}
             img={item.img}
-            width={75}
-            height={75}
+            stylingClasses="w-[8vw] h-auto"
             title={item.title}
             text={item.text}
           />
@@ -42,22 +45,29 @@ export default function About() {
             />
           ))}
         </div>
-        <div className="px-[5vw]">
+        <div className="flex flex-col justify-center w-full ">
           <Image
             src="/imgs/map.png"
             alt="map of schools"
-            width="1218"
-            height="637"
+            width={1218}
+            height={637}
+            className="max-w-[80vw] h-auto mx-auto"
           />
-          <text.Paragraph text={about.aboutText.disclaimer} />
-        </div>
+          <div className="text-center text-3xs">
+            <p>
+              <span className="font-bold">Disclaimer:</span>
+              {about.aboutText.disclaimer}{" "}
+            </p>
+          </div>
+        </div>{" "}
       </section>
       <section className="py-[5vh] relative">
         <Image
           src="/imgs/pivot.png"
           alt="map of schools"
-          width="1436"
-          height="698"
+          width={1436}
+          height={698}
+          className="w-screen h-auto"
         />
         <div className="absolute h-full inset-0 flex justify-center items-center space-x-[10vw] p-[10vw]">
           <Image

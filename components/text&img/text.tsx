@@ -19,9 +19,7 @@ export const Header3 = ({ text }: textItems) => {
 };
 export const Header3Red = ({ text }: textItems) => {
   return (
-    <div className="font-semibold text-2xs md:text-sm text-redLight">
-      {text}
-    </div>
+    <div className="font-semibold text-2xs md:text-sm text-redDark">{text}</div>
   );
 };
 export const Paragraph = ({ text }: textItems) => {

@@ -38,5 +38,5 @@ export const aboutText = {
     "PIVOT is designed with a similar structure to its sister competition, CaseIT, and is tailored to top undergraduates in British Columbia. Built for future leaders.  PIVOT is designed with a similar structure to its sister competition, CaseIT, and is tailored to top undergraduates in British Columbia. Built for future leaders. ",
   ],
   disclaimer:
-    " Disclaimer: the world map displays all the post-secondary institutions that have participated in CaseIT since it inauguration",
+    " the world map displays all the post-secondary institutions that have participated in CaseIT since it inauguration",
 };

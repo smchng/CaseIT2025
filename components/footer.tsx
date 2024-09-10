@@ -1,3 +1,3 @@
 export const Footer = () => {
-  return <div className="bg-red"></div>;
+  return <div className="bg-footerRed"></div>;
 };

@@ -37,7 +37,7 @@ export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
 
 export const GreyButton = ({ text, link }: buttonItems) => {
   return (
-    <div className="inline-flex items-center bg-buttonGreyLight hover:bg-black text-2xs cursor-pointer rounded-full px-5 py-2 transition-colors">
+    <div className="inline-flex items-center bg-buttonBlackOff hover:bg-black text-2xs cursor-pointer rounded-full px-5 py-2 transition-colors">
       <Link href={link}>
         <p className="text-white m-0 text-[17px]">{text}</p>
       </Link>

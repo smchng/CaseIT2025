@@ -23,7 +23,7 @@ export default function About() {
             </div> */}
             <text.BlackHeaderText
               text={about.aboutText.paragraph[0]}
-              title={about.aboutText.header3}
+              title={about.aboutText.header3[0]}
             />
             <GreyButton link="/history" text="CaseIT History" />
           </div>
@@ -81,16 +81,17 @@ export default function About() {
             height="10"
           />
           <div className="text-white w-[40vw]">
-            <text.Header3 text="Our Location rendition" />
+            <text.Header3 text={about.aboutText.header3[1]} />
             <text.Paragraph text={about.aboutText.paragraph[1]} />
           </div>
         </div>
       </section>
       <section className="w-full flex flex-col items-center py-[8vh]">
-        <text.Header2 text="Meet the Team" />
+        <text.Header2 text={about.aboutText.header2} />
         <div className="flex space-x-[2vw] pt-[2vh]">
           {about.imgButtons.map((item, index) => (
             <ImgButton
+              key={index}
               img={item.img}
               alt={item.alt}
               text={item.text}

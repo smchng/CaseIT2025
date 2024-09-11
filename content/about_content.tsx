@@ -32,7 +32,8 @@ export const imgButtons = [
 ];
 
 export const aboutText = {
-  header3: "About CaseIT",
+  header2: "Meet the Team",
+  header3: ["About CaseIT", "Our Location rendition"],
   paragraph: [
     "CaseIT brings together top undergraduate students, distinguished faculty members, experienced industry professionals, and a dedicated student body to challenge conventional thinking and offer professional connections to benefit your business career.",
     "PIVOT is designed with a similar structure to its sister competition, CaseIT, and is tailored to top undergraduates in British Columbia. Built for future leaders.  PIVOT is designed with a similar structure to its sister competition, CaseIT, and is tailored to top undergraduates in British Columbia. Built for future leaders. ",

@@ -24,8 +24,8 @@ export const ImgLeft = ({ img, stylingClasses }: imgItems) => {
 };
 export const ImgRight = ({ img, stylingClasses }: imgItems) => {
   return (
-    <div className="relative p-7 ">
-      <div className="absolute inset-0 border-2 border-redDark rounded-2xl transform -translate-x-36 -z-10"></div>
+    <div className="relative p-7 overflow-hidden">
+      <div className="absolute inset-0 border-2 border-redDark rounded-2xl transform translate-x-36 -z-10"></div>
       <Image
         src={img}
         alt="img"

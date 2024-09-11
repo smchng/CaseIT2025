@@ -12,7 +12,7 @@ export const NavList = [
     name: "CaseIT 2025",
   },
   {
-    link: "/History/",
+    link: "/history/",
     name: "History",
   },
   {

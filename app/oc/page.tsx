@@ -24,7 +24,7 @@ export default function OC() {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <text.Header1 text={oc.ocText.header1} />
-          <p className="text-red font-bold">
+          <p className="text-red font-bold pb-[4vh]">
             <text.Paragraph text={oc.ocText.paragraph} />
           </p>
           <RedButton text="Learn More" link="/about" />

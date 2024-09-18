@@ -47,7 +47,7 @@ export const IconImg = ({ img, stylingClasses, title, text }: imgItems) => {
         className={stylingClasses}
       />
       <div>
-        <div className="text-header1 text-red"> text={title} </div>
+        <div className="text-header3 text-red"> {title} </div>
 
         <p>{text}</p>
       </div>

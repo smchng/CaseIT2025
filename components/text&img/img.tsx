@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Header3 } from "./text";
 
 type imgItems = {
   img: string;
@@ -48,7 +47,7 @@ export const IconImg = ({ img, stylingClasses, title, text }: imgItems) => {
         className={stylingClasses}
       />
       <div>
-        <Header3 stylingClasses="text-red" text={title} />
+        <div className="text-header1 text-red"> text={title} </div>
 
         <p>{text}</p>
       </div>

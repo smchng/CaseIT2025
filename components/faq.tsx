@@ -22,7 +22,7 @@ export const FAQ = ({ question, answer }: textItems) => {
         className="pointer select-none flex items-center mt-[5vh] mb-[1vh] px-1 py-1 "
         onClick={handleToggleClick}
       >
-        <text.Header3 text={question} />
+        <div className="text-header3">{question} </div>
         <p className="flex-end">
           {isToggleOpen ? (
             <Image

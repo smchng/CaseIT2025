@@ -22,15 +22,12 @@ export default function Contact() {
           height="550"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <text.Header1 text={contactText.header1} />
+          <div className="text-header1">{contactText.header1}</div>
         </div>
       </section>
       <section className="flex flex-col items-center justify-center h-[50vh]">
         <div className=" text-center md:max-w-[55vw] border rounded-xl pt-[2vw] border-redDark">
-          <text.Header3
-            stylingClasses="text-red"
-            text={contactText.header3Red}
-          />
+          <div className="text-header3 text-red">{contactText.header3Red}</div>
           <p className="py-[2vh] px-[5vw]">{contactText.paragraph}</p>
           <hr className="border-redDark" />
           <div className="py-[1vw] font-medium text-2xs md:text-[18px]">
@@ -40,7 +37,7 @@ export default function Contact() {
       </section>
       <section>
         <div>
-          <text.Header2 text={contactText.header2} />
+          <div className="text-header2"> {contactText.header2}</div>
         </div>
         <div>
           {contactText.faqs.map((faq, index) => (

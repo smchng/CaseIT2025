@@ -19,7 +19,7 @@ export const FAQ = ({ question, answer }: textItems) => {
   return (
     <div>
       <div
-        className="pointer select-none flex items-center mt-[5vh] mb-[1vh] px-1 py-1 "
+        className="pointer select-none flex items-center justify-between mt-[5vh] mb-[1vh] px-1 py-1 "
         onClick={handleToggleClick}
       >
         <div className="text-header3">{question} </div>

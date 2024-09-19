@@ -35,11 +35,11 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="flex items-center justify-start flex-col ">
+        <div className="min-w-[80vw]">
         <div>
-          <div className="text-header2"> {contactText.header2}</div>
+          <div className="text-header2 justify-start"> {contactText.header2}</div>
         </div>
-        <div>
           {contactText.faqs.map((faq, index) => (
             <FAQ key={index} question={faq.question} answer={faq.answer} />
           ))}

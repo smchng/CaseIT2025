@@ -79,7 +79,7 @@ export const RecapRibbonRight = ({ img, title, text, day }: ribbonItems) => {
         <div className="text-redDark">{day}</div>
         <textFormat.BlackHeaderText title={title} text={text} />
       </div>{" "}
-      <ImgLeft img={img} stylingClasses="w-[90vw] h-auto" />
+      <ImgRight img={img} stylingClasses="w-[90vw] h-auto" />
     </div>
   );
 };

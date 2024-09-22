@@ -4,13 +4,20 @@ import * as oc from "@/content/oc_content";
 
 type ribbonItems = {
   img: string;
+  alt: string;
   title?: string;
   text?: string;
   subtext?: string;
   day?: string;
 };
 
-export const OcRibbonRight = ({ img, title, text, subtext }: ribbonItems) => {
+export const OcRibbonRight = ({
+  img,
+  title,
+  text,
+  subtext,
+  alt,
+}: ribbonItems) => {
   return (
     <div className="flex xl:space-x-[5vw]">
       <div className="pl-[10vw] flex flex-col items-start justify-center space-y-[20px]">
@@ -20,15 +27,29 @@ export const OcRibbonRight = ({ img, title, text, subtext }: ribbonItems) => {
           subtext={subtext}
         />
       </div>
-      <ImgRight img={img} stylingClasses="w-[90vw] h-auto" />
+      <ImgRight
+        img={img}
+        stylingClasses="w-[90vw] h-auto"
+        alt={alt || "img description"}
+      />
     </div>
   );
 };
 
-export const OcRibbonLeft = ({ img, title, text, subtext }: ribbonItems) => {
+export const OcRibbonLeft = ({
+  img,
+  title,
+  text,
+  subtext,
+  alt,
+}: ribbonItems) => {
   return (
     <div className="flex xl:space-x-[5vw]">
-      <ImgLeft img={img} stylingClasses="w-[90vw] h-auto" />
+      <ImgLeft
+        img={img}
+        stylingClasses="w-[90vw] h-auto"
+        alt={alt || "img description"}
+      />
       <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px]">
         <textFormat.BlackHeaderTextOC
           title={title}

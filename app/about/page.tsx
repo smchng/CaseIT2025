@@ -15,12 +15,12 @@ export default function About() {
     <div>
       <section className="py-[20vh]">
         <div className="flex space-x-[2vw] xl:space-x-[5vw]">
-          <ImgLeft img="/imgs/about.png" stylingClasses="w-[90vw] h-auto" />
+          <ImgLeft
+            img="/imgs/about.png"
+            stylingClasses="w-[90vw] h-auto"
+            alt="team candid"
+          />
           <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px] ">
-            {/* <text.Header3 text={about.aboutText.header3} />
-            <div className="max-w-[50vw] pb-[2vh]">
-              <text.Paragraph text={about.aboutText.paragraph[0]} />
-            </div> */}
             <text.BlackHeaderText
               text={about.aboutText.paragraph[0]}
               title={about.aboutText.header3[0]}
@@ -37,6 +37,7 @@ export default function About() {
             stylingClasses="w-[8vw] h-auto"
             title={item.title}
             text={item.text}
+            alt={item.alt}
           />
         ))}
       </section>

@@ -4,7 +4,7 @@ export const NavList = [
     name: "About",
   },
   {
-    link: "/sponsor/sponsorOverview/",
+    link: "/sponsor/Sponsor-Overview/",
     name: "Sponsorship",
   },
   {

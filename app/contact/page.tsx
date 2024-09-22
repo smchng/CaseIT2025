@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import * as text from "@/components/text&img/text";
 import { FAQ } from "@/components/faq";
 import { contactText } from "@/content/contact_content";
 import { BgImgCenter } from "@/components/text&img/img";

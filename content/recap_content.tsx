@@ -8,6 +8,7 @@ export const recapText = {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       names: "Left to right: Person A, Person B, Person C",
       img: "/imgs/about.png",
+      alt: "group candid",
     },
     {
       day: "Day 1",
@@ -15,6 +16,7 @@ export const recapText = {
       desc: "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
       names: "Left to right: Person A, Person B, Person C",
       img: "/imgs/about.png",
+      alt: "group candid",
     },
     {
       day: "Day 1",
@@ -22,6 +24,7 @@ export const recapText = {
       desc: "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
       names: "Left to right: Person A, Person B, Person C",
       img: "/imgs/about.png",
+      alt: "group candid",
     },
     {
       day: "Day 1",
@@ -29,6 +32,7 @@ export const recapText = {
       desc: "best portfolio",
       names: "Left to right: Person A, Person B, Person C",
       img: "/imgs/about.png",
+      alt: "group candid",
     },
     {
       day: "Day 1",
@@ -36,6 +40,7 @@ export const recapText = {
       desc: "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
       names: "Left to right: Person A, Person B, Person C",
       img: "/imgs/about.png",
+      alt: "group candid",
     },
     {
       day: "Day 1",
@@ -43,6 +48,7 @@ export const recapText = {
       desc: "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
       names: "Left to right: Person A, Person B, Person C",
       img: "/imgs/about.png",
+      alt: "group candid",
     },
   ],
 };

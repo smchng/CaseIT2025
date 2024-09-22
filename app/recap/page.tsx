@@ -1,34 +1,23 @@
 import { Metadata } from "next";
-import Image from "next/image";
-import { ImgLeft, ImgRight } from "@/components/text&img/img";
-import { RedButton } from "@/components/buttons";
-import * as text from "@/components/text&img/text";
 import * as re from "@/content/recap_content";
 import { RecapRibbonLeft, RecapRibbonRight } from "@/components/imgRibbons";
+import { BgImgCenter } from "@/components/text&img/img";
 
 export const metadata: Metadata = {
   title: "2024 Recap",
   description: "Learn more about our company and team.",
 };
 
-export default function Recap_2024() {
+export default function Recap2024() {
   return (
     <div>
-      <section className="relative pb-[10vh]">
-        <Image
-          src="/imgs/Downtown-Vancouver.png"
-          alt="Downtown Vancouver"
-          className="h-auto w-screen object-cover"
-          width="1441"
-          height="550"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <text.Header1 text={re.recapText.header1} />
+      <section>
+        <BgImgCenter>
+          <div className="text-header1">{re.recapText.header1}</div>{" "}
           <p className="text-red font-bold pb-[4vh]">
-            <text.Paragraph text={re.recapText.paragraph} />
+            <div className="text-paragraph">{re.recapText.paragraph} </div>
           </p>
-          <RedButton text="Learn More" link="/about" />
-        </div>
+        </BgImgCenter>
       </section>
       <section className="flex flex-col space-x-[2vw] space-y-[20vh]">
         {re.recapText.positions.map((item, index) => (
@@ -40,6 +29,7 @@ export default function Recap_2024() {
                 title={re.recapText.positions[index].title}
                 text={re.recapText.positions[index].desc}
                 subtext={re.recapText.positions[index].names}
+                alt={re.recapText.positions[index].alt}
               />
             ) : (
               <RecapRibbonLeft
@@ -48,6 +38,7 @@ export default function Recap_2024() {
                 title={re.recapText.positions[index].title}
                 text={re.recapText.positions[index].desc}
                 subtext={re.recapText.positions[index].names}
+                alt={re.recapText.positions[index].alt}
               />
             )}
           </div>

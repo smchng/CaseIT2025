@@ -4,11 +4,11 @@ export const NavList = [
     name: "About",
   },
   {
-    link: "/sponsorship/",
+    link: "/sponsor/sponsorOverview/",
     name: "Sponsorship",
   },
   {
-    link: "/caseit2025/",
+    link: "/2025/",
     name: "CaseIT 2025",
   },
   {

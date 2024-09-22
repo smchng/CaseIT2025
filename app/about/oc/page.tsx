@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { BgImg } from "@/components/text&img/img";
+import { BgImgCenter } from "@/components/text&img/img";
 import { RedButton } from "@/components/buttons";
 import * as text from "@/components/text&img/text";
 import * as oc from "@/content/oc_content";
@@ -15,13 +15,13 @@ export default function OC() {
   return (
     <div>
       <section>
-        <BgImg>
+        <BgImgCenter>
           <div className="text-header1">{oc.ocText.header1}</div>
           <p className="text-red font-bold pb-[4vh]">
             <div className="text-paragraph">{oc.ocText.paragraph}</div>
           </p>
           <RedButton text="Learn More" link="/about" />
-        </BgImg>
+        </BgImgCenter>
       </section>
       <section className="flex flex-col space-x-[2vw] space-y-[20vh]">
         {oc.ocText.positions.map((item, index) => (

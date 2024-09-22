@@ -9,7 +9,7 @@ type imgItems = {
   children?: React.ReactNode;
 };
 
-export const BgImg = ({ children }: imgItems) => {
+export const BgImgCenter = ({ children }: imgItems) => {
   return (
     <section className="relative mb-[10vh]  h-[90vh] w-full">
       <Image
@@ -19,7 +19,23 @@ export const BgImg = ({ children }: imgItems) => {
         layout="fill" // Ensures the image fills the container
         objectFit="cover"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
+        {children}
+      </div>
+    </section>
+  );
+};
+export const BgImgLeft = ({ children }: imgItems) => {
+  return (
+    <section className="relative mb-[10vh]  h-[90vh] w-full">
+      <Image
+        src="/imgs/Downtown-Vancouver.png" // Fixed image under the text
+        alt="Downtown Vancouver"
+        className=" object-cover"
+        layout="fill" // Ensures the image fills the container
+        objectFit="cover"
+      />
+      <div className="absolute inset-0 flex flex-col justify-center">
         {children}
       </div>
     </section>

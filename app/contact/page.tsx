@@ -4,7 +4,7 @@ import Link from "next/link";
 import * as text from "@/components/text&img/text";
 import { FAQ } from "@/components/faq";
 import { contactText } from "@/content/contact_content";
-import { BgImg } from "@/components/text&img/img";
+import { BgImgCenter } from "@/components/text&img/img";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <div>
       <section>
-        <BgImg>
+        <BgImgCenter>
           <div className="text-header1">{contactText.header1}</div>{" "}
           <div className="py-[3vh]">
             <div className="bg-white">
@@ -31,7 +31,7 @@ export default function Contact() {
               </div>
             </div>{" "}
           </div>
-        </BgImg>
+        </BgImgCenter>
       </section>
 
       <section className="flex items-center justify-start flex-col ">

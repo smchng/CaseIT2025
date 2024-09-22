@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { BgImg } from "@/components/text&img/img";
+import * as caseitText from "@/content/2025_content";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -6,5 +8,15 @@ export const metadata: Metadata = {
 };
 
 export default function CaseIt2025() {
-  return <div></div>;
+  return (
+    <div>
+      <section>
+        <BgImg>
+          <div className="text-header1">
+            {caseitText.caseit2025Text.header1}
+          </div>
+        </BgImg>
+      </section>
+    </div>
+  );
 }

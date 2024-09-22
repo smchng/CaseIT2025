@@ -23,7 +23,7 @@ export const imgButtons = [
     img: "/imgs/2024_OC.PNG",
     alt: "2024 OC team pic",
     text: "2025 ORGANIZING COMMITTEE",
-    link: "/oc/",
+    link: "/about/oc/",
   },
   {
     img: "/imgs/CaseIT_On3.PNG",

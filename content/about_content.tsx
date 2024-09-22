@@ -6,11 +6,13 @@ export const titles = [
 export const icons = [
   {
     img: "/svgs/target.svg",
+    alt: "targent icon",
     title: "Mission",
     text: "Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. ",
   },
   {
     img: "/svgs/eye.svg",
+    alt: "eye icon",
     title: "Vision",
     text: "Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. ",
   },
@@ -21,7 +23,7 @@ export const imgButtons = [
     img: "/imgs/2024_OC.PNG",
     alt: "2024 OC team pic",
     text: "2025 ORGANIZING COMMITTEE",
-    link: "/oc/",
+    link: "/about/oc/",
   },
   {
     img: "/imgs/CaseIT_On3.PNG",

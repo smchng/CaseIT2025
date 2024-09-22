@@ -6,11 +6,13 @@ export const titles = [
 export const icons = [
   {
     img: "/svgs/target.svg",
+    alt: "targent icon",
     title: "Mission",
     text: "Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. ",
   },
   {
     img: "/svgs/eye.svg",
+    alt: "eye icon",
     title: "Vision",
     text: "Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. ",
   },

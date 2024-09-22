@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { ImgLeft, ImgRight } from "@/components/text&img/img";
+import { BgImg } from "@/components/text&img/img";
 import { RedButton } from "@/components/buttons";
 import * as text from "@/components/text&img/text";
 import * as oc from "@/content/oc_content";
@@ -14,21 +14,14 @@ export const metadata: Metadata = {
 export default function OC() {
   return (
     <div>
-      <section className="relative pb-[10vh]">
-        <Image
-          src="/imgs/Downtown-Vancouver.png"
-          alt="Downtown Vancouver"
-          className="h-auto w-screen object-cover"
-          width="1441"
-          height="550"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+      <section>
+        <BgImg>
           <div className="text-header1">{oc.ocText.header1}</div>
           <p className="text-red font-bold pb-[4vh]">
             <div className="text-paragraph">{oc.ocText.paragraph}</div>
           </p>
           <RedButton text="Learn More" link="/about" />
-        </div>
+        </BgImg>
       </section>
       <section className="flex flex-col space-x-[2vw] space-y-[20vh]">
         {oc.ocText.positions.map((item, index) => (
@@ -39,6 +32,7 @@ export default function OC() {
                 title={oc.ocText.positions[index].title}
                 text={oc.ocText.positions[index].desc}
                 subtext={oc.ocText.positions[index].names}
+                alt={oc.ocText.positions[index].alt}
               />
             ) : (
               <OcRibbonLeft
@@ -46,6 +40,7 @@ export default function OC() {
                 title={oc.ocText.positions[index].title}
                 text={oc.ocText.positions[index].desc}
                 subtext={oc.ocText.positions[index].names}
+                alt={oc.ocText.positions[index].alt}
               />
             )}
           </div>

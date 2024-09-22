@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import { ImgLeft, ImgRight } from "@/components/text&img/img";
-import { RedButton } from "@/components/buttons";
+import { RoundedButton } from "@/components/buttons";
 import * as text from "@/components/text&img/text";
 import * as oc from "@/content/oc_content";
 import { OcRibbonLeft, OcRibbonRight } from "@/components/imgRibbons";
@@ -27,7 +27,7 @@ export default function OC() {
           <p className="text-red font-bold pb-[4vh]">
             <div className="text-paragraph">{oc.ocText.paragraph}</div>
           </p>
-          <RedButton text="Learn More" link="/about" />
+          <RoundedButton text="Learn More" link="/about" variant="red" />
         </div>
       </section>
       <section className="flex flex-col space-x-[2vw] space-y-[20vh]">

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import * as text from "@/components/text&img/text";
-import { ImgButton, GreyButton } from "@/components/buttons";
+import { ImgButton } from "@/components/buttons";
 import * as history from "@/content/history_content";
 
 export const metadata: Metadata = {

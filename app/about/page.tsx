@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { ImgLeft, IconImg } from "@/components/text&img/img";
 import * as text from "@/components/text&img/text";
-import { ImgButton, GreyButton } from "@/components/buttons";
+import { ImgButton, RoundedButton, PivotButton } from "@/components/buttons";
 import * as about from "@/content/about_content";
 
 export const metadata: Metadata = {
@@ -25,7 +25,11 @@ export default function About() {
               text={about.aboutText.paragraph[0]}
               title={about.aboutText.header3[0]}
             />
-            <GreyButton link="/history" text="CaseIT History" />
+            <RoundedButton
+              text="CaseIT History"
+              link="/history"
+              variant="black"
+            />
           </div>
         </div>
       </section>
@@ -85,6 +89,7 @@ export default function About() {
             <div className="text-paragraph">
               {about.aboutText.paragraph[1]}{" "}
             </div>
+            <PivotButton text="CaseIT History" link="/history" />
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { TitleList } from "@/content/home_content";
+import { SquareButton } from "@/components/buttons";
 import { TextDot } from "@/components/text&img/text";
 
 export default function Home() {
@@ -15,6 +16,13 @@ export default function Home() {
           ))}
         </div>
       </div>
+      {/* Example of the 3 buttons. edit it when you get to it*/}
+      <SquareButton
+        variant="black"
+        text="CASEIT History"
+        subtext="Learn about the CaseIT evolution"
+        link="/history"
+      />
     </main>
   );
 }

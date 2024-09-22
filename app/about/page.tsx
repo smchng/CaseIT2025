@@ -45,7 +45,7 @@ export default function About() {
           {about.titles.map((item, index) => (
             <text.TextDot
               key={index}
-              dotText={<text.Header2 text={item.title} />}
+              dotText={<div className="text-header2">{item.title} </div>}
             />
           ))}
         </div>
@@ -81,13 +81,15 @@ export default function About() {
             height="10"
           />
           <div className="text-white w-[40vw]">
-            <text.Header3 text={about.aboutText.header3[1]} />
-            <text.Paragraph text={about.aboutText.paragraph[1]} />
+            <div className="text-header3">{about.aboutText.header3[1]} </div>
+            <div className="text-paragraph">
+              {about.aboutText.paragraph[1]}{" "}
+            </div>
           </div>
         </div>
       </section>
       <section className="w-full flex flex-col items-center py-[8vh]">
-        <text.Header2 text={about.aboutText.header2} />
+        <div className="text-header2">{about.aboutText.header2} </div>
         <div className="flex space-x-[2vw] pt-[2vh]">
           {about.imgButtons.map((item, index) => (
             <ImgButton

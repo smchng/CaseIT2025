@@ -9,31 +9,6 @@ type textItems = {
   stylingClasses?: string;
 };
 
-export const Header1 = ({ text, stylingClasses }: textItems) => {
-  return (
-    <h1 className={`${stylingClasses} font-bold text-lg md:text-xl`}>{text}</h1>
-  );
-};
-
-export const Header2 = ({ text, stylingClasses }: textItems) => {
-  return (
-    <div className={`${stylingClasses} font-semibold text-2xs md:text-sm`}>
-      {text}
-    </div>
-  );
-};
-
-export const Header3 = ({ text, stylingClasses }: textItems) => {
-  return (
-    <div className={`${stylingClasses} font-semibold text-2xs md:text-sm`}>
-      {text}
-    </div>
-  );
-};
-export const Paragraph = ({ text, stylingClasses }: textItems) => {
-  return <div className={`${stylingClasses} text-2xs`}>{text}</div>;
-};
-
 export const TextDot = ({ dotText }: textItems) => {
   return (
     <div className="flex items-baseline">
@@ -48,9 +23,9 @@ export const TextDot = ({ dotText }: textItems) => {
 export const BlackHeaderText = ({ title, text }: textItems) => {
   return (
     <div>
-      <Header3 text={title} />
+      <div className="text-header3">{title}</div>
       <div className="max-w-[50vw] pb-[2vh]">
-        <Paragraph text={text} />
+        <div className="text-paragraph">{text}</div>
       </div>
     </div>
   );
@@ -59,9 +34,9 @@ export const BlackHeaderText = ({ title, text }: textItems) => {
 export const BlackHeaderTextOC = ({ title, text, subtext }: textItems) => {
   return (
     <div>
-      <Header3 text={title} />
+      <div className="text-header3">{title}</div>
       <div className="max-w-[50vw] pb-[2vh]">
-        <Paragraph text={text} />
+        <div className="text-paragraph">{text}</div>
       </div>
       <p>
         <strong>{subtext}</strong>

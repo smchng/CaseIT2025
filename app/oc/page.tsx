@@ -23,9 +23,9 @@ export default function OC() {
           height="550"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <text.Header1 text={oc.ocText.header1} />
+          <div className="text-header1">{oc.ocText.header1}</div>
           <p className="text-red font-bold pb-[4vh]">
-            <text.Paragraph text={oc.ocText.paragraph} />
+            <div className="text-paragraph">{oc.ocText.paragraph}</div>
           </p>
           <RedButton text="Learn More" link="/about" />
         </div>

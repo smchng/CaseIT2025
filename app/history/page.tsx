@@ -13,7 +13,7 @@ export default function History() {
   return (
     <div>
       <section className="w-full flex flex-col items-center py-[8vh]">
-        <text.Header2 text={history.historyText.header2} />
+        <div className="text-header2">{history.historyText.header2}</div>
         <div className="flex space-x-[2vw] pt-[2vh]">
           {history.imgButtons.map((item, index) => (
             <ImgButton

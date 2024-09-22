@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { TitleList } from "@/content/home_content";
-import { TextDot, Header1 } from "@/components/text&img/text";
+import { TextDot } from "@/components/text&img/text";
 
 export default function Home() {
   return (
@@ -8,7 +8,10 @@ export default function Home() {
       <div className="w-full h-screen items-center justify-center flex ">
         <div>
           {TitleList.map((item, index) => (
-            <TextDot key={index} dotText={<Header1 text={item.title} />} />
+            <TextDot
+              key={index}
+              dotText={<div className="text-header1">{item.title} </div>}
+            />
           ))}
         </div>
       </div>

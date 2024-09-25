@@ -6,6 +6,7 @@ type textItems = {
   text?: string;
   subtext?: string;
   dotText?: ReactNode;
+  children?: React.ReactNode;
   stylingClasses?: string;
 };
 
@@ -52,6 +53,24 @@ export const SponsorText = ({ title, text }: textItems) => {
       <div className="max-w-[50vw] pb-[2vh]">
         <div className="text-paragraph">{text}</div>
       </div>
+    </div>
+  );
+};
+
+export const SponsorBanner = ({
+  subtext,
+  title,
+  text,
+  children,
+}: textItems) => {
+  return (
+    <div className="flex flex-col space-y-[2vh]">
+      <div>
+        <div>{subtext}</div>
+        <div className="text-header2">{title}</div>{" "}
+      </div>
+      <div className="text-paragraph">{text}</div>
+      <div>{children}</div>
     </div>
   );
 };

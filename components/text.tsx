@@ -20,18 +20,7 @@ export const TextDot = ({ dotText }: textItems) => {
   );
 };
 
-export const BlackHeaderText = ({ title, text }: textItems) => {
-  return (
-    <div>
-      <div className="text-header3">{title}</div>
-      <div className="max-w-[50vw] pb-[2vh]">
-        <div className="text-paragraph">{text}</div>
-      </div>
-    </div>
-  );
-};
-
-export const BlackHeaderTextOC = ({ title, text, subtext }: textItems) => {
+export const OCText = ({ title, text, subtext }: textItems) => {
   return (
     <div>
       <div className="text-header3">{title}</div>
@@ -41,6 +30,28 @@ export const BlackHeaderTextOC = ({ title, text, subtext }: textItems) => {
       <p>
         <strong>{subtext}</strong>
       </p>
+    </div>
+  );
+};
+
+export const RecapText = ({ title, text }: textItems) => {
+  return (
+    <div>
+      <div className="text-header4">{title}</div>
+      <div className="max-w-[50vw] pb-[2vh]">
+        <div className="text-paragraph">{text}</div>
+      </div>
+    </div>
+  );
+};
+
+export const SponsorText = ({ title, text }: textItems) => {
+  return (
+    <div>
+      <div className="text-header3 text-red">{title}</div>
+      <div className="max-w-[50vw] pb-[2vh]">
+        <div className="text-paragraph">{text}</div>
+      </div>
     </div>
   );
 };

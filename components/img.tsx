@@ -89,8 +89,24 @@ export const IconImg = ({
       />
       <div>
         <div className="text-header3 text-red"> {title} </div>
-
         <p>{text}</p>
+      </div>
+    </div>
+  );
+};
+
+export const SponsorShowcaseText = ({ title, text, img, alt }: imgItems) => {
+  return (
+    <div className="max-w-[50vw] flex flex-col space-y-[3vh]">
+      <div className="text-header4 text-red">{title}</div>
+      <Image
+        src={img || "/imgs/Downtown-Vancouver.png"}
+        alt={alt || "img description"}
+        width={432}
+        height={83}
+      />
+      <div>
+        <div className="text-paragraph">{text}</div>
       </div>
     </div>
   );

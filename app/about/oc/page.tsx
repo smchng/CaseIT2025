@@ -3,7 +3,8 @@ import Image from "next/image";
 import { BgImgCenter } from "@/components/img";
 import { RoundedButton } from "@/components/buttons";
 import * as oc from "@/content/oc_content";
-import { OcRibbonLeft, OcRibbonRight } from "@/components/imgRibbons";
+import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
+import { OCText } from "@/components/text";
 
 export const metadata: Metadata = {
   title: "OC Team",
@@ -26,21 +27,27 @@ export default function OC() {
         {oc.ocText.positions.map((item, index) => (
           <div key={index}>
             {index % 2 === 0 ? (
-              <OcRibbonRight
+              <ImgRibbonRight
                 img={oc.ocText.positions[index].img}
-                title={oc.ocText.positions[index].title}
-                text={oc.ocText.positions[index].desc}
-                subtext={oc.ocText.positions[index].names}
                 alt={oc.ocText.positions[index].alt}
-              />
+              >
+                <OCText
+                  text={oc.ocText.positions[index].desc}
+                  title={oc.ocText.positions[index].title}
+                  subtext={oc.ocText.positions[index].names}
+                />
+              </ImgRibbonRight>
             ) : (
-              <OcRibbonLeft
+              <ImgRibbonLeft
                 img={oc.ocText.positions[index].img}
-                title={oc.ocText.positions[index].title}
-                text={oc.ocText.positions[index].desc}
-                subtext={oc.ocText.positions[index].names}
                 alt={oc.ocText.positions[index].alt}
-              />
+              >
+                <OCText
+                  text={oc.ocText.positions[index].desc}
+                  title={oc.ocText.positions[index].title}
+                  subtext={oc.ocText.positions[index].names}
+                />
+              </ImgRibbonLeft>
             )}
           </div>
         ))}

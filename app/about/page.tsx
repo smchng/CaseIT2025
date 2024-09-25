@@ -21,10 +21,14 @@ export default function About() {
             alt="team candid"
           />
           <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px] ">
-            <text.BlackHeaderText
-              text={about.aboutText.paragraph[0]}
-              title={about.aboutText.header3[0]}
-            />
+            <div>
+              <div className="text-header3">{about.aboutText.header3[0]}</div>
+              <div className="max-w-[50vw] pb-[2vh]">
+                <div className="text-paragraph">
+                  {about.aboutText.paragraph[0]}
+                </div>
+              </div>
+            </div>
             <RoundedButton
               text="CaseIT History"
               link="/history"

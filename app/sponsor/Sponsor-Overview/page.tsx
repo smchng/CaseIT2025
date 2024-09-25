@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
-import * as sponsorText from "@/content/sponsor_content";
+import * as sponsor from "@/content/sponsor_content";
+import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
+import { SponsorText } from "@/components/text";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -12,13 +14,38 @@ export default function SponsorOverview() {
     <div>
       <section>
         <BgImgLeft>
-          <div className="text-header2">
-            {sponsorText.sponsorOppsText.header2}
-          </div>{" "}
+          <div className="text-header2">{sponsor.sponsorOppsText.header2}</div>{" "}
           <div className="text-paragraph">
-            {sponsorText.sponsorShowcaseText.subtext}
+            {sponsor.sponsorShowcaseText.subtext}
           </div>
         </BgImgLeft>
+      </section>
+      <section className="flex flex-col space-x-[2vw] space-y-[20vh]">
+        {sponsor.sponsorOverviewText.ribbons.map((item, index) => (
+          <div key={index}>
+            {index % 2 === 0 ? (
+              <ImgRibbonRight
+                img={sponsor.sponsorOverviewText.ribbons[index].img}
+                alt={sponsor.sponsorOverviewText.ribbons[index].alt}
+              >
+                <SponsorText
+                  text={sponsor.sponsorOverviewText.ribbons[index].desc}
+                  title={sponsor.sponsorOverviewText.ribbons[index].title}
+                />
+              </ImgRibbonRight>
+            ) : (
+              <ImgRibbonLeft
+                img={sponsor.sponsorOverviewText.ribbons[index].img}
+                alt={sponsor.sponsorOverviewText.ribbons[index].alt}
+              >
+                <SponsorText
+                  text={sponsor.sponsorOverviewText.ribbons[index].desc}
+                  title={sponsor.sponsorOverviewText.ribbons[index].title}
+                />
+              </ImgRibbonLeft>
+            )}
+          </div>
+        ))}
       </section>
     </div>
   );

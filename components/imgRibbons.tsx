@@ -8,40 +8,10 @@ type ribbonItems = {
   text?: string;
   subtext?: string;
   day?: string;
+  children?: React.ReactNode;
 };
 
-export const OcRibbonRight = ({
-  img,
-  title,
-  text,
-  subtext,
-  alt,
-}: ribbonItems) => {
-  return (
-    <div className="flex xl:space-x-[5vw]">
-      <div className="pl-[10vw] flex flex-col items-start justify-center space-y-[20px]">
-        <textFormat.BlackHeaderTextOC
-          title={title}
-          text={text}
-          subtext={subtext}
-        />
-      </div>
-      <ImgRight
-        img={img}
-        stylingClasses="w-[90vw] h-auto"
-        alt={alt || "img description"}
-      />
-    </div>
-  );
-};
-
-export const OcRibbonLeft = ({
-  img,
-  title,
-  text,
-  subtext,
-  alt,
-}: ribbonItems) => {
+export const ImgRibbonLeft = ({ img, alt, children }: ribbonItems) => {
   return (
     <div className="flex xl:space-x-[5vw]">
       <ImgLeft
@@ -49,37 +19,25 @@ export const OcRibbonLeft = ({
         stylingClasses="w-[90vw] h-auto"
         alt={alt || "img description"}
       />
-      <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px]">
-        <textFormat.BlackHeaderTextOC
-          title={title}
-          text={text}
-          subtext={subtext}
-        />
+      <div className="pr-[10vw] flex flex-col items-start justify-center">
+        {children}
       </div>
     </div>
   );
 };
 
-export const RecapRibbonLeft = ({ img, title, text, day }: ribbonItems) => {
+export const ImgRibbonRight = ({ img, alt, children }: ribbonItems) => {
   return (
     <div className="flex xl:space-x-[5vw]">
-      <ImgLeft img={img} stylingClasses="w-[90vw] h-auto" />
-      <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px]">
-        <div className="text-redDark text-header3">{day}</div>
-        <textFormat.BlackHeaderText title={title} text={text} />
+      {" "}
+      <div className="pl-[10vw] flex flex-col items-start justify-center">
+        {children}
       </div>
-    </div>
-  );
-};
-
-export const RecapRibbonRight = ({ img, title, text, day }: ribbonItems) => {
-  return (
-    <div className="flex xl:space-x-[5vw]">
-      <div className="pr-[10vw] flex flex-col items-start justify-center ">
-        <div className="text-redDark text-header3">{day}</div>
-        <textFormat.BlackHeaderText title={title} text={text} />
-      </div>{" "}
-      <ImgRight img={img} stylingClasses="w-[90vw] h-auto" />
+      <ImgRight
+        img={img}
+        stylingClasses="w-[90vw] h-auto"
+        alt={alt || "img description"}
+      />
     </div>
   );
 };

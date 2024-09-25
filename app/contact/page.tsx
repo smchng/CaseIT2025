@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FAQ } from "@/components/faq";
 import { contactText } from "@/content/contact_content";
-import { BgImgCenter } from "@/components/text&img/img";
+import { BgImgCenter } from "@/components/img";
 
 export const metadata: Metadata = {
   title: "Contact",

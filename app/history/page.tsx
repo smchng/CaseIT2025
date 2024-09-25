@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import * as text from "@/components/text&img/text";
+import * as text from "@/components/text";
 import { ImgButton } from "@/components/buttons";
 import * as history from "@/content/history_content";
 

@@ -1,5 +1,5 @@
-import { ImgLeft, ImgRight } from "@/components/text&img/img";
-import * as textFormat from "@/components/text&img/text";
+import { ImgLeft, ImgRight } from "@/components/img";
+import * as textFormat from "@/components/text";
 
 type ribbonItems = {
   img: string;

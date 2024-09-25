@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { BgImgCenter } from "@/components/text&img/img";
+import { BgImgCenter } from "@/components/img";
 import * as caseitText from "@/content/2025_content";
 
 export const metadata: Metadata = {

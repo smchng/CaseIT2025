@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { BgImgCenter } from "@/components/text&img/img";
+import { BgImgCenter } from "@/components/img";
 import * as sponsorText from "@/content/sponsor_content";
 
 export const metadata: Metadata = {

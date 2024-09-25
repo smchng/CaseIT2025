@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { TitleList } from "@/content/home_content";
 import { SquareButton } from "@/components/buttons";
-import { TextDot } from "@/components/text&img/text";
+import { TextDot } from "@/components/text";
 
 export default function Home() {
   return (

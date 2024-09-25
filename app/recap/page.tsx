@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import * as re from "@/content/recap_content";
 import { RecapRibbonLeft, RecapRibbonRight } from "@/components/imgRibbons";
-import { BgImgCenter } from "@/components/text&img/img";
+import { BgImgCenter } from "@/components/img";
 
 export const metadata: Metadata = {
   title: "2024 Recap",

@@ -65,11 +65,15 @@ body {
 }
 
 .text-header2 {
-  @apply font-semibold text-2xs md:text-sm;
+  @apply font-semibold text-sm md:text-sm;
 }
 
 .text-header3 {
-  @apply font-semibold text-3xs md:text-xs;
+  @apply font-semibold text-sm md:text-base;
+}
+
+.text-header4 {
+  @apply font-semibold text-xs md:text-xs;
 }
 .text-paragraph {
   @apply text-2xs;

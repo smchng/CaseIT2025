@@ -48,7 +48,7 @@ const config: Config = {
       "2xs": "15px",
       xs: "20px",
       sm: "30px",
-      base: "27px",
+      base: "35px",
       lg: "40px",
       xl: "50px",
       "2xl": "61px",

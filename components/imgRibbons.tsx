@@ -65,7 +65,7 @@ export const RecapRibbonLeft = ({ img, title, text, day }: ribbonItems) => {
     <div className="flex xl:space-x-[5vw]">
       <ImgLeft img={img} stylingClasses="w-[90vw] h-auto" />
       <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px]">
-        <div className="text-redDark">{day}</div>
+        <div className="text-redDark text-header3">{day}</div>
         <textFormat.BlackHeaderText title={title} text={text} />
       </div>
     </div>
@@ -75,8 +75,8 @@ export const RecapRibbonLeft = ({ img, title, text, day }: ribbonItems) => {
 export const RecapRibbonRight = ({ img, title, text, day }: ribbonItems) => {
   return (
     <div className="flex xl:space-x-[5vw]">
-      <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px]">
-        <div className="text-redDark">{day}</div>
+      <div className="pr-[10vw] flex flex-col items-start justify-center ">
+        <div className="text-redDark text-header3">{day}</div>
         <textFormat.BlackHeaderText title={title} text={text} />
       </div>{" "}
       <ImgRight img={img} stylingClasses="w-[90vw] h-auto" />

@@ -43,7 +43,7 @@ export const FAQ = ({ question, answer }: textItems) => {
       </div>
       <div className="border-t border-black"></div>
 
-      {isToggleOpen && <p className="font-normal text-left">{answer}</p>}
+      {isToggleOpen && <p className="font-normal text-left p-4">{answer}</p>}
     </div>
   );
 };

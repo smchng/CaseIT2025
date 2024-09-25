@@ -35,6 +35,12 @@ export default function Recap2024() {
                   text={re.recapText.positions[index].desc}
                   title={re.recapText.positions[index].title}
                 />
+                {re.recapText.positions[index].title2 && (
+                  <RecapText
+                    text={re.recapText.positions[index].desc2}
+                    title={re.recapText.positions[index].title2}
+                  />
+                )}
               </ImgRibbonRight>
             ) : (
               <ImgRibbonLeft
@@ -48,6 +54,12 @@ export default function Recap2024() {
                   text={re.recapText.positions[index].desc}
                   title={re.recapText.positions[index].title}
                 />
+                {re.recapText.positions[index].title2 && (
+                  <RecapText
+                    text={re.recapText.positions[index].desc2}
+                    title={re.recapText.positions[index].title2}
+                  />
+                )}
               </ImgRibbonLeft>
             )}
           </div>

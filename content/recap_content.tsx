@@ -13,6 +13,9 @@ export const recapText = {
       day: "Day 2",
       title: "DiscoverIT",
       desc: "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
+      title2: "DiscoverIT",
+      desc2:
+        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
       img: "/imgs/about.png",
       alt: "group candid",
     },

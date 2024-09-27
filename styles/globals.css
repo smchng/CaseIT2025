@@ -73,7 +73,7 @@ body {
 }
 
 .text-header4 {
-  @apply font-semibold text-sm md:text-xs;
+  @apply font-semibold text-xs;
 }
 .text-paragraph {
   @apply text-2xs;

@@ -88,7 +88,7 @@ export const IconImg = ({
         className={`${stylingClasses} w-[20vw] md:w-[15vw] h-auto`}
       />
       <div>
-        <div className="text-header4 text-red"> {title} </div>
+        <div className="text-header3 md:text-header4 text-red"> {title} </div>
         <p>{text}</p>
       </div>
     </div>

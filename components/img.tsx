@@ -45,7 +45,7 @@ export const BgImgLeft = ({ children }: imgItems) => {
 export const ImgLeft = ({ img, stylingClasses, alt }: imgItems) => {
   return (
     <div className="relative p-7 ">
-      <div className="absolute inset-0 border-2 border-redDark rounded-2xl transform -translate-x-36 -z-10"></div>
+      <div className="absolute inset-0 md:border-2 md:border-redDark md:rounded-2xl md:transform md:-translate-x-36 md:-z-10"></div>
       <Image
         src={img || "/imgs/Downtown-Vancouver.png"}
         alt={alt || "img description"}
@@ -59,7 +59,7 @@ export const ImgLeft = ({ img, stylingClasses, alt }: imgItems) => {
 export const ImgRight = ({ img, stylingClasses, alt }: imgItems) => {
   return (
     <div className="relative p-7 overflow-hidden">
-      <div className="absolute inset-0 border-2 border-redDark rounded-2xl transform translate-x-20 md:translate-x-36 -z-10"></div>
+      <div className="absolute inset-0 md:border-2 md:border-redDark md:rounded-2xl md:transform md:translate-x-20 md:translate-x-36 md:-z-10"></div>
       <Image
         src={img || "/imgs/Downtown-Vancouver.png"}
         alt={alt || "img description"}

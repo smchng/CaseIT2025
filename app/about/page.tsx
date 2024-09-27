@@ -14,17 +14,17 @@ export default function About() {
   return (
     <div>
       <section className="py-[20vh]">
-        <div className="flex space-x-[2vw] xl:space-x-[5vw]">
+        <div className="md:flex md:space-x-[2vw] xl:space-x-[5vw]">
           <ImgLeft
             img="/imgs/about.png"
             stylingClasses="w-[90vw] h-auto"
             alt="team candid"
           />
-          <div className="pr-[10vw] flex flex-col items-start justify-center space-y-[20px] ">
+          <div className="pl-7 md:pr-[10vw] flex flex-col items-start justify-center space-y-[20px] ">
             <div>
               <div className="text-header3">{about.aboutText.header3[0]}</div>
-              <div className="max-w-[50vw] pb-[2vh]">
-                <div className="text-paragraph">
+              <div className="md:max-w-[50vw] pb-[2vh]">
+                <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw] text-paragraph">
                   {about.aboutText.paragraph[0]}
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function About() {
       </section>
       <section className="w-full flex flex-col items-center py-[8vh]">
         <div className="text-header2">{about.aboutText.header2} </div>
-        <div className="flex space-x-[2vw] pt-[2vh]">
+        <div className="flex flex-col space-y-[2vw] md:space-y-[0] md:flex-row md:space-x-[2vw] md:pt-[2vh]">
           {about.imgButtons.map((item, index) => (
             <ImgButton
               key={index}

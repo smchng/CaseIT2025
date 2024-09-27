@@ -20,7 +20,7 @@ export default function SponsorOverview() {
           </div>
         </BgImgLeft>
       </section>
-      <section className="flex flex-col space-x-[2vw] space-y-[20vh]">
+      <section className="md:flex md:flex-col md:space-x-[2vw] md:space-y-[20vh]">
         {sponsor.sponsorOverviewText.ribbons.map((item, index) => (
           <div key={index}>
             {index % 2 === 0 ? (

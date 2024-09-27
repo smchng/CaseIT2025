@@ -14,7 +14,7 @@ export default function History() {
     <div>
       <section className="w-full flex flex-col items-center py-[8vh]">
         <div className="text-header2">{history.historyText.header2}</div>
-        <div className="flex space-x-[2vw] pt-[2vh]">
+        <div className="flex flex-col space-y-[2vw] md:space-y-[0] md:flex-row md:space-x-[2vw] md:pt-[2vh]">
           {history.imgButtons.map((item, index) => (
             <ImgButton
               key={index}

@@ -35,7 +35,7 @@ export const BgImgLeft = ({ children }: imgItems) => {
         layout="fill" // Ensures the image fills the container
         objectFit="cover"
       />
-      <div className="absolute inset-0 flex flex-col justify-center">
+      <div className="absolute inset-0 flex flex-col justify-center  max-w-[40vw]">
         {children}
       </div>
     </section>

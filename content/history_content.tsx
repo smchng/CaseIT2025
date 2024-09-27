@@ -7,12 +7,12 @@ export const imgButtons = [
     img: "/imgs/2024_OC.PNG",
     alt: "2024 OC team pic",
     text: "2024 RECAP",
-    link: "/recap/",
+    link: "/history/recap/",
   },
   {
     img: "/imgs/CaseIT_On3.PNG",
     alt: "2024 OC team pic",
     text: "2024 MEDIA GALLERY",
-    link: "/gallery/",
+    link: "/history/media/",
   },
 ];

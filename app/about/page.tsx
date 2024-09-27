@@ -37,7 +37,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="flex space-x-[5vw] bg-greyDark p-[5vw]">
+      <section className="md:flex md:space-x-[5vw] bg-greyDark p-[5vw] space-y-[15vh] md:space-y-0">
         {about.icons.map((item, index) => (
           <IconImg
             key={index}

@@ -79,16 +79,16 @@ export const IconImg = ({
   alt,
 }: imgItems) => {
   return (
-    <div className="flex space-x-[3vw]">
+    <div className="md:flex md:space-x-[3vw]">
       <Image
         src={img || "/imgs/Downtown-Vancouver.png"}
         alt={alt || "img description"}
         width={75}
         height={75}
-        className={stylingClasses}
+        className={`${stylingClasses} w-[20vw] md:w-[15vw] h-auto`}
       />
       <div>
-        <div className="text-header3 text-red"> {title} </div>
+        <div className="text-header4 text-red"> {title} </div>
         <p>{text}</p>
       </div>
     </div>

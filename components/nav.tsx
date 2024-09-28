@@ -29,7 +29,7 @@ export const NavBar = () => {
       <div className="w-full">
         <ul className="flex space-x-[5vw] justify-end">
           {NavList.map((item, index) => (
-            <NavLinks link={item.link} name={item.name} />
+            <NavLinks key={index} link={item.link} name={item.name} />
           ))}
         </ul>
       </div>

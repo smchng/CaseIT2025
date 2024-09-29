@@ -20,7 +20,7 @@ export default function RootLayout({
       </head>
       <body className="font-dinProRegular ">
         <NavBar />
-        {children}
+        <div className="transition-all duration-200" id="nav-animation">{children}</div>
         <Footer />
       </body>
     </html>

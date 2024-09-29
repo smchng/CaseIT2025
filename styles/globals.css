@@ -78,3 +78,7 @@ body {
 .text-paragraph {
   @apply text-2xs;
 }
+.menu-open{
+  @apply scale-95 opacity-30 overflow-y-hidden
+}
+

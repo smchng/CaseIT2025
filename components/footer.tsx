@@ -1,65 +1,10 @@
 import { NavList } from "./NavList";
-import { svgIcons } from "@/public/svgs/icons";
 import CaseitLogoWhite from "@/public/svgs/CaseitLogoWhite";
+import {allLinks, socialLinks} from "@/content/footer_content"
 
-type navLink = {
-  name: string | React.ReactNode;
-  ref: string;
-};
-
-type link = {
-  title: string;
-  links: navLink[];
-};
 
 export const Footer = () => {
-  const competitionLinks: navLink[] = [
-    { name: "About CaseIT", ref: "/" },
-    { name: "CaseIT 2025", ref: "/" },
-    { name: "Registration", ref: "/" },
-  ];
 
-  const sponsorshipLinks: navLink[] = [
-    { name: "2025 Sponsors", ref: "/" },
-    { name: "Benefits", ref: "/" },
-    { name: "Sponsorship Opportunities", ref: "/" },
-  ];
-
-  const aboutLinks: navLink[] = [
-    { name: "Chair's Welcome", ref: "/" },
-    { name: "CaseIT History", ref: "/" },
-    { name: "Our Team", ref: "/" },
-    { name: "Join CaseIT Team", ref: "/" },
-  ];
-
-  const contactLinks: navLink[] = [
-    { name: "Contact Information", ref: "/" },
-    { name: "FAQ", ref: "/" },
-  ];
-
-  const socialLinks: navLink[] = [
-    { name: svgIcons["instagram"], ref: "/" },
-    { name: svgIcons["facebook"], ref: "/" },
-  ];
-
-  const allLinks: link[] = [
-    {
-      title: "Competition",
-      links: competitionLinks,
-    },
-    {
-      title: "Sponsorships",
-      links: sponsorshipLinks,
-    },
-    {
-      title: "About",
-      links: aboutLinks,
-    },
-    {
-      title: "Contact",
-      links: contactLinks,
-    },
-  ];
 
   return (
     <div className="bg-footerRed px-9 md:px-12 xl:px-20 py-14 lg:pt-24 mt-[10vh] flex flex-col gap-8 lg:gap-36 md:flex-row text-white text-[0.5rem] lg:text-[1.125rem] ">
@@ -72,13 +17,13 @@ export const Footer = () => {
             {allLinks.map((link, index) => (
               <div key={index}>
                 <p className="font-bold mb-6">{link.title}</p>
-                <NavList linkArray={link.links} />
+                <NavList listClassName="flex flex-col gap-2" linkClassName="text-white/60 " linkArray={link.links} />
               </div>
             ))}
           </div>
           <div>
             <p className="font-bold mb-6">Follow us!</p>
-            <NavList classname="flex opacity-60" linkArray={socialLinks} />
+            <NavList listClassName="flex flex-col gap-2" linkClassName="flex opacity-60 " linkArray={socialLinks} />
           </div>
         </div>
 

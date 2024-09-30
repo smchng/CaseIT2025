@@ -1,27 +1,26 @@
 "use client";
 // THIS COMPONENT RENDERS A LIST OF NAV LINKS. IT TAKES AN ARRAY OF TYPE NAVLINK AS PARAMETERS
 
-import Image from "next/image";
-import React, { useState } from "react";
-import * as text from "@/components/text";
+
+import { NavLink, ArrayOfLinks } from "@/app/lib/types";
 import Link from "next/link";
 
-type navLink = {
-  name: string | React.ReactNode;
-  ref: string;
-};
+
 
 type NavListProps = {
-  linkArray: navLink[];
-  classname?:string;
+  linkArray: NavLink[];
+  listClassName?:string;
+  linkClassName?:string;
 };
 
-export const NavList = ({ linkArray, classname }: NavListProps) => {
+const pivotStyle = "bg-pivotBlue text-white px-6 py-1 rounded-full hover:text-white hover:bg-pivotBlueDark cursor-pointer max-w-[6rem]"
+
+export const NavList = ({ linkArray, listClassName, linkClassName }: NavListProps) => {
   return (
-    <ul className={classname}>
-      {linkArray.map((item: navLink, index) => (
-        <li key={index} className="mt-2">
-          <Link  className="text-white/60 font-normal " href={item.ref}>{item.name}</Link>
+    <ul className={listClassName}>
+      {linkArray.map((item: NavLink, index) => (
+        <li key={index} className={`${linkClassName} ${item.name === "Pivot" && pivotStyle }`}>
+          <Link href={item.ref}>{item.name}</Link>
         </li>
       ))}
     </ul>

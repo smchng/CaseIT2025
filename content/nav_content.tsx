@@ -1,26 +1,28 @@
-export const NavList = [
+import {NavLink, ArrayOfLinks} from "@/app/lib/types"
+
+export const NavLinks:NavLink[] = [
   {
-    link: "/about/",
+    ref: "/about/",
     name: "About",
   },
   {
-    link: "/sponsor/Sponsor-Overview/",
+    ref: "/sponsor/Sponsor-Overview/",
     name: "Sponsorship",
   },
   {
-    link: "/2025/",
+    ref: "/2025/",
     name: "CaseIT 2025",
   },
   {
-    link: "/history/",
+    ref: "/history/",
     name: "History",
   },
   {
-    link: "/contact/",
+    ref: "/contact/",
     name: "Contact",
   },
   {
-    link: "https://pivot.caseit.org/",
-    name: "PIVOT",
+    ref: "https://pivot.caseit.org/",
+    name: "Pivot"
   },
 ];

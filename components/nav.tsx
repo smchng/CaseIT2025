@@ -89,9 +89,8 @@ export const NavBar = () => {
     ${lastScrollTop === 0 ? "bg-white/0" : "bg-white"}
     transition-all flex justify-between  w-full py-3 md:py-5 top-0 z-10 fixed px-[5vw] drop-shadow-lg`}
     >
-      <a href="/" className=" flex w-24 lg:w-32 items-center">
+      <a href="/" className=" flex w-[10%] items-center">
       <CaseitLogoBlack/>
-
       </a>
       <div
         onClick={() => setIsOpen(!isOpen)}

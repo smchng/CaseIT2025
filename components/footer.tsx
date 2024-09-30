@@ -17,7 +17,7 @@ export const Footer = () => {
             {allLinks.map((link, index) => (
               <div key={index}>
                 <p className="font-bold mb-6">{link.title}</p>
-                <NavList listClassName="flex flex-col gap-2" linkClassName="text-white/60 " linkArray={link.links} />
+                <NavList listClassName="flex flex-col gap-2" linkClassName="text-white/60 hover:text-white duration-200 " linkArray={link.links} />
               </div>
             ))}
           </div>

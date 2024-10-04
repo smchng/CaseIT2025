@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ImgLeft, IconImg } from "@/components/img";
 import * as text from "@/components/text";
 import { ImgButton, RoundedButton, PivotButton } from "@/components/buttons";
+import { ImgRibbonLeft } from "@/components/imgRibbons";
 import * as about from "@/content/about_content";
 
 export const metadata: Metadata = {
@@ -15,18 +16,11 @@ export default function About() {
     <div>
       <section className="py-[20vh]">
         <div className="md:flex md:space-x-[2vw] xl:space-x-[5vw]">
-          <ImgLeft
-            img="/imgs/about.png"
-            stylingClasses="w-[90vw] h-auto"
-            alt="team candid"
-          />
-          <div className="pl-7 md:pr-[10vw] flex flex-col items-start justify-center space-y-[20px] ">
-            <div>
-              <div className="text-header3">{about.aboutText.header3[0]}</div>
-              <div className="md:max-w-[50vw] pb-[2vh]">
-                <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw] text-paragraph">
-                  {about.aboutText.paragraph[0]}
-                </div>
+          <ImgRibbonLeft img="/imgs/about.png" alt="team candid">
+            <div className="text-header3">{about.aboutText.header3[0]}</div>
+            <div className="md:max-w-[50vw] pb-[2vh]">
+              <div className="md:max-w-[50vw] md:pb-[2vh] pr-[3vw] text-paragraph">
+                {about.aboutText.paragraph[0]}
               </div>
             </div>
             <RoundedButton
@@ -34,7 +28,7 @@ export default function About() {
               link="/history"
               variant="black"
             />
-          </div>
+          </ImgRibbonLeft>
         </div>
       </section>
       <section className="md:flex md:space-x-[5vw] bg-greyDark p-[5vw] space-y-[15vh] md:space-y-0">

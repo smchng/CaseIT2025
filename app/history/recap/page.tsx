@@ -16,7 +16,7 @@ export default function Recap2024() {
       <section>
         <BgImgCenter>
           <div className="text-header1 pb-[5vh]">{re.recapText.header1}</div>
-          <div className="flex flex-col-reverse md:flex-row justify-center items-center space-y-[20px] md:space-x-[20px]">
+          <div className="flex flex-col-reverse md:flex-row justify-center items-center md:space-x-[20px]">
             <RoundedButton
               text="2024 Media Gallery"
               link="/contact"

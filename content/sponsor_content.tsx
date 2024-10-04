@@ -24,8 +24,8 @@ export const sponsorShowcaseText = {
 
 export const sponsorOverviewText = {
   header2: "Sponsoring CaseIT 2025",
-  subtext:
-    "Started in 2004, CaseIT is back and better, stronger, and faster than ever. With our 22nd iteration, the Organizing Committee promises a competition full of fun, challenges, leaving you with double the memories! We are excited to welcome top business technology undergraduates and their faculty advisors from around the world to the beautify city of Vancouver from February 16 to 21, 2025. ",
+  subtext: "Overview",
+  desc: "Started in 2004, CaseIT is back and better, stronger, and faster than ever. With our 22nd iteration, the Organizing Committee promises a competition full of fun, challenges, leaving you with double the memories! We are excited to welcome top business technology undergraduates and their faculty advisors from around the world to the beautify city of Vancouver from February 16 to 21, 2025. ",
   ribbons: [
     {
       img: "/imgs/about.png",
@@ -48,9 +48,9 @@ export const sponsorOverviewText = {
   ],
 };
 export const sponsorOppsText = {
-  header2: "Sponsoring CaseIT 2025",
-  subtext:
-    "Here are some special moments that we want to share with you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+  header2: "Sponsoring Opportunities",
+  subtext: "Sponsorship Opportunities",
+  desc: "Here are some special moments that we want to share with you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 };
 export const buttonText = {
   showcase: [

@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
-import * as sponsorText from "@/content/sponsor_content";
+import * as sponsor from "@/content/sponsor_content";
+import { SponsorText, SponsorBanner } from "@/components/text";
+import { MobileButtons } from "@/components/sponsorBanner";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -12,12 +14,13 @@ export default function SponsorOpps() {
     <div>
       <section>
         <BgImgLeft>
-          <div className="text-header2">
-            {sponsorText.sponsorOppsText.header2}
-          </div>{" "}
-          <div className="text-paragraph">
-            {sponsorText.sponsorShowcaseText.subtext}
-          </div>
+          <SponsorBanner
+            title={sponsor.sponsorOppsText.header2}
+            subtext={sponsor.sponsorOppsText.subtext}
+            text={sponsor.sponsorOppsText.desc}
+          >
+            <MobileButtons text="Overview" link="/sponsor/Sponsor-Overview" />
+          </SponsorBanner>
         </BgImgLeft>
       </section>
     </div>

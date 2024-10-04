@@ -58,19 +58,19 @@ export const RoundedButton = ({
     <Link href={link}>
       <button
         className={clsx(
-          "inline-flex items-center rounded-full px-5 py-2 text-[17px] transition-colors",
+          "inline-flex items-center rounded-full px-5 py-1 md:py-2 text-[10px]  md:text-[17px] transition-colors",
           "md:text-2xs",
           {
             // Variants
             "bg-redDark text-white": variant === "red" && state === "default",
             "bg-buttonBlackOff text-white":
               variant === "black" && state === "default",
-            "bg-transparent text-white":
+            "bg-transparent text-black border border-black":
               variant === "outline" && state === "default",
 
             // Hover states
             "hover:bg-buttonRedDark": variant === "red" && state !== "disabled",
-            "hover:bg-black":
+            "hover:bg-black hover:text-white":
               (variant === "black" || variant === "outline") &&
               state !== "disabled",
 
@@ -79,7 +79,7 @@ export const RoundedButton = ({
               variant === "red" && state === "focus",
             "focus:border focus:border-buttonBlackHovered focus:text-buttonBlackHovered focus:bg-transparent":
               variant === "black" && state === "focus",
-            "focus:border focus:border-none focus:text-white focus:bg-buttonBlackHovered":
+            "focus:border focus:border-none focus:text-black focus:bg-buttonBlackHovered":
               variant === "outline" && state === "focus",
 
             // Ghost buttons

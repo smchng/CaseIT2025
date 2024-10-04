@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
-import { SponsorText } from "@/components/text";
+import { SponsorText, SponsorBanner } from "@/components/text";
+import { MobileButtons } from "@/components/sponsorBanner";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -14,10 +15,16 @@ export default function SponsorOverview() {
     <div>
       <section>
         <BgImgLeft>
-          <div className="text-header2">{sponsor.sponsorOppsText.header2}</div>{" "}
-          <div className="text-paragraph">
-            {sponsor.sponsorShowcaseText.subtext}
-          </div>
+          <SponsorBanner
+            title={sponsor.sponsorOverviewText.header2}
+            subtext={sponsor.sponsorOverviewText.subtext}
+            text={sponsor.sponsorOverviewText.desc}
+          >
+            <MobileButtons
+              text="Sponsorship Opportunities"
+              link="/sponsor/Sponsorship-Opportunities"
+            />
+          </SponsorBanner>
         </BgImgLeft>
       </section>
       <section className="md:flex md:flex-col md:space-x-[2vw] md:space-y-[20vh]">

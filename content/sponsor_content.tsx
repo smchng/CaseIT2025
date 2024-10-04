@@ -26,6 +26,7 @@ export const sponsorOverviewText = {
   header2: "Sponsoring CaseIT 2025",
   subtext: "Overview",
   desc: "Started in 2004, CaseIT is back and better, stronger, and faster than ever. With our 22nd iteration, the Organizing Committee promises a competition full of fun, challenges, leaving you with double the memories! We are excited to welcome top business technology undergraduates and their faculty advisors from around the world to the beautify city of Vancouver from February 16 to 21, 2025. ",
+  sectionTitle: [{ title: "Why Sponsor CaseIT?" }],
   ribbons: [
     {
       img: "/imgs/about.png",

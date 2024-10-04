@@ -53,7 +53,7 @@ export const RecapText = ({ title, text }: textItems) => {
 export const SponsorText = ({ title, text }: textItems) => {
   return (
     <div>
-      <div className="text-header3 text-red">{title}</div>
+      <div className="text-header3 text-red pb-[1vh]">{title}</div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
         <div className="text-paragraph">{text}</div>
       </div>

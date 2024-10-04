@@ -48,9 +48,9 @@ export const sponsorOverviewText = {
   ],
 };
 export const sponsorOppsText = {
-  header2: "Sponsoring CaseIT 2025",
-  subtext:
-    "Here are some special moments that we want to share with you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+  header2: "Sponsoring Opportunities",
+  subtext: "Sponsorship Opportunities",
+  desc: "Here are some special moments that we want to share with you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 };
 export const buttonText = {
   showcase: [

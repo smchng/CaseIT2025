@@ -58,7 +58,7 @@ export const RoundedButton = ({
     <Link href={link}>
       <button
         className={clsx(
-          "inline-flex items-center rounded-full px-5 py-1 md:py-2 text-[10px]  md:text-[17px] transition-colors",
+          "inline-flex items-center rounded-full px-5 py-1.5 md:py-2 text-[10px]  md:text-[17px] transition-colors",
           "md:text-2xs",
           {
             // Variants

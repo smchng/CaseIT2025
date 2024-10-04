@@ -30,7 +30,7 @@ export const ImgRibbonRight = ({ img, alt, children }: ribbonItems) => {
   return (
     <div className="flex flex-col-reverse md:flex-row md:space-x-[5vw]">
       {" "}
-      <div className="pl-7 xl:pl-[10vw] flex flex-col items-start justify-center">
+      <div className="px-7 md:pr-0 xl:pl-[10vw] flex flex-col items-start justify-center">
         {children}
       </div>
       <ImgRight

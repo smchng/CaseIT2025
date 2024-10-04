@@ -11,7 +11,7 @@ type imgItems = {
 
 export const BgImgCenter = ({ children }: imgItems) => {
   return (
-    <section className="relative mb-[10vh]  h-[90vh] w-full">
+    <section className="relative mb-[10vh] h-[90vh] w-full">
       <Image
         src="/imgs/Downtown-Vancouver.png" // Fixed image under the text
         alt="Downtown Vancouver"
@@ -19,7 +19,7 @@ export const BgImgCenter = ({ children }: imgItems) => {
         layout="fill" // Ensures the image fills the container
         objectFit="cover"
       />
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center mx-auto max-w-[90vw]">
         {children}
       </div>
     </section>
@@ -97,7 +97,7 @@ export const IconImg = ({
 
 export const SponsorShowcaseText = ({ title, text, img, alt }: imgItems) => {
   return (
-    <div className="max-w-[50vw] flex flex-col space-y-[3vh]">
+    <div className="md:max-w-[50vw] flex flex-col space-y-[3vh]">
       <div className="text-header4 text-red">{title}</div>
       <Image
         src={img || "/imgs/Downtown-Vancouver.png"}

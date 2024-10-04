@@ -1,6 +1,5 @@
 export const recapText = {
   header1: "What happened at CaseIT 2024?",
-  paragraph: "Meet the team dedicated to producing CaseIT 2025.",
   positions: [
     {
       day: "Day 1",

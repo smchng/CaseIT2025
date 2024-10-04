@@ -3,6 +3,7 @@ import { BgImgCenter } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonRight } from "@/components/imgRibbons";
 import { SponsorShowcaseText } from "@/components/img";
+import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -14,11 +15,18 @@ export default function SponsorShowcase() {
     <div>
       <section>
         <BgImgCenter>
-          <div className="text-header1">
-            {sponsor.sponsorShowcaseText.header1}
-          </div>
-          <div className="text-paragraph">
-            {sponsor.sponsorShowcaseText.subtext}
+          <div className="text-start md:text-center">
+            <div className="text-header1">
+              {sponsor.sponsorShowcaseText.header1}
+            </div>
+            <div className="text-paragraph pb-[3vh] md:pb-[5vh] md:max-w-[55vw]">
+              {sponsor.sponsorShowcaseText.subtext}
+            </div>
+            <RoundedButton
+              text="Learn More About CaseIT"
+              link="/contact"
+              variant="red"
+            />
           </div>
         </BgImgCenter>
       </section>

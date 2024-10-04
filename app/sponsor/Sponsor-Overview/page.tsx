@@ -6,7 +6,7 @@ import { SponsorText, SponsorBanner } from "@/components/text";
 import { MobileButtons } from "@/components/sponsorBanner";
 
 export const metadata: Metadata = {
-  title: "Media Gallery",
+  title: "Sponsor Overview",
   description: "Learn more about our company and team.",
 };
 

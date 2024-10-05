@@ -1,14 +1,9 @@
 import { ImgLeft, ImgRight } from "@/components/img";
-import * as textFormat from "@/components/text";
 
 type ribbonItems = {
   img: string;
   alt: string;
-  title?: string;
-  text?: string;
-  subtext?: string;
-  day?: string;
-  children?: React.ReactNode;
+  children: React.ReactNode;
 };
 
 export const ImgRibbonLeft = ({ img, alt, children }: ribbonItems) => {

@@ -54,7 +54,7 @@ const MySection: React.FC = () => {
         />
       </div>
       <div
-        className=" rounded-xl overflow-hidden col-start-[15] col-span-[-1_/_span_-1] row-start-8 row-span-3 bg-buttonBlack transition-transform duration-300 ease-out"
+        className=" rounded-xl overflow-hidden col-start-[15] col-span-[12_/_span_12] row-start-8 row-span-3 bg-buttonBlack transition-transform duration-300 ease-out"
         style={{
           transform: `translate(${offset.x}px, ${offset.y}px)`,
         }}

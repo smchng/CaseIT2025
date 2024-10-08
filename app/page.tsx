@@ -8,7 +8,7 @@ import MySection from "@/components/test";
 export default function Home() {
   return (
     <main>
-      <div className="w-full h-screen items-center justify-center flex ">
+      {/* <div className="w-full h-screen items-center justify-center flex ">
         <div>
           {TitleList.map((item, index) => (
             <TextDot
@@ -16,6 +16,21 @@ export default function Home() {
               dotText={<div className="text-header1">{item.title} </div>}
             />
           ))}
+        </div>
+      </div> */}
+      <div className=" relative">
+        <MySection />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2">
+          <div className="w-full h-screen items-center justify-center flex ">
+            <div>
+              {TitleList.map((item, index) => (
+                <TextDot
+                  key={index}
+                  dotText={<div className="text-header1">{item.title} </div>}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -59,8 +74,12 @@ export default function Home() {
           </div>
 
           <div className=" text-[1rem] lg:text-[1rem] ">
-            <h2 className="font-bold text-redDark md:text-[1.5rem]">CASEIT 2025</h2>
-            <h3 className="font-bold text-[1.125rem] md:text-[1.75rem] lg:text-[2.5rem]">See you in Vancouver.</h3>
+            <h2 className="font-bold text-redDark md:text-[1.5rem]">
+              CASEIT 2025
+            </h2>
+            <h3 className="font-bold text-[1.125rem] md:text-[1.75rem] lg:text-[2.5rem]">
+              See you in Vancouver.
+            </h3>
             <p className="mt-4 max-w-[40ch] lg:max-w-[45ch]">
               <strong>CaseIT 2025</strong> will take place in the beautiful city
               of Vancouver, BC from <strong> February 16 to 21, 2025</strong>.
@@ -68,47 +87,48 @@ export default function Home() {
             <p className="mt-4 max-w-[60ch] lg:max-w-[45ch]">
               To commemorate our 22nd year, we pledge to shape the next two
               decades by organizing a case competition that will continue
-              <strong> fostering industry expertise, cultural diversity, and
-              international communities.</strong>
-
+              <strong>
+                {" "}
+                fostering industry expertise, cultural diversity, and
+                international communities.
+              </strong>
             </p>
           </div>
         </div>
-      </section >
-
-    
-      <section className=" flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center  font-light gap-8 text-white mt-16 py-12 px-8">
-
-      <h2 className="text-base font-semibold">What is CaseIT?</h2>
-      <p className=" max-w-[65ch] md:text-[1.5rem]">CaseIT is the world’s premier international undergraduate Management Information Systems (MIS) case competition. The brightest business students from across the globe converge in Vancouver, BC, to put their skills to the test in this week-long event. With opportunities to network, explore, and learn, we promise that your CaseIT experience is one that you will never forget. </p>
-
-
-      <div className="flex flex-col md:flex-row  gap-4  ">
-      <SquareButton
-        variant="white"
-        text="CASEIT History"
-        subtext="Learn about the CaseIT evolution"
-        link="/history"
-      />
-            <SquareButton
-        variant="white"
-        text="Our 2024 Recap"
-        subtext="Relive some of our best moments"
-        link="/history"
-      />
-            <SquareButton
-        variant="white"
-        text="PIVOT"
-        subtext="Our local rendition for BC students"
-        link="/history"
-      />
-      
-      </div>
-
-
       </section>
-          <MySection/>
-     
+
+      <section className=" flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center  font-light gap-8 text-white mt-16 py-12 px-8">
+        <h2 className="text-base font-semibold">What is CaseIT?</h2>
+        <p className=" max-w-[76ch] md:text-xs">
+          CaseIT is the world’s premier international undergraduate Management
+          Information Systems (MIS) case competition. The brightest business
+          students from across the globe converge in Vancouver, BC, to put their
+          skills to the test in this week-long event. With opportunities to
+          network, explore, and learn, we promise that your CaseIT experience is
+          one that you will never forget.{" "}
+        </p>
+
+        <div className="flex flex-col md:flex-row  gap-4  ">
+          <SquareButton
+            variant="white"
+            text="CASEIT History"
+            subtext="Learn about the CaseIT evolution"
+            link="/history"
+          />
+          <SquareButton
+            variant="white"
+            text="Our 2024 Recap"
+            subtext="Relive some of our best moments"
+            link="/history"
+          />
+          <SquareButton
+            variant="white"
+            text="PIVOT"
+            subtext="Our local rendition for BC students"
+            link="/history"
+          />
+        </div>
+      </section>
     </main>
   );
 }

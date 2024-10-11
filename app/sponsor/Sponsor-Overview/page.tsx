@@ -4,6 +4,7 @@ import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
 import { SponsorText, SponsorBanner } from "@/components/text";
 import { MobileButtons, SponsorTiles } from "@/components/sponsorBanner";
+import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Sponsor Overview",
@@ -32,7 +33,7 @@ export default function SponsorOverview() {
         <div className="text-header2 text-center md:pb-[4vh]">
           {sponsor.sponsorTileContent.sectionTitle[0].title}
         </div>
-        <div className="max-w-[80vw] mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
+        <div className="max-w-[80vw] mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 lg:gap-[6.5rem] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
           {sponsor.sponsorTileContent.sponsors.map((item, index) => (
             <div key={index}>
               <SponsorTiles 
@@ -75,6 +76,20 @@ export default function SponsorOverview() {
             </div>
           ))}
         </div>
+      </section>
+      <section className="flex justify-center pt-[7rem]">
+        <div>
+          <div className="flex flex-col text-center max-w-[80vw]">
+              <h2 className="text-header2">What can I sponsor?</h2>
+              <p className="py-[1.6rem] max-w-[100vw] xs:max-w-[30vw] md:max-w-[30vw] self-center">Explore the CaseIt 2024 Financial, Technological, and In-Kind oportunities by checking out the link below!</p>
+              <RoundedButton
+                text="Explore Sponsorship Opportunities"
+                link="/sponsor/Sponsorship-Opportunities"
+                variant="outline"
+              />
+          </div>
+        </div>
+        
       </section>
     </div>
   );

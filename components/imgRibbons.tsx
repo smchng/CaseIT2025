@@ -11,7 +11,7 @@ export const ImgRibbonLeft = ({ img, alt, children }: ribbonItems) => {
     <div className="md:flex xl:space-x-[5vw]">
       <ImgLeft
         img={img}
-        stylingClasses="w-[70vw] h-auto"
+        stylingClasses="w-[90vw] md:w-[70vw] h-auto"
         alt={alt || "img description"}
       />
       <div className="px-7 xl:pr-[5vw] flex flex-col items-start justify-center">
@@ -30,7 +30,7 @@ export const ImgRibbonRight = ({ img, alt, children }: ribbonItems) => {
       </div>
       <ImgRight
         img={img}
-        stylingClasses="w-[70vw] h-auto"
+        stylingClasses="w-[90vw] md:w-[70vw] h-auto"
         alt={alt || "img description"}
       />
     </div>

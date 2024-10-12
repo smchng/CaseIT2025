@@ -102,19 +102,43 @@ export const SponsorBanner = ({
           <div className="text-header2">{title}</div>
         </div>
         <div className="text-paragraph">
-          {(text || "").split("\b").map((segment, index) =>
-            index === 0 ? (
-              <span key={index}>{segment}</span> // Normal text before \b
-            ) : (
-              <span key={index} className="font-bold">
-                {segment} {/* Bold text after \b */}
-              </span>
-            )
-          )}
+          <BoldedText text={text}></BoldedText>
         </div>
 
         <div>{children}</div>
       </div>
+    </div>
+  );
+};
+
+export const BoldedText = ({ text }: textItems) => {
+  // Split the text using `\b` as the delimiter
+  const segments = (text || "").split("\b"); // Using regex to capture \b as the delimiter
+
+  return (
+    <div>
+      {segments.map((segment, index) =>
+        index % 2 === 0 ? ( // Even index: normal text
+          <span key={index}>{segment}</span>
+        ) : (
+          // Odd index: bolded text
+          <span key={index} className="font-bold">
+            {segment}
+          </span>
+        )
+      )}
+    </div>
+  );
+};
+
+export const NewLineText = ({ text }: textItems) => {
+  return (
+    <div>
+      {(text || "").split("\n").map((paragraph, index) => (
+        <p key={index} className="pb-[5vh]">
+          {paragraph}
+        </p>
+      ))}
     </div>
   );
 };

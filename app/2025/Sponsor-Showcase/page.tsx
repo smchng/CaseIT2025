@@ -42,7 +42,6 @@ export default function SponsorShowcase() {
                 title={sponsor.sponsorShowcaseText.ribbons[index].title}
                 img={sponsor.sponsorShowcaseText.ribbons[index].logoImg}
                 alt={sponsor.sponsorShowcaseText.ribbons[index].logoAlt}
-                subtext={sponsor.sponsorShowcaseText.ribbons[index].subtext}
               />
             </ImgRibbonRight>
           </div>

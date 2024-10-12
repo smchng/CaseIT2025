@@ -23,7 +23,7 @@ export default function OC() {
           <RoundedButton text="Learn More" link="/about" variant="red" />
         </BgImgCenter>
       </section>
-      <section className="md:flex md:flex-col md:space-x-[2vw] md:space-y-[20vh]">
+      <section className="md:flex md:flex-col  md:space-y-[20vh]">
         {oc.ocText.positions.map((item, index) => (
           <div key={index}>
             {index % 2 === 0 ? (

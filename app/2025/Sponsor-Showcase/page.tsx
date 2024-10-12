@@ -30,7 +30,7 @@ export default function SponsorShowcase() {
           </div>
         </BgImgCenter>
       </section>
-      <section className="flex flex-col space-x-[2vw] space-y-[20vh]">
+      <section className="flex flex-col space-y-[20vh]">
         {sponsor.sponsorShowcaseText.ribbons.map((item, index) => (
           <div key={index}>
             <ImgRibbonRight

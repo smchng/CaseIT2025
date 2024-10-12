@@ -6,6 +6,7 @@ type imgItems = {
   alt?: string;
   title?: string;
   text?: string;
+  subtext?: string;
   children?: React.ReactNode;
 };
 
@@ -35,7 +36,7 @@ export const BgImgLeft = ({ children }: imgItems) => {
         layout="fill" // Ensures the image fills the container
         objectFit="cover"
       />
-      <div className="absolute inset-0 flex flex-col justify-center  max-w-[40vw]">
+      <div className="absolute inset-0 flex flex-col justify-center">
         {children}
       </div>
     </section>
@@ -95,7 +96,13 @@ export const IconImg = ({
   );
 };
 
-export const SponsorShowcaseText = ({ title, text, img, alt }: imgItems) => {
+export const SponsorShowcaseText = ({
+  title,
+  text,
+  img,
+  alt,
+  subtext,
+}: imgItems) => {
   return (
     <div className="md:max-w-[50vw] flex flex-col space-y-[3vh]">
       <div className="text-header4 text-red">{title}</div>
@@ -105,8 +112,14 @@ export const SponsorShowcaseText = ({ title, text, img, alt }: imgItems) => {
         width={432}
         height={83}
       />
-      <div>
-        <div className="text-paragraph">{text}</div>
+
+      <div className="font-bold text-paragraph">{subtext}</div>
+      <div className="text-paragraph">
+        {(text || "").split("\n").map((paragraph, index) => (
+          <p key={index} className="pb-[5vh]">
+            {paragraph}
+          </p>
+        ))}
       </div>
     </div>
   );

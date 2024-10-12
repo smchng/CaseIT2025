@@ -29,7 +29,7 @@ export const SponsorTiles = ({ img, text, alt}: sponsorItems) => {
         alt={alt || "White circle containing a sponsor logo"}
         width={315}
         height={317}
-        className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_25px_rgba(210,121,128,0.8)] transition-all size-[15.5rem],[15.5rem]"
+        className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_25px_rgba(210,121,128,0.8)] transition-all size-[10vw],[15.5rem] md:w-[20vw] xl:w-[10vw]"
       />
       <text className="text-header4 pt-[0.463rem] text-[0.688rem] md:text-1 md:text-[1.5rem]">{text}</text>
     </div>

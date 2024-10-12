@@ -28,7 +28,7 @@ export const TextDot = ({ dotText }: textItems) => {
 export const OCText = ({ title, text, subtext }: textItems) => {
   return (
     <div>
-      <div className="text-header3">{title}</div>
+      <div className="text-header3 pb-[5vh] leading-[2.5rem]">{title}</div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
         <div className="text-paragraph">{text}</div>
       </div>
@@ -53,7 +53,9 @@ export const RecapText = ({ title, text }: textItems) => {
 export const SponsorText = ({ title, text }: textItems) => {
   return (
     <div>
-      <div className="text-header3 text-red pb-[1vh]">{title}</div>
+      <div className="text-header3 text-red pb-[5vh] leading-[2.5rem]">
+        {title}
+      </div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
         <div className="text-paragraph">{text}</div>
       </div>
@@ -69,8 +71,8 @@ export const SponsorBanner = ({
 }: textItems) => {
   const pathname = usePathname();
   return (
-    <div className="w-screen flex items-center justify-center md:justify-start">
-      <div className="flex flex-col space-y-[2vh] max-w-[85vw] md:max-w-[50vw] xl:max-w-[30vw] mx-auto md:mx-[5vw] xl:mx-[15vw] text-left">
+    <div className="w-full flex items-center justify-center md:justify-start">
+      <div className="flex flex-col space-y-[2vh] max-w-[85vw] md:max-w-[50vw] xl:max-w-[40vw] mx-auto md:mx-[5vw] xl:mx-[10vw] text-left">
         <div>
           {/* MOBILE LINK */}
           <div className="md:hidden text-redDark font-bold">{subtext}</div>
@@ -99,7 +101,18 @@ export const SponsorBanner = ({
           </div>
           <div className="text-header2">{title}</div>
         </div>
-        <div className="text-paragraph">{text}</div>
+        <div className="text-paragraph">
+          {(text || "").split("\b").map((segment, index) =>
+            index === 0 ? (
+              <span key={index}>{segment}</span> // Normal text before \b
+            ) : (
+              <span key={index} className="font-bold">
+                {segment} {/* Bold text after \b */}
+              </span>
+            )
+          )}
+        </div>
+
         <div>{children}</div>
       </div>
     </div>

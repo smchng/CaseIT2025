@@ -8,7 +8,7 @@ type ribbonItems = {
 
 export const ImgRibbonLeft = ({ img, alt, children }: ribbonItems) => {
   return (
-    <div className="md:flex xl:space-x-[5vw]">
+    <div className="md:flex space-x-[5vw]">
       <ImgLeft
         img={img}
         stylingClasses="w-[90vw] md:w-[70vw] h-auto"
@@ -25,7 +25,7 @@ export const ImgRibbonRight = ({ img, alt, children }: ribbonItems) => {
   return (
     <div className="flex flex-col-reverse md:flex-row md:space-x-[5vw]">
       {" "}
-      <div className="px-[5vw] flex flex-col items-start justify-center">
+      <div className="px-[5vw] pl-[8vw] flex flex-col items-start justify-center">
         {children}
       </div>
       <ImgRight

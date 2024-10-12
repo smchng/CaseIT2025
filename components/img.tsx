@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BoldedText, NewLineText } from "./text";
 
 type imgItems = {
   img?: string;
@@ -113,11 +114,10 @@ export const SponsorShowcaseText = ({
         height={83}
       />
 
-      <div className="font-bold text-paragraph">{subtext}</div>
       <div className="text-paragraph">
         {(text || "").split("\n").map((paragraph, index) => (
           <p key={index} className="pb-[5vh]">
-            {paragraph}
+            <BoldedText text={paragraph} />
           </p>
         ))}
       </div>

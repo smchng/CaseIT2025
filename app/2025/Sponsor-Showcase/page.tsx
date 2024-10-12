@@ -30,7 +30,7 @@ export default function SponsorShowcase() {
           </div>
         </BgImgCenter>
       </section>
-      <section className="flex flex-col space-x-[2vw] space-y-[20vh]">
+      <section className="flex flex-col space-y-[20vh]">
         {sponsor.sponsorShowcaseText.ribbons.map((item, index) => (
           <div key={index}>
             <ImgRibbonRight
@@ -42,7 +42,6 @@ export default function SponsorShowcase() {
                 title={sponsor.sponsorShowcaseText.ribbons[index].title}
                 img={sponsor.sponsorShowcaseText.ribbons[index].logoImg}
                 alt={sponsor.sponsorShowcaseText.ribbons[index].logoAlt}
-                subtext={sponsor.sponsorShowcaseText.ribbons[index].subtext}
               />
             </ImgRibbonRight>
           </div>

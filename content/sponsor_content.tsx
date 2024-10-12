@@ -17,8 +17,7 @@ export const sponsorShowcaseText = {
       logoImg: "/imgs/beedie.png",
       logoAlt: "SFU Beedie Logo",
       title: "Title Sponsor",
-      subtext: "Careers are built here.",
-      desc: "Our team members share the same motivation to stand up for doing what’s right so that we can better guide the future of our business and our communities. \nWe value the diverse perspectives of our people. Because we recognize that we are only as good as our people, we actively invest in and care for our employees. Whether you work in one of our corporate offices or in the field, a career at Beedie will be an opportunity to do the best work of your life.",
+      desc: "\bCareers are built here.\b \nOur team members share the same motivation to stand up for doing what’s right so that we can better guide the future of our business and our communities. \nWe value the diverse perspectives of our people. Because we recognize that we are only as good as our people, we actively invest in and care for our employees. Whether you work in one of our corporate offices or in the field, a career at Beedie will be an opportunity to do the best work of your life.",
     },
   ],
 };

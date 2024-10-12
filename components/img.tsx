@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BoldedText, NewLineText } from "./text";
 
 type imgItems = {
   img?: string;
@@ -92,34 +91,6 @@ export const IconImg = ({
       <div>
         <div className="text-header3 md:text-header4 text-red"> {title} </div>
         <p>{text}</p>
-      </div>
-    </div>
-  );
-};
-
-export const SponsorShowcaseText = ({
-  title,
-  text,
-  img,
-  alt,
-  subtext,
-}: imgItems) => {
-  return (
-    <div className="md:max-w-[50vw] flex flex-col space-y-[3vh]">
-      <div className="text-header4 text-red">{title}</div>
-      <Image
-        src={img || "/imgs/Downtown-Vancouver.png"}
-        alt={alt || "img description"}
-        width={432}
-        height={83}
-      />
-
-      <div className="text-paragraph">
-        {(text || "").split("\n").map((paragraph, index) => (
-          <p key={index} className="pb-[5vh]">
-            <BoldedText text={paragraph} />
-          </p>
-        ))}
       </div>
     </div>
   );

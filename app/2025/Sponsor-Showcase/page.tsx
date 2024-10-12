@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { BgImgCenter } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonRight } from "@/components/imgRibbons";
-import { SponsorShowcaseText } from "@/components/img";
+import { SponsorShowcaseRibbons } from "@/components/sponsorItems";
 import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function SponsorShowcase() {
               img={sponsor.sponsorShowcaseText.ribbons[index].img}
               alt={sponsor.sponsorShowcaseText.ribbons[index].alt}
             >
-              <SponsorShowcaseText
+              <SponsorShowcaseRibbons
                 text={sponsor.sponsorShowcaseText.ribbons[index].desc}
                 title={sponsor.sponsorShowcaseText.ribbons[index].title}
                 img={sponsor.sponsorShowcaseText.ribbons[index].logoImg}

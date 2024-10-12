@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
-import { SponsorText, SponsorBanner } from "@/components/text";
-import { MobileButtons } from "@/components/sponsorBanner";
+import { SponsorText, SponsorBanner } from "@/components/sponsorItems";
+import { MobileButtons } from "@/components/sponsorItems";
 
 export const metadata: Metadata = {
   title: "Sponsor Overview",

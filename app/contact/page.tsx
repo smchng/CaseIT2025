@@ -32,9 +32,9 @@ export default function Contact() {
           </div>
         </BgImgCenter>
       </section>
-
-      <section className="flex items-center justify-start flex-col ">
-        <div className="min-w-[80vw]">
+      
+      <section className="hidden md:flex items-center justify-start flex-col ">
+        <div className=" min-w-[80vw]">
           <div>
             <div className="text-header2 justify-start">
               {" "}

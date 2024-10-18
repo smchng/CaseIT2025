@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FAQ } from "@/components/faq";
+import { FAQ, MobileContactText } from "@/components/faq";
 import { contactText } from "@/content/contact_content";
 import { BgImgCenter } from "@/components/img";
 
@@ -18,7 +18,7 @@ export default function Contact() {
           <div className="text-header1">{contactText.header1}</div>{" "}
           <div className="py-[3vh]">
             <div className="bg-white">
-              <div className=" text-center md:max-w-[45vw] border rounded-xl pt-[2vw] border-redDark">
+              <div className=" text-center max-w-[80vw] md:max-w-[45vw] border rounded-xl pt-[2vw] border-redDark">
                 <div className="text-header3 text-red">
                   {contactText.header3Red}
                 </div>
@@ -43,6 +43,20 @@ export default function Contact() {
           </div>
           {contactText.faqs.map((faq, index) => (
             <FAQ key={index} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+      </section>
+
+      <section className=" flex md:hidden items-center justify-start flex-col ">
+        <div className=" max-w-[80vw]">
+          <div>
+            <div className="text-header2 justify-start">
+              {" "}
+              {contactText.header2}
+            </div>
+          </div>
+          {contactText.faqs.map((faq, index) => (
+            <MobileContactText key={index} question={faq.question} answer={faq.answer} />
           ))}
         </div>
       </section>

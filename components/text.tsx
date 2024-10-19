@@ -25,7 +25,7 @@ export const TextDot = ({ dotText }: textItems) => {
 export const OCText = ({ title, text, subtext }: textItems) => {
   return (
     <div>
-      <div className="text-header3 pb-[5vh] leading-[2.5rem]">{title}</div>
+      <div className="text-header2 pb-[5vh] leading-[2.5rem]">{title}</div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
         <div className="text-paragraph">{text}</div>
       </div>
@@ -39,7 +39,7 @@ export const OCText = ({ title, text, subtext }: textItems) => {
 export const RecapText = ({ title, text }: textItems) => {
   return (
     <div>
-      <div className="text-header4">{title}</div>
+      <div className="text-header3">{title}</div>
       <div className="md:max-w-[50vw] pb-[2vh] ">
         <div className="text-paragraph">{text}</div>
       </div>

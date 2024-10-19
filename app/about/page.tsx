@@ -17,7 +17,7 @@ export default function About() {
       <section className="py-[20vh]">
         <div className="md:flex md:space-x-[2vw] xl:space-x-[5vw]">
           <ImgRibbonLeft img="/imgs/about.png" alt="team candid">
-            <div className="text-header3">{about.aboutText.header3[0]}</div>
+            <div className="text-header2">{about.aboutText.header2[1]}</div>
             <div className="md:max-w-[50vw] pb-[2vh]">
               <div className="md:max-w-[50vw] md:pb-[2vh] pr-[3vw] text-paragraph">
                 {about.aboutText.paragraph[0]}
@@ -84,7 +84,7 @@ export default function About() {
             height="10"
           />
           <div className="text-white w-[40vw]">
-            <div className="text-header3">{about.aboutText.header3[1]} </div>
+            <div className="text-header2">{about.aboutText.header2[2]} </div>
             <div className="text-paragraph">
               {about.aboutText.paragraph[1]}{" "}
             </div>
@@ -93,7 +93,7 @@ export default function About() {
         </div>
       </section>
       <section className="w-full flex flex-col items-center py-[8vh]">
-        <div className="text-header2">{about.aboutText.header2} </div>
+        <div className="text-header2">{about.aboutText.header2[0]} </div>
         <div className="flex flex-col space-y-[2vw] md:space-y-[0] md:flex-row md:space-x-[2vw] md:pt-[2vh]">
           {about.imgButtons.map((item, index) => (
             <ImgButton

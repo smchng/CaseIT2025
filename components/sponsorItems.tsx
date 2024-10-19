@@ -29,7 +29,7 @@ export const MobileButtons = ({ text, link }: sponsorItems) => {
 export const SponsorText = ({ title, text }: sponsorItems) => {
   return (
     <div>
-      <div className="text-header3 text-red pb-[5vh] leading-[2.5rem]">
+      <div className="text-header2 text-red pb-[5vh] leading-[2.5rem]">
         {title}
       </div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
@@ -111,6 +111,23 @@ export const SponsorBanner = ({
 
         <div>{children}</div>
       </div>
+    </div>
+  );
+};
+
+export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
+  return (
+    <div className="flex flex-col items-center p-[1vh]">
+      <Image
+        src={img || "/imgs/sponsorTile.png"}
+        alt={alt || "White circle containing a sponsor logo"}
+        width={315}
+        height={317}
+        className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_15px_rgba(210,121,128,0.8)] transition-all size-[10vw],[15.5rem] md:w-[20vw] xl:w-[10vw]"
+      />
+      <text className="text-paragraph font-bold pt-[0.463rem] md:text-1">
+        {text}
+      </text>
     </div>
   );
 };

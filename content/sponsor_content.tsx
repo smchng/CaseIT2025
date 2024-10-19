@@ -85,3 +85,70 @@ export const buttonText = {
     },
   ],
 };
+
+export const sponsorTileContent = {
+  sectionTitle: [{ title: "Our Past Sponsors" }],
+  sponsors: [
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    
+  ],
+};

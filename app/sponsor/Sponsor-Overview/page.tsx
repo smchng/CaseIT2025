@@ -52,7 +52,7 @@ export default function SponsorOverview() {
         <div className="text-header2 text-center py-[5rem] md:py-[7.5rem]">
           {sponsor.sponsorOverviewText.sectionTitle[0].title}
         </div>
-        <div className="md:flex md:flex-col md:space-x-[2vw] md:space-y-[20vh]">
+        <div className="md:flex md:flex-col  md:space-y-[20vh]">
           {sponsor.sponsorOverviewText.ribbons.map((item, index) => (
             <div key={index}>
               {index % 2 === 0 ? (

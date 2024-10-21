@@ -6,6 +6,7 @@ import { BgImgCenter } from "@/components/img";
 import Image from "next/image";
 import * as caseitText from "@/content/2025_content";
 import { Stats } from "./2025components/Stats";
+import { CaseItEvent } from "./2025components/CaseItEvent";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -67,7 +68,7 @@ export default function CaseIt2025() {
           <div className="md:col-start-3 md:col-span-3 md:aspect-[2]">
             <Image
               src={sponsor}
-              className="brightness-75 hover:brightness-100 duration-300 object-cover h-full "
+              className="brightness-75 hover:brightness-100 duration-300 object-cover w-full "
               alt="chair women"
               sizes=""
             />
@@ -75,7 +76,7 @@ export default function CaseIt2025() {
           <div className=" md:col-start-3 md:col-span-3 md:aspect-[2]">
             <Image
               src={discover}
-              className="brightness-75 hover:brightness-100 duration-300 object-cover  h-full "
+              className="brightness-75 hover:brightness-100 duration-300 object-cover  w-full "
               alt="chair women"
               sizes=""
             />
@@ -85,7 +86,7 @@ export default function CaseIt2025() {
 
       <section className="flex flex-col items-center">
         <h2>Competition Week Schedule</h2>
-        <div className="bg-black aspect-video w-full"></div>
+        <CaseItEvent/>
       </section>
     </div>
   );

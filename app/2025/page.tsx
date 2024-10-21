@@ -7,6 +7,7 @@ import Image from "next/image";
 import * as caseitText from "@/content/2025_content";
 import { Stats } from "./2025components/Stats";
 import { CaseItEvent } from "./2025components/CaseItEvent";
+import { CaseItCountdown } from "./2025components/CaseItCountdown";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -20,17 +21,8 @@ export default function CaseIt2025() {
         <BgImgCenter>
           <div className="text-header1">
             {caseitText.caseit2025Text.header1}
-
-            <fieldset className="border-redDark border-2 rounded-md ">
-              <legend className="uppercase text-redDark">CaseIT 2025</legend>
-              <div className="flex flex-row justify-center">
-                <div>200</div>
-                <div>11</div>
-                <div>20</div>
-                <div>43</div>
-              </div>
-            </fieldset>
           </div>
+            <CaseItCountdown/>
         </BgImgCenter>
       </section>
 
@@ -68,7 +60,7 @@ export default function CaseIt2025() {
           <div className="md:col-start-3 md:col-span-3 md:aspect-[2]">
             <Image
               src={sponsor}
-              className="brightness-75 hover:brightness-100 duration-300 object-cover w-full "
+              className="brightness-75 hover:brightness-100 duration-300 object-cover w-full h-full "
               alt="chair women"
               sizes=""
             />
@@ -76,7 +68,7 @@ export default function CaseIt2025() {
           <div className=" md:col-start-3 md:col-span-3 md:aspect-[2]">
             <Image
               src={discover}
-              className="brightness-75 hover:brightness-100 duration-300 object-cover  w-full "
+              className="brightness-75 hover:brightness-100 duration-300 object-cover  w-full h-full "
               alt="chair women"
               sizes=""
             />

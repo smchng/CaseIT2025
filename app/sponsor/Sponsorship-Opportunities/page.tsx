@@ -27,7 +27,25 @@ export default function SponsorOpps() {
         <SponsorOpportunities 
           title={sponsor.sponsorOpportunitiesContent.sponsOp[0].title} 
           subtext={sponsor.sponsorOpportunitiesContent.sponsOp[0].subtext} 
-          text={sponsor.sponsorOpportunitiesContent.sponsOp[0].text}>
+          text={sponsor.sponsorOpportunitiesContent.sponsOp[0].text}
+          img={"/imgs/sponsorIcon1.png"}
+          >
+          
+
+        </SponsorOpportunities>
+        <SponsorOpportunities 
+          title={sponsor.sponsorOpportunitiesContent.sponsOp[0].title} 
+          subtext={sponsor.sponsorOpportunitiesContent.sponsOp[0].subtext} 
+          text={sponsor.sponsorOpportunitiesContent.sponsOp[0].text}
+          img={"/imgs/sponsorIcon2.png"}
+          >
+
+        </SponsorOpportunities>
+        <SponsorOpportunities 
+          title={sponsor.sponsorOpportunitiesContent.sponsOp[0].title} 
+          subtext={sponsor.sponsorOpportunitiesContent.sponsOp[0].subtext} 
+          text={sponsor.sponsorOpportunitiesContent.sponsOp[0].text}
+          img={"/imgs/sponsorIcon3.png"}>
 
         </SponsorOpportunities>
       </section>

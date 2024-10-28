@@ -152,3 +152,25 @@ export const sponsorTileContent = {
     
   ],
 };
+
+export const sponsorOpportunitiesContent = {
+  sponsOp: [
+    {
+      title: "Financial Sponsorship",
+      img: "/imgs/sponsorIcon3.png",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      alt: "Various icons with subheadders",
+      subtext: "We invite your organization to choose from four distinct value. Tiers to provide financial aid to our competition: ",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    }
+  ],
+};

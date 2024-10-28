@@ -131,3 +131,25 @@ export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
     </div>
   );
 };
+
+export const SponsorOpportunities = ({ title, text, subtext, img, alt }: sponsorItems) => {
+  return (
+    <div className="flex flex-row mx-auto justify-center max-w-[80vw] rounded-[1rem] border-2 border-redDark px-[7vw] py-[5vh]">
+      <div className="min-w-[50%]">
+        <Image 
+        src={img || "/imgs/sponsorIcon1.png"}
+        alt={alt || "Various icons with subheadders"}
+        width={344}
+        height={323}
+        className=""
+        /> 
+      </div> 
+      <div className="max-w-[80%] pl-5">
+        <div className="text-header2 text-red pb-2">{title} </div>
+        <div className="text-paragraph font-bold pb-6">{subtext}</div>
+        <div className="text-paragraph">{text}</div>
+      </div>
+       
+    </div>
+  );
+};

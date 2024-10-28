@@ -1,7 +1,12 @@
 import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
 import { RoundedButton } from "@/components/buttons";
+import { Gallery } from "@/components/mediaItems";
 import * as media from "@/content/media_content";
+import {
+  SponsorBanner,
+  MobileButtons,
+} from "@/components/sponsorItems";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -13,11 +18,15 @@ export default function Media() {
     <div>
       <section>
         <BgImgLeft>
-          <div className="text-header1">{media.mediaText.header1}</div>{" "}
+        <SponsorBanner
+            title={media.mediaText.header1}
+            text={media.mediaText.paragraph}
+          />
+          {/* { <div className="text-header1">{media.mediaText.header1}</div>{" "}
           <p className="pb-[4vh]">
             <div className="text-paragraph">{media.mediaText.paragraph} </div>
-          </p>
-          <div className="flex space-x-[3vw]">
+          </p> */}
+          <div className="flex space-x-[3vw]"> 
             <RoundedButton
               text={media.buttonText[0].text}
               link={media.buttonText[0].link}
@@ -30,6 +39,20 @@ export default function Media() {
             />
           </div>
         </BgImgLeft>
+      </section>
+      <section>
+      <div className="max-w-[80vw] mx-auto grid md:grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem]">
+          {media.galleryText.map((item, index) => (
+            <div key={index}>
+              <Gallery
+                title={media.galleryText[index].title}
+                subtext={media.galleryText[index].subtext}
+                img={media.galleryText[index].img}
+              />
+            </div>
+          ))}
+        </div>
+        
       </section>
     </div>
   );

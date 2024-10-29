@@ -3,6 +3,7 @@ import { BgImgLeft } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { SponsorText, SponsorBanner, SponsorOpportunities } from "@/components/sponsorItems";
 import { MobileButtons } from "@/components/sponsorItems";
+import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 export default function SponsorOpps() {
   return (
     <div>
-      <section>
+      <section id="SponsorshipOpportunities">
         <BgImgLeft>
           <SponsorBanner
             title={sponsor.sponsorOppsText.header2}
@@ -24,30 +25,21 @@ export default function SponsorOpps() {
         </BgImgLeft>
       </section>
       <section>
-        <SponsorOpportunities 
-          title={sponsor.sponsorOpportunitiesContent.sponsOp[0].title} 
-          subtext={sponsor.sponsorOpportunitiesContent.sponsOp[0].subtext} 
-          text={sponsor.sponsorOpportunitiesContent.sponsOp[0].text}
-          img={"/imgs/sponsorIcon1.png"}
-          >
-          
-
-        </SponsorOpportunities>
-        <SponsorOpportunities 
-          title={sponsor.sponsorOpportunitiesContent.sponsOp[0].title} 
-          subtext={sponsor.sponsorOpportunitiesContent.sponsOp[0].subtext} 
-          text={sponsor.sponsorOpportunitiesContent.sponsOp[0].text}
-          img={"/imgs/sponsorIcon2.png"}
-          >
-
-        </SponsorOpportunities>
-        <SponsorOpportunities 
-          title={sponsor.sponsorOpportunitiesContent.sponsOp[0].title} 
-          subtext={sponsor.sponsorOpportunitiesContent.sponsOp[0].subtext} 
-          text={sponsor.sponsorOpportunitiesContent.sponsOp[0].text}
-          img={"/imgs/sponsorIcon3.png"}>
-
-        </SponsorOpportunities>
+        <div>
+        {sponsor.sponsorOpportunitiesContent.sponsOp.map((item, index) => (
+            <div key={index}>
+              <SponsorOpportunities
+                title={sponsor.sponsorOpportunitiesContent.sponsOp[index].title} 
+                subtext={sponsor.sponsorOpportunitiesContent.sponsOp[index].subtext} 
+                text={sponsor.sponsorOpportunitiesContent.sponsOp[index].text}
+                img={sponsor.sponsorOpportunitiesContent.sponsOp[index].img}
+              />
+            </div>
+            ))}
+        </div>
+      </section>
+      <section className="md:hidden flex justify-center mx-auto scroll-smooth">
+        <RoundedButton text="Back to top" link="#SponsorshipOpportunities" variant="red"/> 
       </section>
     </div>
   );

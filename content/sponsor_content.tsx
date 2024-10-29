@@ -170,11 +170,11 @@ export const sponsorOpportunitiesContent = {
       subtext: "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",
     },
     {
-      title: "Technology Sponsorship",
+      title: "In-kind Sponsorship",
       img: "/imgs/sponsorIcon3.png",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       alt: "Various icons with subheadders",
-      subtext: "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",
+      subtext: "CaseIT 2024 warmly welcomes in-kind contributions offered by esteemed corporate partners to enrich our competition. These items include, but are not limited to:",
     }
   ],
 };

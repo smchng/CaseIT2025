@@ -41,7 +41,7 @@ export default function Media() {
         </BgImgLeft>
       </section>
       <section>
-      <div className="max-w-[80vw] mx-auto grid md:grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem]">
+      <div className="grid mx-auto max-w-[80%] md:grid-cols-2 md:grid-rows-6 gap-[1.644rem]">
           {media.galleryText.map((item, index) => (
             <div key={index}>
               <Gallery

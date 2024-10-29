@@ -17,8 +17,8 @@ type galleryItems = {
 
 export const Gallery = ({ title, subtext, img, alt }: galleryItems) => {
   return (
-    <div className="flex flex-col md:max-w-[80%]">
-      <div className="rounded-[2rem] border-[#E7E7E7] border-2 py-2 max-w-[100%]">
+    <div className="flex flex-col md:max-w-[100%]">
+      <div className="rounded-[2rem] border-[#E7E7E7] border-2 py-2">
         <div>
           <Image
             src={img || "/imgs/mediaGallery.png"}

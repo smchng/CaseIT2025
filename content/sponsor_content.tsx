@@ -158,3 +158,9 @@ export const sponsorThankContent = {
   text: "The 2025 CaseIT Organizing Committee thanks all of our sponsors for their contribution to the execution of our 2025 competition. Your support is tremendous to the development of the next generation of business technology leaders in Vancouver and beyond.",
   buttonText: "Explore Sponsorship Opportunities",
 };
+
+export const techSponsorContent = {
+  header1: "Tech Sponsor",
+  text: "Every year, thousands of university students from every corner of the world join Microsoft. You bring your aspirations, talent, potential—and excitement for the journey ahead. Our internship experience brings interns from around the world together to connect, collaborate and co-create virtually to make a difference and impact the world.",
+  subtext: "Because impact matters",
+};

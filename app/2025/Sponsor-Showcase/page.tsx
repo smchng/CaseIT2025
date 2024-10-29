@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { BgImgCenter } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonRight } from "@/components/imgRibbons";
-import { SponsorShowcaseRibbons } from "@/components/sponsorItems";
+import { SponsorShowcaseRibbons, TechSponsor } from "@/components/sponsorItems";
 import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
@@ -47,8 +47,19 @@ export default function SponsorShowcase() {
           </div>
         ))}
       </section>
-      <section>
-        <div className="flex flex-col mx-auto text-center content-center max-w-[52%] pt-10">
+
+      <section className="pt-[10vh]"> 
+        <TechSponsor
+          title={sponsor.techSponsorContent.header1}
+          subtext={sponsor.techSponsorContent.subtext}
+          text={sponsor.techSponsorContent.text}
+        />
+      </section>
+
+
+
+      <section className="bg-[#FAFAFA] pb-[10vh]">
+        <div className="flex flex-col mx-auto text-center content-center max-w-[52%] pt-[15vh]">
           <div className="text-header2 text-red">
             {sponsor.sponsorThankContent.header1}
           </div>
@@ -56,7 +67,6 @@ export default function SponsorShowcase() {
             {sponsor.sponsorThankContent.text}
           </div>
         </div>
-          
         <div className="flex mx-auto text-paragraph font-bold text-center justify-center max-w-[60vw] md:max-w-[100vw] pt-8">
           <p>Interested in partnering with CaseIT 2026? Visit our <span className="text-red" > Sponsorship </span> page to learn more.</p>
         </div>

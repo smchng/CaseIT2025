@@ -12,6 +12,7 @@ type sponsorItems = {
   subtext?: string;
   img?: string;
   alt?: string;
+  logo?: string;
   children?: React.ReactNode;
 };
 
@@ -128,6 +129,39 @@ export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
       <text className="text-paragraph font-bold pt-[0.463rem] md:text-1">
         {text}
       </text>
+    </div>
+  );
+};
+
+export const TechSponsor = ({ img, logo, title, subtext, text, alt }: sponsorItems) => {
+  return (
+    <div className="flex flex-col md:flex-row bg-[#2B2B2B] py-[12vh]">
+      <div className="flex justify-center min-w-[45%] md:pl-[5vw]">
+      <Image
+        src={img || "/imgs/techSponsor.png"}
+        alt={alt || "Group of people hugging with the text Join. above them"}
+        width={615}
+        height={594}
+        
+      />
+      </div>
+      <div className="md:px-[6vw] text-white max-w-[85%] md:max-w-[44vw] md:py-[10vh] flex flex-col mx-auto">
+        <div className="text-header4 py-4">{title}</div>
+        <Image
+          src={logo || "/imgs/microsoftLogo.png"}
+          alt={alt || "Microsoft logo with logotype"}
+          width={376}
+          height={74}
+        />
+        
+        <div className="font-bold pt-4">
+          {subtext}
+        </div>
+        <p className="text-paragraph pt-[4vh] max-w-[100%]">
+          {text}
+        </p>
+      </div>
+      
     </div>
   );
 };

@@ -152,3 +152,9 @@ export const sponsorTileContent = {
     
   ],
 };
+
+export const sponsorThankContent = {
+  header1: "Thank you 2025 Sponsors" ,
+  text: "The 2025 CaseIT Organizing Committee thanks all of our sponsors for their contribution to the execution of our 2025 competition. Your support is tremendous to the development of the next generation of business technology leaders in Vancouver and beyond.",
+  buttonText: "Explore Sponsorship Opportunities",
+};

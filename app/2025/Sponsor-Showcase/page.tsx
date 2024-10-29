@@ -47,6 +47,28 @@ export default function SponsorShowcase() {
           </div>
         ))}
       </section>
+      <section>
+        <div className="flex flex-col mx-auto text-center content-center max-w-[52%] pt-10">
+          <div className="text-header2 text-red">
+            {sponsor.sponsorThankContent.header1}
+          </div>
+          <div className="text-paragraph pt-4">
+            {sponsor.sponsorThankContent.text}
+          </div>
+        </div>
+          
+        <div className="flex mx-auto text-paragraph font-bold text-center justify-center max-w-[60vw] md:max-w-[100vw] pt-8">
+          <p>Interested in partnering with CaseIT 2026? Visit our <span className="text-red" > Sponsorship </span> page to learn more.</p>
+        </div>
+        <div className="flex mx-auto justify-center mt-8">
+          <RoundedButton
+            text="Explore Sponsorship Opportunities"
+            link="/sponsor/Sponsorship-Opportunities"
+            variant="red"
+            />
+        </div>
+        
+      </section>
     </div>
   );
 }

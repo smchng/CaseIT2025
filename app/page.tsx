@@ -1,23 +1,27 @@
-import Image from "next/image";
+"use client"
+import { useInView } from "react-intersection-observer";
 import { TitleList } from "@/content/home_content";
 import { SquareButton } from "@/components/buttons";
 import { TextDot } from "@/components/text";
 import { Icon2025 } from "@/public/svgs/2026";
 import MySection from "@/components/test";
+import { useCountUp } from "@/hooks/useCountUp";
 
 export default function Home() {
+  const { ref: sectionRef, inView } = useInView({
+    triggerOnce: true, // Trigger only once when it enters the viewport
+    threshold: 0.5, // Trigger when 10% of the section is visible
+  });
+  const competitors = useCountUp(64,1500, inView);
+  const teams = useCountUp(16,1000,inView);
+  const days = useCountUp(6,500, inView);
+  const cases = useCountUp(2,200, inView);
+  const competition = useCountUp(1,100, inView);
+
+  console.log(inView)
+
   return (
     <main>
-      {/* <div className="w-full h-screen items-center justify-center flex ">
-        <div>
-          {TitleList.map((item, index) => (
-            <TextDot
-              key={index}
-              dotText={<div className="text-header1">{item.title} </div>}
-            />
-          ))}
-        </div>
-      </div> */}
       <div className=" relative">
         <MySection />
         <div className="absolute top-0 left-1/2 -translate-x-1/2">
@@ -34,34 +38,34 @@ export default function Home() {
         </div>
       </div>
 
-      <section>
-        <div className="grid grid-cols-2 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto">
+      <section >
+      <div ref={sectionRef} className="grid grid-cols-2 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto">
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            64
+            {competitors}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Driven Competitors
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            16
+            {teams}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               International Teams
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            06
+            {days}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Intensive Days
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            02
+            {cases}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Challenging Cases
             </span>
           </div>
           <div className="col-span-2 md:col-span-1 text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            01
+            {competition}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Competition
             </span>

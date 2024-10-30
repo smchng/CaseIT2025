@@ -63,7 +63,7 @@ export const NavLinks = [
   },
   {
     ref: "https://pivot.caseit.org/",
-    name: "Pivot",
+    name: "PIVOT",
     className:"bg-pivotBlue text-white px-6 py-1 rounded-full hover:text-white hover:bg-pivotBlueDark cursor-pointer max-w-[6rem]"
   },
 ];

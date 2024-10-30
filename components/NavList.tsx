@@ -40,7 +40,7 @@ export const NavList = ({
           )}
         >
           <div onMouseEnter={() => setActive(item.ref)} onMouseLeave={() => setActive(null)}>
-            <Link href={item.ref}>{item.name}</Link>
+          {item.sublinks?(<div className="cursor-default">{item.name}</div>): <Link href={item.ref}>{item.name}</Link>}
 
             {/* Dropdown for sublinks with opacity transition */}
             {item.sublinks && (
@@ -49,8 +49,8 @@ export const NavList = ({
                   isActive === item.ref ? "opacity-100" : "opacity-0 pointer-events-none"
                 }`}
               >
-                <div className=" absolute w-16 h-16 bg-white drop-shadow-lg left-1/2 -translate-x-1/2 rounded-lg rotate-45 "> </div>
-                <ul className="py-8 px-6 flex flex-col gap-4 w-64 z-40 rounded-xl bg-white drop-shadow-lg">
+                <div className=" absolute w-16 h-16 bg-white drop-shadow- left-1/2 -translate-x-1/2 rounded-lg rotate-45 "> </div>
+                <ul className="py-8 px-6 flex flex-col gap-4 w-64 z-40 rounded-xl bg-white drop-shadow-sm">
                   {item.sublinks.map((sublink, index) => (
                     <li key={index}>
                       <Link href={sublink.ref} className="text-greyLight hover:text-black duration-300">

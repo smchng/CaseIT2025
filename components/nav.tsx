@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import CaseitLogoBlack from "@/public/svgs/CaseitLogoBlack";
 import { svgIcons } from "@/public/svgs/icons";
 import { usePathname } from "next/navigation";
+import { NavListMobile } from "./NavListMobile";
 
 export const NavBar = () => {
   const pathname = usePathname();
@@ -96,19 +97,23 @@ export const NavBar = () => {
         >
           {svgIcons["hamburger"]}{" "}
         </div>
+
+
         {/* MOBILE NAV */}
         <div
-          className={`transition-transform ease-[cubic-bezier(.16,1,.3,1)] max-w-[25rem] duration-500 ${
+          className={`transition-transform ease-[cubic-bezier(.16,1,.3,1)] sm:max-w-[25rem] duration-500 bg-white w-screen sm:w-[70vw]  drop-shadow-lg px-16 py-48 h-screen absolute top-0 right-0 ${
             !isOpen && "translate-x-[100%]"
-          } bg-white w-[70vw]  drop-shadow-lg px-16 py-48 h-screen absolute top-0 right-0 `}
+          } `}
         >
-          <NavList
+          <NavListMobile
             activePathname={pathname}
             linkClassName=" text-xs hover:text-black transition-all duration-300"
             listClassName="flex flex-col text-black/50 gap-8 font-medium"
             linkArray={NavLinks}
           />
         </div>
+
+        
         {/* DESKTOP NAV */}
         <div className="hidden md:flex ">
           <NavList

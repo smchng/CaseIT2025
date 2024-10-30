@@ -86,7 +86,7 @@ export const NavBar = () => {
         className={`
     ${scrollingDown && lastScrollTop > 50 && "translate-y-[-100%]"}
     ${lastScrollTop === 0 ? "bg-white/0" : "bg-white"}
-    transition-all flex justify-between  w-full py-3 md:py-5 top-0 z-10 fixed px-[5vw] drop-shadow-lg`}
+    transition-all flex justify-between  w-full py-3 md:py-5 top-0 z-[50] fixed px-[5vw] drop-shadow-lg`}
       >
         <a href="/" className=" block w-24 lg:w-32">
           <CaseitLogoBlack />

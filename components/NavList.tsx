@@ -16,8 +16,6 @@ type NavListProps = {
   activePathname?: string;
 };
 
-const pivotStyle =
-  "bg-pivotBlue text-white px-6 py-1 rounded-full hover:text-white hover:bg-pivotBlueDark cursor-pointer max-w-[6rem]";
 
 export const NavList = ({
   linkArray,
@@ -50,7 +48,7 @@ export const NavList = ({
                 }`}
               >
                 <div className=" absolute w-16 h-16 bg-white drop-shadow- left-1/2 -translate-x-1/2 rounded-lg rotate-45 "> </div>
-                <ul className="py-8 px-6 flex flex-col gap-4 w-64 z-40 rounded-xl bg-white drop-shadow-sm">
+                <ul className="py-8 px-6 z-[1999] flex flex-col gap-4 w-64 rounded-xl bg-white drop-shadow-sm">
                   {item.sublinks.map((sublink, index) => (
                     <li key={index}>
                       <Link href={sublink.ref} className="text-greyLight hover:text-black duration-300">

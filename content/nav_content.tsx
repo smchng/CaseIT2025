@@ -4,10 +4,10 @@ export const NavLinks = [
     name: "About",
     sublinks:[
       {name:"About CaseIT",
-        ref: "placeholder"
+        ref: "/about"
       },
       {name:"2025 Organizing Committee",
-        ref: "placeholder"
+        ref: "/about/oc"
       },
       {name:"Get Involved",
         ref: "placeholder"
@@ -19,10 +19,10 @@ export const NavLinks = [
     name: "Sponsorship",
     sublinks:[
       {name:"Overview",
-        ref: "/sponsor"
+        ref: "/sponsor/Sponsor-Overview"
       },
       {name:"Sponsorship Opportunities",
-        ref: "/sponsor"
+        ref: "/sponsor/Sponsorship-Opportunities"
       },
     ]
   },
@@ -30,14 +30,14 @@ export const NavLinks = [
     ref: "/2025",
     name: "CaseIT 2025",
     sublinks:[
+      {name:"2025",
+        ref: "/2025"
+      },
       {name:"Chair's Welcome",
-        ref: "placeholder"
+        ref: "/2025/chair"
       },
       {name:"2025 Sponsors",
-        ref: "placeholder"
-      },
-      {name:"DiscoverIT",
-        ref: "placeholder"
+        ref: "/2025/Sponsor-Showcase"
       },
     ]
   },
@@ -46,13 +46,13 @@ export const NavLinks = [
     name: "History",
     sublinks:[
       {name:"Last Year",
-        ref: "placeholder"
+        ref: "/history/recap"
       },
       {name:"Timeline",
-        ref: "placeholder"
+        ref: "/history"
       },
       {name:"Media Gallery",
-        ref: "placeholder"
+        ref: "/history/media"
       },
   ]
 
@@ -64,6 +64,6 @@ export const NavLinks = [
   {
     ref: "https://pivot.caseit.org/",
     name: "PIVOT",
-    className:"bg-pivotBlue text-white px-6 py-1 rounded-full hover:text-white hover:bg-pivotBlueDark cursor-pointer max-w-[6rem]"
+    className:"bg-pivotBlue text-white px-6 py-1 rounded-full hover:text-white hover:bg-pivotBlueDark cursor-pointer "
   },
 ];

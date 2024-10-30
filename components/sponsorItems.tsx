@@ -137,7 +137,7 @@ export const SponsorOpportunities = ({ title, text, subtext, img, alt}: sponsorI
     <div className="flex flex-col-reverse md:flex-row mx-auto justify-center max-w-[90vw] md:shadow-[0_0_15px_rgba(197,52,52,0.3)] md:max-w-[80vw] md:rounded-[1rem] md:border-2 md:border-redDark md:px-[7vw] py-[5vh] my-[10vh]">
       <div className="min-w-0 md:min-w-[50%] py-[10%] md:py-0 mx-auto">
         <Image 
-        src={img || "/imgs/sponsorIcon1.png"}
+        src={img || "/svgs/sponsorIcon1.svg"}
         alt={alt || "Various icons with subheadders"}
         width={463}
         height={313}

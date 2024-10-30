@@ -93,7 +93,7 @@ export const NavBar = () => {
         </a>
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-black size-8 z-50"
+          className="lg:hidden text-black size-8 z-50"
         >
           {svgIcons["hamburger"]}{" "}
         </div>
@@ -115,7 +115,7 @@ export const NavBar = () => {
 
         
         {/* DESKTOP NAV */}
-        <div className="hidden md:flex ">
+        <div className="hidden lg:flex ">
           <NavList
             activePathname={pathname}
             linkClassName=" hover:text-black transition-all duration-300"

@@ -11,7 +11,7 @@ export const buttonText = [
   },
   {
     text: "Our Instagram",
-    link: "/history/recap",
+    link: "https://www.instagram.com/caseitsfu/?hl=en",
   },
 ];
 

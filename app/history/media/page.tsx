@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Media() {
   return (
     <div>
-      <section id="MediaTop" className="relative h-[90vh] mb-[-20vh] w-full">
+      <section id="MediaTop" className="relative h-[90vh] mb-[-15vh] w-full">
 
         <div className="absolute inset-0 flex flex-col justify-center">
         <div className="w-full flex items-center justify-center md:justify-start">

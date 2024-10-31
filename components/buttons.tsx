@@ -37,9 +37,9 @@ export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
           height={415}
           className="w-[90vw] md:w-[30vw] h-auto"
         />
-        <div className="absolute inset-0 flex items-end pl-[2vw] pb-[2vh] z-10">
+        <div className="absolute inset-0 flex items-end pl-5 pb-5 z-10">
           <div className="text-white">
-            <p className="font-bold text-lg ">{text}</p>
+            <p className="font-bold text-2xs sm:text-lg ">{text}</p>
           </div>
         </div>
       </Link>

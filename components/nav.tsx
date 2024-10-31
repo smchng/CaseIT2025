@@ -106,7 +106,7 @@ export const NavBar = () => {
         >
           <NavListMobile
             activePathname={pathname}
-            linkClassName=" text-sm hover:text-black transition-all duration-300"
+            linkClassName=" text-xs hover:text-black transition-all duration-300"
             listClassName="flex flex-col text-black/50 gap-8 font-medium"
             linkArray={NavLinks}
           />

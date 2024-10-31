@@ -98,7 +98,6 @@ export const NavBar = () => {
           {svgIcons["hamburger"]}{" "}
         </div>
 
-
         {/* MOBILE NAV */}
         <div
           className={`transition-transform ease-[cubic-bezier(.16,1,.3,1)] sm:max-w-[25rem] duration-500 bg-white w-screen sm:w-[70vw]  drop-shadow-lg px-16 py-48 h-screen absolute top-0 right-0 ${
@@ -107,13 +106,12 @@ export const NavBar = () => {
         >
           <NavListMobile
             activePathname={pathname}
-            linkClassName=" text-xs hover:text-black transition-all duration-300"
+            linkClassName=" text-sm hover:text-black transition-all duration-300"
             listClassName="flex flex-col text-black/50 gap-8 font-medium"
             linkArray={NavLinks}
           />
         </div>
 
-        
         {/* DESKTOP NAV */}
         <div className="hidden lg:flex ">
           <NavList
@@ -124,7 +122,6 @@ export const NavBar = () => {
           />
         </div>
       </nav>
-
     </>
   );
 };

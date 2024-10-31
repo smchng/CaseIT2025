@@ -9,7 +9,7 @@ export const sponsorShowcaseText = {
       logoImg: "/imgs/beedie.png",
       logoAlt: "SFU Beedie Logo",
       title: "Title Sponsor",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      desc: "Since the creation of Canada’s first Executive MBA in 1968, Simon Fraser University’s Beedie School of Business has emerged as a dynamic teaching and learning setting with a reputation for producing global-class research for the knowledge economy. \nOur undergraduate, graduate and PhD programs demonstrate a spirit of innovation, flexibility and relevance. Supported by extensive partnerships with public, private and not-for-profit organizations, our goal is to produce broadly educated, enterprising and socially responsible managers capable of making lasting contributions to their communities. \nLearn more about SFU Beedie's programs, faculty, and students at beedie.sfu.ca",
     },
     {
       img: "/imgs/about.png",
@@ -17,7 +17,7 @@ export const sponsorShowcaseText = {
       logoImg: "/imgs/beedie.png",
       logoAlt: "SFU Beedie Logo",
       title: "Title Sponsor",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      desc: "\bCareers are built here.\b \nOur team members share the same motivation to stand up for doing what’s right so that we can better guide the future of our business and our communities. \nWe value the diverse perspectives of our people. Because we recognize that we are only as good as our people, we actively invest in and care for our employees. Whether you work in one of our corporate offices or in the field, a career at Beedie will be an opportunity to do the best work of your life.",
     },
   ],
 };
@@ -25,7 +25,7 @@ export const sponsorShowcaseText = {
 export const sponsorOverviewText = {
   header2: "Sponsoring CaseIT 2025",
   subtext: "Overview",
-  desc: "Started in 2004, CaseIT is back and better, stronger, and faster than ever. With our 22nd iteration, the Organizing Committee promises a competition full of fun, challenges, leaving you with double the memories! We are excited to welcome top business technology undergraduates and their faculty advisors from around the world to the beautify city of Vancouver from February 16 to 21, 2025. ",
+  desc: "Started in 2004, CaseIT is back and better, stronger, and faster than ever. With our 22nd iteration, the Organizing Committee promises a competition full of fun, challenges, leaving you with double the memories! We are excited to welcome top business technology undergraduates and their faculty advisors from around the world to the beautify city of Vancouver from \bFebruary 16 to 21, 2025. ",
   sectionTitle: [{ title: "Why Sponsor CaseIT?" }],
   ribbons: [
     {
@@ -83,5 +83,98 @@ export const buttonText = {
       text: "Explore Sponsorship Opportunities",
       link: "/about/oc/",
     },
+  ],
+};
+
+export const sponsorTileContent = {
+  sectionTitle: [{ title: "Our Past Sponsors" }],
+  sponsors: [
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    
+  ],
+};
+
+export const sponsorOpportunitiesContent = {
+  sponsOp: [
+    {
+      title: "Financial Sponsorship",
+      img: "/svgs/sponsorIcon1.svg",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      alt: "Various icons with subheadders",
+      subtext: "We invite your organization to choose from four distinct value. Tiers to provide financial aid to our competition: ",
+    },
+    {
+      title: "Technology Sponsorship",
+      img: "/svgs/sponsorIcon2.svg",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      alt: "Various icons with subheadders",
+      subtext: "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",
+    },
+    {
+      title: "In-kind Sponsorship",
+      img: "/svgs/sponsorIcon3.svg",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      alt: "Various icons with subheadders",
+      subtext: "CaseIT 2024 warmly welcomes in-kind contributions offered by esteemed corporate partners to enrich our competition. These items include, but are not limited to:",
+    }
   ],
 };

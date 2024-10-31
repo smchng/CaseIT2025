@@ -6,6 +6,7 @@ type imgItems = {
   alt?: string;
   title?: string;
   text?: string;
+  subtext?: string;
   children?: React.ReactNode;
 };
 
@@ -35,7 +36,7 @@ export const BgImgLeft = ({ children }: imgItems) => {
         layout="fill" // Ensures the image fills the container
         objectFit="cover"
       />
-      <div className="absolute inset-0 flex flex-col justify-center  max-w-[40vw]">
+      <div className="absolute inset-0 flex flex-col justify-center">
         {children}
       </div>
     </section>
@@ -79,34 +80,17 @@ export const IconImg = ({
   alt,
 }: imgItems) => {
   return (
-    <div className="md:flex md:space-x-[3vw]">
+    <div className="flex flex-col md:flex-row md:space-x-[3vw]">
       <Image
-        src={img || "/imgs/Downtown-Vancouver.png"}
+        src={img || "/imgs/target.svg"}
         alt={alt || "img description"}
-        width={75}
-        height={75}
-        className={`${stylingClasses} w-[20vw] md:w-[15vw] h-auto`}
+        width={175}
+        height={175}
+        className={`${stylingClasses} w-[30vw] md:w-[10vw] h-auto`} // Change from w-70 to w-[70vw]
       />
       <div>
-        <div className="text-header3 md:text-header4 text-red"> {title} </div>
+        <div className="text-header2 md:text-header4 text-red"> {title} </div>
         <p>{text}</p>
-      </div>
-    </div>
-  );
-};
-
-export const SponsorShowcaseText = ({ title, text, img, alt }: imgItems) => {
-  return (
-    <div className="md:max-w-[50vw] flex flex-col space-y-[3vh]">
-      <div className="text-header4 text-red">{title}</div>
-      <Image
-        src={img || "/imgs/Downtown-Vancouver.png"}
-        alt={alt || "img description"}
-        width={432}
-        height={83}
-      />
-      <div>
-        <div className="text-paragraph">{text}</div>
       </div>
     </div>
   );

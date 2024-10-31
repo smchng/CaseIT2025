@@ -68,20 +68,22 @@ body {
 }
 
 .text-header1 {
-  @apply font-bold text-lg md:text-xl;
+  @apply font-bold text-4xl;
 }
 
 .text-header2 {
-  @apply font-semibold text-sm md:text-sm;
+  @apply font-semibold text-2xl;
 }
 
 .text-header3 {
-  @apply font-semibold text-sm md:text-base;
+  @apply font-semibold text-xl;
 }
-
 .text-header4 {
-  @apply font-semibold text-xs;
+  @apply font-semibold text-lg;
 }
 .text-paragraph {
-  @apply text-2xs;
+  @apply text-sm;
+}
+.menu-open {
+  @apply scale-95 opacity-30 overflow-y-hidden;
 }

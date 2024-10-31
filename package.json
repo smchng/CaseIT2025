@@ -16,7 +16,8 @@
     "npm": "^10.9.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.13.1"
+    "react-intersection-observer": "^9.13.1",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

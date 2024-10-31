@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
-import { SponsorText, SponsorBanner, SponsorOpportunities } from "@/components/sponsorItems";
+import { SponsorText, SponsorBanner, SponsorOpCards } from "@/components/sponsorItems";
 import { MobileButtons } from "@/components/sponsorItems";
 import { RoundedButton } from "@/components/buttons";
 
@@ -28,7 +28,7 @@ export default function SponsorOpps() {
         <div>
         {sponsor.sponsorOpportunitiesContent.sponsOp.map((item, index) => (
             <div key={index}>
-              <SponsorOpportunities
+              <SponsorOpCards
                 title={sponsor.sponsorOpportunitiesContent.sponsOp[index].title} 
                 subtext={sponsor.sponsorOpportunitiesContent.sponsOp[index].subtext} 
                 text={sponsor.sponsorOpportunitiesContent.sponsOp[index].text}

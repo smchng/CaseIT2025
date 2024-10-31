@@ -18,7 +18,7 @@ type galleryItems = {
 export const Gallery = ({ title, subtext, img, alt, link }: galleryItems) => {
   return (
     <Link href={link || "dummy"} className="flex flex-col">
-      <div className="rounded-[2rem] border-[#E7E7E7] border-2 p-5">
+      <div className="rounded-[2rem] border-[#E7E7E7] focus:border-[#99444B] focus:border-4 hover:shadow-[0_0_15px_rgba(197,52,52,0.3)] transition-all border-2 p-3">
         <div>
           <Image
             src={img || "/imgs/mediaGallery.png"}

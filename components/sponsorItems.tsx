@@ -17,7 +17,7 @@ type sponsorItems = {
 
 export const MobileButtons = ({ text, link }: sponsorItems) => {
   return (
-    <div className="flex flex-col space-y-[5px] ">
+    <div className="flex flex-col space-y-3 ">
       <div className="md:hidden">
         <RoundedButton text={text} link={link || ""} variant="outline" />
       </div>
@@ -105,7 +105,7 @@ export const SponsorBanner = ({
           </div>
           <div className="text-header2">{title}</div>
         </div>
-        <div className="text-paragraph">
+        <div className="text-paragraph pb-[5vh]">
           <BoldedText text={text}></BoldedText>
         </div>
 

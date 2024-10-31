@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
 import { RoundedButton } from "@/components/buttons";
-import { Gallery } from "@/components/mediaItems";
+import { GalleryCards } from "@/components/mediaItems";
 import * as media from "@/content/media_content";
 import {
   SponsorBanner,
@@ -49,7 +49,7 @@ export default function Media() {
       <div className="grid mx-auto max-w-[80%] md:grid-cols-2 md:grid-rows-6 gap-[1.644rem]">
           {media.galleryText.map((item, index) => (
             <div key={index}>
-              <Gallery
+              <GalleryCards
                 title={media.galleryText[index].title}
                 subtext={media.galleryText[index].subtext}
                 img={media.galleryText[index].img}

@@ -17,9 +17,9 @@ export default function OC() {
       <section>
         <BgImgCenter>
           <div className="text-header1">{oc.ocText.header1}</div>
-          <p className="text-red font-bold pb-[4vh]">
+          <div className="text-red font-bold pb-[4vh]">
             <div className="text-paragraph">{oc.ocText.paragraph}</div>
-          </p>
+          </div>
           <RoundedButton text="Learn More" link="/about" variant="red" />
         </BgImgCenter>
       </section>

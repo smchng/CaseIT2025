@@ -44,9 +44,10 @@ export default function About() {
         ))}
       </section>
       <section className="my-[8vh]">
+        {/* MOBILE */}
         <div className="md:hidden flex space-x-2 justify-center  ">
           {about.titles.map((item, index) => (
-            <div key={index} className="text-header3">
+            <div key={index} className="text-header4">
               {item.title}
             </div>
           ))}

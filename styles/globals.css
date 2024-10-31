@@ -65,7 +65,7 @@ body {
 }
 
 .text-header2 {
-  @apply font-semibold text-2xl;
+  @apply font-semibold md:text-2xl;
 }
 
 .text-header3 {
@@ -77,7 +77,6 @@ body {
 .text-paragraph {
   @apply text-sm;
 }
-.menu-open{
-  @apply scale-95 opacity-30 overflow-y-hidden
+.menu-open {
+  @apply scale-95 opacity-30 overflow-y-hidden;
 }
-

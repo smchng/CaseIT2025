@@ -29,7 +29,9 @@ export const MobileButtons = ({ text, link }: sponsorItems) => {
 export const SponsorText = ({ title, text }: sponsorItems) => {
   return (
     <div className="md:pl-10">
-      <div className="text-header2 text-red leading-[2.5rem]">{title}</div>
+      <div className="text-header3 md:text-header2 text-red leading-[2.5rem]">
+        {title}
+      </div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
         <div className="text-paragraph">{text}</div>
       </div>

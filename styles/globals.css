@@ -65,7 +65,7 @@ body {
 }
 
 .text-header2 {
-  @apply font-semibold md:text-2xl;
+  @apply font-semibold text-2xl;
 }
 
 .text-header3 {

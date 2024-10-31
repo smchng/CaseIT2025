@@ -4,7 +4,7 @@ import { TitleList } from "@/content/home_content";
 import { SquareButton } from "@/components/buttons";
 import { TextDot } from "@/components/text";
 import { Icon2025 } from "@/public/svgs/2026";
-import MySection from "@/components/test";
+import HeroSection from "@/components/HeroSection";
 import { useCountUp } from "@/hooks/useCountUp";
 
 export default function Home() {
@@ -23,9 +23,9 @@ export default function Home() {
   return (
     <main>
       <div className=" relative">
-        <MySection />
+        <HeroSection />
         <div className="absolute top-0 left-1/2 -translate-x-1/2">
-          <div className="w-full h-screen items-center justify-center flex ">
+          <div className="w-full h-[60vh] md:h-screen items-center justify-center flex ">
             <div>
               {TitleList.map((item, index) => (
                 <TextDot
@@ -39,33 +39,33 @@ export default function Home() {
       </div>
 
       <section >
-      <div ref={sectionRef} className="grid grid-cols-2 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto">
+      <div ref={sectionRef} className="grid grid-cols-2 mt-12 md:mt-4 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto">
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            {competitors}
+            {String(competitors).padStart(2,"0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Driven Competitors
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            {teams}
+          {String(teams).padStart(2,"0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               International Teams
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            {days}
+          {String(days).padStart(2,"0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Intensive Days
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            {cases}
+          {String(cases).padStart(2,"0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Challenging Cases
             </span>
           </div>
           <div className="col-span-2 md:col-span-1 text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            {competition}
+          {String(competition).padStart(2,"0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Competition
             </span>
@@ -101,9 +101,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center  font-light gap-8 text-white mt-16 py-12 px-8">
+      <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center  font-light gap-8 text-white mt-16 py-32 px-8 overflow-hidden">
+      <div className="absolute inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
         <h2 className="text-base font-semibold">What is CaseIT?</h2>
-        <p className=" max-w-[76ch] md:text-xs">
+        <p className=" max-w-[76ch] md:text-xs mb-8">
           CaseIT is the world’s premier international undergraduate Management
           Information Systems (MIS) case competition. The brightest business
           students from across the globe converge in Vancouver, BC, to put their

@@ -19,61 +19,61 @@ export const galleryText = [
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
   {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
-    img : "/imgs/mediaGallery.png",
+    img: "/imgs/mediaGallery/mediaGallery.png",
   },
 ];

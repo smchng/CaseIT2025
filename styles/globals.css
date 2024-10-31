@@ -77,3 +77,7 @@ body {
 .text-paragraph {
   @apply text-sm;
 }
+.menu-open{
+  @apply scale-95 opacity-30 overflow-y-hidden
+}
+

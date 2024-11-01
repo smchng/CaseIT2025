@@ -54,12 +54,11 @@ export const NavList = ({
                     : "opacity-0 pointer-events-none"
                 }`}
               >
-                <div className=" absolute w-16 h-16 bg-white drop-shadow- left-1/2 -translate-x-1/2 rounded-lg rotate-45 ">
-                  {" "}
+                <div className=" absolute w-16 h-16 bg-white left-1/2 -translate-x-1/2 rounded-lg rotate-45  ">
                 </div>
-                <ul className="py-8 px-6 z-[1999] flex flex-col gap-4 w-64 rounded-xl bg-white drop-shadow-sm">
+                <ul className="py-8 px-6 z-[1999] flex flex-col gap-4 w-64 rounded-xl bg-white shadow-[0px_0px_25px_0px_rgba(0,0,0,0.2)] ">
                   {item.sublinks.map((sublink, index) => (
-                    <li key={index}>
+                    <li key={index} className="z-20">
                       <Link
                         href={sublink.ref}
                         className="text-greyLight hover:text-black duration-300"

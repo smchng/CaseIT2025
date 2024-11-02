@@ -48,7 +48,7 @@ const caseItEvents: CaseItEvent[] = [
 
 export const CaseItEvent = () => {
   return (
-    <div className=" p-6 md:p-12 lg:px-12">
+    <div className=" px-6 md:px-12 lg:px-12">
 
 
     <div className="grid grid-cols-1 xl:grid-cols-6 gap-[2px] md:grid-cols-2 lg:grid-cols-3 bg-greyLight/30   p-[2px] max-w-[1596px] lg:mx-auto ">

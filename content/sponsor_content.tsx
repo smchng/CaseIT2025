@@ -85,3 +85,96 @@ export const buttonText = {
     },
   ],
 };
+
+export const sponsorTileContent = {
+  sectionTitle: [{ title: "Our Past Sponsors" }],
+  sponsors: [
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    
+  ],
+};
+
+export const sponsorOpportunitiesContent = {
+  sponsOp: [
+    {
+      title: "Financial Sponsorship",
+      img: "/svgs/sponsorIcon1.svg",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      alt: "Various icons with subheadders",
+      subtext: "We invite your organization to choose from four distinct value. Tiers to provide financial aid to our competition: ",
+    },
+    {
+      title: "Technology Sponsorship",
+      img: "/svgs/sponsorIcon2.svg",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      alt: "Various icons with subheadders",
+      subtext: "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",
+    },
+    {
+      title: "In-kind Sponsorship",
+      img: "/svgs/sponsorIcon3.svg",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      alt: "Various icons with subheadders",
+      subtext: "CaseIT 2024 warmly welcomes in-kind contributions offered by esteemed corporate partners to enrich our competition. These items include, but are not limited to:",
+    }
+  ],
+};

@@ -43,7 +43,18 @@ export const FAQ = ({ question, answer }: textItems) => {
       </div>
       <div className="border-t border-black"></div>
 
-      {isToggleOpen && <p className="font-normal text-left p-4">{answer}</p>}
+      {isToggleOpen && <p className="font-normal text-left p-4 max-w-[80vw]">{answer}</p>}
+    </div>
+  );
+};
+
+export const MobileContactText = ({ question, answer }: textItems) => {
+  return (
+    <div>
+      <div className="text-header4 pb-[2vh]">{question}</div>
+      <div className="md:max-w-[100vw] py-[3vh] ">
+        <div className="text-paragraph">{answer}</div>
+      </div>
     </div>
   );
 };

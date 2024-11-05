@@ -5,8 +5,8 @@ import signature from "@/public/imgs/chairSignature.png"
 import { chairContent } from "@/content/chair_content";
 
 export const metadata: Metadata = {
-  title: "Media Gallery",
-  description: "Learn more about our company and team.",
+  title: "Chair's Welcome",
+  description: "With great excitement, we are embarking on another remarkable year of CaseIT",
 };
 
 export default function Chair() {

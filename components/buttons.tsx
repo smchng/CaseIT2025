@@ -37,9 +37,9 @@ export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
           height={415}
           className="w-[90vw] md:w-[30vw] h-auto"
         />
-        <div className="absolute inset-0 flex items-end pl-[2vw] pb-[2vh] z-10">
+        <div className="absolute inset-0 flex items-end pl-5 pb-5 z-10">
           <div className="text-white">
-            <p className="font-bold text-lg ">{text}</p>
+            <p className="font-bold text-2xs sm:text-lg ">{text}</p>
           </div>
         </div>
       </Link>
@@ -58,13 +58,13 @@ export const RoundedButton = ({
     <Link href={link}>
       <button
         className={clsx(
-          "inline-flex items-center rounded-full px-5 py-1.5 md:py-2 text-[12px]  md:text-[17px] transition-colors",
+          "inline-flex items-center rounded-full px-5 py-1.5 md:py-2 text-[15px]  md:text-[17px] transition-colors",
           {
             // Variants
             "bg-redDark text-white": variant === "red" && state === "default",
             "bg-buttonBlackOff text-white":
               variant === "black" && state === "default",
-            "bg-transparent text-black border border-black":
+            "bg-transparent text-black border border-black border-2 font-bold":
               variant === "outline" && state === "default",
 
             // Hover states

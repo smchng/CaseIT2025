@@ -33,15 +33,19 @@ export default function Home() {
 
   return (
     <main>
-      <div className=" relative overflow-hidden  pb-[20vh]">
+      <div className=" relative overflow-hidden h-screen mb-[20vh]">
         <HeroSection />
         <div className="absolute top-0 left-1/2 -translate-x-1/2">
-          <div className="w-full h-[60vh] md:h-screen items-center justify-center flex ">
+          <div className="w-full h-screen items-center justify-center flex ">
             <div>
               {home.TitleList.map((item, index) => (
                 <TextDot
                   key={index}
-                  dotText={<div className="text-header1">{item.title} </div>}
+                  dotText={
+                    <div className="text-header1 justify-center">
+                      {item.title}{" "}
+                    </div>
+                  }
                 />
               ))}
             </div>
@@ -89,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center  font-light gap-8 text-white mt-16 py-32 px-8 overflow-hidden h-screen">
+      <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center justify-center font-light gap-8 text-white mt-16 py-32 px-8 overflow-hidden h-screen">
         <div className="absolute inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
         <h2 className="text-header2 font-semibold">
           {" "}

@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["Switzer", "sans-serif"],
+        acid:["acid", "sans-serif"]
       },
     },
     colors: {

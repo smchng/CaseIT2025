@@ -54,3 +54,7 @@ export const chairContent = {
     </p>
   ),
 };
+
+export const chairText = {
+  header: ["Chair's Welcome"],
+};

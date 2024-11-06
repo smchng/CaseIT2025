@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useInView } from "react-intersection-observer";
 import { TitleList } from "@/content/home_content";
 import { SquareButton } from "@/components/buttons";
@@ -6,23 +6,24 @@ import { TextDot } from "@/components/text";
 import { Icon2025 } from "@/public/svgs/2026";
 import HeroSection from "@/components/HeroSection";
 import { useCountUp } from "@/hooks/useCountUp";
+import Image from "next/image";
 
 export default function Home() {
   const { ref: sectionRef, inView } = useInView({
     triggerOnce: true, // Trigger only once when it enters the viewport
     threshold: 0.5, // Trigger when 10% of the section is visible
   });
-  const competitors = useCountUp(64,1500, inView);
-  const teams = useCountUp(16,1000,inView);
-  const days = useCountUp(6,500, inView);
-  const cases = useCountUp(2,200, inView);
-  const competition = useCountUp(1,100, inView);
+  const competitors = useCountUp(64, 1500, inView);
+  const teams = useCountUp(16, 1000, inView);
+  const days = useCountUp(6, 500, inView);
+  const cases = useCountUp(2, 200, inView);
+  const competition = useCountUp(1, 100, inView);
 
-  console.log(inView)
+  console.log(inView);
 
   return (
     <main>
-      <div className=" relative">
+      <div className=" relative overflow-hidden  py-[20vh]">
         <HeroSection />
         <div className="absolute top-0 left-1/2 -translate-x-1/2">
           <div className="w-full h-[60vh] md:h-screen items-center justify-center flex ">
@@ -38,40 +39,51 @@ export default function Home() {
         </div>
       </div>
 
-      <section >
-      <div ref={sectionRef} className="grid grid-cols-2 mt-12 md:mt-4 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto">
+      <section className="relative overflow-hidden py-[20vh]">
+        <div className="absolute inset-0 -z-10 flex items-center justify-center">
+          <Image
+            src="/svgs/globe.svg"
+            alt="Background Globe"
+            layout="fill"
+            objectFit="cover"
+            className="w-[150vw] h-auto"
+          />
+        </div>
+        <div
+          ref={sectionRef}
+          className="grid grid-cols-2 mt-12 md:mt-4 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto"
+        >
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-            {String(competitors).padStart(2,"0")}
+            {String(competitors).padStart(2, "0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Driven Competitors
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-          {String(teams).padStart(2,"0")}
+            {String(teams).padStart(2, "0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               International Teams
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-          {String(days).padStart(2,"0")}
+            {String(days).padStart(2, "0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Intensive Days
             </span>
           </div>
           <div className="text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-          {String(cases).padStart(2,"0")}
+            {String(cases).padStart(2, "0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Challenging Cases
             </span>
           </div>
           <div className="col-span-2 md:col-span-1 text-[4.5rem] xl:text-[152px] font-acid text-redDark flex flex-col items-center leading-none ">
-          {String(competition).padStart(2,"0")}
+            {String(competition).padStart(2, "0")}
             <span className="text-[0.75rem] xl:text-[1.5rem] font-sans">
               Competition
             </span>
           </div>
         </div>
-
         <div className="  mt-12 grid grid-cols-1 md:grid-cols-2 border-redDark border-2 rounded-2xl gap-12 p-6 md:p-12 xl:p-20 w-[90%] max-w-[25rem] md:max-w-[1200px] mx-auto drop-shadow-[0_0_15px_rgba(197,52,52,0.25)] bg-white">
           <div className="w-full">
             <Icon2025 width="100%" height="100%" />
@@ -101,9 +113,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center  font-light gap-8 text-white mt-16 py-32 px-8 overflow-hidden">
-      <div className="absolute inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
-        <h2 className="text-base font-semibold">What is CaseIT?</h2>
+      <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center  font-light gap-8 text-white mt-16 py-32 px-8 overflow-hidden h-screen">
+        <div className="absolute inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
+        <h2 className="text-header2 font-semibold">What is CaseIT?</h2>
         <p className=" max-w-[76ch] md:text-xs mb-8">
           CaseIT is the world’s premier international undergraduate Management
           Information Systems (MIS) case competition. The brightest business

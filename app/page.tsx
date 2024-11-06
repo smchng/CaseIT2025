@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className=" relative overflow-hidden  py-[20vh]">
+      <div className=" relative overflow-hidden  pb-[20vh]">
         <HeroSection />
         <div className="absolute top-0 left-1/2 -translate-x-1/2">
           <div className="w-full h-[60vh] md:h-screen items-center justify-center flex ">

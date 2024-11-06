@@ -3,6 +3,7 @@ import Image from "next/image";
 import chair from "@/public/imgs/caseitChair.png";
 import signature from "@/public/imgs/chairSignature.png";
 import * as chairs from "@/content/chair_content";
+import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Chair's Welcome",
@@ -35,6 +36,13 @@ export default function Chair() {
           className=" w-full md:h-1/2 xl:h-full object-cover row-start-1 md:col-start-2"
           src={chair}
           alt="portait of CaseIT 2025 Chair"
+        />
+      </div>
+      <div className="w-full flex justify-center items-center py-[10vh]">
+        <RoundedButton
+          text="Return to CaseIT 2025 Page"
+          link="/2025"
+          variant="red"
         />
       </div>
     </main>

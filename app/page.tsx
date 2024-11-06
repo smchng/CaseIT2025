@@ -60,7 +60,7 @@ export default function Home() {
             alt="Background Globe"
             layout="fill"
             objectFit="cover"
-            className="w-[150vw] h-auto"
+            className="w-[150vw] h-auto hidden md:block"
           />
         </div>
         <div
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center justify-center font-light gap-8 text-white mt-16 py-32 px-8 overflow-hidden h-screen">
+      <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center justify-center font-light gap-8 text-white mt-16 py-32 md:h-screen px-8 overflow-hidden ">
         <div className="absolute inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
         <h2 className="text-header2 font-semibold">
           {" "}

@@ -14,7 +14,7 @@ export default function Media() {
       <section>
         <BgImgLeft>
           <div className="text-header1">{media.mediaText.header1}</div>{" "}
-          <p className="pb-[4vh]">
+          <p className="pb-[4vh]">  
             <div className="text-paragraph">{media.mediaText.paragraph} </div>
           </p>
           <div className="flex space-x-[3vw]">

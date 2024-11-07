@@ -124,11 +124,37 @@ export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
         alt={alt || "White circle containing a sponsor logo"}
         width={315}
         height={317}
-        className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_15px_rgba(210,121,128,0.8)] transition-all size-[10vw],[15.5rem] md:w-[20vw] xl:w-[10vw]"
+        className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_15px_rgba(210,121,128,0.8)] transition-all size-[10vw],[15.5rem] md:w-[20vw] xl:w-[20vw]"
       />
       <text className="text-paragraph font-bold pt-[0.463rem] md:text-1">
         {text}
       </text>
+    </div>
+  );
+};
+
+export const SilverSponsor = ({ title, img, alt, showHeader = true }: sponsorItems & { showHeader?: boolean }) =>  {
+  return (
+    <div className="flex flex-col p-[1vh]">
+      {showHeader && (
+        <div className="text-header3 text-red py-[5vh]">
+          <text>{title}</text>
+        </div>
+      )}
+      <Image
+        src={img || "/imgs/silverSponsorLogo.png"}
+        alt={alt || "Pearson Logo"}
+        width={541}
+        height={335}
+        className="py-[5vh]"
+      />
+      <Image
+        src={img || "/imgs/silverSponsor.png"}
+        alt={alt || "A girl smiling in front of her laptop."}
+        width={541}
+        height={335}
+      />
+
     </div>
   );
 };

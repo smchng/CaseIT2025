@@ -164,3 +164,53 @@ export const techSponsorContent = {
   text: "Every year, thousands of university students from every corner of the world join Microsoft. You bring your aspirations, talent, potential—and excitement for the journey ahead. Our internship experience brings interns from around the world together to connect, collaborate and co-create virtually to make a difference and impact the world.",
   subtext: "Because impact matters",
 };
+
+export const silverSponsorContent = {
+  header1: "SilverSponsor",
+};
+
+export const pastSponsorTileContent = {
+  title: "In-kind Sponsor",
+  sponsors: [
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+  ],
+};

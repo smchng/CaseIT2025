@@ -2,7 +2,12 @@ import { Metadata } from "next";
 import { BgImgCenter } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonRight } from "@/components/imgRibbons";
-import { SponsorShowcaseRibbons, TechSponsor, SponsorTiles, SilverSponsor } from "@/components/sponsorItems";
+import {
+  SponsorShowcaseRibbons,
+  TechSponsor,
+  SponsorTiles,
+  SilverSponsor,
+} from "@/components/sponsorItems";
 import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
@@ -48,38 +53,38 @@ export default function SponsorShowcase() {
         ))}
       </section>
 
-      <section className="pt-[10vh]"> 
+      <section className="pt-[20vh]">
         <TechSponsor
           title={sponsor.techSponsorContent.header1}
           subtext={sponsor.techSponsorContent.subtext}
           text={sponsor.techSponsorContent.text}
         />
       </section>
-      <section className="pt-[10vh] max-w-[95vw] mx-auto flex flex-col md:flex-row md:justify-around "> 
+      <section className="pt-[10vh] max-w-[95vw] mx-auto flex flex-col md:flex-row md:justify-around ">
         <div className="flex justify-center">
-        <SilverSponsor
-          title={sponsor.silverSponsorContent.header1}
-          text={""}
-        />
+          <SilverSponsor
+            title={sponsor.silverSponsorContent.header1}
+            text={""}
+          />
         </div>
         <div className="hidden md:flex justify-center">
-        <SilverSponsor
-          title={sponsor.silverSponsorContent.header1}
-          text={""}
-        />
+          <SilverSponsor
+            title={sponsor.silverSponsorContent.header1}
+            text={""}
+          />
         </div>
         <div className="flex md:hidden justify-center">
-        <SilverSponsor
-          title={sponsor.silverSponsorContent.header1}
-          text={""}
-          showHeader={false}
-        />
+          <SilverSponsor
+            title={sponsor.silverSponsorContent.header1}
+            text={""}
+            showHeader={false}
+          />
         </div>
       </section>
-      <section className="flex flex-col justify-center pt-[5vh]">
-      <div className="text-header3 text-red text-center py-[5vh]">
-            {sponsor.pastSponsorTileContent.title}
-      </div>
+      <section className="flex flex-col justify-center py-[5vh]">
+        <div className="text-header3 text-red text-center py-[10vh]">
+          {sponsor.pastSponsorTileContent.title}
+        </div>
         <div className="max-w-[80vw] hidden md:grid mx-auto grid-cols-2 grid-rows-4 grid-flow-row gap-[1.644rem] md:gap-[6vh] md:grid-cols-4 md:grid-rows-2 lg:gap-[15vh] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
           {sponsor.pastSponsorTileContent.sponsors.map((item, index) => (
             <div key={index}>
@@ -103,7 +108,9 @@ export default function SponsorShowcase() {
           ))}
         </div>
       </section>
-      <section className="bg-[#FAFAFA] pb-[10vh]">
+
+      {/* ADD AFTER COMP WEEK */}
+      {/* <section className="bg-[#FAFAFA] pb-[10vh]">
         <div className="flex flex-col mx-auto text-center content-center max-w-[52%] pt-[15vh]">
           <div className="text-header2 text-red">
             {sponsor.sponsorThankContent.header1}
@@ -123,7 +130,7 @@ export default function SponsorShowcase() {
             />
         </div>
         
-      </section>
+      </section> */}
     </div>
   );
 }

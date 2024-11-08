@@ -149,7 +149,6 @@ export const sponsorTileContent = {
       alt: "White circle with sponsor logo",
       text: "Title Sponsor",
     },
-    
   ],
 };
 
@@ -160,21 +159,86 @@ export const sponsorOpportunitiesContent = {
       img: "/svgs/sponsorIcon1.svg",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       alt: "Various icons with subheadders",
-      subtext: "We invite your organization to choose from four distinct value. Tiers to provide financial aid to our competition: ",
+      subtext:
+        "We invite your organization to choose from four distinct value. Tiers to provide financial aid to our competition: ",
     },
     {
       title: "Technology Sponsorship",
       img: "/svgs/sponsorIcon2.svg",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       alt: "Various icons with subheadders",
-      subtext: "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",
+      subtext:
+        "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",
     },
     {
       title: "In-kind Sponsorship",
       img: "/svgs/sponsorIcon3.svg",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       alt: "Various icons with subheadders",
-      subtext: "CaseIT 2024 warmly welcomes in-kind contributions offered by esteemed corporate partners to enrich our competition. These items include, but are not limited to:",
-    }
+      subtext:
+        "CaseIT 2024 warmly welcomes in-kind contributions offered by esteemed corporate partners to enrich our competition. These items include, but are not limited to:",
+    },
+  ],
+};
+
+export const sponsorThankContent = {
+  header1: "Thank you 2025 Sponsors",
+  text: "The 2025 CaseIT Organizing Committee thanks all of our sponsors for their contribution to the execution of our 2025 competition. Your support is tremendous to the development of the next generation of business technology leaders in Vancouver and beyond.",
+  buttonText: "Explore Sponsorship Opportunities",
+};
+
+export const techSponsorContent = {
+  header1: "Tech Sponsor",
+  text: "Every year, thousands of university students from every corner of the world join Microsoft. You bring your aspirations, talent, potential—and excitement for the journey ahead. Our internship experience brings interns from around the world together to connect, collaborate and co-create virtually to make a difference and impact the world.",
+  subtext: "Because impact matters",
+};
+
+export const silverSponsorContent = {
+  header1: "SilverSponsor",
+};
+
+export const pastSponsorTileContent = {
+  title: "In-kind Sponsor",
+  sponsors: [
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
+    {
+      img: "/imgs/sponsorTile.png",
+      alt: "White circle with sponsor logo",
+      text: "Title Sponsor",
+    },
   ],
 };

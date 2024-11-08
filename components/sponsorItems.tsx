@@ -12,6 +12,7 @@ type sponsorItems = {
   subtext?: string;
   img?: string;
   alt?: string;
+  logo?: string;
   children?: React.ReactNode;
 };
 
@@ -123,7 +124,7 @@ export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
         alt={alt || "White circle containing a sponsor logo"}
         width={315}
         height={317}
-        className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_15px_rgba(210,121,128,0.8)] transition-all size-[10vw],[15.5rem] md:w-[20vw] xl:w-[10vw]"
+        className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_15px_rgba(210,121,128,0.8)] transition-all size-[10vw],[15.5rem] md:w-[20vw] xl:w-[20vw]"
       />
       <text className="text-paragraph font-bold pt-[0.463rem] md:text-1">
         {text}
@@ -153,6 +154,70 @@ export const SponsorOpCards = ({
         <div className="text-header2 text-red pb-2">{title} </div>
         <div className="text-paragraph font-bold pb-6">{subtext}</div>
         <div className="text-paragraph">{text}</div>
+      </div>
+    </div>
+  );
+};
+
+export const SilverSponsor = ({
+  title,
+  img,
+  alt,
+  showHeader = true,
+}: sponsorItems & { showHeader?: boolean }) => {
+  return (
+    <div className="flex flex-col ">
+      {showHeader && (
+        <div className="text-header3 text-red py-[5vh]">
+          <text>{title}</text>
+        </div>
+      )}
+      <Image
+        src={img || "/imgs/silverSponsorLogo.png"}
+        alt={alt || "Pearson Logo"}
+        width={541}
+        height={335}
+        className="py-[5vh]"
+      />
+      <Image
+        src={img || "/imgs/silverSponsor.png"}
+        alt={alt || "A girl smiling in front of her laptop."}
+        width={541}
+        height={335}
+      />
+    </div>
+  );
+};
+
+export const TechSponsor = ({
+  img,
+  logo,
+  title,
+  subtext,
+  text,
+  alt,
+}: sponsorItems) => {
+  return (
+    <div className="flex flex-col md:flex-row bg-[#2B2B2B] py-[12vh] px-7">
+      <div className="flex justify-center min-w-[45%] md:pl-[5vw]">
+        <Image
+          src={img || "/imgs/techSponsor.png"}
+          alt={alt || "Group of people hugging with the text Join. above them"}
+          width={615}
+          height={594}
+        />
+      </div>
+      <div className="md:px-[6vw] text-white md:max-w-[44vw] md:py-[10vh] flex flex-col mx-auto">
+        <div className="text-header4 py-4">{title}</div>
+        <Image
+          src={logo || "/imgs/microsoftLogo.png"}
+          alt={alt || "Microsoft logo with logotype"}
+          width={376}
+          height={74}
+        />
+
+        <div className="font-bold pt-4">{subtext}</div>
+        <p className="text-paragraph pt-[4vh] max-w-[100%]">{text}</p>
       </div>
     </div>
   );

@@ -2,7 +2,12 @@ import { Metadata } from "next";
 import { BgImgCenter } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonRight } from "@/components/imgRibbons";
-import { SponsorShowcaseRibbons } from "@/components/sponsorItems";
+import {
+  SponsorShowcaseRibbons,
+  TechSponsor,
+  SponsorTiles,
+  SilverSponsor,
+} from "@/components/sponsorItems";
 import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
@@ -47,6 +52,85 @@ export default function SponsorShowcase() {
           </div>
         ))}
       </section>
+
+      <section className="pt-[20vh]">
+        <TechSponsor
+          title={sponsor.techSponsorContent.header1}
+          subtext={sponsor.techSponsorContent.subtext}
+          text={sponsor.techSponsorContent.text}
+        />
+      </section>
+      <section className="pt-[10vh] px-7 mx-auto flex flex-col md:flex-row md:justify-around ">
+        <div className="flex justify-center">
+          <SilverSponsor
+            title={sponsor.silverSponsorContent.header1}
+            text={""}
+          />
+        </div>
+        <div className="hidden md:flex justify-center">
+          <SilverSponsor
+            title={sponsor.silverSponsorContent.header1}
+            text={""}
+          />
+        </div>
+        <div className="flex md:hidden justify-center">
+          <SilverSponsor
+            title={sponsor.silverSponsorContent.header1}
+            text={""}
+            showHeader={false}
+          />
+        </div>
+      </section>
+      <section className="flex flex-col justify-center py-[5vh]">
+        <div className="text-header3 text-red text-center py-[10vh]">
+          {sponsor.pastSponsorTileContent.title}
+        </div>
+        <div className="max-w-[80vw] hidden md:grid mx-auto grid-cols-2 grid-rows-4 grid-flow-row gap-[1.644rem] md:gap-[6vh] md:grid-cols-4 md:grid-rows-2 lg:gap-[15vh] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
+          {sponsor.pastSponsorTileContent.sponsors.map((item, index) => (
+            <div key={index}>
+              <SponsorTiles
+                img={sponsor.pastSponsorTileContent.sponsors[index].img}
+                text={""}
+                alt={sponsor.pastSponsorTileContent.sponsors[index].alt}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="max-w-[80vw] md:hidden mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 lg:gap-[6.5rem] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
+          {sponsor.pastSponsorTileContent.sponsors.map((item, index) => (
+            <div key={index}>
+              <SponsorTiles
+                img={sponsor.pastSponsorTileContent.sponsors[index].img}
+                text={sponsor.pastSponsorTileContent.sponsors[index].text}
+                alt={sponsor.pastSponsorTileContent.sponsors[index].alt}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ADD AFTER COMP WEEK */}
+      {/* <section className="bg-[#FAFAFA] pb-[10vh]">
+        <div className="flex flex-col mx-auto text-center content-center max-w-[52%] pt-[15vh]">
+          <div className="text-header2 text-red">
+            {sponsor.sponsorThankContent.header1}
+          </div>
+          <div className="text-paragraph pt-4">
+            {sponsor.sponsorThankContent.text}
+          </div>
+        </div>
+        <div className="flex mx-auto text-paragraph font-bold text-center justify-center max-w-[60vw] md:max-w-[100vw] pt-8">
+          <p>Interested in partnering with CaseIT 2026? Visit our <span className="text-red"  > Sponsorship </span> page to learn more.</p>
+        </div>
+        <div className="flex mx-auto justify-center mt-8">
+          <RoundedButton
+            text="Explore Sponsorship Opportunities"
+            link="/sponsor/Sponsorship-Opportunities"
+            variant="red"
+            />
+        </div>
+        
+      </section> */}
     </div>
   );
 }

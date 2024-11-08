@@ -7,7 +7,7 @@ type buttonItems = {
   img?: string;
   alt?: string;
   link: string;
-  text: string;
+  text?: string;
   subtext?: string;
 };
 type ButtonProps = buttonItems & {
@@ -187,3 +187,18 @@ export const PivotButton = ({ text, link, state = "default" }: ButtonProps) => {
   );
 };
 
+export const ArrowButton = ({ img, alt, link }: ButtonProps) => {
+  return (
+    <Link href={link || "null"}>
+      <div className="bg-buttonBlack hover:bg-buttonRedDark transition-all p-5 rounded-2xl ">
+        <Image
+          src={img || "/svgs/arrowButton.svg"}
+          alt={alt || "red button with an arrow pointing up"}
+          width={25}
+          height={25}
+          className="fill-transparent"
+        />
+      </div>
+    </Link>
+  );
+};

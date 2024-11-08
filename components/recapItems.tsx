@@ -35,19 +35,3 @@ export const RecapCards = ({ title, subtext, img, alt, link }: recapItems) => {
     </Link>
   );
 };
-
-export const ArrowButton = ({ img, alt, link }: recapItems) => {
-  return (
-    <Link href={link || "null"}>
-      <div className="bg-buttonBlack hover:bg-buttonRedDark transition-all p-5 rounded-2xl ">
-        <Image
-          src={img || "/svgs/arrowButton.svg"}
-          alt={alt || "red button with an arrow pointing up"}
-          width={25}
-          height={25}
-          className="fill-transparent"
-        />
-      </div>
-    </Link>
-  );
-};

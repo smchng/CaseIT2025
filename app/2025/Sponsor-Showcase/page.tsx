@@ -8,7 +8,7 @@ import {
   SponsorTiles,
   SilverSponsor,
 } from "@/components/sponsorItems";
-import { RoundedButton } from "@/components/buttons";
+import { RoundedButton, ArrowButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function SponsorShowcase() {
   return (
     <div>
-      <section>
+      <section id="sponShow">
         <BgImgCenter>
           <div className="text-start md:text-center">
             <div className="text-header1">
@@ -131,6 +131,9 @@ export default function SponsorShowcase() {
         </div>
         
       </section> */}
+      <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
+        <ArrowButton link="#sponShow" />
+      </section>
     </div>
   );
 }

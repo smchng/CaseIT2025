@@ -8,7 +8,7 @@ import {
   SponsorTiles,
   MobileButtons,
 } from "@/components/sponsorItems";
-import { RoundedButton } from "@/components/buttons";
+import { RoundedButton, ArrowButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Sponsor Overview",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function SponsorOverview() {
   return (
     <div>
-      <section>
+      <section id="sponOpp">
         <BgImgLeft>
           <SponsorBanner
             title={sponsor.sponsorOverviewText.header2}
@@ -95,6 +95,9 @@ export default function SponsorOverview() {
             />
           </div>
         </div>
+      </section>
+      <section className="flex justify-center mx-auto scroll-smooth py-[7vh]">
+        <ArrowButton link="#sponOpp" />
       </section>
     </div>
   );

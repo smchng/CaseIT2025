@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
-import { RoundedButton } from "@/components/buttons";
+import { RoundedButton, ArrowButton } from "@/components/buttons";
 import { GalleryCards } from "@/components/mediaItems";
 import * as media from "@/content/media_content";
 import { SponsorBanner, MobileButtons } from "@/components/sponsorItems";
@@ -36,7 +36,7 @@ export default function Media() {
         </div>
       </section>
       <section>
-        <div className="grid mx-auto max-w-[80%] md:grid-cols-2 2xl:grid-cols-3 gap-[1.644rem]">
+        <div className="grid mx-auto max-w-[80%] md:pb-[5vh] md:grid-cols-2 2xl:grid-cols-3 gap-[1.644rem]">
           {media.galleryText.map((item, index) => (
             <div key={index}>
               <GalleryCards
@@ -48,8 +48,8 @@ export default function Media() {
           ))}
         </div>
       </section>
-      <section className="md:hidden flex justify-center mx-auto scroll-smooth pt-[7vh]">
-        <RoundedButton text="Back to top" link="#MediaTop" variant="red" />
+      <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
+        <ArrowButton link="#MediaTop" />
       </section>
     </div>
   );

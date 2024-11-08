@@ -79,7 +79,7 @@ export default function Recap2024() {
           <text className="text-red text-header4">Award</text>
           <text className="text-header3">CaseIT 2024 Placements</text>
         </div>
-        <div className="grid  mx-auto min-w-[80%] md:grid-cols-2 2xl:grid-cols-2 gap-[1.644rem]">
+        <div className="grid  mx-auto max-w-[60vw] md:grid-cols-2 2xl:grid-cols-2 gap-[1.644rem]">
           {re.recapCardText.map((item, index) => (
             <div key={index}>
               <RecapCards
@@ -91,12 +91,9 @@ export default function Recap2024() {
           ))}
         </div>
         <div className="flex justify-center pb-[15vh]">
-          <ArrowButton
-          link="#recap"
-          />
+          <ArrowButton link="#recap" />
         </div>
       </section>
-      
     </div>
   );
 }

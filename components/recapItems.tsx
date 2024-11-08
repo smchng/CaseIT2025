@@ -1,4 +1,4 @@
-  "use client";
+"use client";
 import { RoundedButton } from "@/components/buttons";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -14,13 +14,7 @@ type recapItems = {
   alt?: string;
 };
 
-export const RecapCards = ({
-  title,
-  subtext,
-  img,
-  alt,
-  link,
-}: recapItems) => {
+export const RecapCards = ({ title, subtext, img, alt, link }: recapItems) => {
   return (
     <Link href={link || "dummy"} className="flex flex-col">
       <div className="rounded-3xl border-redDark shadow-[0_0_15px_rgba(197,52,52,0.3)] focus:border-4 transition-all border-2 p-1">
@@ -34,8 +28,8 @@ export const RecapCards = ({
           />
         </div>
         <div className="text-center py-4">
-          <div className="text-header3 font-bold">{title}</div>
-          <div className="text-header4 font-normal">{subtext}</div>
+          <div className="text-header2">{title}</div>
+          <div className="text-lg">{subtext}</div>
         </div>
       </div>
     </Link>
@@ -45,16 +39,15 @@ export const RecapCards = ({
 export const ArrowButton = ({ img, alt, link }: recapItems) => {
   return (
     <Link href={link || "null"}>
-      <div className="bg-buttonBlack hover:bg-buttonRedDark transition-all p-[28px] rounded-2xl size-[87px]">
-      <Image
+      <div className="bg-buttonBlack hover:bg-buttonRedDark transition-all p-5 rounded-2xl ">
+        <Image
           src={img || "/svgs/arrowButton.svg"}
           alt={alt || "red button with an arrow pointing up"}
-          width={33.41}
-          height={37.14}
+          width={25}
+          height={25}
           className="fill-transparent"
         />
       </div>
-        
-    </Link> 
+    </Link>
   );
 };

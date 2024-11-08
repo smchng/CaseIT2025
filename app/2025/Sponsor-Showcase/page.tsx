@@ -60,7 +60,7 @@ export default function SponsorShowcase() {
           text={sponsor.techSponsorContent.text}
         />
       </section>
-      <section className="pt-[10vh] max-w-[95vw] mx-auto flex flex-col md:flex-row md:justify-around ">
+      <section className="pt-[10vh] px-7 mx-auto flex flex-col md:flex-row md:justify-around ">
         <div className="flex justify-center">
           <SilverSponsor
             title={sponsor.silverSponsorContent.header1}

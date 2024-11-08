@@ -133,9 +133,14 @@ export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
   );
 };
 
-export const SilverSponsor = ({ title, img, alt, showHeader = true }: sponsorItems & { showHeader?: boolean }) =>  {
+export const SilverSponsor = ({
+  title,
+  img,
+  alt,
+  showHeader = true,
+}: sponsorItems & { showHeader?: boolean }) => {
   return (
-    <div className="flex flex-col p-[1vh]">
+    <div className="flex flex-col ">
       {showHeader && (
         <div className="text-header3 text-red py-[5vh]">
           <text>{title}</text>
@@ -154,24 +159,29 @@ export const SilverSponsor = ({ title, img, alt, showHeader = true }: sponsorIte
         width={541}
         height={335}
       />
-
     </div>
   );
 };
 
-export const TechSponsor = ({ img, logo, title, subtext, text, alt }: sponsorItems) => {
+export const TechSponsor = ({
+  img,
+  logo,
+  title,
+  subtext,
+  text,
+  alt,
+}: sponsorItems) => {
   return (
-    <div className="flex flex-col md:flex-row bg-[#2B2B2B] py-[12vh]">
+    <div className="flex flex-col md:flex-row bg-[#2B2B2B] py-[12vh] px-7">
       <div className="flex justify-center min-w-[45%] md:pl-[5vw]">
-      <Image
-        src={img || "/imgs/techSponsor.png"}
-        alt={alt || "Group of people hugging with the text Join. above them"}
-        width={615}
-        height={594}
-        
-      />
+        <Image
+          src={img || "/imgs/techSponsor.png"}
+          alt={alt || "Group of people hugging with the text Join. above them"}
+          width={615}
+          height={594}
+        />
       </div>
-      <div className="md:px-[6vw] text-white max-w-[85%] md:max-w-[44vw] md:py-[10vh] flex flex-col mx-auto">
+      <div className="md:px-[6vw] text-white md:max-w-[44vw] md:py-[10vh] flex flex-col mx-auto">
         <div className="text-header4 py-4">{title}</div>
         <Image
           src={logo || "/imgs/microsoftLogo.png"}
@@ -179,15 +189,10 @@ export const TechSponsor = ({ img, logo, title, subtext, text, alt }: sponsorIte
           width={376}
           height={74}
         />
-        
-        <div className="font-bold pt-4">
-          {subtext}
-        </div>
-        <p className="text-paragraph pt-[4vh] max-w-[100%]">
-          {text}
-        </p>
+
+        <div className="font-bold pt-4">{subtext}</div>
+        <p className="text-paragraph pt-[4vh] max-w-[100%]">{text}</p>
       </div>
-      
     </div>
   );
 };

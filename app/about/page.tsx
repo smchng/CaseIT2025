@@ -65,16 +65,10 @@ export default function About() {
           <Image
             src="/imgs/map.png"
             alt="map of schools"
-            width={1218}
-            height={637}
+            width={1536}
+            height={892}
             className="max-w-[80vw] h-auto mx-auto"
           />
-          <div className="text-center text-3xs">
-            <p>
-              <span className="font-bold">Disclaimer:</span>
-              {about.aboutText.disclaimer}{" "}
-            </p>
-          </div>
         </div>{" "}
       </section>
       <section className=" bg-pivotBlue md:bg-transparent md:relative">

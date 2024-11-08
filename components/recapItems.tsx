@@ -28,7 +28,7 @@ export const RecapCards = ({ title, subtext, img, alt, link }: recapItems) => {
           />
         </div>
         <div className="text-center py-4">
-          <div className="text-header2">{title}</div>
+          <div className="text-header3">{title}</div>
           <div className="text-lg">{subtext}</div>
         </div>
       </div>

@@ -44,13 +44,6 @@ export default function SponsorOpps() {
           ))}
         </div>
       </section>
-      <section className="md:hidden flex justify-center mx-auto scroll-smooth">
-        <RoundedButton
-          text="Back to top"
-          link="#SponsorshipOpportunities"
-          variant="red"
-        />
-      </section>
     </div>
   );
 }

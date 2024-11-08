@@ -9,22 +9,22 @@ export const contactText = {
     {
       question: "How do I join the CaseIT Team?",
       answer:
-        "You can join the CaseIT team by applying through our website during the recruitment season.",
+        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
     },
     {
       question: "I am a student, how can I compete in CaseIT 2024?",
       answer:
-        "To compete in CaseIT 2024, you need to be part of a selected team from your university.",
+        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
     },
     {
       question: "My school applied, now what?",
       answer:
-        "Once your school has applied, wait for the confirmation and further instructions from the CaseIT team.",
+        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
     },
     {
       question: "How long is the CaseIT competition week?",
       answer:
-        "The CaseIT competition week lasts 5 days, packed with various events and the main competition.",
+        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
     },
   ],
 };

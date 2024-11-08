@@ -31,7 +31,7 @@ export default function About() {
           </ImgRibbonLeft>
         </div>
       </section>
-      <section className="md:flex md:space-x-[5vw] bg-greyDark p-[5vw] space-y-[15vh] md:space-y-0">
+      <section className="md:flex md:space-x-[5vw] bg-greyDark  p-7 space-y-[15vh] md:space-y-0">
         {about.icons.map((item, index) => (
           <IconImg
             key={index}
@@ -44,9 +44,10 @@ export default function About() {
         ))}
       </section>
       <section className="my-[8vh]">
+        {/* MOBILE */}
         <div className="md:hidden flex space-x-2 justify-center  ">
           {about.titles.map((item, index) => (
-            <div key={index} className="text-header3">
+            <div key={index} className="text-header4">
               {item.title}
             </div>
           ))}
@@ -76,7 +77,7 @@ export default function About() {
           </div>
         </div>{" "}
       </section>
-      <section className=" bg-pivotBlue md:bg-transparent py-[5vh] md:relative">
+      <section className=" bg-pivotBlue md:bg-transparent md:relative">
         {/* DESKTOP BG IMAGE */}
         <Image
           src="/imgs/pivot.png"
@@ -85,7 +86,7 @@ export default function About() {
           height={1698}
           className="w-screen h-auto hidden md:block"
         />{" "}
-        <div className="md:absolute inset-0 flex flex-col md:flex-row justify-center  md:items-center space-y-[8vh] md:space-x-[10vw] p-[5vw] md:p-[10vw]">
+        <div className="md:absolute inset-0 flex flex-col md:flex-row justify-center  md:items-center space-y-[3vh] md:space-x-[10vw] py-[10vh] px-7  md:p-[10vw]">
           {" "}
           <Image
             src="/imgs/pivotMobile.png"
@@ -99,7 +100,7 @@ export default function About() {
             alt="pivot banner"
             width={229}
             height={10}
-            className="w-[30vw] md:w-[20vw] h-auto"
+            className="w-[40vw] md:w-[20vw] h-auto"
           />
           <div className="text-white md:w-[40vw]">
             <div className="text-header3 md:text-header2 pb-[2vh]">
@@ -112,7 +113,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col md:items-center p-[5vh]">
+      <section className="w-full flex flex-col md:items-center p-7">
         <div className="text-header2">{about.aboutText.header2[0]} </div>
         <div className="flex flex-col space-y-[2vw] md:space-y-[0] md:flex-row md:space-x-[2vw] md:pt-[2vh]">
           {about.imgButtons.map((item, index) => (

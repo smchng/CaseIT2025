@@ -42,10 +42,8 @@ export default function Recap2024() {
                 img={re.recapText.positions[index].img}
                 alt={re.recapText.positions[index].alt}
               >
-                <div className="text-red text-header3">
-                  {re.recapText.positions[index].day}
-                </div>
                 <RecapText
+                  subtext={re.recapText.positions[index].day}
                   text={re.recapText.positions[index].desc}
                   title={re.recapText.positions[index].title}
                 />
@@ -61,10 +59,8 @@ export default function Recap2024() {
                 img={re.recapText.positions[index].img}
                 alt={re.recapText.positions[index].alt}
               >
-                <div className="text-red text-header3">
-                  {re.recapText.positions[index].day}
-                </div>
                 <RecapText
+                  subtext={re.recapText.positions[index].day}
                   text={re.recapText.positions[index].desc}
                   title={re.recapText.positions[index].title}
                 />

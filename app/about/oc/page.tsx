@@ -17,13 +17,13 @@ export default function OC() {
       <section>
         <BgImgCenter>
           <div className="text-header1">{oc.ocText.header1}</div>
-          <p className="text-red font-bold pb-[4vh]">
+          <div className="text-red font-bold pb-[4vh]">
             <div className="text-paragraph">{oc.ocText.paragraph}</div>
-          </p>
+          </div>
           <RoundedButton text="Learn More" link="/about" variant="red" />
         </BgImgCenter>
       </section>
-      <section className="md:flex md:flex-col  md:space-y-[20vh]">
+      <section className="flex flex-col space-y-[10vh] md:space-y-[20vh]">
         {oc.ocText.positions.map((item, index) => (
           <div key={index}>
             {index % 2 === 0 ? (

@@ -18,7 +18,7 @@ type sponsorItems = {
 
 export const MobileButtons = ({ text, link }: sponsorItems) => {
   return (
-    <div className="flex flex-col space-y-[5px] ">
+    <div className="flex flex-col space-y-3 ">
       <div className="md:hidden">
         <RoundedButton text={text} link={link || ""} variant="outline" />
       </div>
@@ -29,8 +29,8 @@ export const MobileButtons = ({ text, link }: sponsorItems) => {
 
 export const SponsorText = ({ title, text }: sponsorItems) => {
   return (
-    <div>
-      <div className="text-header2 text-red pb-[5vh] leading-[2.5rem]">
+    <div className="md:pl-10">
+      <div className="text-header3 md:text-header2 text-red leading-[2.5rem]">
         {title}
       </div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
@@ -106,7 +106,7 @@ export const SponsorBanner = ({
           </div>
           <div className="text-header2">{title}</div>
         </div>
-        <div className="text-paragraph">
+        <div className="text-paragraph pb-[5vh]">
           <BoldedText text={text}></BoldedText>
         </div>
 
@@ -129,6 +129,32 @@ export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
       <text className="text-paragraph font-bold pt-[0.463rem] md:text-1">
         {text}
       </text>
+    </div>
+  );
+};
+
+export const SponsorOpCards = ({
+  title,
+  text,
+  subtext,
+  img,
+  alt,
+}: sponsorItems) => {
+  return (
+    <div className="flex flex-col-reverse md:flex-row mx-auto justify-center items-center max-w-[90vw] md:shadow-[0_0_15px_rgba(197,52,52,0.3)] md:max-w-[80vw] md:rounded-[1rem] md:border-2 md:border-redDark md:px-[7vw] py-[15vh] my-[10vh]">
+      <div className="min-w-0 md:min-w-[50%] py-[10%] md:py-0 mx-auto ">
+        <Image
+          src={img || "/svgs/sponsorIcon1.svg"}
+          alt={alt || "Various icons with subheadders"}
+          width={463}
+          height={313}
+        />
+      </div>
+      <div className="md:max-w-[80%] pl-5 mx-auto">
+        <div className="text-header2 text-red pb-2">{title} </div>
+        <div className="text-paragraph font-bold pb-6">{subtext}</div>
+        <div className="text-paragraph">{text}</div>
+      </div>
     </div>
   );
 };

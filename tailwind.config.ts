@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./content/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "/styles/global.css",
   ],
@@ -11,6 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["Switzer", "sans-serif"],
+        acid:["acid", "sans-serif"]
       },
     },
     colors: {

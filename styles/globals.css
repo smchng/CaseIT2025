@@ -60,6 +60,13 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "acid";
+  src: url("/fonts/FFF-AcidGrotesk-Bold-TRIAL.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 .text-header1 {
   @apply font-bold text-4xl;
 }
@@ -76,4 +83,7 @@ body {
 }
 .text-paragraph {
   @apply text-sm;
+}
+.menu-open {
+  @apply scale-95 opacity-30 overflow-y-hidden;
 }

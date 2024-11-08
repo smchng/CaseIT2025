@@ -17,7 +17,7 @@ type recapItems = {
 export const RecapCards = ({ title, subtext, img, alt, link }: recapItems) => {
   return (
     <Link href={link || "dummy"} className="flex flex-col">
-      <div className="rounded-3xl border-redDark shadow-[0_0_15px_rgba(197,52,52,0.3)] focus:border-4 transition-all border-2 p-1">
+      <div className="rounded-2xl border-redDark shadow-[0_0_15px_rgba(197,52,52,0.3)] focus:border-4 transition-all border-2 p-1">
         <div>
           <Image
             src={img || "/imgs/mediaGallery/mediaGallery.png"}

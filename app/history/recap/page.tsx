@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import * as re from "@/content/recap_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
+import { RecapCards, ArrowButton } from "@/components/recapItems";
 import { BgImgCenter } from "@/components/img";
 import { RecapText } from "@/components/text";
 import { RoundedButton } from "@/components/buttons";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 export default function Recap2024() {
   return (
     <div>
-      <section>
+      <section id="recap">
         <BgImgCenter>
           <div className="text-header1 pb-[5vh]">{re.recapText.header1}</div>
           <div className="flex flex-col-reverse md:flex-row justify-center items-center md:space-x-[20px] ">
@@ -74,11 +75,28 @@ export default function Recap2024() {
             )}
           </div>
         ))}
-
-        <div>
-          
+        <div className="flex flex-col mx-auto text-center ">
+          <text className="text-red text-header4">Award</text>
+          <text className="text-header3">CaseIT 2024 Placements</text>
+        </div>
+        <div className="grid  mx-auto min-w-[80%] md:grid-cols-2 2xl:grid-cols-2 gap-[1.644rem]">
+          {re.recapCardText.map((item, index) => (
+            <div key={index}>
+              <RecapCards
+                title={re.recapCardText[index].title}
+                subtext={re.recapCardText[index].subtext}
+                img={re.recapCardText[index].img}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center pb-[15vh]">
+          <ArrowButton
+          link="#recap"
+          />
         </div>
       </section>
+      
     </div>
   );
 }

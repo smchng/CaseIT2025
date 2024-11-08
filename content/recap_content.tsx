@@ -48,3 +48,27 @@ export const recapText = {
     },
   ],
 };
+
+export const recapCardText = [
+  {
+    title: "1st Place",
+    subtext: "HEC Montréal University",
+    img: "/imgs/recapPlacement1.png",
+  },
+  {
+    title: "2nd Place",
+    subtext: "University of Washington",
+    img: "/imgs/recapPlacement2.png",
+  },
+  {
+    title: "3rd Place",
+    subtext: "Ivey School of Business",
+    img: "/imgs/recapPlacement3.png",
+  },
+  {
+    title: "Best Speaker",
+    subtext: "Sherry Yang",
+    img: "/imgs/recapPlacement4.png",
+  },
+  
+];

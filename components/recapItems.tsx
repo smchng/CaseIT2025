@@ -23,21 +23,38 @@ export const RecapCards = ({
 }: recapItems) => {
   return (
     <Link href={link || "dummy"} className="flex flex-col">
-      <div className="rounded-2xl border-[#E7E7E7] focus:border-[#99444B] focus:border-4 hover:shadow-[0_0_15px_rgba(197,52,52,0.3)] transition-all border-2 p-1">
+      <div className="rounded-3xl border-redDark shadow-[0_0_15px_rgba(197,52,52,0.3)] focus:border-4 transition-all border-2 p-1">
         <div>
           <Image
             src={img || "/imgs/mediaGallery/mediaGallery.png"}
-            alt={alt || "Circle of people doing a cheer"}
-            width={472}
-            height={267}
+            alt={alt || "Award winners"}
+            width={513}
+            height={370}
             className="mx-auto w-full rounded-xl border"
           />
         </div>
         <div className="text-center py-4">
-          <div className="text-paragraph font-bold">{title}</div>
-          <div className="text-paragraph text-greyLight ">{subtext}</div>
+          <div className="text-header3 font-bold">{title}</div>
+          <div className="text-header4 font-normal">{subtext}</div>
         </div>
       </div>
     </Link>
+  );
+};
+
+export const ArrowButton = ({ img, alt, link }: recapItems) => {
+  return (
+    <Link href={link || "null"}>
+      <div className="bg-buttonBlack hover:bg-buttonRedDark transition-all p-[28px] rounded-2xl size-[87px]">
+      <Image
+          src={img || "/svgs/arrowButton.svg"}
+          alt={alt || "red button with an arrow pointing up"}
+          width={33.41}
+          height={37.14}
+          className="fill-transparent"
+        />
+      </div>
+        
+    </Link> 
   );
 };

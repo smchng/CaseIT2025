@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { BoldedText } from "./text";
 import Link from "next/link";
 
-type galleryItems = {
+type recapItems = {
   text?: string;
   link?: string;
   title?: string;
@@ -14,13 +14,13 @@ type galleryItems = {
   alt?: string;
 };
 
-export const GalleryCards = ({
+export const RecapCards = ({
   title,
   subtext,
   img,
   alt,
   link,
-}: galleryItems) => {
+}: recapItems) => {
   return (
     <Link href={link || "dummy"} className="flex flex-col">
       <div className="rounded-2xl border-[#E7E7E7] focus:border-[#99444B] focus:border-4 hover:shadow-[0_0_15px_rgba(197,52,52,0.3)] transition-all border-2 p-1">

@@ -98,7 +98,7 @@ export default function CaseIt2025() {
         <CaseItEvent />
       </section>
 
-      <section className="w-screen flex justify-center mt-6 py-[10vh]">
+      <section className="w-full flex justify-center mt-6 py-[10vh]">
         <div className="flex hidden md:flex items-center justify-center gap-4">
           <SquareButton
             variant="black"

@@ -12,8 +12,8 @@ export const CaseItCountdown = () => {
   });
 
   useEffect(() => {
-    // Target date: Jan 9, 2025
-    const targetDate = new Date("2025-04-19T00:00:00").getTime();
+    // Target date set whatever you want
+    const targetDate = new Date("2025-02-16T00:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -45,7 +45,7 @@ export const CaseItCountdown = () => {
       <legend className="uppercase text-redDark text-[1.5rem]">
         CaseIT 2025
       </legend>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-[2.5rem] text-redDark justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-24 text-[2.5rem] text-redDark justify-center">
         <div className="flex flex-col items-center">
           <div className="text-[4rem] lg:text-[8rem] leading-[110%]">{timeLeft.days}</div>
           <div className="text-[24px] font-normal">Days</div>

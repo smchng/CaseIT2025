@@ -4,7 +4,7 @@ import sponsor from "@/public/imgs/2025_sponsor.png";
 import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";
 import Image from "next/image";
-import * as caseitText from "@/content/2025_content";
+import * as thiscontent from "@/content/2025_content";
 import { Stats } from "./2025components/Stats";
 import { CaseItEvent } from "./2025components/CaseItEvent";
 import { CaseItCountdown } from "./2025components/CaseItCountdown";
@@ -20,9 +20,9 @@ export default function CaseIt2025() {
       <section>
         <BgImgCenter>
           <div className="text-header1">
-            {caseitText.caseit2025Text.header1}
+            {thiscontent.caseit2025Text.header1}
           </div>
-            <CaseItCountdown/>
+          <CaseItCountdown />
         </BgImgCenter>
       </section>
 
@@ -36,57 +36,58 @@ export default function CaseIt2025() {
             <Stats title="The suprises" />
             <Stats title="The memories" />
           </div>
-          <p className="max-w-[65ch] md:text-center mt-4 md:mt-8">
-            CaseIT is back and better, stronger, and faster than ever. With our
-            22nd iteration, the Organizing Committee promises a competition full
-            of fun, challenges, leaving you with double the memories! We are
-            excited to welcome top business technology undergraduates and their
-            faculty advisors from around the world to the beautify city of
-            Vancouver from <strong>February 16 to 21, 2025</strong>.
-          </p>
+          {thiscontent.content.section_2_Pargraph}
         </div>
       </section>
       <section className="px-6 md:px-12 lg:px-48">
-        <h2 className="mx-auto w-fit text-[1.125rem] md:text-[1.5rem] font-medium">Competition Information</h2>
+        <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
+          {thiscontent.content.section_3_Title}
+        </h2>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-5 gap-6">
           <div className="group relative md:row-span-2 md:col-span-2 aspect-video md:aspect-[0] ">
-          <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
+            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
             <Image
               src={caseitChair}
               className="brightness-75 hover:brightness-100 duration-300 object-cover object-[0%_20%] md:object-[50%_50%] h-full "
               alt="chair women"
               sizes=""
             />
-            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">Chair's Welcome</h3>
+            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
+              Chair's Welcome
+            </h3>
           </div>
           <div className="relative group md:col-start-3 md:col-span-3 md:aspect-[2]">
-          <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
+            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
             <Image
               src={sponsor}
               className="brightness-75 hover:brightness-100 duration-300 object-cover w-full h-full "
               alt="chair women"
               sizes=""
             />
-             <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">2025 Sponsors</h3>
+            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
+              2025 Sponsors
+            </h3>
           </div>
           <div className=" group relative md:col-start-3 md:col-span-3 md:aspect-[2]">
-          <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
+            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
             <Image
               src={discover}
               className="brightness-75 hover:brightness-100 duration-300 object-cover  w-full h-full "
               alt="chair women"
               sizes=""
             />
-             <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">DiscoverIt</h3>
+            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
+              DiscoverIt
+            </h3>
           </div>
         </div>
       </section>
 
-      
-
       <section className=" mt-24 gap-4 flex flex-col items-center ">
-        <h2 className=" font-semibold text-[2rem]  md:text-[4rem]">Event Schedule</h2>
-        <CaseItEvent/>
+        <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
+          Event Schedule
+        </h2>
+        <CaseItEvent />
       </section>
     </div>
   );

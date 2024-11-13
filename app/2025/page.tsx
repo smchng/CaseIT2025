@@ -5,9 +5,10 @@ import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";
 import Image from "next/image";
 import * as thiscontent from "@/content/2025_content";
-import { Stats } from "./2025components/Stats";
-import { CaseItEvent } from "./2025components/CaseItEvent";
-import { CaseItCountdown } from "./2025components/CaseItCountdown";
+import { Stats } from "../../components/2025components/Stats";
+import { CaseItEvent } from "../../components/2025components/CaseItEvent";
+import { CaseItCountdown } from "../../components/2025components/CaseItCountdown";
+import { ImgButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -18,12 +19,21 @@ export default function CaseIt2025() {
   return (
     <div>
       <section>
-        <BgImgCenter>
-          <div className="text-header1">
-            {thiscontent.caseit2025Text.header1}
+        <section className="relative mb-[10vh] h-[130vh] md:h-[90vh] w-full">
+          <Image
+            src="/imgs/Downtown-Vancouver.png" // Fixed image under the text
+            alt="Downtown Vancouver"
+            className=" object-cover"
+            layout="fill" // Ensures the image fills the container
+            objectFit="cover"
+          />
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center mx-auto max-w-[90vw]">
+            <div className="text-header1 pb-8">
+              {thiscontent.caseit2025Text.header1}
+            </div>
+            <CaseItCountdown />
           </div>
-          <CaseItCountdown />
-        </BgImgCenter>
+        </section>
       </section>
 
       <section className="">

@@ -45,24 +45,44 @@ export const CaseItCountdown = () => {
       <legend className="uppercase text-redDark text-[1.5rem]">
         CaseIT 2025
       </legend>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-24 text-[2.5rem] text-redDark justify-center">
+      <div className="text-[2.5rem] text-redDark justify-center flex flex-col md:flex-row md:space-x-[3vw] xl:space-x-[5vw]">
         <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">{timeLeft.days}</div>
+          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">
+            {timeLeft.days}
+          </div>
           <div className="text-[24px] font-normal">Days</div>
         </div>
-
         <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">{timeLeft.hours}</div>
+          <div className="text-[4rem] lg:text-[8rem] leading-[110%] pb-3 md:pb-0  rotate-90 md:rotate-0">
+            :
+          </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">
+            {timeLeft.hours}
+          </div>
           <div className="text-[24px] font-normal">Hours</div>
         </div>
-
         <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">{timeLeft.minutes}</div>
+          <div className="text-[4rem] lg:text-[8rem] leading-[110%] pb-3 md:pb-0  rotate-90 md:rotate-0">
+            :
+          </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">
+            {timeLeft.minutes}
+          </div>
           <div className="text-[24px] font-normal">Minutes</div>
         </div>
-
         <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">{timeLeft.seconds}</div>
+          <div className="text-[4rem] lg:text-[8rem] leading-[110%] pb-3 md:pb-0 rotate-90 md:rotate-0">
+            :
+          </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="text-[4rem] lg:text-[8rem] leading-[110%] ">
+            {timeLeft.seconds}
+          </div>
           <div className="text-[24px] font-normal">Seconds</div>
         </div>
       </div>

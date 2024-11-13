@@ -29,13 +29,13 @@ export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
         <div className="absolute top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-10"></div>
       </div>
 
-      <Link href={link} className="relative block">
+      <Link href={link} className="relative block ">
         <Image
           src={img || "/svgs/CaseIT_Black.svg"}
           alt={alt || "image description"}
           width={645}
           height={415}
-          className="w-[90vw] md:w-[30vw] h-auto"
+          className="w-[90vw] md:w-[30vw] h-auto brightness-75 hover:brightness-100 duration-300"
         />
         <div className="absolute inset-0 flex items-end pl-5 pb-5 z-10">
           <div className="text-white">

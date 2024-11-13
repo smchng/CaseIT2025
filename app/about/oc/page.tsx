@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function OC() {
   return (
-    <div>
+    <div className="pb-[10vh]">
       <section>
         <BgImgCenter>
           <div className="text-header1">{oc.ocText.header1}</div>

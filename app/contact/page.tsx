@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <div>
+    <div className="pb-[10vh]">
       <section>
         <BgImgCenter>
           <div className="text-header1">{contactText.header1}</div>{" "}
@@ -32,7 +32,7 @@ export default function Contact() {
           </div>
         </BgImgCenter>
       </section>
-      
+
       <section className="hidden md:flex items-center justify-start flex-col ">
         <div className=" min-w-[80vw]">
           <div>
@@ -56,7 +56,11 @@ export default function Contact() {
             </div>
           </div>
           {contactText.faqs.map((faq, index) => (
-            <MobileContactText key={index} question={faq.question} answer={faq.answer} />
+            <MobileContactText
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+            />
           ))}
         </div>
       </section>

@@ -83,12 +83,12 @@ export default function Home() {
             <h3 className="font-bold text-[1.125rem] md:text-[1.75rem] lg:text-[2.5rem]">
               {home.HomeText.large[0]}
             </h3>
-            <p className="mt-4 max-w-[40ch] lg:max-w-[45ch]">
+            <div className="mt-4 max-w-[40ch] lg:max-w-[45ch]">
               <BoldedText text={home.HomeText.paragraph[0]} />
-            </p>
-            <p className="mt-4 max-w-[60ch] lg:max-w-[45ch]">
+            </div>
+            <div className="mt-4 max-w-[60ch] lg:max-w-[45ch]">
               <BoldedText text={home.HomeText.paragraph[1]} />
-            </p>
+            </div>
           </div>
         </div>
       </section>

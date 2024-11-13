@@ -8,7 +8,7 @@ import * as thiscontent from "@/content/2025_content";
 import { Stats } from "../../components/2025components/Stats";
 import { CaseItEvent } from "../../components/2025components/CaseItEvent";
 import { CaseItCountdown } from "../../components/2025components/CaseItCountdown";
-import { ImgButton } from "@/components/buttons";
+import { ImgButton, SquareButton, ArrowButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function CaseIt2025() {
   return (
     <div>
-      <section>
+      <section id="2025">
         <section className="relative mb-[10vh] h-[130vh] md:h-[90vh] w-full">
           <Image
             src="/imgs/Downtown-Vancouver.png" // Fixed image under the text
@@ -35,7 +35,6 @@ export default function CaseIt2025() {
           </div>
         </section>
       </section>
-
       <section className="">
         <div className="flex gap-2 flex-col md:items-center p-8">
           <h2 className="text-redDark font-semibold text-[1.125rem] lg:text-[1.75rem]">
@@ -92,12 +91,37 @@ export default function CaseIt2025() {
           </div>
         </div>
       </section>
-
       <section className=" mt-24 gap-4 flex flex-col items-center ">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
           Event Schedule
         </h2>
         <CaseItEvent />
+      </section>
+
+      <section className="w-screen flex justify-center mt-6 py-[10vh]">
+        <div className="flex hidden md:flex items-center justify-center gap-4">
+          <SquareButton
+            variant="black"
+            text="Rulebook"
+            subtext="Learn about the rules this year."
+            link="/history"
+          />
+          <SquareButton
+            variant="black"
+            text="Competitor Handbook"
+            subtext="Prepare fo the competition."
+            link="/history"
+          />
+          <SquareButton
+            variant="black"
+            text="Livestreams"
+            subtext="Tune into CaseIT signature events."
+            link="/history"
+          />
+        </div>
+        <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
+          <ArrowButton link="#2025" />
+        </section>
       </section>
     </div>
   );

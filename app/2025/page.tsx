@@ -1,6 +1,13 @@
 import { Metadata } from "next";
+import caseitChair from "@/public/imgs/caseitChair.png";
+import sponsor from "@/public/imgs/2025_sponsor.png";
+import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";
-import * as caseitText from "@/content/2025_content";
+import Image from "next/image";
+import * as thiscontent from "@/content/2025_content";
+import { Stats } from "./2025components/Stats";
+import { CaseItEvent } from "./2025components/CaseItEvent";
+import { CaseItCountdown } from "./2025components/CaseItCountdown";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -13,9 +20,74 @@ export default function CaseIt2025() {
       <section>
         <BgImgCenter>
           <div className="text-header1">
-            {caseitText.caseit2025Text.header1}
+            {thiscontent.caseit2025Text.header1}
           </div>
+          <CaseItCountdown />
         </BgImgCenter>
+      </section>
+
+      <section className="">
+        <div className="flex gap-2 flex-col md:items-center p-8">
+          <h2 className="text-redDark font-semibold text-[1.125rem] lg:text-[1.75rem]">
+            22nd iteration
+          </h2>
+          <div className="flex flex-col md:flex-row md:justify-center md:gap-16 lg:gap-24">
+            <Stats title="The engagement" />
+            <Stats title="The suprises" />
+            <Stats title="The memories" />
+          </div>
+          {thiscontent.content.section_2_Pargraph}
+        </div>
+      </section>
+      <section className="px-6 md:px-12 lg:px-48">
+        <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
+          {thiscontent.content.section_3_Title}
+        </h2>
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="group relative md:row-span-2 md:col-span-2 aspect-video md:aspect-[0] ">
+            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
+            <Image
+              src={caseitChair}
+              className="brightness-75 hover:brightness-100 duration-300 object-cover object-[0%_20%] md:object-[50%_50%] h-full "
+              alt="chair women"
+              sizes=""
+            />
+            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
+              Chair's Welcome
+            </h3>
+          </div>
+          <div className="relative group md:col-start-3 md:col-span-3 md:aspect-[2]">
+            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
+            <Image
+              src={sponsor}
+              className="brightness-75 hover:brightness-100 duration-300 object-cover w-full h-full "
+              alt="chair women"
+              sizes=""
+            />
+            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
+              2025 Sponsors
+            </h3>
+          </div>
+          <div className=" group relative md:col-start-3 md:col-span-3 md:aspect-[2]">
+            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
+            <Image
+              src={discover}
+              className="brightness-75 hover:brightness-100 duration-300 object-cover  w-full h-full "
+              alt="chair women"
+              sizes=""
+            />
+            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
+              DiscoverIt
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section className=" mt-24 gap-4 flex flex-col items-center ">
+        <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
+          Event Schedule
+        </h2>
+        <CaseItEvent />
       </section>
     </div>
   );

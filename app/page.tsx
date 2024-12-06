@@ -68,7 +68,7 @@ export default function Home() {
           className="grid grid-cols-2 mt-12 md:mt-4 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto"
         >
           {stats.map((stat, index) => (
-            <StatCard key={index} number={stat.count} label={stat.label} />
+            <StatCard key={index} number={stat.count} label={stat.label} className={index === stats.length - 1 ? 'col-span-2 md:col-span-1' : ''} />
           ))}
         </div>
         <div className="  mt-12 grid grid-cols-1 md:grid-cols-2 border-redDark border-2 rounded-2xl gap-12 p-6 md:p-12 xl:p-20 w-[90%] max-w-[25rem] md:max-w-[1200px] mx-auto drop-shadow-[0_0_15px_rgba(197,52,52,0.25)] bg-white">

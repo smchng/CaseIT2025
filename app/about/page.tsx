@@ -107,9 +107,11 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col md:items-center p-7">
-        <div className="text-header2">{about.aboutText.header2[0]} </div>
-        <div className="flex flex-col space-y-[2vw] md:space-y-[0] md:flex-row md:space-x-[2vw] md:pt-[2vh]">
+      <section className="w-full  flex flex-col items-center p-7">
+        <div className="text-header2 py-[5vh]">
+          {about.aboutText.header2[0]}{" "}
+        </div>
+        <div className="flex flex-col  space-y-[2vw] md:space-y-[0] md:flex-row md:space-x-[2vw] md:pt-[2vh]">
           {about.imgButtons.map((item, index) => (
             <ImgButton
               key={index}

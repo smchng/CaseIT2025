@@ -8,13 +8,13 @@ export const icons = [
     img: "/svgs/target.svg",
     alt: "targent icon",
     title: "Mission",
-    text: "Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. ",
+    text: "Our mission is to provide an unparalleled, rigorous, and engaging competition for talented business students from around the world. Competitors will get the opportunity to showcase their analytics skills and technology expertise, while embarking in countless meaningful connections with the community of passionate individuals. ",
   },
   {
     img: "/svgs/eye.svg",
     alt: "eye icon",
     title: "Vision",
-    text: "Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee. ",
+    text: "Cultivate innovation, collaboration, and growth between competitors and the Organizing Committee.",
   },
 ];
 
@@ -37,7 +37,7 @@ export const aboutText = {
   header2: ["Meet the Team", "About CaseIT", "Our Location rendition"],
   paragraph: [
     "CaseIT brings together top undergraduate students, distinguished faculty members, experienced industry professionals, and a dedicated student body to challenge conventional thinking and offer professional connections to benefit your business career.",
-    "PIVOT is designed with a similar structure to its sister competition, CaseIT, and is tailored to top undergraduates in British Columbia. Built for future leaders.  PIVOT is designed with a similar structure to its sister competition, CaseIT, and is tailored to top undergraduates in British Columbia. Built for future leaders. ",
+    "PIVOT shares a similar structure to its international rendition, CaseIT, and is designed for passionate undergraduate students in British Columbia. Designed to challenge your way of thinking and collaborating, teams will need to leverage their technology and business acumen to tackle real world problems. PIVOT 2025 is integrated into the CaseIT international competition week! Get ready to #experienceIT.",
   ],
   disclaimer:
     " the world map displays all the post-secondary institutions that have participated in CaseIT since it inauguration",

@@ -36,13 +36,15 @@ export const chairContent = {
         leveraging information systems to reshape and challenge the boundaries
         between technology and business. We implore you to explore our financial
         and in-kind related sponsorships to identify the best option that
-        provides your organization with the greatest value.{" "}
+        provides your organization with the greatest value.
       </p>
 
       <p>
         To learn more about our upcoming opportunities for the year, please
-        contact us at caseit@sfu.ca
+        contact us at caseit@sfu.ca or visit our website
+        https://www.caseit.org/.
       </p>
+
       <p>Sincerly,</p>
     </>
   ),

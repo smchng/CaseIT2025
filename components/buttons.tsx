@@ -22,24 +22,24 @@ type SquareButtonProps = ButtonProps & {
 
 export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
   return (
-    <div className="relative group">
+    <div className="relative">
       {/* Top line */}
 
-      <div className="absolute top-0 left-0 right-0 h-8 z-10 overflow-hidden">
-        <div className="absolute top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-10"></div>
-      </div>
-
-      <Link href={link} className="relative block ">
+      <Link
+        href={link}
+        className="relative block group focus:shadow-[0_0_15px_rgba(197,52,52,0.8)] focus:outline-red focus:outline focus:outline-[2px] focus:rounded-xl"
+      >
         <Image
           src={img || "/svgs/CaseIT_Black.svg"}
           alt={alt || "image description"}
           width={645}
           height={415}
-          className="w-[90vw] md:w-[30vw] h-auto brightness-75 hover:brightness-100 duration-300"
+          className="w-[80vw] md:w-[50vw] lg:w-[30vw] h-auto brightness-75 group-hover:brightness-100 duration-300 xl:rounded-2xl rounded-xl group-hover:outline group-hover:outline-[4px] group-hover:outline-red"
         />
+
         <div className="absolute inset-0 flex items-end pl-5 pb-5 z-10">
           <div className="text-white">
-            <p className="font-bold text-2xs sm:text-lg ">{text}</p>
+            <p className="font-bold text-2xs sm:text-lg">{text}</p>
           </div>
         </div>
       </Link>

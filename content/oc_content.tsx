@@ -24,7 +24,7 @@ export const ocText = {
       title: "Competition Execution",
       desc: "The Competition Executive team is the driving force behind a seamless execution of CaseIT. With their commitment to excellence, they ensure every event runs smoothly and efficiently.",
       names:
-        "Left to right: Crystal Wen, Alex Ileto, Dasom Kim, Jarl Arciaga, Helen Chen, Yosei Ishida, Reina Castaneda, Praveeni Balaji, Jennif Berlian. Missing: Jessica La Grange",
+        "Left to right: Crystal Wen, Alexandra Ileto, Dasom Kim, Jarl Arciaga, Helen Chen, Yosei Ishida, Reina Castaneda, Praveeni Balaji, Jennif Berlian. Missing: Jessica La Grange",
       img: "/imgs/oc/compex.jpg",
       img2: "/imgs/oc/compex_silly.png",
       alt: "faculty advisors img",

@@ -5,6 +5,7 @@ import { RoundedButton } from "@/components/buttons";
 import * as oc from "@/content/oc_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
 import { OCText } from "@/components/text";
+import groupPic from "@/public/imgs/oc/oc.jpg";
 
 export const metadata: Metadata = {
   title: "OC Team",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function OC() {
   return (
-    <div className="pb-[10vh]">
+    <div>
       <section>
         <BgImgCenter>
           <div className="text-header1">{oc.ocText.header1}</div>
@@ -23,6 +24,15 @@ export default function OC() {
           <RoundedButton text="Learn More" link="/about" variant="red" />
         </BgImgCenter>
       </section>
+      <div className="py-[10vh] justify-center items-center flex w-full">
+        <Image
+          src={groupPic}
+          alt="CaseIT OC Group Pic"
+          width={1002}
+          height={503}
+          className="w-[90vw] xl:w-[60vw] h-auto xl:rounded-2xl rounded-xl"
+        />
+      </div>
       <section className="flex flex-col space-y-[10vh] md:space-y-[20vh]">
         {oc.ocText.positions.map((item, index) => (
           <div key={index}>

@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div>
-      <section className="py-[20vh]">
+    <div className="py-[10vh]">
+      <section className="pb-[20vh]">
         <div className="md:flex md:space-x-[2vw] xl:space-x-[5vw]">
           <ImgRibbonLeft img="/imgs/about.png" alt="team candid">
             <div className="text-header2">{about.aboutText.header2[1]}</div>
@@ -67,7 +67,7 @@ export default function About() {
             alt="map of schools"
             width={1536}
             height={892}
-            className="max-w-[80vw] h-auto mx-auto"
+            className="md:max-w-[80vw] max-w-[90vw] h-auto mx-auto"
           />
         </div>{" "}
       </section>
@@ -94,7 +94,7 @@ export default function About() {
             alt="pivot banner"
             width={229}
             height={10}
-            className="w-[40vw] md:w-[20vw] h-auto"
+            className="w-[40vw] pb-10 md:w-[20vw] h-auto"
           />
           <div className="text-white md:w-[40vw]">
             <div className="text-header3 md:text-header2 pb-[2vh]">

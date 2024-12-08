@@ -10,13 +10,50 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
       animation: {
         marquee: 'marquee 25s linear infinite',
+        "nav1-open": "nav1_open 0.3s ease-in-out forwards  ",
+        "nav1-close": "nav1_close 0.3s ease-in-out forwards   ",
+        "nav2-open": "nav2_open 0.3s ease-in-out forwards  ",
+        "nav2-close": "nav2_close 0.3s ease-in-out forwards   ",
+        "nav3-open": "nav3_open 0.3s ease-in-out forwards  ",
+        "nav3-close": "nav3_close 0.3s ease-in-out forwards  ",
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' },
+        },
+        nav1_open:{
+          '50%': {transform: 'translate(0px,10px)'},
+          '100%': {transform: 'translate(0px,10px) rotate(45deg)'},
+        },
+        nav1_close:{
+          '0%': {transform: 'translate(0px,10px) rotate(45deg)'},
+          '70%': {transform: 'translate(0px,10px) rotate(0deg)'},
+          '100%': {transform: 'translate(0px,0px) rotate(0deg)'},
+        },
+
+        nav2_open:{
+          '0%': {opacity: '1'},
+          '100%': {opacity: '0'},
+        },
+        nav2_close:{
+          '0%': {opacity: '0'},
+          '60%': {opacity: '0'},
+          '70%': {opacity: '1'},
+
+        },
+
+        nav3_open:{
+          '50%': {transform: 'translate(0px,-10px)'},
+          '100%': {transform: 'translate(0px,-10px) rotate(-45deg)'},
+        },
+        nav3_close:{
+          '0%': {transform: 'translate(0px,-10px) rotate(-45deg)'},
+          '70%': {transform: 'translate(0px,-10px) rotate(0deg)'},
+          '100%': {transform: 'translate(0px,0px) rotate(0deg)'},
         }
       },
       fontFamily: {

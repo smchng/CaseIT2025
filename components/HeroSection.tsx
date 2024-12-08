@@ -45,8 +45,8 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="w-screen ">
-    <div className="flex md:hidden w-full">
+    <section className="flex w-full h-full">
+    <div className="flex md:hidden w-full  items-center justify-center ">
       <Image src={mobilehero} className="w-full" alt="hero"/>
     </div>
     <div className="hidden md:grid grid-cols-[repeat(50,_2%)] grid-rows-[repeat(50,_2%)] w-full h-screen opacity-30 grayscale">

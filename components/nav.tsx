@@ -86,17 +86,30 @@ export const NavBar = () => {
         className={`
     ${scrollingDown && lastScrollTop > 50 && "translate-y-[-100%]"}
     ${lastScrollTop === 0 ? "bg-white/0" : "bg-white"}
-    transition-all flex justify-between  w-full py-3 md:py-5 top-0 z-[50] fixed px-[5vw] drop-shadow-lg`}
+    transition-all flex justify-between  w-full py-4 md:py-5 top-0 z-[50] fixed px-[5vw] drop-shadow-lg`}
       >
         <a href="/" className=" block w-24 lg:w-32">
           <CaseitLogoBlack />
         </a>
-        <div
+        {/* <div
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden text-black size-8 z-50"
         >
           {svgIcons["hamburger"]}{" "}
-        </div>
+        </div> */}
+        <button  onClick={() => setIsOpen(!isOpen)} className="md:hidden relative w-8 h-6 z-50">
+          <div className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute top-0
+            transition-all duration-500  ${isOpen ? "animate-nav1-open": "animate-nav1-close"}
+            `}>
+           
+          </div>
+          <div className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute top-[11px]
+            transition-all duration-500 ${isOpen ? "animate-nav2-open": "animate-nav2-close"}
+            `}></div>
+          <div className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute bottom-0
+            transition-all duration-500 ${isOpen ? "animate-nav3-open": "animate-nav3-close"}
+            `}></div>
+        </button>
 
         {/* MOBILE NAV */}
         <div

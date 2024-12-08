@@ -37,7 +37,7 @@ export default function History() {
         </div>
       </section>
 
-      <section className="w-full flex flex-col items-center py-[8vh]">
+      <section className="w-full flex flex-col items-center p-7">
         <div className="text-header4 pb-3 md:text-header2">
           {history.historyText.header2}
         </div>

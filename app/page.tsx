@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className=" relative overflow-hidden h-screen mb-[20vh]">
+      <div className=" relative overflow-hidden h-screen md:mb-[20vh]">
         <HeroSection />
         <div className="absolute top-0 left-1/2 -translate-x-1/2">
           <div className="w-full h-screen items-center justify-center flex ">
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative overflow-hidden py-[20vh]">
+      <section className="relative overflow-hidden md:py-[25vh]">
         <div className="absolute inset-0 -z-10 flex items-center justify-center">
           <Image
             src="/svgs/globe.svg"
@@ -65,10 +65,17 @@ export default function Home() {
         </div>
         <div
           ref={sectionRef}
-          className="grid grid-cols-2 mt-12 md:mt-4 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto"
+          className="grid grid-cols-2 mb-20 mt-12 md:mt-4 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto"
         >
           {stats.map((stat, index) => (
-            <StatCard key={index} number={stat.count} label={stat.label} className={index === stats.length - 1 ? 'col-span-2 md:col-span-1' : ''} />
+            <StatCard
+              key={index}
+              number={stat.count}
+              label={stat.label}
+              className={
+                index === stats.length - 1 ? "col-span-2 md:col-span-1" : ""
+              }
+            />
           ))}
         </div>
         <div className="  mt-12 grid grid-cols-1 md:grid-cols-2 border-redDark border-2 rounded-2xl gap-12 p-6 md:p-12 xl:p-20 w-[90%] max-w-[25rem] md:max-w-[1200px] mx-auto drop-shadow-[0_0_15px_rgba(197,52,52,0.25)] bg-white">

@@ -23,9 +23,9 @@ export const ocText = {
       title: "Competition Execution",
       desc: "The Competition Executive team is the driving force behind a seamless execution of CaseIT. With their commitment to excellence, they ensure every event runs smoothly and efficiently.",
       names:
-        "Left to right: Crystal, Alex, Dasom, Jarl, BLANK, Yosei, Reina, Praveeni, Jennif",
+        "Left to right: Crystal, Alexandra, Dasom, Jarl, BLANK, Yosei, Reina, Praveeni, Jennif",
       img: "/imgs/oc/compex.jpg",
-      img2: "/imgs/oc/compex_silly.jpg",
+      img2: "/imgs/oc/compex_silly.png",
       alt: "faculty advisors img",
     },
     {

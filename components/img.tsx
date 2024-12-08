@@ -86,11 +86,11 @@ export const IconImg = ({
         alt={alt || "img description"}
         width={175}
         height={175}
-        className={`${stylingClasses} w-[30vw] md:w-[10vw] h-auto`} // Change from w-70 to w-[70vw]
+        className={`${stylingClasses} w-[8rem] md:w-[10vw] h-auto`} // Change from w-70 to w-[70vw]
       />
       <div>
         <div className="text-header2 md:text-header4 text-red"> {title} </div>
-        <p>{text}</p>
+        <p className="md:max-w-[30vw]">{text}</p>
       </div>
     </div>
   );

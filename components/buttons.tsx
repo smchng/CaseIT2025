@@ -34,12 +34,12 @@ export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
           alt={alt || "image description"}
           width={645}
           height={415}
-          className="w-[80vw] md:w-[50vw] lg:w-[30vw] h-auto brightness-75 group-hover:brightness-100 duration-300 xl:rounded-2xl rounded-xl group-hover:outline group-hover:outline-[4px] group-hover:outline-red"
+          className="w-[90vw] md:w-[50vw] lg:w-[40vw] xl:w-[30vw] h-auto brightness-75 group-hover:brightness-100 duration-300 xl:rounded-2xl rounded-xl group-hover:outline group-hover:outline-[4px] group-hover:outline-red"
         />
 
-        <div className="absolute inset-0 flex items-end pl-5 pb-5 z-10">
+        <div className="absolute inset-0 flex items-end pl-5 pb-5 z-10 max-w-[95%]">
           <div className="text-white">
-            <p className="font-bold text-base sm:text-lg">{text}</p>
+            <p className="font-bold text-base sm:text-lg ">{text}</p>
           </div>
         </div>
       </Link>

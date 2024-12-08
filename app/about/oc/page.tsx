@@ -14,14 +14,13 @@ export const metadata: Metadata = {
 
 export default function OC() {
   return (
-    <div>
+    <div className="pb-[10vh]">
       <section>
         <BgImgCenter>
           <div className="text-header1">{oc.ocText.header1}</div>
           <div className="text-red font-bold pb-[4vh]">
             <div className="text-paragraph">{oc.ocText.paragraph}</div>
           </div>
-          <RoundedButton text="Learn More" link="/about" variant="red" />
         </BgImgCenter>
       </section>
       <div className="py-[10vh] justify-center items-center flex w-full">
@@ -39,6 +38,7 @@ export default function OC() {
             {index % 2 === 0 ? (
               <ImgRibbonRight
                 img={oc.ocText.positions[index].img}
+                hoverImg={oc.ocText.positions[index].img2}
                 alt={oc.ocText.positions[index].alt}
               >
                 <OCText
@@ -50,6 +50,7 @@ export default function OC() {
             ) : (
               <ImgRibbonLeft
                 img={oc.ocText.positions[index].img}
+                hoverImg={oc.ocText.positions[index].img2}
                 alt={oc.ocText.positions[index].alt}
               >
                 <OCText

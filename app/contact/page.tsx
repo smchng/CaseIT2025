@@ -17,18 +17,16 @@ export default function Contact() {
         <BgImgCenter>
           <div className="text-header1">{contactText.header1}</div>{" "}
           <div className="py-[3vh]">
-            <div className="bg-white">
-              <div className=" text-center max-w-[80vw] md:max-w-[45vw] border rounded-xl pt-[3vw] border-redDark">
-                <div className="text-header3 text-red">
-                  {contactText.header3Red}
-                </div>
-                <p className="pb-[2vh] px-[5vw]">{contactText.paragraph}</p>
-                <hr className="border-redDark" />
-                <div className="py-[2vw] font-bold text-paragraph md:text-[18px]">
-                  <Link href="mailto:caseit@sfu.ca">{contactText.email}</Link>
-                </div>
+            <div className="bg-white text-center max-w-[80vw] md:max-w-[45vw] border rounded-xl pt-[3vw] border-redDark">
+              <div className="text-header3 text-red">
+                {contactText.header3Red}
               </div>
-            </div>{" "}
+              <p className="pb-[2vh] px-[5vw]">{contactText.paragraph}</p>
+              <hr className="border-redDark" />
+              <div className="py-[2vw] font-bold text-paragraph md:text-[18px]">
+                <Link href="mailto:caseit@sfu.ca">{contactText.email}</Link>
+              </div>
+            </div>
           </div>
         </BgImgCenter>
       </section>

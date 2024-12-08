@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 // import images here, also makes it easier for the next Image component
 import ph from "@/public/imgs/CaseIT_On3.png";
 import img1 from "@/public/imgs/CaseIT_On3.png";
-import img2 from "@/public/imgs/caseitChair.png";
+import img2 from "@/public/imgs/caseitChair.jpg";
 import img3 from "@/public/imgs/about.png";
 
 export const historyText = {

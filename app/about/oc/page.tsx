@@ -36,18 +36,6 @@ export default function OC() {
         {oc.ocText.positions.map((item, index) => (
           <div key={index}>
             {index % 2 === 0 ? (
-              <ImgRibbonRight
-                img={oc.ocText.positions[index].img}
-                hoverImg={oc.ocText.positions[index].img2}
-                alt={oc.ocText.positions[index].alt}
-              >
-                <OCText
-                  text={oc.ocText.positions[index].desc}
-                  title={oc.ocText.positions[index].title}
-                  subtext={oc.ocText.positions[index].names}
-                />
-              </ImgRibbonRight>
-            ) : (
               <ImgRibbonLeft
                 img={oc.ocText.positions[index].img}
                 hoverImg={oc.ocText.positions[index].img2}
@@ -59,6 +47,18 @@ export default function OC() {
                   subtext={oc.ocText.positions[index].names}
                 />
               </ImgRibbonLeft>
+            ) : (
+              <ImgRibbonRight
+                img={oc.ocText.positions[index].img}
+                hoverImg={oc.ocText.positions[index].img2}
+                alt={oc.ocText.positions[index].alt}
+              >
+                <OCText
+                  text={oc.ocText.positions[index].desc}
+                  title={oc.ocText.positions[index].title}
+                  subtext={oc.ocText.positions[index].names}
+                />
+              </ImgRibbonRight>
             )}
           </div>
         ))}

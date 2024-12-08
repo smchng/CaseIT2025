@@ -9,22 +9,22 @@ export const contactText = {
     {
       question: "How do I join the CaseIT Team?",
       answer:
-        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
+        "CaseIT team applications open in September, so keep a look out to see how you can be a part of the CaseIT Organizing Committee.",
     },
     {
       question: "I am a student, how can I compete in CaseIT 2024?",
       answer:
-        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
+        "If you are a student interested in competing at CaseIT, please have a faculty representative contact us to express your school’s interest and complete the application.",
     },
     {
       question: "My school applied, now what?",
       answer:
-        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
+        "Awesome! Applications will be reviewed and you will receive notification of your acceptance. Next steps will be provided and eligible fees and information will be sent periodically.",
     },
     {
       question: "How long is the CaseIT competition week?",
       answer:
-        "The Operations portfolio oversees the daily activities of CaseIT such as securing sponsorships, strengthening the internal team culture, budgeting, and managing university relations.",
+        "CaseIT 2024 will be a 6 day competition week from February 16, 2025 to February 21, 2025!",
     },
   ],
 };

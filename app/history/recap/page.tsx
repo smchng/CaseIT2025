@@ -5,7 +5,7 @@ import { RecapCards } from "@/components/recapItems";
 import { BgImgCenter } from "@/components/img";
 import { RecapText } from "@/components/text";
 import { RoundedButton, ArrowButton } from "@/components/buttons";
-
+import banner from "@/public/imgs/banners/recap_banner.png";
 export const metadata: Metadata = {
   title: "2024 Recap",
   description: "Learn more about our company and team.",
@@ -15,7 +15,7 @@ export default function Recap2024() {
   return (
     <div>
       <section id="recap">
-        <BgImgCenter>
+        <BgImgCenter img={banner}>
           <div className="text-header1 pb-[5vh]">{re.recapText.header1}</div>
           <div className="flex flex-col-reverse md:flex-row justify-center items-center md:space-x-[20px] ">
             <div>

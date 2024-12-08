@@ -9,9 +9,10 @@ import { Stats } from "../../components/2025components/Stats";
 import { CaseItEvent } from "../../components/2025components/CaseItEvent";
 import { CaseItCountdown } from "../../components/2025components/CaseItCountdown";
 import { ImgButton, SquareButton, ArrowButton } from "@/components/buttons";
+import banner from "@/public/imgs/banners/2025_banner.png";
 
 export const metadata: Metadata = {
-  title: "Media Gallery",
+  title: "CaseIT 2025",
   description: "Learn more about our company and team.",
 };
 
@@ -19,21 +20,12 @@ export default function CaseIt2025() {
   return (
     <div>
       <section id="2025">
-        <section className="relative mb-[10vh] h-[130vh] md:h-[90vh] w-full">
-          <Image
-            src="/imgs/Downtown-Vancouver.png" // Fixed image under the text
-            alt="Downtown Vancouver"
-            className=" object-cover"
-            layout="fill" // Ensures the image fills the container
-            objectFit="cover"
-          />
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center mx-auto max-w-[90vw]">
-            <div className="text-header1 pb-8">
-              {thiscontent.caseit2025Text.header1}
-            </div>
-            <CaseItCountdown />
+        <BgImgCenter img={banner}>
+          <div className="text-header1 pb-8">
+            {thiscontent.caseit2025Text.header1}
           </div>
-        </section>
+          <CaseItCountdown />
+        </BgImgCenter>
       </section>
       <section className="">
         <div className="flex gap-2 flex-col md:items-center p-8">

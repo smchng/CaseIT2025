@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type imgItems = {
-  img?: string;
+  img?: string | StaticImageData;
   stylingClasses?: string;
   alt?: string;
   title?: string;
@@ -10,11 +10,11 @@ type imgItems = {
   children?: React.ReactNode;
 };
 
-export const BgImgCenter = ({ children }: imgItems) => {
+export const BgImgCenter = ({ img, children }: imgItems) => {
   return (
-    <section className="relative mb-[10vh] h-[90vh] w-full">
+    <section className="relative mb-[10vh] h-screen w-full">
       <Image
-        src="/imgs/Downtown-Vancouver.png" // Fixed image under the text
+        src={img || "/imgs/Downtown-Vancouver.png"}
         alt="Downtown Vancouver"
         className=" object-cover"
         layout="fill" // Ensures the image fills the container
@@ -28,9 +28,9 @@ export const BgImgCenter = ({ children }: imgItems) => {
 };
 export const BgImgLeft = ({ children }: imgItems) => {
   return (
-    <section className="relative mb-[10vh]  h-[90vh] w-full">
+    <section className="relative mb-[10vh]  h-screen w-full">
       <Image
-        src="/imgs/Downtown-Vancouver.png" // Fixed image under the text
+        src="/imgs/banners/sponsor_banner.png" // Fixed image under the text
         alt="Downtown Vancouver"
         className=" object-cover"
         layout="fill" // Ensures the image fills the container

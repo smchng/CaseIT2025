@@ -2,60 +2,40 @@ export const NavLinks = [
   {
     ref: "/about",
     name: "About",
-    sublinks:[
-      {name:"About CaseIT",
-        ref: "/about"
-      },
-      {name:"2025 Organizing Committee",
-        ref: "/about/oc"
-      },
-      {name:"Get Involved",
-        ref: "placeholder"
-      },
-    ]
+    sublinks: [
+      { name: "About CaseIT", ref: "/about" },
+      { name: "2025 Organizing Committee", ref: "/about/oc" },
+      { name: "Get Involved", ref: "/2025/Get-Involved" },
+    ],
   },
   {
     ref: "/sponsor/Sponsor-Overview",
     name: "Sponsorship",
-    sublinks:[
-      {name:"Overview",
-        ref: "/sponsor/Sponsor-Overview"
+    sublinks: [
+      { name: "Overview", ref: "/sponsor/Sponsor-Overview" },
+      {
+        name: "Sponsorship Opportunities",
+        ref: "/sponsor/Sponsorship-Opportunities",
       },
-      {name:"Sponsorship Opportunities",
-        ref: "/sponsor/Sponsorship-Opportunities"
-      },
-    ]
+    ],
   },
   {
     ref: "/2025",
     name: "CaseIT 2025",
-    sublinks:[
-      {name:"2025",
-        ref: "/2025"
-      },
-      {name:"Chair's Welcome",
-        ref: "/2025/chair"
-      },
-      {name:"2025 Sponsors",
-        ref: "/2025/Sponsor-Showcase"
-      },
-    ]
+    sublinks: [
+      { name: "2025", ref: "/2025" },
+      { name: "Chair's Welcome", ref: "/2025/chair" },
+      { name: "2025 Sponsors", ref: "/2025/Sponsor-Showcase" },
+    ],
   },
   {
     ref: "/history",
     name: "History",
-    sublinks:[
-      {name:"Last Year",
-        ref: "/history/recap"
-      },
-      {name:"Timeline",
-        ref: "/history"
-      },
-      {name:"Media Gallery",
-        ref: "/history/media"
-      },
-  ]
-
+    sublinks: [
+      { name: "Last Year", ref: "/history/recap" },
+      { name: "Timeline", ref: "/history" },
+      { name: "Media Gallery", ref: "/history/media" },
+    ],
   },
   {
     ref: "/contact",
@@ -64,6 +44,7 @@ export const NavLinks = [
   {
     ref: "https://pivot.caseit.org/",
     name: "PIVOT",
-    className:"bg-pivotBlue text-white px-6 py-1 rounded-full hover:text-white hover:bg-pivotBlueDark cursor-pointer "
+    className:
+      "bg-pivotBlue text-white px-6 py-1 rounded-full hover:text-white hover:bg-pivotBlueDark cursor-pointer ",
   },
 ];

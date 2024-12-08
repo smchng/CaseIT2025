@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="py-[10vh]">
+    <div className="md:py-[20vh] py-[10vh]">
       <section className="pb-[20vh]">
         <div className="md:flex md:space-x-[2vw] xl:space-x-[5vw]">
           <ImgRibbonLeft img="/imgs/about.png" alt="team candid">

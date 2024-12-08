@@ -31,7 +31,7 @@ export default function About() {
           </ImgRibbonLeft>
         </div>
       </section>
-      <section className="md:flex md:space-x-[5vw] bg-greyDark  p-7 space-y-[15vh] md:space-y-0">
+      <section className="md:flex md:space-x-[5vw] bg-greyDark  justify-center p-7 space-y-[15vh] md:space-y-0">
         {about.icons.map((item, index) => (
           <IconImg
             key={index}

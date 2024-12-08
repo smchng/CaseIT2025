@@ -90,7 +90,7 @@ export const IconImg = ({
       />
       <div>
         <div className="text-header2 md:text-header4 text-red"> {title} </div>
-        <p className="md:max-w-[30vw]">{text}</p>
+        <p className="md:max-w-[30vw] xl:max-w-[25vw]">{text}</p>
       </div>
     </div>
   );

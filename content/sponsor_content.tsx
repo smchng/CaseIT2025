@@ -25,7 +25,7 @@ export const sponsorShowcaseText = {
 export const sponsorOverviewText = {
   header2: "Sponsoring CaseIT 2025",
   subtext: "Overview",
-  desc: "Started in 2004, CaseIT is back and better, stronger, and faster than ever. With our 22nd iteration, the Organizing Committee promises a competition full of fun, challenges, leaving you with double the memories! We are excited to welcome top business technology undergraduates and their faculty advisors from around the world to the beautify city of Vancouver from \bFebruary 16 to 21, 2025. ",
+  desc: "Through the generosity, support, and involvement of our corporate partners, CaseIT is proud to foster meaningful connections within the business and technology industry. Are you looking to become involved as a sponsor? Learn more about our sponsorship opportunities for our 22nd iteration.",
   sectionTitle: [{ title: "Why Sponsor CaseIT?" }],
   ribbons: [
     {
@@ -90,64 +90,79 @@ export const sponsorTileContent = {
   sectionTitle: [{ title: "Our Past Sponsors" }],
   sponsors: [
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/sponsorTile.png",
       alt: "White circle with sponsor logo",
       text: "Title Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/beedie.png",
       alt: "White circle with sponsor logo",
       text: "Title Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/CIO.png",
       alt: "White circle with sponsor logo",
       text: "Title Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/Microsoft.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "Tech Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/Slalom.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "Silver Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/Evo.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "In-Kind Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/StevesPoke.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "In-Kind Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/BookStore.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "In-Kind Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/BonMacaron.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "In-Kind Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/BethAndOlivia.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "In-Kind Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/SugarPlumPaper.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "In-Kind Sponsor",
     },
     {
-      img: "/imgs/sponsorTile.png",
+      img: "/imgs/sponsors/Sponsor.png",
       alt: "White circle with sponsor logo",
-      text: "Title Sponsor",
+      text: "In-Kind Sponsor",
+    },
+    {
+      img: "/imgs/sponsors/GoodBowl.png",
+      alt: "White circle with sponsor logo",
+      text: "In-Kind Sponsor",
+    },
+    {
+      img: "/imgs/sponsors/NorthernBars.png",
+      alt: "White circle with sponsor logo",
+      text: "In-Kind Sponsor",
+    },
+    {
+      img: "/imgs/sponsors/PromoSapien.png",
+      alt: "White circle with sponsor logo",
+      text: "In-Kind Sponsor",
     },
   ],
 };

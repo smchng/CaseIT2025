@@ -51,7 +51,7 @@ export const sponsorOverviewText = {
 export const sponsorOppsText = {
   header2: "Sponsoring Opportunities",
   subtext: "Sponsorship Opportunities",
-  desc: "Here are some special moments that we want to share with you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+  desc: "CaseIT 2025 invites our corporate partners to contribute to years of academic excellence. In collaboration, we aim to foster meaningful connections, provide industry expertise, and enable professional growth amongst our rising leaders in business and technology.",
 };
 export const buttonText = {
   showcase: [
@@ -157,15 +157,15 @@ export const sponsorOpportunitiesContent = {
     {
       title: "Financial Sponsorship",
       img: "/svgs/sponsorIcon1.svg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      text: "Our tiers are designed to offer a diverse range of touch points with competitors, faculty advisors, the CaseIT Organizing Committee, and industry professionals. \nBased on your sponsorship tier, your organization will be featured in one or more of our Signature Events, such as the Welcome Ceremony, Sponsor Networking Event, and Award Banquet. You will also have the opportunity to invite representatives as industry judges for our Preliminary, Wildcard, or Final Presentations. Join us for an exciting and impactful experience! \n",
       alt: "Various icons with subheadders",
       subtext:
-        "We invite your organization to choose from four distinct value. Tiers to provide financial aid to our competition: ",
+        "We invite your organization to choose from four distinct value. Tiers to provide financial aid to our competition:",
     },
     {
       title: "Technology Sponsorship",
       img: "/svgs/sponsorIcon2.svg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      text: ["Technology sponsors will be featured on the CaseIT website, social media, event program, and other relevant materials. You will also receive a tailored resume book showcasing all competitors and the CaseIT Organizing Committee, plus an exclusive initiation to our Awards Banquet."],
       alt: "Various icons with subheadders",
       subtext:
         "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",
@@ -173,7 +173,7 @@ export const sponsorOpportunitiesContent = {
     {
       title: "In-kind Sponsorship",
       img: "/svgs/sponsorIcon3.svg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      text: "In-kind sponsors will have their name and hyperlink displayed on our website, a feature in our event program, and countless uses of their in-kind product throughout the competition week.",
       alt: "Various icons with subheadders",
       subtext:
         "CaseIT 2024 warmly welcomes in-kind contributions offered by esteemed corporate partners to enrich our competition. These items include, but are not limited to:",

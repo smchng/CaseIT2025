@@ -14,7 +14,7 @@ export const BgImgCenter = ({ img, children }: imgItems) => {
   return (
     <section className="relative mb-[10vh] h-screen w-full">
       <Image
-        src={img || "/imgs/Downtown-Vancouver.png"}
+        src={img || "/imgs/banners/Downtown-Vancouver.png"}
         alt="Downtown Vancouver"
         className=" object-cover"
         layout="fill" // Ensures the image fills the container

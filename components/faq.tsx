@@ -45,7 +45,7 @@ export const FAQ = ({ question, answer }: textItems) => {
 
       <div
         className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
-          isToggleOpen ? "max-h-[300px] py-2" : "max-h-0 py-0"
+          isToggleOpen ? "max-h-[300px] " : "max-h-0 "
         }`}
       >
         <p className="font-normal text-left py-4 max-w-[80vw]">{answer}</p>

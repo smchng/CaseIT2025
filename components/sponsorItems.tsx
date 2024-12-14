@@ -2,7 +2,7 @@
 import { RoundedButton } from "@/components/buttons";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { BoldedText } from "./text";
+import { BoldedText, NewLineText, NewLineText2 } from "./text";
 import Link from "next/link";
 
 type sponsorItems = {
@@ -34,7 +34,7 @@ export const SponsorText = ({ title, text }: sponsorItems) => {
         {title}
       </div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
-        <div className="text-paragraph">{text}</div>
+        <div className="text-paragraph pt-[2vh]"><NewLineText2>{text}</NewLineText2></div>
       </div>
     </div>
   );

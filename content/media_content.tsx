@@ -1,7 +1,7 @@
 export const mediaText = {
   header1: "Media Gallery",
   paragraph:
-    "Here are some special moments that we want to share with you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    "Relive the best moments from 21 years of innovation, collaboration, and championship - all happened in the beautiful city of Vancouver, BC. ",
 };
 
 export const buttonText = [

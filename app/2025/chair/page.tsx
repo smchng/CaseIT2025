@@ -4,6 +4,7 @@ import chair from "@/public/imgs/caseitChair.jpg";
 import signature from "@/public/imgs/chairSignature.png";
 import * as chairs from "@/content/chair_content";
 import { RoundedButton } from "@/components/buttons";
+import { NewLineText } from "@/components/text";
 
 export const metadata: Metadata = {
   title: "Chair's Welcome",
@@ -13,31 +14,27 @@ export const metadata: Metadata = {
 
 export default function Chair() {
   return (
-    <main className="  p-4 md:px-16 lg:px-32 pt-36">
-      {" "}
-      <h2 className="font-semibold text-header2 md:hidden mb-8">
+    <main className="p-4 md:px-16 pt-36 mx-auto max-w-[1536px] overflow-hidden">
+      <h2 className="font-semibold text-4xl lg:text-[4rem] tracking-tight leading-none mb-16">
         {chairs.chairText.header}
       </h2>
-      <div className=" grid grid-cols-1 md:grid-cols-2 gap-14 ">
-        <div>
-          {" "}
-          <h2 className="font-semibold text-header2 hidden md:block mb-8">
-            {chairs.chairText.header}
-          </h2>
-          <div className="flex flex-col gap-8 text-pretty max-w-[58ch]">
-            {chairs.chairContent.paragraph}
-          </div>{" "}
+
+      <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 gap-y-[5vw] lg:gap-x-[5vw] ">
+        <div className="flex flex-col gap-8 text-pretty md:col-start-1 md:col-span-2">
+          {chairs.chairContent.paragraph}
+          <div className="flex flex-col gap-8 text-pretty md:max-w-[58ch]">
+            <Image className=" w-48" src={signature} alt="chiar signature" />
+            {chairs.chairContent.signature}
+          </div>
         </div>
-        <div className="flex flex-col gap-8 text-pretty max-w-[58ch]">
-          <Image className=" w-48" src={signature} alt="chiar signature" />
-          {chairs.chairContent.signature}
-        </div>
+
         <Image
-          className=" w-full md:h-1/2 xl:h-full object-cover row-start-1 md:col-start-2"
+          className=" w-full row-start-1 md:col-start-3 col-span-full rounded-[1.5rem]"
           src={chair}
           alt="portait of CaseIT 2025 Chair"
         />
       </div>
+
       <div className="w-full flex justify-center items-center py-[10vh]">
         <RoundedButton
           text="Return to CaseIT 2025 Page"

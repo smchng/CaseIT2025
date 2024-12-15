@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function CaseIt2025() {
   return (
     <div>
-      <section id="2025">
+      <section id="2025" className="">
         <BgImgCenter img={banner}>
           <div className="text-header1 pb-8">
             {thiscontent.caseit2025Text.header1}

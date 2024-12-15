@@ -99,7 +99,7 @@ export const NavBar = () => {
         </div> */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden relative w-8 h-6 z-50"
+          className="lg:hidden relative w-8 h-6 z-50"
         >
           <div
             className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute top-0

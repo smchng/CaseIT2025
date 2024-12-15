@@ -8,8 +8,9 @@ import * as thiscontent from "@/content/2025_content";
 import { Stats } from "../../components/2025components/Stats";
 import { CaseItEvent } from "../../components/2025components/CaseItEvent";
 import { CaseItCountdown } from "../../components/2025components/CaseItCountdown";
-import { ImgButton, SquareButton, ArrowButton } from "@/components/buttons";
+import { SquareButton, ArrowButton } from "@/components/buttons";
 import banner from "@/public/imgs/banners/2025_banner.png";
+import { ImgButton2025 } from "@/components/2025components/ImgButton2025";
 
 export const metadata: Metadata = {
   title: "CaseIT 2025",
@@ -40,49 +41,47 @@ export default function CaseIt2025() {
           {thiscontent.content.section_2_Pargraph}
         </div>
       </section>
-      <section className="px-6 md:px-12 lg:px-48">
+
+{/* COMPETITION INFORMATION */}
+
+      <section className="flex flex-col justify-center items-center px-4 md:px-8 xl:px-20 md:mx-auto max-w-[1920px]">
         <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
           {thiscontent.content.section_3_Title}
         </h2>
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-5 gap-6">
+
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-6">
+          
           <div className="group relative md:row-span-2 md:col-span-2 aspect-video md:aspect-[0] ">
-            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
-            <Image
-              src={caseitChair}
-              className="brightness-75 hover:brightness-100 duration-300 object-cover object-[0%_20%] md:object-[50%_50%] h-full "
-              alt="chair women"
-              sizes=""
+          <ImgButton2025
+              img={caseitChair}
+              alt={"case it chair"}
+              text={"Chair's Welcome"}
+              link={"/2025/chair"}
             />
-            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
-              Chair's Welcome
-            </h3>
+    
           </div>
           <div className="relative group md:col-start-3 md:col-span-3 md:aspect-[2]">
-            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
-            <Image
-              src={sponsor}
-              className="brightness-75 hover:brightness-100 duration-300 object-cover w-full h-full "
-              alt="chair women"
-              sizes=""
+          <ImgButton2025
+              img={sponsor}
+              alt={"2025 Sponsors"}
+              text={"2025 Sponsors"}
+              link={"/sponsor/Sponsor-Overview"}
             />
-            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
-              2025 Sponsors
-            </h3>
+  
           </div>
           <div className=" group relative md:col-start-3 md:col-span-3 md:aspect-[2]">
-            <div className="absolute z-40 top-0 left-10 h-2 bg-redDark transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full w-16"></div>
-            <Image
-              src={discover}
-              className="brightness-75 hover:brightness-100 duration-300 object-cover  w-full h-full "
-              alt="chair women"
-              sizes=""
+          <ImgButton2025
+              img={discover}
+              alt={"2025 Sponsors"}
+              text={"2025 Sponsors"}
+              link={""}
             />
-            <h3 className="text-white text-xl absolute bottom-0 p-4 font-semibold">
-              DiscoverIt
-            </h3>
           </div>
         </div>
       </section>
+
+{/* COMPETITION INFORMATION */}
+
       <section className=" mt-24 gap-4 flex flex-col items-center ">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
           Event Schedule

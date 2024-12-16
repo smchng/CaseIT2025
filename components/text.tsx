@@ -41,7 +41,7 @@ export const OCText = ({ title, text, subtext }: textItems) => {
 export const RecapText = ({ title, text, subtext }: textItems) => {
   return (
     <div className="md:pl-10 flex flex-col space-y-3">
-      <div className="text-red text-header3">{subtext}</div>
+      <div className="text-red text-header2">{subtext}</div>
       <div className="text-header4">{title}</div>
       <div className="md:max-w-[50vw] pb-[2vh] ">
         <div className="text-paragraph">{text}</div>

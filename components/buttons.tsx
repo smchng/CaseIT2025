@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
@@ -21,6 +22,7 @@ type SquareButtonProps = ButtonProps & {
 };
 
 export const ImgButton = ({ img, alt, text, link }: buttonItems) => {
+
   return (
     <div className="relative">
       {/* Top line */}
@@ -187,9 +189,13 @@ export const PivotButton = ({ text, link, state = "default" }: ButtonProps) => {
   );
 };
 
-export const ArrowButton = ({ img, alt, link }: ButtonProps) => {
+export const ArrowButton = ({ img, alt, link }: ButtonProps) => {  
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  
   return (
-    <Link href={link || "null"}>
+    <button onClick={handleScrollToTop}>
       <div className="bg-buttonBlack hover:bg-buttonRedDark transition-all p-5 rounded-2xl ">
         <Image
           src={img || "/svgs/arrowButton.svg"}
@@ -198,7 +204,7 @@ export const ArrowButton = ({ img, alt, link }: ButtonProps) => {
           height={25}
           className="fill-transparent"
         />
-      </div>
-    </Link>
+      </div> 
+    </button>  
   );
 };

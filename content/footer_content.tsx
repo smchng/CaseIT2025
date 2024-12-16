@@ -2,32 +2,31 @@
 import { svgIcons } from "@/public/svgs/icons";
 
 const competitionLinks = [
-    { name: "About CaseIT", ref: "/" },
-    { name: "CaseIT 2025", ref: "/" },
-    { name: "Registration", ref: "/" },
+    { name: "About CaseIT", ref: "/about" },
+    { name: "CaseIT 2025", ref: "/2025" },
   ];
 
   const sponsorshipLinks = [
-    { name: "2025 Sponsors", ref: "/" },
-    { name: "Benefits", ref: "/" },
-    { name: "Sponsorship Opportunities", ref: "/" },
+    { name: "2025 Sponsors", ref: "/2025/Sponsor-Showcase" },
+    { name: "Benefits", ref: "/sponsor/Sponsor-Overview" },
+    { name: "Sponsorship Opportunities", ref: "/sponsor/Sponsorship-Opportunities" },
   ];
 
   const aboutLinks = [
-    { name: "Chair's Welcome", ref: "/" },
-    { name: "CaseIT History", ref: "/" },
-    { name: "Our Team", ref: "/" },
-    { name: "Join CaseIT Team", ref: "/" },
+    { name: "Chair's Welcome", ref: "/2025/chair" },
+    { name: "CaseIT History", ref: "/history" },
+    { name: "Our Team", ref: "/about/oc" },
+    { name: "Join CaseIT Team", ref: "2025/Get-Involved" },
   ];
 
   const contactLinks = [
-    { name: "Contact Information", ref: "/" },
-    { name: "FAQ", ref: "/" },
+    { name: "Contact Information", ref: "/contact" },
+    { name: "FAQ", ref: "/contact" },
   ];
 
   export const socialLinks = [
-    { name: svgIcons["instagram"], ref: "/" },
-    { name: svgIcons["facebook"], ref: "/" },
+    { name: svgIcons["instagram"], ref: "https://www.instagram.com/caseitsfu/?hl=en" },
+    { name: svgIcons["facebook"], ref: "https://www.facebook.com/CaseIT/" },
   ];
 
   export const allLinks = [

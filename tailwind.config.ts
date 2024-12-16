@@ -10,9 +10,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
       animation: {
-        marquee: 'marquee 25s linear infinite',
+        marquee: "marquee 25s linear infinite",
         "nav1-open": "nav1_open 0.3s ease-in-out forwards  ",
         "nav1-close": "nav1_close 0.3s ease-in-out forwards   ",
         "nav2-open": "nav2_open 0.3s ease-in-out forwards  ",
@@ -22,45 +21,43 @@ const config: Config = {
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' },
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
-        nav1_open:{
-          '50%': {transform: 'translate(0px,10px)'},
-          '100%': {transform: 'translate(0px,10px) rotate(45deg)'},
+        nav1_open: {
+          "50%": { transform: "translate(0px,10px)" },
+          "100%": { transform: "translate(0px,10px) rotate(45deg)" },
         },
-        nav1_close:{
-          '0%': {transform: 'translate(0px,10px) rotate(45deg)'},
-          '70%': {transform: 'translate(0px,10px) rotate(0deg)'},
-          '100%': {transform: 'translate(0px,0px) rotate(0deg)'},
-        },
-
-        nav2_open:{
-          '0%': {opacity: '1'},
-          '100%': {opacity: '0'},
-        },
-        nav2_close:{
-          '0%': {opacity: '0'},
-          '60%': {opacity: '0'},
-          '70%': {opacity: '1'},
-
+        nav1_close: {
+          "0%": { transform: "translate(0px,10px) rotate(45deg)" },
+          "70%": { transform: "translate(0px,10px) rotate(0deg)" },
+          "100%": { transform: "translate(0px,0px) rotate(0deg)" },
         },
 
-        nav3_open:{
-          '50%': {transform: 'translate(0px,-10px)'},
-          '100%': {transform: 'translate(0px,-10px) rotate(-45deg)'},
+        nav2_open: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
         },
-        nav3_close:{
-          '0%': {transform: 'translate(0px,-10px) rotate(-45deg)'},
-          '70%': {transform: 'translate(0px,-10px) rotate(0deg)'},
-          '100%': {transform: 'translate(0px,0px) rotate(0deg)'},
-        }
+        nav2_close: {
+          "0%": { opacity: "0" },
+          "60%": { opacity: "0" },
+          "70%": { opacity: "1" },
+        },
+
+        nav3_open: {
+          "50%": { transform: "translate(0px,-10px)" },
+          "100%": { transform: "translate(0px,-10px) rotate(-45deg)" },
+        },
+        nav3_close: {
+          "0%": { transform: "translate(0px,-10px) rotate(-45deg)" },
+          "70%": { transform: "translate(0px,-10px) rotate(0deg)" },
+          "100%": { transform: "translate(0px,0px) rotate(0deg)" },
+        },
       },
       fontFamily: {
         sans: ["Switzer", "sans-serif"],
-        acid:["acid", "sans-serif"]
+        acid: ["acid", "sans-serif"],
       },
-      
     },
     colors: {
       white: "#FFFFFF", //default white
@@ -83,6 +80,7 @@ const config: Config = {
       buttonGreyDisabled: "#E4E4E4", //bg colour for disabled buttons
       buttonGreyDisabledText: "#C7C5C5", //text colour for disabled buttons
       borderGreyDisabledFocus: "#C4C4C4", //The default border colour of disabled card
+      borderGrey: "#E7E7E7",
 
       pivotBlue: "#0449B0", //Branding PIVOT Blue
       pivotBlueDark: "#04347B", //Darker PIVOT Blue

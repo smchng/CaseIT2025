@@ -34,7 +34,9 @@ export const SponsorText = ({ title, text }: sponsorItems) => {
         {title}
       </div>
       <div className="md:max-w-[50vw] pb-[2vh] pr-[3vw]">
-        <div className="text-paragraph pt-[2vh]"><NewLineText2>{text}</NewLineText2></div>
+        <div className="text-paragraph pt-[2vh]">
+          <NewLineText2>{text}</NewLineText2>
+        </div>
       </div>
     </div>
   );
@@ -141,7 +143,7 @@ export const SponsorOpCards = ({
   alt,
 }: sponsorItems) => {
   return (
-    <div className="flex flex-col-reverse md:flex-row mx-auto justify-center items-center max-w-[90vw] md:shadow-[0_0_15px_rgba(197,52,52,0.3)] md:max-w-[80vw] md:rounded-[1rem] md:border-2 md:border-redDark md:px-[7vw] py-[15vh] my-[10vh]">
+    <div className="flex flex-col-reverse md:flex-row mx-auto justify-center items-center max-w-[90vw] md:shadow-[0_0_10px_rgba(0,0,0,0.3)] md:max-w-[80vw] md:rounded-[1rem] md:border-2 md:border-borderGrey md:px-[7vw] py-[15vh] my-[10vh]">
       <div className="min-w-0 md:min-w-[50%] py-[10%] md:py-0 mx-auto ">
         <Image
           src={img || "/svgs/sponsorIcon1.svg"}
@@ -153,7 +155,7 @@ export const SponsorOpCards = ({
       <div className="md:max-w-[80%] pl-5 mx-auto">
         <div className="text-header2 text-red pb-2">{title} </div>
         <div className="text-paragraph font-bold pb-6">{subtext}</div>
-        <NewLineText text={text}/>
+        <NewLineText text={text} />
       </div>
     </div>
   );

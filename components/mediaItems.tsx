@@ -1,4 +1,4 @@
-  "use client";
+"use client";
 import { RoundedButton } from "@/components/buttons";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -23,7 +23,7 @@ export const GalleryCards = ({
 }: galleryItems) => {
   return (
     <Link href={link || "dummy"} className="flex flex-col">
-      <div className="rounded-2xl border-[#E7E7E7] focus:border-[#99444B] focus:border-4 hover:shadow-[0_0_15px_rgba(197,52,52,0.3)] transition-all border-2 p-1">
+      <div className="rounded-2xl border-borderGrey focus:border-[#99444B] focus:border-4 hover:shadow-[0_0_15px_rgba(197,52,52,0.3)] transition-all border-2 p-1">
         <div>
           <Image
             src={img || "/imgs/mediaGallery/mediaGallery.png"}

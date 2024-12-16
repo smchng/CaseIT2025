@@ -153,7 +153,7 @@ export const SponsorOpCards = ({
       <div className="md:max-w-[80%] pl-5 mx-auto">
         <div className="text-header2 text-red pb-2">{title} </div>
         <div className="text-paragraph font-bold pb-6">{subtext}</div>
-        <div className="text-paragraph">{text}</div>
+        <NewLineText text={text}/>
       </div>
     </div>
   );

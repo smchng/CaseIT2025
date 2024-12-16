@@ -40,51 +40,38 @@ export const CaseItCountdown = () => {
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
 
+  const timeUnits = [
+    { label: "Days", colon: ":", value: timeLeft.days },
+    { label: "Hours", colon: ":", value: timeLeft.hours },
+    { label: "Minutes", colon: ":", value: timeLeft.minutes },
+    { label: "Seconds", colon: ":", value: timeLeft.seconds },
+  ];
+
   return (
-    <fieldset className="border-redDark border-4 rounded-xl lg:rounded-[30px] px-12 py-2 md:py-12 font-bold">
+    <fieldset className="border-redDark font-acid border-4 rounded-xl lg:rounded-[30px] px-12 py-2 md:py-4 font-bold ">
       <legend className="uppercase text-redDark text-[1.5rem]">
         CaseIT 2025
       </legend>
-      <div className="text-[2.5rem] text-redDark justify-center flex flex-col md:flex-row md:space-x-[3vw] xl:space-x-[5vw]">
-        <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">
-            {timeLeft.days}
-          </div>
-          <div className="text-[24px] font-normal">Days</div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%] pb-3 md:pb-0  rotate-90 md:rotate-0">
-            :
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">
-            {timeLeft.hours}
-          </div>
-          <div className="text-[24px] font-normal">Hours</div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%] pb-3 md:pb-0  rotate-90 md:rotate-0">
-            :
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%]">
-            {timeLeft.minutes}
-          </div>
-          <div className="text-[24px] font-normal">Minutes</div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%] pb-3 md:pb-0 rotate-90 md:rotate-0">
-            :
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-[4rem] lg:text-[8rem] leading-[110%] ">
-            {timeLeft.seconds}
-          </div>
-          <div className="text-[24px] font-normal">Seconds</div>
-        </div>
+
+      <div className="text-[2.5rem] text-redDark justify-center grid grid-cols-1 md:grid-cols-7 ">
+        {timeUnits.map((unit, index) => (
+          <>
+            {/* Time unit (value and label) */}
+            <div key={unit.label} className="flex flex-col col-span-1 items-center justify-center">
+              <div className="text-[2.5rem] md:text-[5rem] lg:text-[8rem] leading-[110%]">
+                {unit.value}
+              </div>
+              <div className="text-[24px] font-normal">{unit.label}</div>
+            </div>
+
+            {/* Colon (only between units, not after the last one) */}
+            {index < timeUnits.length - 1 && (
+              <div className="text-[3rem] md:text-[5rem] lg:text-[8rem] leading-[50%] md:leading-[110%] pb-3 md:pb-0 rotate-90 md:rotate-0 col-span-1">
+                :
+              </div>
+            )}
+          </>
+        ))}
       </div>
     </fieldset>
   );

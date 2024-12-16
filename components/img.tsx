@@ -14,7 +14,7 @@ export const BgImgCenter = ({ img, children }: imgItems) => {
   return (
     <section className="relative mb-[10vh] h-screen w-full">
       <Image
-        src={img || "/imgs/Downtown-Vancouver.png"}
+        src={img || "/imgs/banners/Downtown-Vancouver.png"}
         alt="Downtown Vancouver"
         className=" object-cover"
         layout="fill" // Ensures the image fills the container
@@ -86,7 +86,7 @@ export const IconImg = ({
         alt={alt || "img description"}
         width={175}
         height={175}
-        className={`${stylingClasses} w-[8rem] md:w-[10vw] h-auto`} // Change from w-70 to w-[70vw]
+        className={`${stylingClasses} w-[8rem] md:w-[10vw] h-auto hidden md:block`}
       />
       <div>
         <div className="text-header2 md:text-header4 text-red"> {title} </div>

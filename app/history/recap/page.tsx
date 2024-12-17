@@ -21,7 +21,7 @@ export default function Recap2024() {
             <div>
               <RoundedButton
                 text="2024 Media Gallery"
-                link="/contact"
+                link="/history/media"
                 variant="red"
               />
             </div>

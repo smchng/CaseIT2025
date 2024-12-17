@@ -50,7 +50,7 @@ export default function Media() {
           ))}
         </div>
       </section>
-      <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
+      <section className=" flex justify-center mx-auto scroll-smooth py-[7vh]">
         <ArrowButton link="#MediaTop" />
       </section>
     </div>

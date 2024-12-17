@@ -1,5 +1,11 @@
 export const involvedText = {
   header1: "Challenge, Step Outside of your Comfort Zone",
+  header2: [
+    "How has CaseIT impacted students’ university journey?",
+    "Open Positions",
+  ],
+  paragraph:
+    "There are no open positions for now! Follow @caseitsfu on Instagram to get the latest updates on our hiring initiatives!",
   red: "Join Our Team",
   testimonials: [
     {

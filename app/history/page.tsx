@@ -24,7 +24,7 @@ export default function History() {
           <p className="mt-6 max-w-[65ch]">{history.heroContent.paragraph} </p>
         </div>
 
-        <div className="mt-8 mx-4 flex flex-col md:items-stretch justify-center space-y-8 md:space-y-2 md:px-0 md:flex-row md:gap-4 md:pl-4 md:flex-nowrap md:w-fit  md:py-6 md:animate-marquee md:hover:pause md:animation-delay ">
+        <div className="mt-8 mx-4 flex flex-col gap-4  md:px-0 md:flex-row md:gap-4 md:pl-4 md:flex-nowrap md:w-fit  md:py-6  md:hover:pause md:animate-marquee md:animation-delay ">
           {competitionData.map((competition, index) => (
             <CompetitionCard
               key={index}

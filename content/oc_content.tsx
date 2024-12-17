@@ -51,7 +51,7 @@ export const ocText = {
       title: "Team Host",
       desc: "Team Hosts are our competitors’ ultimate guides during competition week. They are responsible for ensuring teams are where they need to be, while also showing them an unforgettable time around the city of Vancouver.",
       names:
-        "Left to right: Catherine Ho, Aley Nguyen, Kai Lee, Olivia Cheng, Troy Cheah, Shriansha Madaan, Adrian Wong, Angela Lim, Sana Vankalwala, Andy Cheng, Katherine Huang, Matthias Chun, Arianna Tham, Shannon Tang. Missing: Aline Paracha, Lauren Riestra.",
+        "Left to right: Catherine Ho, Aley Nguyen, Kai Lee, Olivia Cheng, Troy Cheah, Shriansha Madaan, Adrian Wong, Angela Lim, Sana Vankalwala, Andy Cheng, Katherine Huang, Matthias Chun, Arianna Tham, Shannon Tang. Missing: Alina Paracha, Lauren Riestra.",
       img: "/imgs/oc/teamHost.jpg",
       img2: "/imgs/oc/teamHost_silly.jpg",
       alt: "faculty advisors img",

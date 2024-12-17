@@ -91,12 +91,7 @@ export const NavBar = () => {
         <a href="/" className=" block w-24 lg:w-32">
           <CaseitLogoBlack />
         </a>
-        {/* <div
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-black size-8 z-50"
-        >
-          {svgIcons["hamburger"]}{" "}
-        </div> */}
+
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden relative w-8 h-6 z-50"
@@ -109,14 +104,14 @@ export const NavBar = () => {
             `}
           ></div>
           <div
-            className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute top-[11px]
+            className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute top-[10px]
             transition-all duration-500 ${
               isOpen ? "animate-nav2-open" : "animate-nav2-close"
             }
             `}
           ></div>
           <div
-            className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute bottom-0
+            className={`bg-[#8b8b8b] w-8 h-[2.5px] rounded-md absolute top-[20px]
             transition-all duration-500 ${
               isOpen ? "animate-nav3-open" : "animate-nav3-close"
             }

@@ -1,9 +1,12 @@
 import { StaticImageData } from "next/image";
 // import images here, also makes it easier for the next Image component
-import ph from "@/public/imgs/CaseIT_On3.png";
-import img1 from "@/public/imgs/CaseIT_On3.png";
-import img2 from "@/public/imgs/caseitChair.jpg";
-import img3 from "@/public/imgs/about.png";
+
+import ph from "@/public/imgs/history/2018.png";
+import _2024 from "@/public/imgs/history/2024.png";
+import _2023 from "@/public/imgs/history/2023.png";
+import _2020 from "@/public/imgs/history/2020.png";
+import _2018 from "@/public/imgs/history/2018.png";
+import _2016 from "@/public/imgs/history/2016.png";
 
 export const historyText = {
   header2: "Relive our best moments",
@@ -25,74 +28,74 @@ export type CompetitionData = {
 
 export const competitionData: CompetitionData[] = [
   {
-    img: img1,
-    title: "CaseIT 2004",
+    img: _2024,
+    title: "CaseIT 2024",
     description:
-      "Beginning of CaseIT as an undergraduate MIS-oriented business case competition exclusively for Simon Fraser University students.",
-    winner: "Simon Fraser University",
+      "CaseIT further expands its connections featuring schools from Asia, North America, South America, Australia, and Europe.",
+    winner: "HEC Montreal",
   },
   {
-    img: img2,
-    title: "CaseIT 2005",
+    img: _2023,
+    title: "CaseIT 2023",
     description:
-      "Expanded to include participants from other Canadian universities, increasing competition and networking opportunities.",
-    winner: "Simon Fraser University",
+      "CaseIT celebrates its 20th Year Anniversary.",
+    winner: "Winner: Queen's University",
   },
   {
-    img: img3,
-    title: "CaseIT 2006",
+    img: _2020,
+    title: "CaseIT 2020",
     description:
-      "Introduced an international component, bringing in teams from Asia and establishing CaseIT as a global competition.",
-    winner: "Simon Fraser University",
+      "CaseIT furthers the competition experience by introducing Coaches Hockey Night and a competitor networking event, ExchangeIT.",
+    winner: "Indiana University",
   },
   {
-    img: ph,
-    title: "CaseIT 2007",
+    img: _2018,
+    title: "CaseIT 2018",
     description:
-      "Further expansion with more international participants and new sponsorships to enhance competition scope.",
-    winner: "Simon Fraser University",
+      "To celebrate its 15 Years of CaseIT, a new multi-case structure was introduced to further challenge our international competitors.",
+    winner: "Université libre de Bruxelles",
   },
   {
-    img: ph,
-    title: "CaseIT 2008",
+    img: _2016,
+    title: "CaseIT 2016",
     description:
-      "Developed new event segments, including workshops and speaker sessions, creating a more comprehensive experience.",
-    winner: "Simon Fraser University",
+      "Embracing technology, CaseIT launches the Competition Portal, allowing competitors to engage with the competition like never before.",
+    winner: "Queen's University",
   },
   {
-    img: ph,
-    title: "CaseIT 2004",
+    img: _2024,
+    title: "CaseIT 2024",
     description:
-      "Beginning of CaseIT as an undergraduate MIS-oriented business case competition exclusively for Simon Fraser University students.",
-    winner: "Simon Fraser University",
+      "CaseIT further expands its connections featuring schools from Asia, North America, South America, Australia, and Europe.",
+    winner: "HEC Montreal",
   },
   {
-    img: ph,
-    title: "CaseIT 2005",
+    img: _2023,
+    title: "CaseIT 2023",
     description:
-      "Expanded to include participants from other Canadian universities, increasing competition and networking opportunities.",
-    winner: "Simon Fraser University",
+      "CaseIT celebrates its 20th Year Anniversary.",
+    winner: "Winner: Queen's University",
   },
   {
-    img: ph,
-    title: "CaseIT 2006",
+    img: _2020,
+    title: "CaseIT 2020",
     description:
-      "Introduced an international component, bringing in teams from Asia and establishing CaseIT as a global competition.",
-    winner: "Simon Fraser University",
+      "CaseIT furthers the competition experience by introducing Coaches Hockey Night and a competitor networking event, ExchangeIT.",
+    winner: "Indiana University",
   },
   {
-    img: ph,
-    title: "CaseIT 2007",
+    img: _2018,
+    title: "CaseIT 2018",
     description:
-      "Further expansion with more international participants and new sponsorships to enhance competition scope.",
-    winner: "Simon Fraser University",
+      "To celebrate its 15 Years of CaseIT, a new multi-case structure was introduced to further challenge our international competitors.",
+    winner: "Université libre de Bruxelles",
   },
   {
-    img: ph,
-    title: "CaseIT 2008",
+    img: _2016,
+    title: "CaseIT 2016",
     description:
-      "Developed new event segments, including workshops and speaker sessions, creating a more comprehensive experience.",
-    winner: "Simon Fraser University",
+      "Embracing technology, CaseIT launches the Competition Portal, allowing competitors to engage with the competition like never before.",
+    winner: "Queen's University",
   },
 ];
 

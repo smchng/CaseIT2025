@@ -35,7 +35,7 @@ export default function Recap2024() {
           </div>
         </BgImgCenter>
       </section>
-      <section className="flex flex-col space-y-[10vh] md:space-y-[20vh]">
+      <section className="flex flex-col space-y-[3rem] md:space-y-[4rem]">
         {re.recapText.positions.map((item, index) => (
           <div key={index}>
             {index % 2 === 0 ? (

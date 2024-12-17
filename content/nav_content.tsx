@@ -5,7 +5,6 @@ export const NavLinks = [
     sublinks: [
       { name: "About CaseIT", ref: "/about" },
       { name: "2025 Organizing Committee", ref: "/about/oc" },
-      { name: "Get Involved", ref: "/2025/Get-Involved" },
     ],
   },
   {
@@ -26,6 +25,7 @@ export const NavLinks = [
       { name: "2025", ref: "/2025" },
       { name: "Chair's Welcome", ref: "/2025/chair" },
       { name: "2025 Sponsors", ref: "/2025/Sponsor-Showcase" },
+      { name: "Get Involved", ref: "/2025/Get-Involved" },
     ],
   },
   {

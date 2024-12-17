@@ -101,12 +101,11 @@ export default function Home() {
       </section>
 
       <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center justify-center font-light gap-8 text-white mt-16 py-32 md:h-screen px-8 overflow-hidden ">
-        <div className="absolute inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
+        <div className="absolute pointer-events-none inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
         <h2 className="text-header2 font-semibold">
-          {" "}
           {home.HomeText.header2[1]}
         </h2>
-        <p className=" max-w-[76ch] md:text-xs mb-8">
+        <p className=" max-w-[76ch] md:text-base mb-8">
           {home.HomeText.paragraph[2]}
         </p>
 
@@ -121,13 +120,13 @@ export default function Home() {
             variant="white"
             text="Our 2024 Recap"
             subtext="Relive some of our best moments"
-            link="/history"
+            link="/history/recap"
           />
           <SquareButton
             variant="white"
             text="PIVOT"
             subtext="Our local rendition for BC students"
-            link="/history"
+            link="https://pivot.caseit.org/"
           />
         </div>
       </section>

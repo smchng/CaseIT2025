@@ -110,8 +110,8 @@ export const SquareButton = ({
     <Link href={link}>
       <button
         className={clsx(
-          "inline-flex flex-col items-left rounded-lg px-5 py-2 text-[17px] transition-colors",
-          "md:text-2xs",
+          "flex flex-col text-left rounded-lg px-5 py-2 text-[17px] transition-colors",
+          "md:text-base",
           {
             // Variants
             "bg-transparent text-black border border-black":
@@ -141,8 +141,8 @@ export const SquareButton = ({
           }
         )}
       >
-        <p className="font-bold">{text}</p>
-        <p className="text-[10px]">{subtext}</p>
+        <p className="font-semibold">{text}</p>
+        <p className="text-[1rem]">{subtext}</p>
       </button>
     </Link>
   );

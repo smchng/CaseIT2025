@@ -29,7 +29,7 @@ export default function Chair() {
         </div>
 
         <Image
-          className=" w-full row-start-1 md:col-start-3 col-span-full rounded-[1.5rem]"
+          className=" w-full row-start-1 md:col-start-3 col-span-2 rounded-[1rem]"
           src={chair}
           alt="portait of CaseIT 2025 Chair"
         />

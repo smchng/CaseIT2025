@@ -12,6 +12,7 @@ type galleryItems = {
   subtext?: string;
   img?: string;
   alt?: string;
+  state?: string;
 };
 
 export const GalleryCards = ({
@@ -20,6 +21,7 @@ export const GalleryCards = ({
   img,
   alt,
   link,
+  state,
 }: galleryItems) => {
   return (
     <Link href={link || "dummy"} className="flex flex-col">
@@ -27,15 +29,15 @@ export const GalleryCards = ({
         <div>
           <Image
             src={img || "/imgs/mediaGallery/mediaGallery.png"}
-            alt={alt || "Circle of people doing a cheer"}
+            alt={alt || "Gallery photo"}
             width={472}
             height={267}
             className="mx-auto w-full rounded-xl border"
           />
         </div>
         <div className="text-center py-4">
-          <div className="text-paragraph font-bold">{title}</div>
-          <div className="text-paragraph text-greyLight ">{subtext}</div>
+          <div className={`text-paragraph font-bold ${state === "disabled" ? "text-[#C7C5C5]" : ""}`}>{title}</div>
+          <div className={`text-paragraph ${state === "disabled" ? "text-[#C7C5C5]" : " text-greyLight"}`}>{subtext}</div>
         </div>
       </div>
     </Link>

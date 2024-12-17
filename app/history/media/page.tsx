@@ -43,6 +43,8 @@ export default function Media() {
                 title={media.galleryText[index].title}
                 subtext={media.galleryText[index].subtext}
                 img={media.galleryText[index].img}
+                link={media.galleryText[index].link}
+                state={media.galleryText[index].state}
               />
             </div>
           ))}

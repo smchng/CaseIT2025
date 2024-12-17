@@ -42,7 +42,7 @@ export default function CaseIt2025() {
         </div>
       </section>
 
-{/* COMPETITION INFORMATION */}
+      {/* COMPETITION INFORMATION */}
 
       <section className="flex flex-col justify-center items-center px-4 md:px-8 xl:px-20 md:mx-auto max-w-[1920px]">
         <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
@@ -50,37 +50,34 @@ export default function CaseIt2025() {
         </h2>
 
         <div className="mt-6 grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-6">
-          
           <div className="group relative md:row-span-2 md:col-span-2 aspect-video md:aspect-[0] ">
-          <ImgButton2025
+            <ImgButton2025
               img={caseitChair}
               alt={"case it chair"}
               text={"Chair's Welcome"}
               link={"/2025/chair"}
             />
-    
           </div>
           <div className="relative group md:col-start-3 md:col-span-3 md:aspect-[2]">
-          <ImgButton2025
+            <ImgButton2025
               img={sponsor}
               alt={"2025 Sponsors"}
               text={"2025 Sponsors"}
               link={"/sponsor/Sponsor-Overview"}
             />
-  
           </div>
-          <div className=" group relative md:col-start-3 md:col-span-3 md:aspect-[2]">
-          <ImgButton2025
+          <div className=" group relative md:col-start-3 md:col-span-3 md:aspect-[2] pointer-events-none">
+            <ImgButton2025
               img={discover}
               alt={"2025 Sponsors"}
-              text={"2025 Sponsors"}
+              text={"DiscoverIT"}
               link={""}
             />
           </div>
         </div>
       </section>
 
-{/* COMPETITION INFORMATION */}
+      {/* COMPETITION INFORMATION */}
 
       <section className=" mt-24 gap-4 flex flex-col items-center ">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
@@ -90,7 +87,8 @@ export default function CaseIt2025() {
       </section>
 
       <section className="w-full flex justify-center mt-6 py-[10vh]">
-        <div className="flex hidden md:flex items-center justify-center gap-4">
+        {/* Hidden square buttons  */}
+        {/* <div className="flex hidden md:flex items-center justify-center gap-4">
           <SquareButton
             variant="black"
             text="Rulebook"
@@ -109,7 +107,7 @@ export default function CaseIt2025() {
             subtext="Tune into CaseIT signature events."
             link="/history"
           />
-        </div>
+        </div> */}
         <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
           <ArrowButton link="#2025" />
         </section>

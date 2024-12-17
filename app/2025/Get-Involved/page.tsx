@@ -19,7 +19,7 @@ export default function GetInvolved() {
             <div className="text-redDark text-center text-header4">
               {involved.involvedText.red}
             </div>
-            <div className="text-header1 text-center pb-8 max-w-[50vw]">
+            <div className="text-header1 text-center pb-8 md:max-w-[50vw]">
               {involved.involvedText.header1}
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4">

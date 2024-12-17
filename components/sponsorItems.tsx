@@ -128,7 +128,7 @@ export const SponsorTiles = ({ img, text, alt }: sponsorItems) => {
         height={317}
         className="drop-shadow-[0_0_33px_rgba(0,0,0,0.1)] hover:drop-shadow-[0_0_15px_rgba(210,121,128,0.8)] transition-all size-[10vw],[15.5rem] md:w-[20vw] xl:w-[20vw]"
       />
-      <text className="text-paragraph font-bold pt-[0.463rem] md:text-1">
+      <text className="text-paragraph font-bold pt-[0.463rem] md:text-1 text-center">
         {text}
       </text>
     </div>

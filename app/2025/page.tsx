@@ -49,7 +49,7 @@ export default function CaseIt2025() {
           {thiscontent.content.section_3_Title}
         </h2>
 
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-6">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-6 sm:max-w-[80vw] lg:max-w-[60vw]">
           <div className="group relative md:row-span-2 md:col-span-2 aspect-video md:aspect-[0] ">
             <ImgButton2025
               img={caseitChair}

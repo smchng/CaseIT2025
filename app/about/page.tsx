@@ -31,7 +31,7 @@ export default function About() {
           </ImgRibbonLeft>
         </div>
       </section>
-      <section className="md:flex md:space-x-[5vw] bg-greyDark  justify-center p-7">
+      <section className="md:flex md:space-x-[5vw] bg-greyDark justify-center p-7 ">
         {about.icons.map((item, index) => (
           <IconImg
             key={index}
@@ -43,7 +43,7 @@ export default function About() {
           />
         ))}
       </section>
-      <section className="my-[8vh]">
+      <section className="py-[15vh]">
         {/* MOBILE */}
         <div className="md:hidden flex space-x-2 justify-center  ">
           {about.titles.map((item, index) => (
@@ -94,7 +94,7 @@ export default function About() {
             alt="pivot banner"
             width={229}
             height={10}
-            className="w-[40vw] pb-10 md:w-[20vw] h-auto"
+            className="w-[40vw] py-10 md:w-[20vw] h-auto"
           />
           <div className="text-white md:w-[40vw]">
             <div className="text-header3 md:text-header2 pb-[2vh]">

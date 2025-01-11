@@ -15,7 +15,7 @@ export const TextDot = ({ dotText }: textItems) => {
   return (
     <div className="flex items-baseline">
       <div>{dotText}</div>
-      <span className="ml-1">
+      <span className="ml-1 w-2">
         <Image src="/svgs/redDot.svg" alt="red dot" width="8" height="8" />
       </span>
     </div>
@@ -83,7 +83,7 @@ export const NewLineText = ({ text }: textItems) => {
 };
 
 interface NewLineTextProps {
-  children: string; 
+  children: string;
 }
 
 export const NewLineText2: React.FC<NewLineTextProps> = ({ children }) => {
@@ -97,4 +97,3 @@ export const NewLineText2: React.FC<NewLineTextProps> = ({ children }) => {
     </div>
   );
 };
-

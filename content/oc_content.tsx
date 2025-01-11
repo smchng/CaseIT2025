@@ -1,6 +1,7 @@
 export const ocText = {
   header1: "Organizing Committee",
-  paragraph: "Meet the team dedicated to producing CaseIT 2025.",
+  header2: "CaseIT 2025 Organizing Committee",
+  paragraph: "Meet the dedicated teams behind CaseIT 2025.",
   positions: [
     // {
     //   title: "Faculty Advisors",
@@ -24,14 +25,14 @@ export const ocText = {
       title: "Competition Execution",
       desc: "The Competition Executive team is the driving force behind a seamless execution of CaseIT. With their commitment to excellence, they ensure every event runs smoothly and efficiently.",
       names:
-        "Left to right: Crystal Wen, Alexandra Ileto, Dasom Kim, Jarl Arciaga, Helen Chen, Yosei Ishida, Reina Castaneda, Praveeni Balaji, Jennif Berlian. Missing: Jessica La Grange",
+        "Left to right: Crystal Wen, Alexandra Ileto, Dasom Kim, Jarl Arciaga, Helen Chen, Yosei Ishida, Reina Castaneda, Praveeni Balaji, Jennif Berlian. Missing: Jessica La Grange.",
       img: "/imgs/oc/compex.jpg",
       img2: "/imgs/oc/compex_silly.png",
       alt: "faculty advisors img",
     },
     {
       title: "Marketing",
-      desc: "The Marketing team is the creative minds of CaseIT, with innovative strategies and eye-catching designs, they connect with the community through different mediums. By capturing lively memories, no moment will be lost.",
+      desc: "The Marketing team is the creative minds of CaseIT. With innovative strategies and eye-catching designs, they connect with the community through different mediums. By capturing lively memories, no moment is lost.",
       names:
         "Left to right: Simon Wong Chung, Clayton Lam, Christine Hui, Caleb Tsui, Alan Lam, Samantha Chung, Kaia Crozier, August Othanavathakit, Jeffrey Su. ",
       img: "/imgs/oc/marketing.jpg",

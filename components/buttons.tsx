@@ -155,7 +155,7 @@ export const PivotButton = ({ text, link, state = "default" }: ButtonProps) => {
       <button
         className={clsx(
           "inline-flex items-center rounded-full px-4 py-1 text-[17px] transition-colors ",
-          "md:text-[12px]",
+          "md:text-[15px]",
           {
             // Variants
             "bg-transparent text-white border border-white":

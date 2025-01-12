@@ -180,7 +180,7 @@ export const sponsorOpportunitiesContent = {
     {
       title: "Technology Sponsorship",
       img: "/svgs/sponsorIcon2.svg",
-      text: "Technology sponsors will be featured on the CaseIT website, social media, event program, and other relevant materials. You will also receive a tailored resume book showcasing all competitors and the CaseIT Organizing Committee, plus an exclusive initiation to our Awards Banquet.",
+      text: "Technology sponsors will be featured on the CaseIT website, social media, event program, and other relevant materials. You will also receive a tailored resume book showcasing all competitors and the CaseIT Organizing Committee, plus an exclusive invitation to our Awards Banquet.",
       alt: "Various icons with subheadders",
       subtext:
         "As an innovative and technology-focussed competition, we are pleased to offer Technology Sponsorship opportunities to our stakeholders. CaseIT is an elaborate event that requires a wide array of equipment including:",

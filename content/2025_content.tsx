@@ -1,23 +1,24 @@
 export const caseit2025Text = {
   header1: "Ready for iT?",
+  header2: "Competition Schedule",
+  disclaimer:
+    "Note: An official detailed schedule for CaseIT 2025 will be updated soon.",
 };
 
-
 export const content = {
-  section_2_Pargraph:<p className="max-w-[65ch] md:text-center md:text-lg mt-4 md:mt-8">
-  CaseIT is back and better, stronger, and faster than ever. With our
-  22nd iteration, the Organizing Committee promises a competition full
-  of fun, challenges, leaving you with double the memories! We are
-  excited to welcome top business technology undergraduates and their
-  faculty advisors from around the world to the beautify city of
-  Vancouver from <strong>February 16 to 21, 2025</strong>.
-</p>,
+  section_2_Pargraph: (
+    <p className="max-w-[65ch] md:text-center md:text-lg mt-4 md:mt-8">
+      CaseIT is back and better, stronger, and faster than ever. With our 22nd
+      iteration, the Organizing Committee promises a competition full of fun,
+      challenges, leaving you with double the memories! We are excited to
+      welcome top business technology undergraduates and their faculty advisors
+      from around the world to the beautify city of Vancouver from{" "}
+      <strong>February 16 to 21, 2025</strong>.
+    </p>
+  ),
 
-section_3_Title: "Competition Information"
-
-}
-
-
+  section_3_Title: "Competition Information",
+};
 
 export const caseItEvents = [
   {

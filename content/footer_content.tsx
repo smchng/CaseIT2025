@@ -33,6 +33,10 @@ export const socialLinks = [
     ref: "https://www.instagram.com/caseitsfu/?hl=en",
   },
   { name: svgIcons["facebook"], ref: "https://www.facebook.com/CaseIT/" },
+  {
+    name: svgIcons["linkedin"],
+    ref: "https://www.linkedin.com/company/caseit-mis-case-competition/posts/?feedView=all",
+  },
 ];
 
 export const allLinks = [

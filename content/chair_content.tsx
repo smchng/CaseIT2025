@@ -1,11 +1,11 @@
 export const chairContent = {
   paragraph: (
     <>
-      <p>
+      <p className="pb-2">
         On behalf of the 2025 Organizing Committee, it is our honour to welcome
         you to CaseIT 2025.
       </p>
-      <p>
+      <p className="pb-2">
         With great excitement, we are embarking on another remarkable year of
         CaseIT where we bring together a talented group of individuals to
         challenge conventional thinking and bridge the gap between business and
@@ -17,7 +17,7 @@ export const chairContent = {
         beautiful city of Vancouver, British Columbia.
       </p>
 
-      <p>
+      <p className="pb-2">
         Our organizing committee is fully committed to providing an
         unparalleled, rigorous, and engaging competition for talented business
         students to challenge themselves on an international stage. Our team
@@ -28,7 +28,7 @@ export const chairContent = {
         on our attendees.
       </p>
 
-      <p>
+      <p className="pb-2">
         We kindly invite you to support this world-class business case
         competition and its impact on technology-focused undergraduate programs.
         CaseIT provides the unique opportunity to reach and connect with a local
@@ -39,7 +39,7 @@ export const chairContent = {
         provides your organization with the greatest value.
       </p>
 
-      <p>
+      <p className="pb-2">
         To learn more about our upcoming opportunities for the year, please
         contact us at caseit@sfu.ca or visit our website
         https://www.caseit.org/.

@@ -3,12 +3,11 @@ import caseitChair from "@/public/imgs/caseitChair.jpg";
 import sponsor from "@/public/imgs/2025_sponsor.png";
 import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";
-import Image from "next/image";
 import * as thiscontent from "@/content/2025_content";
 import { Stats } from "../../components/2025components/Stats";
 import { CaseItEvent } from "../../components/2025components/CaseItEvent";
 import { CaseItCountdown } from "../../components/2025components/CaseItCountdown";
-import { SquareButton, ArrowButton } from "@/components/buttons";
+import { ArrowButton } from "@/components/buttons";
 import banner from "@/public/imgs/banners/2025_banner.png";
 import { ImgButton2025 } from "@/components/2025components/ImgButton2025";
 
@@ -79,11 +78,14 @@ export default function CaseIt2025() {
 
       {/* COMPETITION INFORMATION */}
 
-      <section className=" mt-24 gap-4 flex flex-col items-center ">
+      <section className=" mt-24 gap-4 flex flex-col items-center">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
-          Event Schedule
+          {thiscontent.caseit2025Text.header2}
         </h2>
         <CaseItEvent />
+        <p className="text-paragraph  p-7">
+          {thiscontent.caseit2025Text.disclaimer}
+        </p>
       </section>
 
       <section className="w-full flex justify-center mt-6 py-[10vh]">

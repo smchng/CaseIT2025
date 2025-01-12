@@ -29,7 +29,7 @@ export const imgButtons = [
     img: "/imgs/CaseIT_On3.PNG",
     alt: "2024 OC team pic",
     text: "GET INVOLVED",
-    link: "/2025/Get-Involved",
+    link: "/about/Get-Involved",
   },
 ];
 

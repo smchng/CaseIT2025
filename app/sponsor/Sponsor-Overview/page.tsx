@@ -36,7 +36,7 @@ export default function SponsorOverview() {
         <div className="text-header3 md:text-header2 md:text-center pl-[10vw] md:pl-0 pb-[10vh]">
           {sponsor.sponsorTileContent.sectionTitle[0].title}
         </div>
-        <div className="max-w-[80vw] mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 lg:gap-[6.5rem] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
+        <div className="max-w-[80vw] mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 lg:gap-[4rem] lg:grid-cols-3 lg:grid-rows-4 lg:p-[8%] xl:grid-cols-4 xl:grid-rows-3 ">
           {sponsor.sponsorTileContent.sponsors.map((item, index) => (
             <div key={index}>
               <SponsorTiles

@@ -21,14 +21,14 @@ export default function Recap2024() {
             <div>
               <RoundedButton
                 text="2024 Media Gallery"
-                link="/history/media"
+                link="https://drive.google.com/drive/u/4/folders/1mkOBqwmWtPPuD7FvBlQuO974As3zuGAS"
                 variant="red"
               />
             </div>
             <div className="mb-4 md:mb-0">
               <RoundedButton
                 text="View CaseIT 2024 Recap Video"
-                link="/contact"
+                link="/history/media"
                 variant="black"
               />
             </div>

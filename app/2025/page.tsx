@@ -65,12 +65,12 @@ export default function CaseIt2025() {
               link={"/sponsor/Sponsor-Overview"}
             />
           </div>
-          <div className=" group relative md:col-start-3 md:col-span-3 md:aspect-[2] pointer-events-none">
+          <div className=" group relative md:col-start-3 md:col-span-3 md:aspect-[2]">
             <ImgButton2025
               img={discover}
-              alt={"2025 Sponsors"}
+              alt={"DiscoverIT"}
               text={"DiscoverIT"}
-              link={""}
+              link={"/2025/DiscoverIT/overview"}
             />
           </div>
         </div>

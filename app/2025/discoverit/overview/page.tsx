@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 
 export default function Overview() {
   return (
-    <div className="py-[15vh] px-16">
+    <div className="py-[20vh] px-7 md:px-16 xl:px-[15vw]">
       <div className="pb-8">
         <DiscoverITBanner></DiscoverITBanner>
       </div>
       <section className="pb-6">
         <Bento>
           {" "}
-          <div className="md:grid md:grid-cols-2 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <BentoText
               title={overviewText.title[0]}
               text={overviewText.paragraph[0]}
@@ -30,13 +30,13 @@ export default function Overview() {
           </div>{" "}
         </Bento>
       </section>
-      <section className="md:grid md:grid-cols-2 md:gap-6">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Bento>
           <BentoText
             title={overviewText.title[1]}
             text={overviewText.paragraph[1]}
           ></BentoText>
-          <div className="mt-auto">
+          <div className="mt-8 md:mt-auto">
             <RoundedButton
               text="Explore"
               link="/2025/DiscoverIT/CaptureIT"

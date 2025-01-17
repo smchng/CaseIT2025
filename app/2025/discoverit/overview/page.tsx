@@ -23,10 +23,6 @@ export default function Overview() {
               title={overviewText.title[0]}
               text={overviewText.paragraph[0]}
             ></BentoText>{" "}
-            <BentoText
-              title={overviewText.title[1]}
-              text={overviewText.paragraph[1]}
-            ></BentoText>
           </div>{" "}
         </Bento>
       </section>

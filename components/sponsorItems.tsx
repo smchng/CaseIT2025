@@ -3,7 +3,7 @@ import { RoundedButton } from "@/components/buttons";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { BoldedText, NewLineText, NewLineText2 } from "./text";
-import Link from "next/link";
+import SubpageBanner from "./subpageBanner";
 
 type sponsorItems = {
   text: string;
@@ -85,26 +85,11 @@ export const SponsorBanner = ({
           <div className="md:hidden text-redDark font-bold">{subtext}</div>
           {/* DESKTOP LINK */}
           <div className="space-x-[3rem] flex text-redDark font-bold hidden md:flex mb-[1vh]">
-            <Link
-              href="/sponsor/Sponsor-Overview"
-              className={`${
-                pathname === "/sponsor/Sponsor-Overview"
-                  ? "underline underline-offset-4 decoration-2"
-                  : ""
-              }`}
-            >
-              Overview
-            </Link>
-            <Link
-              href="/sponsor/Sponsorship-Opportunities"
-              className={`${
-                pathname === "/sponsor/Sponsorship-Opportunities"
-                  ? "underline underline-offset-4 decoration-2"
-                  : ""
-              }`}
-            >
-              Sponsorship Opportunities
-            </Link>
+            <SubpageBanner link="/sponsor/Sponsor-Overview" title="Overview" />
+            <SubpageBanner
+              link="/sponsor/Sponsorship-Opportunities"
+              title="Sponsorship Opportunities"
+            />
           </div>
           <div className="text-header2">{title}</div>
         </div>

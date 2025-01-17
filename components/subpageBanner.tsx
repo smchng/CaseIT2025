@@ -1,0 +1,35 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function SubpageBanner({
+  link,
+  title,
+}: {
+  link: string;
+  title: string;
+}) {
+  const pathname = usePathname();
+
+  return (
+    <Link
+      href={link}
+      className={`${
+        pathname === link ? "underline underline-offset-4 decoration-2" : ""
+      }`}
+    >
+      {title}
+    </Link>
+  );
+}
+
+export const DiscoverITBanner = () => {
+  const pathname = usePathname();
+  return (
+    <div className="space-x-[3rem] flex text-redDark text-[13px] font-semibold hidden md:flex mb-[1vh]">
+      <SubpageBanner link="/2025/DiscoverIT/overview" title="OVERVIEW" />
+      <SubpageBanner link="/2025/DiscoverIT/Tour" title="TOUR" />
+      <SubpageBanner link="/2025/DiscoverIT/CaptureIT" title="CAPTUREIT" />
+    </div>
+  );
+};

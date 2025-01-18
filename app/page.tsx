@@ -9,6 +9,7 @@ import { useCountUp } from "@/hooks/useCountUp";
 import Image from "next/image";
 import StatCard from "@/components/stats";
 import { BoldedText } from "@/components/text";
+import TawkTo from "@/components/liveChat";
 
 export default function Home() {
   const { ref: sectionRef, inView } = useInView({
@@ -129,6 +130,11 @@ export default function Home() {
             link="https://pivot.caseit.org/"
           />
         </div>
+      </section>
+
+      {/* LIVECHAT CODE */}
+      <section>
+        <TawkTo />
       </section>
     </main>
   );

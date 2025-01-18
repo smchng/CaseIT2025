@@ -30,3 +30,25 @@ export const tourText = {
   ),
   img: ["/imgs/discoverit/Tour1.png", "/imgs/discoverit/Tour2.png"],
 };
+
+export const CaptureITCardText = {
+  content:[
+    {
+      header:"01/ Photos at DiscoverIT",
+      paragraph:"Take a picture of you and your team completing the DiscoverIT photo challenges! SpirIT points will be rewarded for completion and creativity. Please upload ONE Instagram story for every picture submission.",
+    }, 
+    {
+      header:"02/ Capture your Experience",
+      paragraph:"Record your experiences visiting tourist attractions and our top recommendations for restaurants.",
+    }, 
+    {
+      header:"03/ BONUS",
+      paragraph:"Complete the DiscoverIT challenges included in your specific tour packages for EXTRA SpirIT points!",
+    }, 
+    
+  ],
+};
+
+export const CaptureITImgs = {
+  imgs:['/imgs/discoverit/Story1.png','/imgs/discoverit/Story2.png','/imgs/discoverit/Story3.png']
+};

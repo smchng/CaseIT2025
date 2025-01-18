@@ -53,7 +53,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <section className="relative overflow-hidden md:py-[25vh]">
         <div className="absolute inset-0 -z-10 flex items-center justify-center">
           <Image
@@ -100,7 +99,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center justify-center font-light gap-8 text-white mt-16 py-32 md:h-screen px-8 overflow-hidden ">
         <div className="absolute pointer-events-none inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
         <h2 className="text-header2 font-semibold">
@@ -131,11 +129,9 @@ export default function Home() {
           />
         </div>
       </section>
-
       {/* LIVECHAT CODE */}
-      <section>
-        <TawkTo />
-      </section>
+      {/* Uncomment and set "Overview > Status" and "Channels > Chat Widget > Widget Status" to Active on TawkTo */}
+      <section>{/* <TawkTo /> */}</section>
     </main>
   );
 }

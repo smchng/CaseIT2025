@@ -1,6 +1,5 @@
 export const overviewText = {
-  header2: "About DiscoverIT",
-  title: ["About DiscoverIT", "CaptureIT", "SpirIT"],
+  title: ["About Discover", "Capture", "Spir"],
   paragraph: [
     "\bGet excITed for DISCOVERIT \b🔍 On the second day of the CaseIT Competition Week, get ready for an exhilarating chance to explore Vancouver and engage in entertaining challenges. It is an amazing opportunity to immerse yourself in the wonders of Vancouver by selecting your CaseIT tour. Dive into the city's premier attractions while experiencing a day in the life of a true Vancouverite. Anticipate this as an event that promises excitement and unforgettable experiences. Check out our DiscoverIT teaser to preview the exciting event!",
     "\bGet ready to hIT the shutters and CaptureIT\b 📷 You will embark on an exciting journey during DiscoverIT, where your team can partake in our annual social media challenge, CaptureIT. Competitors will showcase their adventures while exploring the beauty of Downtown Vancouver and its main attractions. With each tour, expect to partake in DiscoverIT challenges to accumulate SpirIT points. These bonus points will contribute to your team's SpirIT tally to compete for the SpirIT rize. This is your chance to make unforgettable memories and claim victory!",
@@ -32,23 +31,29 @@ export const tourText = {
 };
 
 export const CaptureITCardText = {
-  content:[
+  content: [
     {
-      header:"01/ Photos at DiscoverIT",
-      paragraph:"Take a picture of you and your team completing the DiscoverIT photo challenges! SpirIT points will be rewarded for completion and creativity. Please upload ONE Instagram story for every picture submission.",
-    }, 
+      header: "01/ Photos at DiscoverIT",
+      paragraph:
+        "Take a picture of you and your team completing the DiscoverIT photo challenges! SpirIT points will be rewarded for completion and creativity. Please upload ONE Instagram story for every picture submission.",
+    },
     {
-      header:"02/ Capture your Experience",
-      paragraph:"Record your experiences visiting tourist attractions and our top recommendations for restaurants.",
-    }, 
+      header: "02/ Capture your Experience",
+      paragraph:
+        "Record your experiences visiting tourist attractions and our top recommendations for restaurants.",
+    },
     {
-      header:"03/ BONUS",
-      paragraph:"Complete the DiscoverIT challenges included in your specific tour packages for EXTRA SpirIT points!",
-    }, 
-    
+      header: "03/ BONUS",
+      paragraph:
+        "Complete the DiscoverIT challenges included in your specific tour packages for EXTRA SpirIT points!",
+    },
   ],
 };
 
 export const CaptureITImgs = {
-  imgs:['/imgs/discoverit/Story1.png','/imgs/discoverit/Story2.png','/imgs/discoverit/Story3.png']
+  imgs: [
+    "/imgs/discoverit/Story1.png",
+    "/imgs/discoverit/Story2.png",
+    "/imgs/discoverit/Story3.png",
+  ],
 };

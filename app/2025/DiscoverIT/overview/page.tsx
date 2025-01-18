@@ -3,6 +3,7 @@ import { DiscoverITBanner } from "@/components/subpageBanner";
 import { Bento, BentoText } from "@/components/discoverITItems";
 import { overviewText } from "@/content/discoverIT_content";
 import { RoundedButton } from "@/components/buttons";
+import { BoldedText } from "@/components/text";
 
 export const metadata: Metadata = {
   title: "DiscoverIT - Overview",
@@ -42,12 +43,15 @@ export default function Overview() {
         </Bento>
 
         <Bento>
-          <BentoText
-            title={overviewText.title[2]}
-            text={overviewText.paragraph[2]}
-          ></BentoText>
-          <BentoText text={overviewText.paragraph[3]}></BentoText>
-          <BentoText text={overviewText.paragraph[4]}></BentoText>
+          {" "}
+          <div className="flex flex-col space-y-4">
+            <BentoText
+              title={overviewText.title[2]}
+              text={overviewText.paragraph[2]}
+            ></BentoText>
+            <BoldedText text={overviewText.paragraph[3]}></BoldedText>
+            <BoldedText text={overviewText.paragraph[4]}></BoldedText>
+          </div>
         </Bento>
       </section>
     </div>

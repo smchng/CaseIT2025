@@ -20,7 +20,11 @@ export const Bento = ({ children }: discoverITItems) => {
 export const BentoText = ({ title, text }: discoverITItems) => {
   return (
     <div>
-      <h1 className="text-header2 pb-4">{title}</h1>
+      <div className="text-header2"></div>
+      <h1 className="text-header2 pb-4">
+        {title}
+        <span className="text-red">IT</span>
+      </h1>
       <BoldedText text={text} />
     </div>
   );

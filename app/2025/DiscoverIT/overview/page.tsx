@@ -56,8 +56,9 @@ export default function Overview() {
       </section>
 
       <section className="">
-        {/* add padding */}
-        <OverviewMap />
+        <div className="mt-6 h-55">
+          <OverviewMap />
+        </div>
       </section>
     </div>
   );

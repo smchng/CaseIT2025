@@ -106,7 +106,6 @@ export const CaptureITPosts = ({ img }: discoverITItems) => {
   );
 };
 
-// add component here
 export const OverviewMap = () => {
   return (
     <div>
@@ -114,7 +113,6 @@ export const OverviewMap = () => {
         src="https://www.google.com/maps/d/embed?mid=1b6xiebGCg5bnW6dZBfN-u9xAZFV-QNY&ehbc=2E312F&noprof=1"
         loading="lazy"
         allowFullScreen
-        frameBorder="0"
         style={{ border: 0, width: "100%", height: "500px" }}
         title="Overview Map"
       ></iframe>

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { DiscoverITBanner } from "@/components/subpageBanner";
-import { Bento, BentoText } from "@/components/discoverITItems";
+import { Bento, BentoText, OverviewMap } from "@/components/discoverITItems";
 import { overviewText } from "@/content/discoverIT_content";
 import { RoundedButton } from "@/components/buttons";
 import { BoldedText } from "@/components/text";
@@ -53,6 +53,10 @@ export default function Overview() {
             <BoldedText text={overviewText.paragraph[4]}></BoldedText>
           </div>
         </Bento>
+      </section>
+
+      <section>
+        <OverviewMap />
       </section>
     </div>
   );

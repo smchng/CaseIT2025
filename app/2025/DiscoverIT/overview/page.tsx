@@ -55,7 +55,8 @@ export default function Overview() {
         </Bento>
       </section>
 
-      <section>
+      <section className="">
+        {/* add padding */}
         <OverviewMap />
       </section>
     </div>

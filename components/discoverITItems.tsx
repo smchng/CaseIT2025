@@ -38,7 +38,7 @@ export const TourBento = ({
   children,
 }: discoverITItems) => {
   return (
-    <div className="flex flex-col  lg:flex-row lg:space-x-20 p-10 py-12 bg-greyDark rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+    <div className="flex flex-col  lg:flex-row lg:space-x-20 p-7 bg-greyDark rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
       <div className=" flex flex-col space-y-3 pb-12 lg:pb-0">
         <div className="text-[18px] font-bold ">{subtext}</div>
         <div className="text-red text-header2">{title}</div>

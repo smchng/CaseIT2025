@@ -38,7 +38,7 @@ export const TourBento = ({
   children,
 }: discoverITItems) => {
   return (
-    <div className="flex flex-col  lg:flex-row lg:space-x-20 p-10 py-12 bg-greyDark rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+    <div className="flex flex-col  lg:flex-row lg:space-x-20 p-7 bg-greyDark rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
       <div className=" flex flex-col space-y-3 pb-12 lg:pb-0">
         <div className="text-[18px] font-bold ">{subtext}</div>
         <div className="text-red text-header2">{title}</div>
@@ -102,6 +102,20 @@ export const CaptureITPosts = ({ img }: discoverITItems) => {
         height={690.916} // Original aspect ratio height
         // className="rounded-xl  max-w-[45vw] lg:max-w-[25vw]"
       />
+    </div>
+  );
+};
+
+export const OverviewMap = () => {
+  return (
+    <div>
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1b6xiebGCg5bnW6dZBfN-u9xAZFV-QNY&ehbc=2E312F&noprof=1"
+        loading="lazy"
+        allowFullScreen
+        style={{ width: "100%", height: "85vh" }}
+        title="Overview Map"
+      ></iframe>
     </div>
   );
 };

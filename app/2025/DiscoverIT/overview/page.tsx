@@ -55,10 +55,8 @@ export default function Overview() {
         </Bento>
       </section>
 
-      <section className="">
-        <div className="mt-6 h-[50vh]">
-          <OverviewMap />
-        </div>
+      <section className="mt-6">
+        <OverviewMap />
       </section>
     </div>
   );

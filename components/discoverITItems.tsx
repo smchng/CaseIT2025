@@ -113,7 +113,7 @@ export const OverviewMap = () => {
         src="https://www.google.com/maps/d/embed?mid=1b6xiebGCg5bnW6dZBfN-u9xAZFV-QNY&ehbc=2E312F&noprof=1"
         loading="lazy"
         allowFullScreen
-        style={{ border: 0, width: "100%", height: "500px" }}
+        style={{ width: "100%", height: "85vh" }}
         title="Overview Map"
       ></iframe>
     </div>

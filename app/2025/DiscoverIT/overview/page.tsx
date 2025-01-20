@@ -56,7 +56,7 @@ export default function Overview() {
       </section>
 
       <section className="">
-        <div className="mt-6 h-55">
+        <div className="mt-6 h-[50vh]">
           <OverviewMap />
         </div>
       </section>

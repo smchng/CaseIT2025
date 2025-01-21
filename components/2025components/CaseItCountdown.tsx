@@ -48,7 +48,7 @@ export const CaseItCountdown = () => {
   ];
 
   return (
-    <fieldset className=" font-acid font-bold ">
+    <fieldset className="border-redDark border-4 rounded-xl lg:rounded-[30px] px-16 py-2 md:py-4 font-acid font-bold ">
       <legend className="uppercase text-redDark text-[1.5rem]">
         CaseIT 2025
       </legend>

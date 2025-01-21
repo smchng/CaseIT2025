@@ -12,7 +12,7 @@ export const content = {
       iteration, the Organizing Committee promises a competition full of fun,
       challenges, leaving you with double the memories! We are excited to
       welcome top business technology undergraduates and their faculty advisors
-      from around the world to the beautify city of Vancouver from{" "}
+      from around the world to the beautiful city of Vancouver from{" "}
       <strong>February 16 to 21, 2025</strong>.
     </p>
   ),

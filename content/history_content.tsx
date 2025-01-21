@@ -110,7 +110,7 @@ export const competitionData: CompetitionData[] = [
     title: "CaseIT 2004",
     description:
       "Beginning of CaseIT as an undergraduate MIS-oriented business case competition exclusively for Simon Fraser University Students.",
-    winner: "",
+    winner: "N/A",
   },
 ];
 

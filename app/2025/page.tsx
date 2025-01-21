@@ -24,7 +24,9 @@ export default function CaseIt2025() {
           <div className="text-header1 pb-8">
             {thiscontent.caseit2025Text.header1}
           </div>
-          <CaseItCountdown />
+          <div className=" border-redDark border-4 rounded-xl lg:rounded-[30px] px-12 py-2 md:py-4 ">
+            <CaseItCountdown />
+          </div>
         </BgImgCenter>
       </section>
       <section className="">

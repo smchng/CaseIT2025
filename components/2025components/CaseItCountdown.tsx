@@ -48,7 +48,7 @@ export const CaseItCountdown = () => {
   ];
 
   return (
-    <fieldset className="border-redDark font-acid border-4 rounded-xl lg:rounded-[30px] px-12 py-2 md:py-4 font-bold ">
+    <fieldset className=" font-acid font-bold ">
       <legend className="uppercase text-redDark text-[1.5rem]">
         CaseIT 2025
       </legend>
@@ -57,7 +57,10 @@ export const CaseItCountdown = () => {
         {timeUnits.map((unit, index) => (
           <>
             {/* Time unit (value and label) */}
-            <div key={unit.label} className="flex flex-col col-span-1 items-center justify-center">
+            <div
+              key={unit.label}
+              className="flex flex-col col-span-1 items-center justify-center"
+            >
               <div className="text-[2.5rem] md:text-[5rem] lg:text-[8rem] leading-[110%]">
                 {unit.value}
               </div>

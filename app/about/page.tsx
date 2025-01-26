@@ -103,7 +103,10 @@ export default function About() {
             <div className="text-paragraph pb-[4vh]">
               {about.aboutText.paragraph[1]}{" "}
             </div>
-            <PivotButton text="Learn More About PIVOT" link="/history" />
+            <PivotButton
+              text="Learn More About PIVOT"
+              link="https://pivot.caseit.org/"
+            />
           </div>
         </div>
       </section>

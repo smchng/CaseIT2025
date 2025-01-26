@@ -38,14 +38,16 @@ export const Footer = () => {
           <span className="hidden sm:flex">| </span>
           <Link
             className="hover:text-white duration-200"
-            href={"/privacypolicy"}
+            href={"https://www.sfu.ca/contact/terms-conditions/privacy.html"}
           >
             Privacy Policy{" "}
           </Link>
           <span className="hidden sm:flex">| </span>
           <Link
             className="hover:text-white duration-200"
-            href={"/tradterritories"}
+            href={
+              "https://www.sfu.ca/communicators-toolkit/brand/guidelines/writing/editorial-style-guide/language-grammar/territorial-acknowledgements.html"
+            }
           >
             Traditional Territories Acknowledgement
           </Link>

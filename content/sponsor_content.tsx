@@ -29,19 +29,19 @@ export const sponsorOverviewText = {
   sectionTitle: [{ title: "Why Sponsor CaseIT?" }],
   ribbons: [
     {
-      img: "/imgs/sponsorsOverview/SponsOverview1.png",
+      img: "/imgs/sponsorOverview/SponsOverview1.png",
       alt: "group candid",
       title: "Top Talent Recruitment",
       desc: "Engage with motivated and driven participants at CaseIT and our local competition PIVOT, who are passionate about leveraging technology to create impactful change in our community. \nConnect with the CaseIT 2025 Organizing Committee comprised of 50 dedicated SFU students actively pursuing opportunities in various fields of business. \nBuild your brand as a valued partner of CaseIT and the Beedie School of Business - a network of over 3,800 undergraduate Bachelor of Business Administration students.",
     },
     {
-      img: "/imgs/sponsorsOverview/SponsOverview2.png",
+      img: "/imgs/sponsorOverview/SponsOverview2.png",
       alt: "group candid",
       title: "Build Professional Connections",
       desc: "Tap into a network of leading technology companies ranked amongst the Forbes Global 2000 List.\n Connect with distinguished professors and faculty advisors from leading universities from around the globe and the Beedie School of Business.\nEngage and network with industry professionals from the Vancouver business community.",
     },
     {
-      img: "/imgs/sponsorsOverview/SponsOverview3.png",
+      img: "/imgs/sponsorOverview/SponsOverview3.png",
       alt: "group candid",
       title: "Give Back to Your Community",
       desc: "Share your expertise, feedback, and insights with the next generation of local and international MIS leaders.\nSupport an established, reputable academic case competition by providing top global competitors a unique opportunity to apply their classroom knowledge in a meaningful, challenging way.\nContribute to the rising prevalence and importance of technology-focused undergraduate business programs in universities around the world.",

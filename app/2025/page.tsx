@@ -43,9 +43,7 @@ export default function CaseIt2025() {
           {content.content.section_2_Pargraph}
         </div>
       </section>
-
       {/* COMPETITION INFORMATION */}
-
       <section className="flex flex-col justify-center items-center px-4 md:px-8 xl:px-20 md:mx-auto max-w-[1920px]">
         <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
           {content.content.section_3_Title}
@@ -78,7 +76,6 @@ export default function CaseIt2025() {
           </div>
         </div>
       </section>
-
       {/* RESULTS IMAGES */}
       {/* <section className="w-full flex flex-col justify-center items-center pt-[10vh] space-y-12">
         {content.results.map((item, index) => (
@@ -87,9 +84,8 @@ export default function CaseIt2025() {
           </div>
         ))}
       </section> */}
-
+      test push
       {/* COMPETITION INFORMATION */}
-
       <section className=" mt-24 gap-4 flex flex-col items-center">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
           {content.caseit2025Text.header2}
@@ -99,7 +95,6 @@ export default function CaseIt2025() {
           {content.caseit2025Text.disclaimer}
         </p>
       </section>
-
       <section className="w-full flex justify-center mt-6 py-[10vh]">
         {/* Hidden square buttons  */}
         {/* <div className="flex hidden md:flex items-center justify-center gap-4">

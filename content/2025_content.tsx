@@ -58,3 +58,22 @@ export const caseItEvents = [
       "Finalists are invited to present, followed by the Awards Banquet which concludes CaseIT 2025. Keynote speakers from the case organization, the Beedie School of Business, and Title sponsors will be in attendance, culminating in the highly anticipated announcement of the CaseIT 2025 champions.",
   },
 ];
+
+export const results = [
+  {
+    img: "/imgs/2024_OC.png",
+    alt: "Downtown Vancouver",
+    title: "Case I",
+  },
+  {
+    img: "/imgs/2024_OC.png",
+    alt: "Downtown Vancouver",
+    title: "Case II",
+  },
+
+  {
+    img: "/imgs/2024_OC.png",
+    alt: "Downtown Vancouver",
+    title: "Finalists",
+  },
+];

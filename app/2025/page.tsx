@@ -3,13 +3,14 @@ import caseitChair from "@/public/imgs/caseitChair.jpg";
 import sponsor from "@/public/imgs/2025_sponsor.png";
 import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";
-import * as thiscontent from "@/content/2025_content";
+import * as content from "@/content/2025_content";
 import { Stats } from "../../components/2025components/Stats";
 import { CaseItEvent } from "../../components/2025components/CaseItEvent";
 import { CaseItCountdown } from "../../components/2025components/CaseItCountdown";
 import { ArrowButton } from "@/components/buttons";
 import banner from "@/public/imgs/banners/2025_banner.png";
 import { ImgButton2025 } from "@/components/2025components/ImgButton2025";
+import { Results } from "@/components/2025components/results";
 
 export const metadata: Metadata = {
   title: "CaseIT 2025",
@@ -22,7 +23,7 @@ export default function CaseIt2025() {
       <section id="2025" className="">
         <BgImgCenter img={banner}>
           <div className="text-header1 pb-8">
-            {thiscontent.caseit2025Text.header1}
+            {content.caseit2025Text.header1}
           </div>
           <div className="w-full sm:w-[60vw] md:w-[80vw] lg:w-[90vw] xl:w-[80%]">
             <CaseItCountdown />
@@ -39,7 +40,7 @@ export default function CaseIt2025() {
             <Stats title="The suprises" />
             <Stats title="The memories" />
           </div>
-          {thiscontent.content.section_2_Pargraph}
+          {content.content.section_2_Pargraph}
         </div>
       </section>
 
@@ -47,7 +48,7 @@ export default function CaseIt2025() {
 
       <section className="flex flex-col justify-center items-center px-4 md:px-8 xl:px-20 md:mx-auto max-w-[1920px]">
         <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
-          {thiscontent.content.section_3_Title}
+          {content.content.section_3_Title}
         </h2>
 
         <div className="mt-6 grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-6 sm:max-w-[80vw] lg:max-w-[60vw]">
@@ -78,15 +79,24 @@ export default function CaseIt2025() {
         </div>
       </section>
 
+      {/* RESULTS IMAGES */}
+      {/* <section className="w-full flex flex-col justify-center items-center pt-[10vh] space-y-12">
+        {content.results.map((item, index) => (
+          <div key={index}>
+            <Results img={item.img} alt={item.alt} title={item.title} />
+          </div>
+        ))}
+      </section> */}
+
       {/* COMPETITION INFORMATION */}
 
       <section className=" mt-24 gap-4 flex flex-col items-center">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
-          {thiscontent.caseit2025Text.header2}
+          {content.caseit2025Text.header2}
         </h2>
         <CaseItEvent />
         <p className="text-paragraph  p-7">
-          {thiscontent.caseit2025Text.disclaimer}
+          {content.caseit2025Text.disclaimer}
         </p>
       </section>
 

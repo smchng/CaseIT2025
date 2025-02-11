@@ -84,7 +84,7 @@ export default function CaseIt2025() {
           </div>
         ))}
       </section> */}
-      test push
+
       {/* COMPETITION INFORMATION */}
       <section className=" mt-24 gap-4 flex flex-col items-center">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">

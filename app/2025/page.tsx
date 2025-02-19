@@ -11,7 +11,7 @@ import { ArrowButton } from "@/components/buttons";
 import banner from "@/public/imgs/banners/2025_banner.png";
 import { ImgButton2025 } from "@/components/2025components/ImgButton2025";
 import { Results } from "@/components/2025components/results";
-
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "CaseIT 2025",
   description: "Learn more about our company and team.",
@@ -85,8 +85,34 @@ export default function CaseIt2025() {
         ))}
       </section> */}
 
+      {/* COMP WEEK RESULTS */}
+      <section className="mt-[20vh] flex flex-col gap-4 p-7 md:p-0 md:max-w-[80vw] mx-auto">
+        <div className="font-semibold text-[2rem] text-center md:text-[2.5rem] pb-8">
+          {content.caseit2025Text.header2[1]}
+        </div>
+
+        {content.compWeek.caseOne}
+
+        <div className="grid md:grid-cols-2 gap-4">
+          {content.caseOneImgs.map((item, index) => (
+            <div key={index}>
+              <Image src={item.src} alt={item.src} width={500} height={450} />
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="mt-[20vh] flex flex-col gap-4 p-7 md:p-0 md:max-w-[80vw] mx-auto">
+        {content.compWeek.caseOneWinner}
+        <Image
+          src="/imgs/compWeek/C1_win.png"
+          alt="case 1 winner"
+          width={1100}
+          height={436}
+        />
+      </section>
+
       {/* COMPETITION INFORMATION */}
-      <section className=" mt-24 gap-4 flex flex-col items-center">
+      {/* <section className=" mt-24 gap-4 flex flex-col items-center">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
           {content.caseit2025Text.header2}
         </h2>
@@ -94,7 +120,7 @@ export default function CaseIt2025() {
         <p className="text-paragraph  p-7">
           {content.caseit2025Text.disclaimer}
         </p>
-      </section>
+      </section> */}
       <section className="w-full flex justify-center mt-6 py-[10vh]">
         {/* Hidden square buttons  */}
         {/* <div className="flex hidden md:flex items-center justify-center gap-4">

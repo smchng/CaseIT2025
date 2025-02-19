@@ -1,9 +1,41 @@
 export const caseit2025Text = {
   header1: "Ready for iT?",
-  header2: "Competition Schedule",
+  header2: ["Competition Schedule", "Live Updates"],
   disclaimer:
     "Note: An official detailed schedule for CaseIT 2025 will be updated soon.",
 };
+
+export const compWeek = {
+  caseOne: (
+    <h2 className="font-semibold text-header2">
+      <span className="text-redDark">Case I</span> Division Draw
+    </h2>
+  ),
+  caseOneWinner: (
+    <h2 className="font-semibold text-header2">
+      <span className="text-redDark">Case I</span> Division Winners
+    </h2>
+  ),
+};
+
+export const caseOneImgs = [
+  {
+    src: "/imgs/compWeek/C1_div1.png",
+    alt: "div 1",
+  },
+  {
+    src: "/imgs/compWeek/C1_div2.png",
+    alt: "div 2",
+  },
+  {
+    src: "/imgs/compWeek/C1_div3.png",
+    alt: "div 3",
+  },
+  {
+    src: "/imgs/compWeek/C1_div4.png",
+    alt: "div 4",
+  },
+];
 
 export const content = {
   section_2_Pargraph: (

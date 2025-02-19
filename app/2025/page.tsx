@@ -96,7 +96,13 @@ export default function CaseIt2025() {
         <div className="grid md:grid-cols-2 gap-4">
           {content.caseOneImgs.map((item, index) => (
             <div key={index}>
-              <Image src={item.src} alt={item.src} width={500} height={450} />
+              <Image
+                className="w-full"
+                src={item.src}
+                alt={item.src}
+                width={500}
+                height={450}
+              />
             </div>
           ))}
         </div>

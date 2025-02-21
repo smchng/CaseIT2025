@@ -107,7 +107,6 @@ export default function CaseIt2025() {
           ))}
         </div>
 
-        <div></div>
         <Results
           img2="/imgs/compWeek/C1_win.png"
           img1="/imgs/compWeek/C1_mobile.png"

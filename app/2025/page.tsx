@@ -107,13 +107,17 @@ export default function CaseIt2025() {
           ))}
         </div>
 
+        <div></div>
         <Results
-          img="/imgs/compWeek/C1_win.png"
+          img2="/imgs/compWeek/C1_win.png"
+          img1="/imgs/compWeek/C1_mobile.png"
           alt="case 1 winner"
           title={content.compWeek.caseOneWinner}
         />
+
         <Results
-          img="/imgs/compWeek/C2_win.png"
+          img2="/imgs/compWeek/C2_win.png"
+          img1="/imgs/compWeek/C2_mobile.png"
           alt="case 2 winner"
           title={content.compWeek.caseTwoWinner}
         />

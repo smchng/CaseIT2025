@@ -7,17 +7,17 @@ export const caseit2025Text = {
 
 export const compWeek = {
   caseOne: (
-    <h2 className="font-semibold text-header2">
+    <h2 className="font-semibold text-header3 sm:text-header2">
       <span className="text-redDark">Case I</span> Division Draw
     </h2>
   ),
   caseOneWinner: (
-    <h2 className="font-semibold text-header2">
+    <h2 className="font-semibold text-header3 sm:text-header2">
       <span className="text-redDark">Case I</span> Division Winners
     </h2>
   ),
   caseTwoWinner: (
-    <h2 className="font-semibold text-header2">
+    <h2 className="font-semibold text-header3 sm:text-header2">
       <span className="text-redDark">Case II</span> Division Winners
     </h2>
   ),

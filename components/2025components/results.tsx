@@ -9,7 +9,7 @@ type resultsProps = {
 
 export const Results = ({ title, img1, img2, alt }: resultsProps) => {
   return (
-    <div>
+    <div className="mt-4">
       {title}
       <div className="md:hidden">
         <Image

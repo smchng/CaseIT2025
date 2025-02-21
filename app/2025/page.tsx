@@ -106,17 +106,18 @@ export default function CaseIt2025() {
             </div>
           ))}
         </div>
-      </section>
-      <section className="mt-[20vh] flex flex-col gap-4 p-7 md:p-0 md:max-w-[80vw] mx-auto">
-        {content.compWeek.caseOneWinner}
-        <Image
-          src="/imgs/compWeek/C1_win.png"
+
+        <Results
+          img="/imgs/compWeek/C1_win.png"
           alt="case 1 winner"
-          width={1100}
-          height={436}
+          title={content.compWeek.caseOneWinner}
+        />
+        <Results
+          img="/imgs/compWeek/C2_win.png"
+          alt="case 2 winner"
+          title={content.compWeek.caseTwoWinner}
         />
       </section>
-
       {/* COMPETITION INFORMATION */}
       {/* <section className=" mt-24 gap-4 flex flex-col items-center">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">

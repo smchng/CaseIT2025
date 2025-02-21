@@ -16,6 +16,11 @@ export const compWeek = {
       <span className="text-redDark">Case I</span> Division Winners
     </h2>
   ),
+  caseTwoWinner: (
+    <h2 className="font-semibold text-header2">
+      <span className="text-redDark">Case II</span> Division Winners
+    </h2>
+  ),
 };
 
 export const caseOneImgs = [

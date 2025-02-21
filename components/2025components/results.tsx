@@ -9,7 +9,7 @@ type resultsProps = {
 
 export const Results = ({ title, img1, img2, alt }: resultsProps) => {
   return (
-    <div className="mt-[20vh] flex flex-col gap-4 p-7 md:p-0 md:max-w-[80vw] mx-auto">
+    <div>
       {title}
       <div className="md:hidden">
         <Image

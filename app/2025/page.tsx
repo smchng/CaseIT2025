@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import caseitChair from "@/public/imgs/chair/caseitChair.jpg";
+import caseitChair from "@/public/imgs/chair/2025/caseitChair.jpg";
 import sponsor from "@/public/imgs/2025_sponsor.png";
 import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";

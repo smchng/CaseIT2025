@@ -29,7 +29,7 @@ export const ImgRibbonLeft = ({
     }
   };
   return (
-    <div className="md:flex md:space-x-[5vw]">
+    <div className="md:flex md:space-x-[5vw] items-center">
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <ImgLeft
           img={isHovered ? hoverImg : img}
@@ -64,7 +64,7 @@ export const ImgRibbonRight = ({
     }
   };
   return (
-    <div className="flex flex-col-reverse md:flex-row md:space-x-[5vw]">
+    <div className="flex flex-col-reverse md:flex-row md:space-x-[5vw]  items-center">
       {" "}
       <div className="md:px-[5vw] md:w-[70vw] flex flex-col items-start justify-center px-7">
         {children}

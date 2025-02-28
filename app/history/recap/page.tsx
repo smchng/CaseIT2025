@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function Recap2024() {
   return (
     <div>
+      {/* ---MAIN BANNER--- */}
       <section id="recap">
         <BgImgCenter img={banner}>
           <div className="text-header1 pb-[5vh]">{re.recapText.header1}</div>
@@ -35,6 +36,7 @@ export default function Recap2024() {
           </div>
         </BgImgCenter>
       </section>
+      {/* ---INFO AND IMGS--- */}
       <section className="flex flex-col space-y-[3rem] md:space-y-[4rem]">
         {re.recapText.positions.map((item, index) => (
           <div key={index}>
@@ -75,10 +77,15 @@ export default function Recap2024() {
             )}
           </div>
         ))}
+      </section>{" "}
+      {/* ---Winner Cards--- */}
+      <section className="flex flex-col space-y-[3rem] md:space-y-[4rem] py-[4rem]">
+        {/* titles */}
         <div className="flex flex-col mx-auto text-center ">
-          <text className="text-red text-header4">Award</text>
-          <text className="text-header3">CaseIT 2024 Placements</text>
+          <text className="text-red text-header4">{re.recapText.header4}</text>
+          <text className="text-header3">{re.recapText.header3}</text>
         </div>
+        {/* cards  */}
         <div className="grid mx-auto max-w-[80vw] md:max-w-[60vw] md:grid-cols-2 2xl:grid-cols-2 gap-[1.644rem]">
           {re.recapCardText.map((item, index) => (
             <div key={index}>
@@ -90,10 +97,10 @@ export default function Recap2024() {
             </div>
           ))}
         </div>
-        <div className="flex justify-center pb-[15vh]">
-          <ArrowButton link="#recap" />
-        </div>
       </section>
+      <div className="flex justify-center pb-[15vh]">
+        <ArrowButton link="#recap" />
+      </div>
     </div>
   );
 }

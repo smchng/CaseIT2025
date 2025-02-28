@@ -10,8 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // Moving parts like nav bars and carousels
       animation: {
-        marquee: "marquee 25s linear infinite",
+        marquee: "marquee 65s linear infinite",
         "nav1-open": "nav1_open 0.3s ease-in-out forwards  ",
         "nav1-close": "nav1_close 0.3s ease-in-out forwards   ",
         "nav2-open": "nav2_open 0.3s ease-in-out forwards  ",
@@ -59,6 +60,7 @@ const config: Config = {
         acid: ["acid", "sans-serif"],
       },
     },
+    // Colours used based on Figma Library
     colors: {
       white: "#FFFFFF", //default white
 

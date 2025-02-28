@@ -34,8 +34,11 @@ export default function Home() {
 
   return (
     <main>
+      {/* ---MAIN BANNER--- */}
       <div className=" relative overflow-hidden h-screen md:mb-[20vh]">
+        {/* BG moving imgs */}
         <HeroSection />
+        {/* Title text with red dots  */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2">
           <div className="w-full h-screen items-center justify-center flex ">
             <div>
@@ -53,7 +56,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* ---Stat scroll and globe section--- */}
       <section className="relative overflow-hidden md:py-[25vh]">
+        {/* bg img  */}
         <div className="absolute inset-0 -z-10 flex items-center justify-center">
           <Image
             src="/svgs/globe.svg"
@@ -63,6 +68,7 @@ export default function Home() {
             className="w-[150vw] h-auto hidden md:block"
           />
         </div>
+        {/* number scrolling */}
         <div
           ref={sectionRef}
           className="grid grid-cols-2 mb-20 mt-12 md:mt-4 md:grid-cols-5 place-items-center p-8 gap-8 max-w-96 md:max-w-[1440px] mx-auto"
@@ -78,6 +84,7 @@ export default function Home() {
             />
           ))}
         </div>
+        {/* Vancouver card  */}
         <div className="  mt-12 grid grid-cols-1 md:grid-cols-2 border-redDark border-2 rounded-2xl gap-12 p-6 md:p-12 xl:p-20 w-[90%] max-w-[25rem] md:max-w-[1200px] mx-auto drop-shadow-[0_0_15px_rgba(197,52,52,0.25)] bg-white">
           <div className="w-full">
             <Icon2025 width="100%" height="100%" />
@@ -99,6 +106,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* ---What is CaseIT--- */}
       <section className=" relative flex flex-col bg-sectionBlack w-full text-left md:text-center md:items-center justify-center font-light gap-8 text-white mt-16 py-32 md:h-screen px-8 overflow-hidden ">
         <div className="absolute pointer-events-none inset-[-50rem] scale-75 bg-[url('/svgs/city.svg')] bg-center bg-no-repeat blur-[8px] opacity-100" />
         <h2 className="text-header2 font-semibold">

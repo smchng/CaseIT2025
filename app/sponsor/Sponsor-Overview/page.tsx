@@ -18,10 +18,11 @@ export const metadata: Metadata = {
 export default function SponsorOverview() {
   return (
     <div>
+      {/* ---MAIN BANNER--- */}
       <section id="sponOpp">
         <BgImgLeft>
           <SponsorBanner
-            title={sponsor.sponsorOverviewText.header2}
+            title={sponsor.sponsorOverviewText.header2[0]}
             subtext={sponsor.sponsorOverviewText.subtext}
             text={sponsor.sponsorOverviewText.desc}
           >
@@ -32,12 +33,14 @@ export default function SponsorOverview() {
           </SponsorBanner>
         </BgImgLeft>
       </section>
+      {/* ---SPONSOR TILES--- */}
       <section className="flex flex-col justify-center pb-[5vh]">
         <div className="text-header3 md:text-header2 md:text-center pl-[10vw] md:pl-0 pb-[10vh]">
           {sponsor.sponsorTileContent.sectionTitle[0].title}
         </div>
         <div className="max-w-[80vw] mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 lg:gap-[4rem] lg:grid-cols-3 lg:grid-rows-4 lg:p-[8%] xl:grid-cols-4 xl:grid-rows-3 ">
           {sponsor.sponsorTileContent.sponsors.map((item, index) => (
+            // Populated by the content
             <div key={index}>
               <SponsorTiles
                 img={sponsor.sponsorTileContent.sponsors[index].img}
@@ -48,6 +51,7 @@ export default function SponsorOverview() {
           ))}
         </div>
       </section>
+      {/* ---INFO AND IMGS--- */}
       <section>
         <div className="text-header3 md:text-header2 text-center pt-[5rem] md:py-[7.5rem]">
           {sponsor.sponsorOverviewText.sectionTitle[0].title}
@@ -80,13 +84,15 @@ export default function SponsorOverview() {
           ))}
         </div>
       </section>
+      {/* ---PLUG---  */}
       <section className="flex justify-center pt-[7rem]">
         <div>
           <div className="flex flex-col text-center max-w-[80vw]">
-            <h2 className="text-header2">What can I sponsor?</h2>
+            <h2 className="text-header2">
+              {sponsor.sponsorOverviewText.header2[1]}
+            </h2>
             <p className="py-[1.6rem] max-w-[100vw] xs:max-w-[30vw] md:max-w-[30vw] self-center">
-              Explore the CaseIt 2024 Financial, Technological, and In-Kind
-              oportunities by checking out the link below!
+              {sponsor.sponsorOverviewText.plug}
             </p>
             <RoundedButton
               text="Explore Sponsorship Opportunities"

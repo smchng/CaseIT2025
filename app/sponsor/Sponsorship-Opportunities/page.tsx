@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 export default function SponsorOpps() {
   return (
     <div>
+      {/* ---MAIN BANNER--- */}
       <section id="SponsorshipOpportunities">
         <BgImgLeft>
           <SponsorBanner
@@ -28,6 +29,7 @@ export default function SponsorOpps() {
           </SponsorBanner>
         </BgImgLeft>
       </section>
+      {/* ---SPONSOR CARDS--- */}
       <section>
         <div>
           {sponsor.sponsorOpportunitiesContent.sponsOp.map((item, index) => (

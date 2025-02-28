@@ -1,9 +1,7 @@
 import { Metadata } from "next";
-import { BgImgLeft } from "@/components/img";
 import { RoundedButton, ArrowButton } from "@/components/buttons";
 import { GalleryCards } from "@/components/mediaItems";
 import * as media from "@/content/media_content";
-import { SponsorBanner, MobileButtons } from "@/components/sponsorItems";
 
 export const metadata: Metadata = {
   title: "Media Gallery",
@@ -13,6 +11,7 @@ export const metadata: Metadata = {
 export default function Media() {
   return (
     <div>
+      {/* ---MAIN BANNER--- */}
       <section id="MediaTop" className="relative w-full py-[15vh]">
         <div className="w-full flex items-center justify-center md:justify-start pb-[3vh] md:pb-[2vh]">
           <div className="flex flex-col space-y-[2vh] max-w-[85vw] md:max-w-[50vw] xl:max-w-[40vw] mx-[8vw] md:mx-[15vw] xl:mx-[15vw] text-left">
@@ -35,9 +34,11 @@ export default function Media() {
           </div>
         </div>
       </section>
+      {/* ---GALLERY CARDS--- */}
       <section>
         <div className="grid mx-auto max-w-[80%] md:pb-[5vh] md:grid-cols-2 2xl:grid-cols-3 gap-[1.644rem]">
           {media.galleryText.map((item, index) => (
+            // Populates the cards based on content
             <div key={index}>
               <GalleryCards
                 title={media.galleryText[index].title}

@@ -1,5 +1,8 @@
 export const recapText = {
   header1: "What happened at CaseIT 2024?",
+  header3: "CaseIT 2024 Placements",
+  header4: "Awards",
+
   positions: [
     {
       day: "Day One",

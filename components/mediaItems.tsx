@@ -6,12 +6,10 @@ import { BoldedText } from "./text";
 import Link from "next/link";
 
 type galleryItems = {
-  text?: string;
-  link?: string;
-  title?: string;
-  subtext?: string;
-  img?: string;
-  alt?: string;
+  link: string;
+  title: string;
+  subtext: string;
+  img: string;
   state?: string;
 };
 
@@ -19,7 +17,6 @@ export const GalleryCards = ({
   title,
   subtext,
   img,
-  alt,
   link,
   state,
 }: galleryItems) => {
@@ -29,15 +26,27 @@ export const GalleryCards = ({
         <div>
           <Image
             src={img || "/imgs/mediaGallery/mediaGallery.png"}
-            alt={alt || "Gallery photo"}
+            alt="Gallery photo"
             width={472}
             height={267}
             className="mx-auto w-full rounded-xl border"
           />
         </div>
         <div className="text-center py-4">
-          <div className={`text-paragraph font-bold ${state === "disabled" ? "text-[#C7C5C5]" : ""}`}>{title}</div>
-          <div className={`text-paragraph ${state === "disabled" ? "text-[#C7C5C5]" : " text-greyLight"}`}>{subtext}</div>
+          <div
+            className={`text-paragraph font-bold ${
+              state === "disabled" ? "text-[#C7C5C5]" : ""
+            }`}
+          >
+            {title}
+          </div>
+          <div
+            className={`text-paragraph ${
+              state === "disabled" ? "text-[#C7C5C5]" : " text-greyLight"
+            }`}
+          >
+            {subtext}
+          </div>
         </div>
       </div>
     </Link>

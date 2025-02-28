@@ -23,8 +23,9 @@ export const sponsorShowcaseText = {
 };
 
 export const sponsorOverviewText = {
-  header2: "Sponsoring CaseIT 2025",
+  header2: ["Sponsoring CaseIT 2025", "What can I sponsor?"],
   subtext: "Overview",
+  plug: "Explore the CaseIt 2024 Financial, Technological, and In-Kind oportunities by checking out the link below!",
   desc: "Through the generosity, support, and involvement of our corporate partners, CaseIT is proud to foster meaningful connections within the business and technology industry. Are you looking to become involved as a sponsor? Learn more about our sponsorship opportunities for our 22nd iteration.",
   sectionTitle: [{ title: "Why Sponsor CaseIT?" }],
   ribbons: [

@@ -50,9 +50,15 @@ export const Footer = () => {
             }
           >
             Traditional Territories Acknowledgement
-          </Link>
+          </Link>{" "}
         </div>
       </nav>
+      <Link
+        href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+        className="text-buttonRedDark text-[10px] "
+      >
+        smchng
+      </Link>
     </div>
   );
 };

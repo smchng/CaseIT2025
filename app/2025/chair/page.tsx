@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import chair from "@/public/imgs/caseitChair.jpg";
-import signature from "@/public/imgs/chairSignature.png";
+import chair from "@/public/imgs/chair/2025/caseitChair.jpg";
+import signature from "@/public/imgs/chair/2025/chairSignature.png";
 import * as chairs from "@/content/chair_content";
 import { RoundedButton } from "@/components/buttons";
 

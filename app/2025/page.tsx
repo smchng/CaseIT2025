@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import caseitChair from "@/public/imgs/caseitChair.jpg";
+import caseitChair from "@/public/imgs/chair/caseitChair.jpg";
 import sponsor from "@/public/imgs/2025_sponsor.png";
 import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";
@@ -99,15 +99,15 @@ export default function CaseIt2025() {
         </div>
 
         <Results
-          img2="/imgs/compWeek/C1_win.png"
-          img1="/imgs/compWeek/C1_mobile.png"
+          img2="/imgs/compWeek/2025/C1_win.png"
+          img1="/imgs/compWeek/2025/C1_mobile.png"
           alt="case 1 winner"
           title={content.compWeek.caseOneWinner}
         />
 
         <Results
-          img2="/imgs/compWeek/C2_win.png"
-          img1="/imgs/compWeek/C2_mobile.png"
+          img2="/imgs/compWeek/2025/C2_win.png"
+          img1="/imgs/compWeek/2025/C2_mobile.png"
           alt="case 2 winner"
           title={content.compWeek.caseTwoWinner}
         />

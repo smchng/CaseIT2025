@@ -17,8 +17,8 @@ export const ocText = {
       desc: "The Operations team is the backbone of CaseIT, ensuring everything runs smoothly behind the scenes. This dynamic group oversees daily activities like securing sponsorships, strengthening internal team culture and tackling challenges.",
       names:
         "Left to right: Amanda Chan, Ananya Singh, Aliya Hussain, Justin Tabuchi, Andrew Oberson, Paul Lee, Ramiz Sabahat, Victor Le.",
-      img: "/imgs/oc/ops.jpg",
-      img2: "/imgs/oc/ops_silly.jpg",
+      img: "/imgs/oc/2025/ops.jpg",
+      img2: "/imgs/oc/2025/ops_silly.jpg",
       alt: "faculty advisors img",
     },
     {
@@ -26,8 +26,8 @@ export const ocText = {
       desc: "The Competition Executive team is the driving force behind a seamless execution of CaseIT. With their commitment to excellence, they ensure every event runs smoothly and efficiently.",
       names:
         "Left to right: Crystal Wen, Alexandra Ileto, Dasom Kim, Jarl Arciaga, Helen Chen, Yosei Ishida, Reina Castaneda, Praveeni Balaji, Jennif Berlian. Missing: Jessica La Grange.",
-      img: "/imgs/oc/compex.jpg",
-      img2: "/imgs/oc/compex_silly.png",
+      img: "/imgs/oc/2025/compex.jpg",
+      img2: "/imgs/oc/2025/compex_silly.png",
       alt: "faculty advisors img",
     },
     {
@@ -36,7 +36,7 @@ export const ocText = {
       names:
         "Left to right: Simon Wong Chung, Clayton Lam, Christine Hui, Caleb Tsui, Alan Lam, Samantha Chung, Kaia Crozier, August Othanavathakit, Jeffrey Su. ",
       img: "/imgs/oc/marketing.jpg",
-      img2: "/imgs/oc/marketing_silly.jpg",
+      img2: "/imgs/oc/2025/marketing_silly.jpg",
       alt: "faculty advisors img",
     },
     {
@@ -44,8 +44,8 @@ export const ocText = {
       desc: "This team works together to host our local rendition of CaseIT, designed specifically for British Columbia’s next generation of business leaders. With a focus on Business Technology Management (BTM), this competition is built for local CaseIT enthusiasts who are eager to showcase their skills and looking to compete.",
       names:
         "Left to right: Yumi Kawagoe, Knacky Sun, Alexis Yew, Joshua Chang, Devangi Bajaj.",
-      img: "/imgs/oc/pivot.jpg",
-      img2: "/imgs/oc/pivot_silly.jpg",
+      img: "/imgs/oc/2025/pivot.jpg",
+      img2: "/imgs/oc/2025/pivot_silly.jpg",
       alt: "faculty advisors img",
     },
     {
@@ -53,8 +53,8 @@ export const ocText = {
       desc: "Team Hosts are our competitors’ ultimate guides during competition week. They are responsible for ensuring teams are where they need to be, while also showing them an unforgettable time around the city of Vancouver.",
       names:
         "Left to right: Catherine Ho, Aley Nguyen, Kai Lee, Olivia Cheng, Troy Cheah, Shriansha Madaan, Adrian Wong, Angela Lim, Sana Vankalwala, Andy Cheng, Katherine Huang, Matthias Chun, Arianna Tham, Shannon Tang. Missing: Alina Paracha, Lauren Riestra.",
-      img: "/imgs/oc/teamHost.jpg",
-      img2: "/imgs/oc/teamHost_silly.jpg",
+      img: "/imgs/oc/2025/teamHost.jpg",
+      img2: "/imgs/oc/2025/teamHost_silly.jpg",
       alt: "faculty advisors img",
     },
   ],

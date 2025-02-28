@@ -1,20 +1,18 @@
 import { StaticImageData } from "next/image";
 // import images here, also makes it easier for the next Image component
 import ph from "@/public/imgs/CaseIT_On3.png";
-import andrew from "@/public/imgs/getinvolved/andrew.png";
-import suki from "@/public/imgs/getinvolved/suki.png";
-import shirley from "@/public/imgs/getinvolved/shirley.png";
-import cameron from "@/public/imgs/getinvolved/cameron.png";
-import stephanie from "@/public/imgs/getinvolved/stephanie.png";
-import troy from "@/public/imgs/getinvolved/troy.png";
+import andrew from "@/public/imgs/getinvolved/2025/andrew.png";
+import suki from "@/public/imgs/getinvolved/2025/suki.png";
+import shirley from "@/public/imgs/getinvolved/2025/shirley.png";
+import cameron from "@/public/imgs/getinvolved/2025/cameron.png";
+import stephanie from "@/public/imgs/getinvolved/2025/stephanie.png";
+import troy from "@/public/imgs/getinvolved/2025/troy.png";
 
 export const historyText = {
   header2: "Relive our best moments",
 };
 
-export const heroContent = {
-
-};
+export const heroContent = {};
 
 export type MemberTypes = {
   name: string;
@@ -66,7 +64,6 @@ export const memberData: MemberTypes[] = [
       "“Being a Team Host for CaseIT was one of the highlights of my semester.  Through this  experience, I built meaningful and lasting friendships that extended far beyond the competition. I highly recommend this role to anyone—it's an amazing way to connect and make lasting memories during your undergrad.”",
     position: "CaseIT 2024, Team Host",
   },
-  
 ];
 
 export const imgButtons = [

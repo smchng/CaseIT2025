@@ -25,14 +25,14 @@ export const DesktopFAQ = ({ question, answer }: textItems) => {
         <p className="flex-end">
           {isToggleOpen ? (
             <Image
-              src="/svgs/tabArrowUp.svg"
+              src="/svgs/arrows/tabArrowUp.svg"
               alt="Arrow Up"
               width={15}
               height={15}
             />
           ) : (
             <Image
-              src="/svgs/tabArrowDown.svg"
+              src="/svgs/arrows/tabArrowDown.svg"
               alt="Arrow Down"
               width={15}
               height={15}

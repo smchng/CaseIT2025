@@ -172,7 +172,7 @@ export const sponsorOpportunitiesContent = {
   sponsOp: [
     {
       title: "Financial Sponsorship",
-      img: "/svgs/sponsorIcon1.svg",
+      img: "/svgs/sponsor/sponsorIcon1.svg",
       text: "Our tiers are designed to offer a diverse range of touch points with competitors, faculty advisors, the CaseIT Organizing Committee, and industry professionals. \nBased on your sponsorship tier, your organization will be featured in one or more of our Signature Events, such as the Welcome Ceremony, Sponsor Networking Event, and Award Banquet. You will also have the opportunity to invite representatives as industry judges for our Preliminary, Wildcard, or Final Presentations. Join us for an exciting and impactful experience!",
       alt: "Various icons with subheadders",
       subtext:
@@ -180,7 +180,7 @@ export const sponsorOpportunitiesContent = {
     },
     {
       title: "Technology Sponsorship",
-      img: "/svgs/sponsorIcon2.svg",
+      img: "/svgs/sponsor/sponsorIcon2.svg",
       text: "Technology sponsors will be featured on the CaseIT website, social media, event program, and other relevant materials. You will also receive a tailored resume book showcasing all competitors and the CaseIT Organizing Committee, plus an exclusive invitation to our Awards Banquet.",
       alt: "Various icons with subheadders",
       subtext:
@@ -188,7 +188,7 @@ export const sponsorOpportunitiesContent = {
     },
     {
       title: "In-kind Sponsorship",
-      img: "/svgs/sponsorIcon3.svg",
+      img: "/svgs/sponsor/sponsorIcon3.svg",
       text: "In-kind sponsors will have their name and hyperlink displayed on our website, a feature in our event program, and countless uses of their in-kind product throughout the competition week.",
       alt: "Various icons with subheadders",
       subtext:

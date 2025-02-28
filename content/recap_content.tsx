@@ -11,7 +11,7 @@ export const recapText = {
       title2: "ExchangeIT",
       desc2:
         "ExchangeIT, a component of ReadyForIt, gave competitors from all around the world the chance to show off all their unique items from their home country and swap swag with all the competitors and organizing committee!",
-      img: "/imgs/recap/day1.png",
+      img: "/imgs/recap/2024/day1.png",
       alt: "group candid",
     },
     {
@@ -21,14 +21,14 @@ export const recapText = {
       title2: "Welcome Ceremony ",
       desc2:
         "The Welcome Ceremony celebrated, brought together, and connected competing teams, coaches, industry professionals, and the CaseIT Organizing Committee for the very first time, jumpstarting the official start to CaseIT 2024.",
-      img: "/imgs/recap/day2.png",
+      img: "/imgs/recap/2024/day2.png",
       alt: "group candid",
     },
     {
       day: "Day Three",
       title: "Case I Presentations",
       desc: "Case I of CaseIT’s set the stage for innovation as teams tackled real-world challenges and suggested creative solutions within a 5-hour deliberation period. Competitors presented their solutions to a panel of industry professionals for 15 minutes, followed by a 5 minute Q&A.",
-      img: "/imgs/recap/day3.png",
+      img: "/imgs/recap/2024/day3.png",
       alt: "group candid",
     },
     {
@@ -38,14 +38,14 @@ export const recapText = {
       title2: "Coaches Dinner",
       desc2:
         "As our competitors were challenged with the 24-hour case, the coaches were invited to an exclusive dinner for their diligent efforts in the heart of downtown Vancouver. The dinner offered a chance for coaches to unwind, share experiences, and celebrate the hard work and dedication that went into guiding the teams throughout the intense competition.",
-      img: "/imgs/recap/day4.png",
+      img: "/imgs/recap/2024/day4.png",
       alt: "group candid",
     },
     {
       day: "Day Five",
       title: "Microsoft Sponsor Event",
       desc: "Competitors were welcomed to engage in one of two interactive workshops at Microsoft’s Vancouver location and connect with industry professionals. The workshops provided valuable insights into the latest technologies, fostering collaboration and networking opportunities for all participants.",
-      img: "/imgs/recap/day5.png",
+      img: "/imgs/recap/2024/day5.png",
       alt: "group candid",
     },
     {
@@ -55,7 +55,7 @@ export const recapText = {
       title2: "Award Banquet",
       desc2:
         "The Awards Banquet wrapped up our intensive competition week of CaseIT 2024. Competitors gathered in formal attire to celebrate their achievements. The evening featured speeches from faculty members and the CaseIT team, highlighting the event's significance and the hard work of all participants. Finally, the winners of CaseIT 2024 were announced along with other existing awards.",
-      img: "/imgs/recap/day6.png",
+      img: "/imgs/recap/2024/day6.png",
       alt: "group candid",
     },
   ],
@@ -65,21 +65,21 @@ export const recapCardText = [
   {
     title: "1st Place",
     subtext: "HEC Montréal University",
-    img: "/imgs/recap/recapPlacement1.png",
+    img: "/imgs/recap/2024/recapPlacement1.png",
   },
   {
     title: "2nd Place",
     subtext: "University of Washington",
-    img: "/imgs/recap/recapPlacement2.png",
+    img: "/imgs/recap/2024/recapPlacement2.png",
   },
   {
     title: "3rd Place",
     subtext: "Ivey School of Business",
-    img: "/imgs/recap/recapPlacement3.png",
+    img: "/imgs/recap/2024/recapPlacement3.png",
   },
   {
     title: "Best Speaker",
     subtext: "Sherry Yang",
-    img: "/imgs/recap/recapPlacement4.png",
+    img: "/imgs/recap/2024/recapPlacement4.png",
   },
 ];

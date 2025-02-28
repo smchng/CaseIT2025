@@ -95,7 +95,7 @@ export default function About() {
             className="w-[90vw] md:hidden"
           />
           <Image
-            src="/svgs/pivot.svg"
+            src="/svgs/caseit/pivot.svg"
             alt="pivot banner"
             width={229}
             height={10}

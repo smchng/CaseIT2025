@@ -27,19 +27,19 @@ export const stats = ["The engagement", "The surprises", "The memories"];
 
 export const caseOneImgs = [
   {
-    src: "/imgs/compWeek/C1_div1.png",
+    src: "/imgs/compWeek/2025/C1_div1.png",
     alt: "div 1",
   },
   {
-    src: "/imgs/compWeek/C1_div2.png",
+    src: "/imgs/compWeek/2025/C1_div2.png",
     alt: "div 2",
   },
   {
-    src: "/imgs/compWeek/C1_div3.png",
+    src: "/imgs/compWeek/2025/C1_div3.png",
     alt: "div 3",
   },
   {
-    src: "/imgs/compWeek/C1_div4.png",
+    src: "/imgs/compWeek/2025/C1_div4.png",
     alt: "div 4",
   },
 ];

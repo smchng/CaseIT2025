@@ -2,7 +2,7 @@
 import { NavList } from "./NavList";
 import { NavLinks } from "@/content/nav_content";
 import { useState, useEffect, useRef } from "react";
-import CaseitLogoBlack from "@/public/svgs/CaseitLogoBlack";
+import CaseitLogoBlack from "@/public/svgs/caseit/CaseitLogoBlack";
 import { usePathname } from "next/navigation";
 import { NavListMobile } from "./NavListMobile";
 

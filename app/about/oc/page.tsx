@@ -5,7 +5,7 @@ import { RoundedButton } from "@/components/buttons";
 import * as oc from "@/content/oc_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
 import { OCText } from "@/components/text";
-import groupPic from "@/public/imgs/oc/oc.jpg";
+import groupPic from "@/public/imgs/oc/2025/oc.jpg";
 
 export const metadata: Metadata = {
   title: "OC Team",

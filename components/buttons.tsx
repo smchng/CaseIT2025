@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
-import { ArrowIcon } from "@/public/svgs/arrow";
+import { ArrowIcon } from "@/public/svgs/arrows/arrow";
 
 // CLSX library was used here to create different variations of imgButtons
 // Make sure you npm install!
@@ -201,7 +201,7 @@ export const ArrowButton = ({ img, alt }: ButtonProps) => {
     <button onClick={handleScrollToTop}>
       <div className="bg-buttonBlack hover:bg-buttonRedDark transition-all p-5 rounded-2xl ">
         <Image
-          src={img || "/svgs/arrowButton.svg"}
+          src={img || "/svgs/arrows/arrowButton.svg"}
           alt={alt || "red button with an arrow pointing up"}
           width={25}
           height={25}

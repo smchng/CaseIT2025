@@ -1,5 +1,5 @@
 import { NavList } from "./navigation/NavList";
-import CaseitLogoWhite from "@/public/svgs/CaseitLogoWhite";
+import CaseitLogoWhite from "@/public/svgs/caseit/CaseitLogoWhite";
 import { allLinks, socialLinks } from "@/content/footer_content";
 import Link from "next/link";
 

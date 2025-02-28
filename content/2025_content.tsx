@@ -1,6 +1,6 @@
 export const caseit2025Text = {
   header1: "Ready for iT?",
-  header2: ["Competition Schedule", "Live Updates"],
+  header2: ["Competition Schedule", "Live Updates", "22nd iteration"],
   disclaimer:
     "Note: An official detailed schedule for CaseIT 2025 will be updated soon.",
 };
@@ -22,6 +22,8 @@ export const compWeek = {
     </h2>
   ),
 };
+
+export const stats = ["The engagement", "The surprises", "The memories"];
 
 export const caseOneImgs = [
   {

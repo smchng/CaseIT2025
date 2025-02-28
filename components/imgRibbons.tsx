@@ -9,6 +9,7 @@ type ribbonItems = {
   hoverImg?: string;
 };
 
+// Image on the left while the text or children elements are on the right
 export const ImgRibbonLeft = ({
   hoverImg,
   img,
@@ -43,6 +44,7 @@ export const ImgRibbonLeft = ({
   );
 };
 
+// Image on the right while the text or children elements are on the left
 export const ImgRibbonRight = ({
   hoverImg,
   img,

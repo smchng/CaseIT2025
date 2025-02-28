@@ -8,7 +8,7 @@ type textItems = {
   answer: string;
 };
 
-export const FAQ = ({ question, answer }: textItems) => {
+export const DesktopFAQ = ({ question, answer }: textItems) => {
   const [isToggleOpen, setToggleOpen] = useState(false);
 
   const handleToggleClick = () => {
@@ -54,7 +54,7 @@ export const FAQ = ({ question, answer }: textItems) => {
   );
 };
 
-export const MobileContactText = ({ question, answer }: textItems) => {
+export const MobileFAQ = ({ question, answer }: textItems) => {
   return (
     <div>
       <div className="text-header4 ">{question}</div>

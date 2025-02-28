@@ -58,5 +58,5 @@ export const chairContent = {
 };
 
 export const chairText = {
-  header: ["Chair's Welcome"],
+  header: "Chair's Welcome",
 };

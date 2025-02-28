@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export default function OC() {
   return (
     <div className="pb-[10vh]">
+      {/* ---MAIN BANNER---  */}
       <section>
         <BgImgCenter>
           <div className="text-header1">{oc.ocText.header1}</div>
@@ -23,17 +24,22 @@ export default function OC() {
           </div>
         </BgImgCenter>
       </section>
-      <div className="py-[10vh] justify-center items-center flex flex-col space-y-6 w-full">
-        <div className="text-header2">{oc.ocText.header2}</div>
-        <Image
-          src={groupPic}
-          alt="CaseIT OC Group Pic"
-          width={1002}
-          height={503}
-          className="w-[90vw] xl:w-[60vw] h-auto xl:rounded-2xl rounded-xl"
-        />
-      </div>
+      {/* ---ENTIRE OC---  */}
+      <section>
+        <div className="py-[10vh] justify-center items-center flex flex-col space-y-6 w-full">
+          <div className="text-header2">{oc.ocText.header2}</div>
+          <Image
+            src={groupPic}
+            alt="CaseIT OC Group Pic"
+            width={1002}
+            height={503}
+            className="w-[90vw] xl:w-[60vw] h-auto xl:rounded-2xl rounded-xl"
+          />
+        </div>
+      </section>
+      {/* ---PORTFOLIO PICS---  */}
       <section className="flex flex-col space-y-[10vh] md:space-y-[20vh]">
+        {/* Parses through each photo based on the content arrays - Edit the content to alter the photos  */}
         {oc.ocText.positions.map((item, index) => (
           <div key={index}>
             {index % 2 === 0 ? (

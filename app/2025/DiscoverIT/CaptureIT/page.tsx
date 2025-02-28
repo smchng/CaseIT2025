@@ -5,7 +5,11 @@ import {
   CaptureITCard,
   CaptureITPosts,
 } from "@/components/discoverITItems";
-import { CaptureITCardText, CaptureITImgs } from "@/content/discoverIT_content";
+import {
+  CaptureITBannerText,
+  CaptureITCardText,
+  CaptureITImgs,
+} from "@/content/discoverIT_content";
 export const metadata: Metadata = {
   title: "DiscoverIT - CaptureIT",
   description: "Learn more about our company and team.",
@@ -14,12 +18,18 @@ export const metadata: Metadata = {
 export default function CaptureIT() {
   return (
     <div className="py-[20vh] px-7 md:px-16 xl:px-[15vw]">
+      {/* ---MAIN NAV--- */}
       <div className="pb-8">
         <DiscoverITBanner></DiscoverITBanner>
       </div>
       <section className="md:flex md:flex-col lg:grid lg:grid-cols-2">
         <div className="pb-[10vh]">
-          <CaptureITBanner></CaptureITBanner>
+          {/* ---INTRO PRAGRAPH--- */}
+          <CaptureITBanner
+            title={CaptureITBannerText.title}
+            paragraph={CaptureITBannerText.paragraph}
+          />
+          {/* ---EACH SECTION--- */}
           {CaptureITCardText.content.map((item, index) => (
             <div key={index}>
               <CaptureITCard
@@ -29,7 +39,7 @@ export default function CaptureIT() {
             </div>
           ))}
         </div>
-
+        {/* ---IMAGES--- */}
         <div className="pb-6">
           {CaptureITImgs.imgs.map((item, index) => (
             <div key={index}>

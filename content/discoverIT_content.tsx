@@ -30,6 +30,23 @@ export const tourText = {
   img: ["/imgs/discoverit/Tour1.png", "/imgs/discoverit/Tour2.png"],
 };
 
+export const CaptureITBannerText = {
+  title: (
+    <p>
+      Capture<span className="text-red">IT</span>
+    </p>
+  ),
+  paragraph: (
+    <p>
+      Capture memorable moments of your team exploring Vancouver and upload them
+      on Instagram to earn points and win the SpirIT prize! Make sure to set
+      your settings to public and mention{" "}
+      <span className="text-red">@caseitsfu</span> along with a hashtag of your
+      university (e.g. #simonfraseruniversity).
+    </p>
+  ),
+};
+
 export const CaptureITCardText = {
   content: [
     {

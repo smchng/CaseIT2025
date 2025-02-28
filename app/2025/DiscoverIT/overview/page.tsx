@@ -13,9 +13,12 @@ export const metadata: Metadata = {
 export default function Overview() {
   return (
     <div className="py-[20vh] px-7 md:px-16 xl:px-[15vw]">
+      {/* ---MAIN NAV--- */}
       <div className="pb-8">
         <DiscoverITBanner></DiscoverITBanner>
       </div>
+
+      {/* ---TOP BENTO--- */}
       <section className="pb-6">
         <Bento>
           {" "}
@@ -27,7 +30,10 @@ export default function Overview() {
           </div>{" "}
         </Bento>
       </section>
+
+      {/* ---BOTTOM BENTO--- */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* ---LEFT--- */}
         <Bento>
           <BentoText
             title={overviewText.title[1]}
@@ -41,7 +47,7 @@ export default function Overview() {
             />
           </div>
         </Bento>
-
+        {/* ---RIGHT--- */}
         <Bento>
           {" "}
           <div className="flex flex-col space-y-4">
@@ -54,7 +60,7 @@ export default function Overview() {
           </div>
         </Bento>
       </section>
-
+      {/* ---GOOGLE MAP--- */}
       <section className="mt-6">
         <OverviewMap />
       </section>

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="md:py-[20vh] py-[10vh]">
+      {/* ---TOP INTRO---  */}
       <section className="pb-[20vh]">
         <div className="md:flex md:space-x-[2vw] xl:space-x-[5vw]">
           <ImgRibbonLeft img="/imgs/about.png" alt="team candid">
@@ -31,6 +32,7 @@ export default function About() {
           </ImgRibbonLeft>
         </div>
       </section>
+      {/* ---ICON SECTION--- */}
       <section className="md:flex md:space-x-[5vw] bg-greyDark justify-center p-7 ">
         {about.icons.map((item, index) => (
           <IconImg
@@ -43,8 +45,9 @@ export default function About() {
           />
         ))}
       </section>
+      {/* ---MAP TITLE--- */}
       <section className="py-[15vh]">
-        {/* MOBILE */}
+        {/* MOBILE - no red dots */}
         <div className="md:hidden flex space-x-2 justify-center  ">
           {about.titles.map((item, index) => (
             <div key={index} className="text-header4">
@@ -52,7 +55,7 @@ export default function About() {
             </div>
           ))}
         </div>
-        {/* DESKTOP */}
+        {/* DESKTOP - with red dots*/}
         <div className="hidden sm:flex w-full justify-center mt-[8vh] space-x-[5px]">
           {about.titles.map((item, index) => (
             <text.TextDot
@@ -61,6 +64,7 @@ export default function About() {
             />
           ))}
         </div>
+        {/* MAP  */}
         <div className="flex flex-col justify-center w-full ">
           <Image
             src="/imgs/map.png"
@@ -71,6 +75,7 @@ export default function About() {
           />
         </div>{" "}
       </section>
+      {/* ---PIVOT SECTION---  */}
       <section className=" bg-pivotBlue md:bg-transparent md:relative">
         {/* DESKTOP BG IMAGE */}
         <Image
@@ -110,6 +115,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      {/* ---IMAGE BUTTON CARDS---  */}
       <section className="w-full  flex flex-col items-center p-7">
         <div className="text-header2 py-[5vh]">
           {about.aboutText.header2[0]}{" "}

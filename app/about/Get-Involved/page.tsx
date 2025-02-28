@@ -13,21 +13,24 @@ export const metadata: Metadata = {
 export default function GetInvolved() {
   return (
     <div>
+      {/* ---MAIN BANNER---  */}
       <section>
         <BgImgCenter img={banner}>
           <div className="flex flex-col items-center">
             <div className="text-redDark text-center text-header4">
               {involved.involvedText.red}
             </div>
-            <div className="text-header1 text-center pb-8 md:max-w-[50vw]">
+            {/* Title */}
+            <div className="text-header1 text-center pb-8 lg:max-w-[50vw]">
               {involved.involvedText.header1}
             </div>
+            {/* Buttons */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-4">
               <RoundedButton
                 text="Apply now"
-                link="/history"
+                link="/history" // link to application form
                 variant="black"
-                state="disabled"
+                state="disabled" //remove this to enable
               />
               <RoundedButton
                 text="View 2025 Recruitment Package"
@@ -38,12 +41,14 @@ export default function GetInvolved() {
           </div>
         </BgImgCenter>
       </section>
+      {/* ---CAROUSEL SECTION--- */}
       <section className="  mt-24 ">
         <h2 className=" text-header2 ml-8 lg:ml-32 mb-12 max-w-[24ch] tracking-tight leading-tight">
           {involved.involvedText.header2[0]}
         </h2>
         <Carousel />
       </section>
+      {/* ---PLUG--- */}
       <section className="flex flex-col justify-center items-center gap-6 py-28 px-4">
         <h2 className="text-header2 text-center">
           {involved.involvedText.header2[1]}

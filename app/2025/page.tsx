@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 export default function CaseIt2025() {
   return (
     <div>
+      {/* ---MAIN BANNER--- */}
       <section id="2025" className="">
         <BgImgCenter img={banner}>
           <div className="text-header1 pb-8">
@@ -30,25 +31,25 @@ export default function CaseIt2025() {
           </div>
         </BgImgCenter>
       </section>
-      <section className="">
+      <section>
         <div className="flex gap-2 flex-col md:items-center p-8">
-          <h2 className="text-redDark font-semibold text-[1.125rem] lg:text-[1.75rem]">
-            22nd iteration
+          <h2 className="text-redDark font-semibold text-header3 md:text-header2">
+            {content.caseit2025Text.header2[2]}
           </h2>
           <div className="flex flex-col md:flex-row md:justify-center md:gap-16 lg:gap-24">
-            <Stats title="The engagement" />
-            <Stats title="The suprises" />
-            <Stats title="The memories" />
+            {content.stats.map((stat, index) => (
+              <Stats key={index} title={stat} />
+            ))}
           </div>
           {content.content.section_2_Pargraph}
         </div>
       </section>
-      {/* COMPETITION INFORMATION */}
+      {/* ---COMPETITION INFORMATION--- */}
       <section className="flex flex-col justify-center items-center px-4 md:px-8 xl:px-20 md:mx-auto max-w-[1920px]">
         <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
           {content.content.section_3_Title}
         </h2>
-
+        {/* ---3 BUTTON GRID---  */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-6 sm:max-w-[80vw] lg:max-w-[60vw]">
           <div className="group relative md:row-span-2 md:col-span-2 aspect-video md:aspect-[0] ">
             <ImgButton2025
@@ -76,17 +77,8 @@ export default function CaseIt2025() {
           </div>
         </div>
       </section>
-      {/* RESULTS IMAGES */}
-      {/* <section className="w-full flex flex-col justify-center items-center pt-[10vh] space-y-12">
-        {content.results.map((item, index) => (
-          <div key={index}>
-            <Results img={item.img} alt={item.alt} title={item.title} />
-          </div>
-        ))}
-      </section> */}
-
-      {/* COMP WEEK RESULTS */}
-      <section className="mt-[20vh] flex flex-col gap-4 p-7 md:p-0 md:max-w-[80vw] mx-auto">
+      {/* ---COMP WEEK RESULTS - LIVE UPDATES--- */}
+      <section className="my-[20vh] flex flex-col gap-4 p-7 md:p-0 md:max-w-[80vw] mx-auto">
         <div className="font-semibold text-[2rem] text-center md:text-[2.5rem] pb-8">
           {content.caseit2025Text.header2[1]}
         </div>
@@ -121,7 +113,8 @@ export default function CaseIt2025() {
           title={content.compWeek.caseTwoWinner}
         />
       </section>
-      {/* COMPETITION INFORMATION */}
+
+      {/* ---COMPETITION INFORMATION SCHEDULE--- */}
       {/* <section className=" mt-24 gap-4 flex flex-col items-center">
         <h2 className=" font-semibold text-[2rem]  md:text-[2.5rem]">
           {content.caseit2025Text.header2}
@@ -131,9 +124,11 @@ export default function CaseIt2025() {
           {content.caseit2025Text.disclaimer}
         </p>
       </section> */}
+
+      {/* ---Hidden square buttons---  */}
+      {/*
       <section className="w-full flex justify-center mt-6 py-[10vh]">
-        {/* Hidden square buttons  */}
-        {/* <div className="flex hidden md:flex items-center justify-center gap-4">
+       <div className="flex hidden md:flex items-center justify-center gap-4">
           <SquareButton
             variant="black"
             text="Rulebook"
@@ -152,10 +147,10 @@ export default function CaseIt2025() {
             subtext="Tune into CaseIT signature events."
             link="/history"
           />
-        </div> */}
-        <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
-          <ArrowButton link="#2025" />
-        </section>
+        </div> 
+          </section>*/}
+      <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
+        <ArrowButton link="#2025" />
       </section>
     </div>
   );

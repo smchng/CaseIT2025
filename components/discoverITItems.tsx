@@ -2,8 +2,9 @@
 import { BoldedText } from "./text";
 import Image from "next/image";
 type discoverITItems = {
-  title?: string;
+  title?: string | JSX.Element;
   text?: string;
+  paragraph?: JSX.Element;
   img?: string;
   subtext?: string;
   children?: React.ReactNode;
@@ -58,23 +59,11 @@ export const TourBento = ({
   );
 };
 
-export const CaptureITBanner = ({}: discoverITItems) => {
+export const CaptureITBanner = ({ title, paragraph }: discoverITItems) => {
   return (
     <div>
-      <div className="text-header2">
-        <p>
-          Capture<span className="text-red">IT</span>
-        </p>
-      </div>
-      <div className="pt-[3%]">
-        <p>
-          Capture memorable moments of your team exploring Vancouver and upload
-          them on Instagram to earn points and win the SpirIT prize! Make sure
-          to set your settings to public and mention{" "}
-          <span className="text-red">@caseitsfu</span> along with a hashtag of
-          your university (e.g. #simonfraseruniversity).
-        </p>
-      </div>
+      <div className="text-header2">{title}</div>
+      <div className="pt-[3%]">{paragraph}</div>
     </div>
   );
 };
@@ -109,6 +98,7 @@ export const CaptureITPosts = ({ img }: discoverITItems) => {
 export const OverviewMap = () => {
   return (
     <div>
+      {/* Simply an imported Google map :)  */}
       <iframe
         src="https://www.google.com/maps/d/embed?mid=1b6xiebGCg5bnW6dZBfN-u9xAZFV-QNY&ehbc=2E312F&noprof=1"
         loading="lazy"

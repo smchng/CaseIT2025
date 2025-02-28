@@ -7,7 +7,7 @@ import {
   SponsorBanner,
   SponsorTiles,
   MobileButtons,
-} from "@/components/sponsorItems";
+} from "@/components/pages/sponsorItems";
 import { RoundedButton, ArrowButton } from "@/components/buttons";
 
 export const metadata: Metadata = {

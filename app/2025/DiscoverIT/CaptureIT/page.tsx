@@ -4,7 +4,7 @@ import {
   CaptureITBanner,
   CaptureITCard,
   CaptureITPosts,
-} from "@/components/discoverITItems";
+} from "@/components/pages/discoverITItems";
 import {
   CaptureITBannerText,
   CaptureITCardText,

@@ -4,6 +4,10 @@ import Link from "next/link";
 import clsx from "clsx";
 import { ArrowIcon } from "@/public/svgs/arrow";
 
+// CLSX library was used here to create different variations of imgButtons
+// Make sure you npm install!
+// Additional variations can be applied but this should cover almost all states
+
 type buttonItems = {
   img?: string;
   alt?: string;

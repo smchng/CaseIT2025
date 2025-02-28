@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import * as re from "@/content/recap_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
-import { RecapCards } from "@/components/recapItems";
+import { RecapCards } from "@/components/pages/recapItems";
 import { BgImgCenter } from "@/components/img";
 import { RecapText } from "@/components/text";
 import { RoundedButton, ArrowButton } from "@/components/buttons";

@@ -5,7 +5,6 @@ import discover from "@/public/imgs/2025_discover.png";
 import { BgImgCenter } from "@/components/img";
 import * as content from "@/content/2025_content";
 import { Stats } from "../../components/2025components/Stats";
-import { CaseItEvent } from "../../components/2025components/CaseItEvent";
 import { CaseItCountdown } from "../../components/2025components/CaseItCountdown";
 import { ArrowButton } from "@/components/buttons";
 import banner from "@/public/imgs/banners/2025_banner.png";

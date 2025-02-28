@@ -1,5 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
+// anything to do with ImageResponse, like sizing and formating for other components too
+
 type imgItems = {
   img?: string | StaticImageData;
   stylingClasses?: string;

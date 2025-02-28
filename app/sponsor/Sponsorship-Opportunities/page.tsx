@@ -5,8 +5,8 @@ import {
   SponsorText,
   SponsorBanner,
   SponsorOpCards,
-} from "@/components/sponsorItems";
-import { MobileButtons } from "@/components/sponsorItems";
+} from "@/components/pages/sponsorItems";
+import { MobileButtons } from "@/components/pages/sponsorItems";
 import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {

@@ -1,5 +1,5 @@
 "use client";
-import { BoldedText } from "./text";
+import { BoldedText } from "../text";
 import Image from "next/image";
 type discoverITItems = {
   title?: string | JSX.Element;

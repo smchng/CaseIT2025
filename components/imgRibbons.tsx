@@ -2,6 +2,8 @@
 import { ImgLeft, ImgRight } from "@/components/img";
 import React, { useState } from "react";
 
+// Merges a few components into reusable image and info components
+
 type ribbonItems = {
   img: string;
   alt: string;

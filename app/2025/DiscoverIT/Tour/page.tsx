@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { DiscoverITBanner } from "@/components/subpageBanner";
-import { TourBento } from "@/components/discoverITItems";
+import { TourBento } from "@/components/pages/discoverITItems";
 import { tourText } from "@/content/discoverIT_content";
 
 export const metadata: Metadata = {

@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import * as text from "@/components/text";
 
 type textItems = {
   question: string;

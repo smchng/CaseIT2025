@@ -1,6 +1,10 @@
 import { Metadata } from "next";
 import { DiscoverITBanner } from "@/components/subpageBanner";
-import { Bento, BentoText, OverviewMap } from "@/components/discoverITItems";
+import {
+  Bento,
+  BentoText,
+  OverviewMap,
+} from "@/components/pages/discoverITItems";
 import { overviewText } from "@/content/discoverIT_content";
 import { RoundedButton } from "@/components/buttons";
 import { BoldedText } from "@/components/text";

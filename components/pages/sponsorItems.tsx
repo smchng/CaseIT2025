@@ -2,8 +2,8 @@
 import { RoundedButton } from "@/components/buttons";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { BoldedText, NewLineText, NewLineText2 } from "./text";
-import SubpageBanner from "./subpageBanner";
+import { BoldedText, NewLineText, NewLineText2 } from "../text";
+import SubpageBanner from "../subpageBanner";
 
 type sponsorItems = {
   text: string;

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { RoundedButton, ArrowButton } from "@/components/buttons";
-import { GalleryCards } from "@/components/mediaItems";
+import { GalleryCards } from "@/components/pages/mediaItems";
 import * as media from "@/content/media_content";
 
 export const metadata: Metadata = {

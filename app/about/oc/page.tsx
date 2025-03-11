@@ -26,7 +26,7 @@ export default function OC() {
       </section>
       {/* ---ENTIRE OC---  */}
       <section>
-        <div className="py-[10vh] justify-center items-center flex flex-col space-y-6 w-full">
+        <div className="p-7 py-[10vh] justify-center items-center flex flex-col space-y-6 w-full">
           <div className="text-header2">{oc.ocText.header2}</div>
           <Image
             src={groupPic}

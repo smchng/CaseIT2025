@@ -35,7 +35,7 @@ export const ocText = {
       desc: "The Marketing team is the creative minds of CaseIT. With innovative strategies and eye-catching designs, they connect with the community through different mediums. By capturing lively memories, no moment is lost.",
       names:
         "Left to right: Simon Wong Chung, Clayton Lam, Christine Hui, Caleb Tsui, Alan Lam, Samantha Chung, Kaia Crozier, August Othanavathakit, Jeffrey Su. ",
-      img: "/imgs/oc/marketing.jpg",
+      img: "/imgs/oc/2025/marketing.jpg",
       img2: "/imgs/oc/2025/marketing_silly.jpg",
       alt: "faculty advisors img",
     },

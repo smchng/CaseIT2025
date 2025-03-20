@@ -19,7 +19,7 @@ export default function History() {
       <section className=" flex flex-col pb-10 overflow-hidden">
         {/* INTRO PARAGRAPH  */}
         <div className="px-4 md:pl-32 pt-24">
-          <h2 className="text-header2  font-semibold">
+          <h2 className="text-header2  leading-none font-semibold">
             {history.heroContent.header}
           </h2>
           <h3 className="font-medium">{history.heroContent.subtitle}</h3>

@@ -17,7 +17,7 @@ export default function About() {
       {/* ---TOP INTRO---  */}
       <section className="pb-[20vh]">
         <div className="md:flex md:space-x-[2vw] xl:space-x-[5vw]">
-          <ImgRibbonLeft img="/imgs/about.png" alt="team candid">
+          <ImgRibbonLeft img="/imgs/about/about.png" alt="team candid">
             <div className="text-header2">{about.aboutText.header2[1]}</div>
             <div className="md:max-w-[50vw] pb-[2vh]">
               <div className="md:max-w-[50vw] md:pb-[2vh] pr-[3vw] text-paragraph">
@@ -67,7 +67,7 @@ export default function About() {
         {/* MAP  */}
         <div className="flex flex-col justify-center w-full ">
           <Image
-            src="/imgs/map.png"
+            src="/imgs/about/map.png"
             alt="map of schools"
             width={1536}
             height={892}
@@ -79,7 +79,7 @@ export default function About() {
       <section className=" bg-pivotBlue md:bg-transparent md:relative">
         {/* DESKTOP BG IMAGE */}
         <Image
-          src="/imgs/pivot.png"
+          src="/imgs/about/pivot/pivot.png"
           alt="map of schools"
           width={2436}
           height={1698}
@@ -88,7 +88,7 @@ export default function About() {
         <div className="md:absolute inset-0 flex flex-col md:flex-row justify-center  md:items-center space-y-[3vh] md:space-x-[10vw] py-[10vh] px-7  md:p-[10vw]">
           {" "}
           <Image
-            src="/imgs/pivotMobile.png"
+            src="/imgs/about/pivot/pivotMobile.png"
             alt="PIVOT comp"
             width={460}
             height={305}

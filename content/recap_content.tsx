@@ -64,22 +64,28 @@ export const recapText = {
 export const recapCardText = [
   {
     title: "1st Place",
-    subtext: "HEC Montréal University",
-    img: "/imgs/recap/2024/recapPlacement1.png",
+    subtext: "The University of Manchester",
+    img: "/imgs/winners/2025/Place1.png",
   },
   {
     title: "2nd Place",
-    subtext: "University of Washington",
-    img: "/imgs/recap/2024/recapPlacement2.png",
+    subtext: "Wilfred Laurier University",
+    img: "/imgs/winners/2025/Place2.png",
   },
   {
     title: "3rd Place",
-    subtext: "Ivey School of Business",
-    img: "/imgs/recap/2024/recapPlacement3.png",
+    subtext: "Cornivus University of Budapest",
+    img: "/imgs/winners/2025/Place3.png",
   },
+
   {
     title: "Best Speaker",
-    subtext: "Sherry Yang",
-    img: "/imgs/recap/2024/recapPlacement4.png",
+    subtext: "Jasmine Peart",
+    img: "/imgs/winners/2025/Speaker.png",
+  },
+  {
+    title: "Spirit Award",
+    subtext: "HEC Montréal University",
+    img: "/imgs/winners/2025/Spirit.png",
   },
 ];

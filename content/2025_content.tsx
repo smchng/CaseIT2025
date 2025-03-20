@@ -105,31 +105,31 @@ export const caseOneImgs = [
 
 export const winners = [
   {
-    img: "/imgs/compWeek/2025/Place1.png",
+    img: "/imgs/winners/2025/Place1.png",
     alt: "Manchster winner",
     title: "The University of Manchester",
     place: "First Place",
   },
   {
-    img: "/imgs/compWeek/2025/Place2.png",
+    img: "/imgs/winners/2025/Place2.png",
     alt: "Wilfred Laruier winner",
     title: "Wilfred Laurier University",
     place: "Second Place",
   },
   {
-    img: "/imgs/compWeek/2025/Place3.png",
+    img: "/imgs/winners/2025/Place3.png",
     alt: "Cornivus University of Budapest winner",
     title: "Cornivus University of Budapest",
     place: "Third Place",
   },
   {
-    img: "/imgs/compWeek/2025/Spirit.png",
+    img: "/imgs/winners/2025/Spirit.png",
     alt: "Manchster winner",
     title: "HEC Montréal",
     place: "Spirit Award",
   },
   {
-    img: "/imgs/compWeek/2025/Speaker.png",
+    img: "/imgs/winners/2025/Speaker.png",
     alt: "Speaker winner",
     title: "Jasmine Peart",
     place: "Best Speaker",

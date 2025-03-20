@@ -79,20 +79,28 @@ export default function Recap2024() {
         ))}
       </section>{" "}
       {/* ---Winner Cards--- */}
-      <section className="flex flex-col space-y-[3rem] md:space-y-[4rem] py-[4rem]">
+      <section className="flex flex-col space-y-[3rem] md:space-y-[4rem] py-[20vh]">
         {/* titles */}
         <div className="flex flex-col mx-auto text-center ">
           <text className="text-red text-header4">{re.recapText.header4}</text>
           <text className="text-header3">{re.recapText.header3}</text>
         </div>
         {/* cards  */}
-        <div className="grid mx-auto max-w-[80vw] md:max-w-[60vw] md:grid-cols-2 2xl:grid-cols-2 gap-[1.644rem]">
+        <div className="grid mx-auto max-w-[80vw] md:max-w-[60vw]  gap-5">
           {re.recapCardText.map((item, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              className={`${
+                re.recapCardText.length % 2 !== 0 &&
+                index === re.recapCardText.length - 1
+                  ? "md:col-span-2 flex justify-center"
+                  : ""
+              }`}
+            >
               <RecapCards
-                title={re.recapCardText[index].title}
-                subtext={re.recapCardText[index].subtext}
-                img={re.recapCardText[index].img}
+                title={item.title}
+                subtext={item.subtext}
+                img={item.img}
               />
             </div>
           ))}

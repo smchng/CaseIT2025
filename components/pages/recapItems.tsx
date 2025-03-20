@@ -14,20 +14,20 @@ type recapItems = {
 
 export const RecapCards = ({ title, subtext, img, alt }: recapItems) => {
   return (
-    <div className="flex flex-col">
-      <div className="rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.3)] focus:border-4 transition-all p-3">
+    <div className="flex flex-col md:max-w-[30vw] ">
+      <div>
         <div>
           <Image
             src={img || "/imgs/mediaGallery/mediaGallery.png"}
             alt={alt || "Award winners"}
             width={513}
             height={370}
-            className="mx-auto w-full rounded-xl border"
+            className="mx-auto w-full rounded-2xl"
           />
         </div>
         <div className="text-center py-4">
           <div className="text-header3">{title}</div>
-          <div className="text-lg">{subtext}</div>
+          <div className="text-paragraph">{subtext}</div>
         </div>
       </div>
     </div>

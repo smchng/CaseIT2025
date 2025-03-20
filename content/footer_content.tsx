@@ -7,7 +7,7 @@ const competitionLinks = [
 ];
 
 const sponsorshipLinks = [
-  // { name: "2025 Sponsors", ref: "/2025/Sponsor-Showcase" },
+  { name: "2025 Sponsors", ref: "/2025/Sponsor-Showcase" },
   { name: "Benefits", ref: "/sponsor/Sponsor-Overview" },
   {
     name: "Sponsorship Opportunities",

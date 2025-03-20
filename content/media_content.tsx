@@ -17,6 +17,12 @@ export const buttonText = [
 
 export const galleryText = [
   {
+    title: "CaseIT 2025",
+    subtext: "February 16-21, 2024",
+    img: "/imgs/mediaGallery/Gallery2025.png",
+    link: "https://drive.google.com/drive/folders/1mkOBqwmWtPPuD7FvBlQuO974As3zuGAS",
+  },
+  {
     title: "CaseIT 2024",
     subtext: "February 14-20, 2024",
     img: "/imgs/mediaGallery/Gallery2024.png",

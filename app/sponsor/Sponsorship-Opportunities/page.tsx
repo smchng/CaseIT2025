@@ -1,13 +1,8 @@
 import { Metadata } from "next";
 import { BgImgLeft } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
-import {
-  SponsorText,
-  SponsorBanner,
-  SponsorOpCards,
-} from "@/components/pages/sponsorItems";
+import { SponsorBanner, SponsorOpCards } from "@/components/pages/sponsorItems";
 import { MobileButtons } from "@/components/pages/sponsorItems";
-import { RoundedButton } from "@/components/buttons";
 
 export const metadata: Metadata = {
   title: "Sponsorship Opportunities",

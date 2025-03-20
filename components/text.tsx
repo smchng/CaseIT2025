@@ -50,6 +50,17 @@ export const RecapText = ({ title, text, subtext }: textItems) => {
   );
 };
 
+export const WinnersText = ({ title, subtext }: textItems) => {
+  return (
+    <div className="md:pl-10 flex flex-col space-y-3 leading-none">
+      <div className="text-red text-paragraph font-bold">{subtext}</div>
+      <div className="md:max-w-[50vw] pb-[2vh] ">
+        <div className="text-header2">{title}</div>
+      </div>
+    </div>
+  );
+};
+
 export const BoldedText = ({ text }: textItems) => {
   // Split the text using `\b` as the delimiter
   const segments = (text || "").split("\b"); // Using regex to capture \b as the delimiter

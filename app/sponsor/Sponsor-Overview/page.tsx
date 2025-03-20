@@ -3,7 +3,7 @@ import { BgImgLeft } from "@/components/img";
 import * as sponsor from "@/content/sponsor_content";
 import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
 import {
-  SponsorText,
+  SponsorOverviewRibbonText,
   SponsorBanner,
   SponsorTiles,
   MobileButtons,
@@ -64,7 +64,7 @@ export default function SponsorOverview() {
                   img={sponsor.sponsorOverviewText.ribbons[index].img}
                   alt={sponsor.sponsorOverviewText.ribbons[index].alt}
                 >
-                  <SponsorText
+                  <SponsorOverviewRibbonText
                     text={sponsor.sponsorOverviewText.ribbons[index].desc}
                     title={sponsor.sponsorOverviewText.ribbons[index].title}
                   />
@@ -74,7 +74,7 @@ export default function SponsorOverview() {
                   img={sponsor.sponsorOverviewText.ribbons[index].img}
                   alt={sponsor.sponsorOverviewText.ribbons[index].alt}
                 >
-                  <SponsorText
+                  <SponsorOverviewRibbonText
                     text={sponsor.sponsorOverviewText.ribbons[index].desc}
                     title={sponsor.sponsorOverviewText.ribbons[index].title}
                   />

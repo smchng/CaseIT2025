@@ -7,6 +7,7 @@ import {
   TechSponsor,
   SponsorTiles,
   SilverSponsor,
+  DiamondSponsor,
 } from "@/components/pages/sponsorItems";
 import { RoundedButton, ArrowButton } from "@/components/buttons";
 
@@ -18,91 +19,88 @@ export const metadata: Metadata = {
 export default function SponsorShowcase() {
   return (
     <div>
+      {/* ---MAIN BANNER--- */}
       <section id="sponShow">
         <BgImgCenter>
           <div className="text-start md:text-center">
             <div className="text-header1">
-              {sponsor.sponsorShowcaseText.header1}
+              {sponsor.sponsorShowcaseBannerText.header1}
             </div>
             <div className="text-paragraph pb-[3vh] md:pb-[5vh] md:max-w-[55vw]">
-              {sponsor.sponsorShowcaseText.subtext}
+              {sponsor.sponsorShowcaseBannerText.subtext}
             </div>
             <RoundedButton
               text="Learn More About CaseIT"
-              link="/contact"
+              link="/2025/Sponsor-Showcase"
               variant="red"
             />
           </div>
         </BgImgCenter>
       </section>
-      <section className="flex flex-col space-y-[20vh]">
-        {sponsor.sponsorShowcaseText.ribbons.map((item, index) => (
+      {/* ---TITLE SPONSORS--- */}
+      <section className="flex flex-col space-y-[10vh]">
+        {sponsor.titleSponsorContent.map((item, index) => (
           <div key={index}>
             <ImgRibbonRight
-              img={sponsor.sponsorShowcaseText.ribbons[index].img}
-              alt={sponsor.sponsorShowcaseText.ribbons[index].alt}
+              img={sponsor.titleSponsorContent[index].img}
+              alt={sponsor.titleSponsorContent[index].alt}
             >
               <SponsorShowcaseRibbons
-                text={sponsor.sponsorShowcaseText.ribbons[index].desc}
-                title={sponsor.sponsorShowcaseText.ribbons[index].title}
-                img={sponsor.sponsorShowcaseText.ribbons[index].logoImg}
-                alt={sponsor.sponsorShowcaseText.ribbons[index].logoAlt}
+                text={sponsor.titleSponsorContent[index].desc}
+                title={sponsor.titleSponsorContent[index].title}
+                img={sponsor.titleSponsorContent[index].logoImg}
+                alt={sponsor.titleSponsorContent[index].logoAlt}
               />
             </ImgRibbonRight>
           </div>
         ))}
       </section>
-
-      <section className="pt-[20vh]">
+      {/* ---DIAMOND SPONSORS--- */}
+      <section className=" px-7 mx-auto flex flex-col md:flex-row md:gap-[8rem] max-w-[90vw] space-y-12 md:space-y-0 py-[10vh] justify-center">
+        {sponsor.diamondSponsorContent.map((item, index) => (
+          <DiamondSponsor
+            text="Diamond Sponsor"
+            img={sponsor.diamondSponsorContent[index].img}
+            alt={sponsor.diamondSponsorContent[index].alt}
+          />
+        ))}
+      </section>
+      {/* ---TECH SPONSORS--- */}
+      <section>
         <TechSponsor
           title={sponsor.techSponsorContent.header1}
           subtext={sponsor.techSponsorContent.subtext}
           text={sponsor.techSponsorContent.text}
+          img={sponsor.techSponsorContent.img}
+          logo={sponsor.techSponsorContent.logo}
+          alt={sponsor.techSponsorContent.alt}
         />
       </section>
-      <section className="pt-[10vh] px-7 mx-auto flex flex-col md:flex-row md:justify-around ">
-        <div className="flex justify-center">
+
+      {/* ---SILVER SPONSORS--- */}
+      <section className=" px-7 mx-auto flex flex-col md:flex-row md:gap-[8rem] max-w-[90vw] space-y-12 md:space-y-0 py-[10vh]">
+        {sponsor.caseSponsorContent.map((item, index) => (
           <SilverSponsor
-            title={sponsor.silverSponsorContent.header1}
-            text={""}
+            title={sponsor.caseSponsorContent[index].header1}
+            subtext={sponsor.caseSponsorContent[index].subtext}
+            text={sponsor.caseSponsorContent[index].text}
+            img={sponsor.caseSponsorContent[index].img}
+            alt={sponsor.caseSponsorContent[index].alt}
           />
-        </div>
-        <div className="hidden md:flex justify-center">
-          <SilverSponsor
-            title={sponsor.silverSponsorContent.header1}
-            text={""}
-          />
-        </div>
-        <div className="flex md:hidden justify-center">
-          <SilverSponsor
-            title={sponsor.silverSponsorContent.header1}
-            text={""}
-            showHeader={false}
-          />
-        </div>
+        ))}
       </section>
+      {/* ---IN-KIND SPONSOR TILES--- */}
       <section className="flex flex-col justify-center py-[5vh]">
         <div className="text-header3 text-red text-center py-[10vh]">
-          {sponsor.pastSponsorTileContent.title}
+          {sponsor.inkindSponsorTileContent.title}
         </div>
-        <div className="max-w-[80vw] hidden md:grid mx-auto grid-cols-2 grid-rows-4 grid-flow-row gap-[1.644rem] md:gap-[6vh] md:grid-cols-4 md:grid-rows-2 lg:gap-[15vh] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
-          {sponsor.pastSponsorTileContent.sponsors.map((item, index) => (
+        <div className="max-w-[80vw]  grid mx-auto grid-cols-2 grid-rows-6 md:grid-rows-4 grid-flow-row gap-[1.644rem] md:gap-[6vh] md:grid-cols-4 md:grid-rows-2 lg:gap-[15vh] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
+          {sponsor.inkindSponsorTileContent.sponsors.map((item, index) => (
             <div key={index}>
               <SponsorTiles
-                img={sponsor.pastSponsorTileContent.sponsors[index].img}
+                img={sponsor.inkindSponsorTileContent.sponsors[index].img}
                 text={""}
-                alt={sponsor.pastSponsorTileContent.sponsors[index].alt}
-              />
-            </div>
-          ))}
-        </div>
-        <div className="max-w-[80vw] md:hidden mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 lg:gap-[6.5rem] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
-          {sponsor.pastSponsorTileContent.sponsors.map((item, index) => (
-            <div key={index}>
-              <SponsorTiles
-                img={sponsor.pastSponsorTileContent.sponsors[index].img}
-                text={sponsor.pastSponsorTileContent.sponsors[index].text}
-                alt={sponsor.pastSponsorTileContent.sponsors[index].alt}
+                alt={sponsor.inkindSponsorTileContent.sponsors[index].alt}
               />
             </div>
           ))}
@@ -110,7 +108,8 @@ export default function SponsorShowcase() {
       </section>
 
       {/* ADD AFTER COMP WEEK */}
-      {/* <section className="bg-[#FAFAFA] pb-[10vh]">
+      {/* ---THANK YOU SECTION--- */}
+      <section className="bg-[#FAFAFA] pb-[10vh]">
         <div className="flex flex-col mx-auto text-center content-center max-w-[52%] pt-[15vh]">
           <div className="text-header2 text-red">
             {sponsor.sponsorThankContent.header1}
@@ -120,17 +119,16 @@ export default function SponsorShowcase() {
           </div>
         </div>
         <div className="flex mx-auto text-paragraph font-bold text-center justify-center max-w-[60vw] md:max-w-[100vw] pt-8">
-          <p>Interested in partnering with CaseIT 2026? Visit our <span className="text-red"  > Sponsorship </span> page to learn more.</p>
+          {sponsor.sponsorThankContent.bold}
         </div>
         <div className="flex mx-auto justify-center mt-8">
           <RoundedButton
             text="Explore Sponsorship Opportunities"
             link="/sponsor/Sponsorship-Opportunities"
             variant="red"
-            />
+          />
         </div>
-        
-      </section> */}
+      </section>
       <section className="md:hidden flex justify-center mx-auto scroll-smooth py-[7vh]">
         <ArrowButton link="#sponShow" />
       </section>

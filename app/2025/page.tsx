@@ -11,6 +11,8 @@ import banner from "@/public/imgs/banners/2025_banner.png";
 import { ImgButton2025 } from "@/components/2025components/ImgButton2025";
 import { Results } from "@/components/2025components/results";
 import Image from "next/image";
+import { ImgRibbonLeft, ImgRibbonRight } from "@/components/imgRibbons";
+import { WinnersText } from "@/components/text";
 export const metadata: Metadata = {
   title: "CaseIT 2025",
   description: "Learn more about our company and team.",
@@ -40,13 +42,13 @@ export default function CaseIt2025() {
               <Stats key={index} title={stat} />
             ))}
           </div>
-          {content.content.section_2_Pargraph}
+          {content.boldText.section_2_Pargraph}
         </div>
       </section>
       {/* ---COMPETITION INFORMATION--- */}
       <section className="flex flex-col justify-center items-center px-4 md:px-8 xl:px-20 md:mx-auto max-w-[1920px]">
         <h2 className="mx-auto w-fit mt-8 font-semibold text-[2rem]  md:text-[2.5rem]">
-          {content.content.section_3_Title}
+          {content.boldText.section_3_Title}
         </h2>
         {/* ---3 BUTTON GRID---  */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 gap-6 sm:max-w-[80vw] lg:max-w-[60vw]">
@@ -111,6 +113,39 @@ export default function CaseIt2025() {
           alt="case 2 winner"
           title={content.compWeek.caseTwoWinner}
         />
+      </section>
+      <section className="bg-sectionBlack">
+        <div className="text-header2 text-white flex justify-center py-20">
+          {content.caseit2025Text.header2[3]}
+        </div>
+      </section>
+      <section className="flex flex-col space-y-[10vh] md:space-y-[20vh]  py-20">
+        {/* Parses through each photo based on the content arrays - Edit the content to alter the photos  */}
+        {content.winners.map((item, index) => (
+          <div key={index}>
+            {index % 2 === 0 ? (
+              <ImgRibbonRight
+                img={content.winners[index].img}
+                alt={content.winners[index].alt}
+              >
+                <WinnersText
+                  title={content.winners[index].title}
+                  subtext={content.winners[index].place}
+                />
+              </ImgRibbonRight>
+            ) : (
+              <ImgRibbonLeft
+                img={content.winners[index].img}
+                alt={content.winners[index].alt}
+              >
+                <WinnersText
+                  title={content.winners[index].title}
+                  subtext={content.winners[index].place}
+                />
+              </ImgRibbonLeft>
+            )}
+          </div>
+        ))}
       </section>
 
       {/* ---COMPETITION INFORMATION SCHEDULE--- */}

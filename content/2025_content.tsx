@@ -1,50 +1,18 @@
 export const caseit2025Text = {
   header1: "Ready for iT?",
-  header2: ["Competition Schedule", "Live Updates", "22nd iteration"],
+  header2: [
+    "Competition Schedule",
+    "Live Updates",
+    "22nd iteration",
+    "2025 Winners",
+  ],
   disclaimer:
     "Note: An official detailed schedule for CaseIT 2025 will be updated soon.",
 };
 
-export const compWeek = {
-  caseOne: (
-    <h2 className="font-semibold text-header3 sm:text-header2">
-      <span className="text-redDark">Case I</span> Division Draw
-    </h2>
-  ),
-  caseOneWinner: (
-    <h2 className="font-semibold text-header3 sm:text-header2">
-      <span className="text-redDark">Case I</span> Division Winners
-    </h2>
-  ),
-  caseTwoWinner: (
-    <h2 className="font-semibold text-header3 sm:text-header2">
-      <span className="text-redDark">Case II</span> Division Winners
-    </h2>
-  ),
-};
-
 export const stats = ["The engagement", "The surprises", "The memories"];
 
-export const caseOneImgs = [
-  {
-    src: "/imgs/compWeek/2025/C1_div1.png",
-    alt: "div 1",
-  },
-  {
-    src: "/imgs/compWeek/2025/C1_div2.png",
-    alt: "div 2",
-  },
-  {
-    src: "/imgs/compWeek/2025/C1_div3.png",
-    alt: "div 3",
-  },
-  {
-    src: "/imgs/compWeek/2025/C1_div4.png",
-    alt: "div 4",
-  },
-];
-
-export const content = {
+export const boldText = {
   section_2_Pargraph: (
     <p className="max-w-[65ch] md:text-center md:text-lg mt-4 md:mt-8">
       CaseIT is back and better, stronger, and faster than ever. With our 22nd
@@ -98,21 +66,72 @@ export const caseItEvents = [
   },
 ];
 
-export const results = [
-  {
-    img: "/imgs/2024_OC.png",
-    alt: "Downtown Vancouver",
-    title: "Case I",
-  },
-  {
-    img: "/imgs/2024_OC.png",
-    alt: "Downtown Vancouver",
-    title: "Case II",
-  },
+export const compWeek = {
+  caseOne: (
+    <h2 className="font-semibold text-header3 sm:text-header2">
+      <span className="text-redDark">Case I</span> Division Draw
+    </h2>
+  ),
+  caseOneWinner: (
+    <h2 className="font-semibold text-header3 sm:text-header2">
+      <span className="text-redDark">Case I</span> Division Winners
+    </h2>
+  ),
+  caseTwoWinner: (
+    <h2 className="font-semibold text-header3 sm:text-header2">
+      <span className="text-redDark">Case II</span> Division Winners
+    </h2>
+  ),
+};
 
+export const caseOneImgs = [
   {
-    img: "/imgs/2024_OC.png",
-    alt: "Downtown Vancouver",
-    title: "Finalists",
+    src: "/imgs/compWeek/2025/C1_div1.png",
+    alt: "div 1",
+  },
+  {
+    src: "/imgs/compWeek/2025/C1_div2.png",
+    alt: "div 2",
+  },
+  {
+    src: "/imgs/compWeek/2025/C1_div3.png",
+    alt: "div 3",
+  },
+  {
+    src: "/imgs/compWeek/2025/C1_div4.png",
+    alt: "div 4",
+  },
+];
+
+export const winners = [
+  {
+    img: "/imgs/compWeek/2025/Place1.png",
+    alt: "Manchster winner",
+    title: "The University of Manchester",
+    place: "First Place",
+  },
+  {
+    img: "/imgs/compWeek/2025/Place2.png",
+    alt: "Wilfred Laruier winner",
+    title: "Wilfred Laurier University",
+    place: "Second Place",
+  },
+  {
+    img: "/imgs/compWeek/2025/Place3.png",
+    alt: "Cornivus University of Budapest winner",
+    title: "Cornivus University of Budapest",
+    place: "Third Place",
+  },
+  {
+    img: "/imgs/compWeek/2025/Spirit.png",
+    alt: "Manchster winner",
+    title: "HEC Montréal",
+    place: "Spirit Award",
+  },
+  {
+    img: "/imgs/compWeek/2025/Speaker.png",
+    alt: "Speaker winner",
+    title: "Jasmine Peart",
+    place: "Best Speaker",
   },
 ];

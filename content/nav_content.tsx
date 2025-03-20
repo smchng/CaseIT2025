@@ -25,7 +25,7 @@ export const NavLinks = [
     sublinks: [
       { name: "Overview", ref: "/2025" },
       { name: "Chair's Welcome", ref: "/2025/chair" },
-      // { name: "2025 Sponsors", ref: "/2025/Sponsor-Showcase" },
+      { name: "2025 Sponsors", ref: "/2025/Sponsor-Showcase" },
     ],
   },
   {

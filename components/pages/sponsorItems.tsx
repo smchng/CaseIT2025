@@ -93,7 +93,7 @@ export const SilverSponsor = ({
       <div className="text-header3 text-red">
         <text>{title}</text>
       </div>
-      <div className="flex items-center justify-center h-[30vh]">
+      <div className="flex items-center justify-center h-[20vh] md:h-[30vh]">
         <Image
           src={img || "/imgs/silverSponsorLogo.png"}
           alt={alt || "Logo"}
@@ -116,7 +116,7 @@ export const TechSponsor = ({
   alt,
 }: sponsorItems) => {
   return (
-    <div className="flex flex-col h-full md:flex-row bg-sectionBlack gap-8 p-7 lg:p-20">
+    <div className="flex flex-col h-full md:flex-row bg-sectionBlack gap-8 px-7 py-[10vh] lg:p-20">
       <div className="flex justify-center items-center ">
         <Image
           src={img || "/imgs/sponsorShowcase/teamMicrosoft.png"}

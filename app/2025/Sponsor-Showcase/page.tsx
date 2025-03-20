@@ -94,7 +94,7 @@ export default function SponsorShowcase() {
         <div className="text-header3 text-red text-center py-[10vh]">
           {sponsor.inkindSponsorTileContent.title}
         </div>
-        <div className="max-w-[80vw]  grid mx-auto grid-cols-2 grid-rows-6 md:grid-rows-4 grid-flow-row gap-[1.644rem] md:gap-[6vh] md:grid-cols-4 md:grid-rows-2 lg:gap-[15vh] lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3">
+        <div className="max-w-[80vw] mx-auto grid grid-cols-2 grid-rows-6 grid-flow-row gap-[1.644rem] md:gap-[6.5rem] md:grid-cols-3 md:grid-rows-4 lg:gap-[4rem] lg:grid-cols-3 lg:grid-rows-4 lg:p-[8%] xl:grid-cols-4 xl:grid-rows-3 ">
           {sponsor.inkindSponsorTileContent.sponsors.map((item, index) => (
             <div key={index}>
               <SponsorTiles
@@ -109,19 +109,18 @@ export default function SponsorShowcase() {
 
       {/* ADD AFTER COMP WEEK */}
       {/* ---THANK YOU SECTION--- */}
-      <section className="bg-[#FAFAFA] pb-[10vh]">
-        <div className="flex flex-col mx-auto text-center content-center max-w-[52%] pt-[15vh]">
-          <div className="text-header2 text-red">
+      <section className="bg-greyDark py-[10vh]">
+        <div className="flex flex-col mx-auto text-center content-center md:max-w-[50vw] space-y-8 px-7">
+          <div className="text-header2 text-red leading-none">
             {sponsor.sponsorThankContent.header1}
           </div>
-          <div className="text-paragraph pt-4">
+          <div className="text-paragraph">
             {sponsor.sponsorThankContent.text}
           </div>
-        </div>
-        <div className="flex mx-auto text-paragraph font-bold text-center justify-center max-w-[60vw] md:max-w-[100vw] pt-8">
-          {sponsor.sponsorThankContent.bold}
-        </div>
-        <div className="flex mx-auto justify-center mt-8">
+
+          <div className="text-paragraph font-bold">
+            {sponsor.sponsorThankContent.bold}
+          </div>
           <RoundedButton
             text="Explore Sponsorship Opportunities"
             link="/sponsor/Sponsorship-Opportunities"

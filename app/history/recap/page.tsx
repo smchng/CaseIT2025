@@ -17,7 +17,9 @@ export default function Recap2024() {
       {/* ---MAIN BANNER--- */}
       <section id="recap">
         <BgImgCenter img={banner}>
-          <div className="text-header1 pb-[5vh]">{re.recapText.header1}</div>
+          <div className="text-header1 pb-[5vh]  leading-none">
+            {re.recapText.header1}
+          </div>
           <div className="flex flex-col-reverse md:flex-row justify-center items-center md:space-x-[20px] ">
             <div>
               <RoundedButton

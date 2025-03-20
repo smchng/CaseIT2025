@@ -24,7 +24,7 @@ export default function CaseIt2025() {
       {/* ---MAIN BANNER--- */}
       <section id="2025" className="">
         <BgImgCenter img={banner}>
-          <div className="text-header1 pb-8">
+          <div className="text-header1 pb-8 leading-none">
             {content.caseit2025Text.header1}
           </div>
           <div className="w-full sm:w-[60vw] md:w-[80vw] lg:w-[90vw] xl:w-[80%]">
